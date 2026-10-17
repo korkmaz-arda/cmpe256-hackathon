@@ -175,7 +175,8 @@ def consultant_tab() -> None:
     if result["query"] != st.session_state.get("query", "").strip():
         st.caption("⚠️ The request box has changed since this answer was produced; press the button to run the new request.")
     cols = st.columns(4)
-    cols[0].metric("Routed to", ", ".join(config.DOMAIN_LABELS.get(x, "Out of scope").replace(" Agent", "") for x in r["routes"]))
+    short = {"technology": "Tech", "clinical": "Clinical", "sec": "SEC", "csr": "CSR", "out_of_scope": "Out of scope"}
+    cols[0].metric("Routed to", " + ".join(short.get(x, x) for x in r["routes"]))
     cols[1].metric("Cross-domain", "Yes" if r.get("cross_domain") else "No")
     cols[2].metric("Router confidence", f"{r['confidence']:.2f}")
     cols[3].metric("Total time", f"{result['seconds']}s")
