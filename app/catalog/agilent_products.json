@@ -1,0 +1,75 @@
+[
+  {
+    "id": "seahorse-xf",
+    "name": "Seahorse XF analyzers (XF Pro)",
+    "category": "Real-time cell metabolic analysis",
+    "measures_or_does": "Label-free measurement of cellular respiration, glycolysis and ATP production",
+    "sample_types": [
+      "2D cell models",
+      "3D cell models"
+    ],
+    "regulatory": null,
+    "typical_use_cases": [
+      "Cellular bioenergetics",
+      "Therapeutic development",
+      "Drug toxicity programs"
+    ],
+    "keywords": [
+      "seahorse",
+      "metabolism",
+      "respiration",
+      "glycolysis",
+      "ATP",
+      "cell analysis"
+    ],
+    "source_url": "https://www.agilent.com/about/newsroom/presrel/2023/07mar-ca23010.html"
+  },
+  {
+    "id": "nanozoomer-ivd",
+    "name": "NanoZoomer Slide Scanner System IVD",
+    "category": "Digital pathology",
+    "measures_or_does": "Automated high-resolution whole-slide imaging for primary diagnosis, with 20x and 40x scanning",
+    "sample_types": [
+      "Glass histopathology slides",
+      "Anatomical tissue slides"
+    ],
+    "regulatory": "IVD",
+    "typical_use_cases": [
+      "Primary diagnostic pathology",
+      "Digital slide viewing and management"
+    ],
+    "keywords": [
+      "nanozoomer",
+      "pathology",
+      "histology",
+      "tissue",
+      "scanner",
+      "slides",
+      "IVD"
+    ],
+    "source_url": "https://www.agilent.com/en/product/digital-pathology/digital-pathology-scanners/nanozoomer-slide-scanner-system-4370282"
+  },
+  {
+    "id": "artisan-link-pro",
+    "name": "Artisan Link Pro",
+    "category": "Special histochemical staining",
+    "measures_or_does": "Automates special staining from drying and deparaffinization through finished slides",
+    "sample_types": [
+      "Histochemical staining slides"
+    ],
+    "regulatory": null,
+    "typical_use_cases": [
+      "Automated special stains in pathology laboratories",
+      "Consistent staining using ready-to-use kits and editable protocols"
+    ],
+    "keywords": [
+      "artisan",
+      "staining",
+      "histochemical",
+      "special stains",
+      "pathology",
+      "slides"
+    ],
+    "source_url": "https://www.agilent.com/en/product/special-stains"
+  }
+]

@@ -1,0 +1,10 @@
+openai>=1.40
+numpy
+pandas
+pypdf
+rank-bm25
+requests
+beautifulsoup4
+streamlit
+python-dotenv
+fonttools

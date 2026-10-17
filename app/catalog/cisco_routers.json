@@ -1,0 +1,922 @@
+[
+  {
+    "id": "catalyst-8300",
+    "family": "Catalyst 8300",
+    "model": null,
+    "form_factor": "physical",
+    "deployment": "branch",
+    "max_throughput_text": null,
+    "ipsec_throughput_text": "Up to 9.3 Gbps IPsec IMIX (autonomous mode)",
+    "wan_interfaces": null,
+    "modules_or_slots": null,
+    "power_supply_redundancy": true,
+    "sd_wan": true,
+    "notable_features": [
+      "Cisco IOS XE SD-WAN",
+      "LTE and 5G Wireless WAN",
+      "Survivable Remote Site Telephony (SRST)"
+    ],
+    "field_replaceable_parts": [],
+    "best_for": "Medium and large enterprise branch offices",
+    "source_url": "https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8300-series-edge-platforms/datasheet-c78-744088.pdf",
+    "source_pages": [
+      3,
+      4,
+      6,
+      7,
+      10,
+      15,
+      16,
+      17
+    ]
+  },
+  {
+    "id": "c8300-2n2s-4t2x",
+    "family": "Catalyst 8300",
+    "model": "C8300-2N2S-4T2X",
+    "form_factor": "physical",
+    "deployment": "branch",
+    "max_throughput_text": "Up to 19.7 Gbps IPv4 forwarding, 1400-byte packets, autonomous mode",
+    "ipsec_throughput_text": "SD-WAN up to 18.8 Gbps (1400 bytes); 7.6 Gbps IMIX",
+    "wan_interfaces": "2 x 10GE + 4 x 1GE",
+    "modules_or_slots": "2 SM, 2 NIM, 1 PIM",
+    "power_supply_redundancy": true,
+    "sd_wan": true,
+    "notable_features": [
+      "Cisco IOS XE SD-WAN",
+      "LTE and 5G Wireless WAN",
+      "Survivable Remote Site Telephony (SRST)"
+    ],
+    "field_replaceable_parts": [
+      "MEM-C8300-8GB: 8 GB memory",
+      "MEM-C8300-16GB: 16 GB memory",
+      "MEM-C8300-32GB: 32 GB memory",
+      "C8300-FAN-2R: fan tray",
+      "PWR-CC1-650WAC: AC PSU"
+    ],
+    "best_for": "Medium and large enterprise branch offices",
+    "source_url": "https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8300-series-edge-platforms/datasheet-c78-744088.pdf",
+    "source_pages": [
+      3,
+      4,
+      6,
+      7,
+      10,
+      15,
+      16,
+      17
+    ]
+  },
+  {
+    "id": "c8300-1n1s-4t2x",
+    "family": "Catalyst 8300",
+    "model": "C8300-1N1S-4T2X",
+    "form_factor": "physical",
+    "deployment": "branch",
+    "max_throughput_text": "Up to 19.7 Gbps IPv4 forwarding, 1400-byte packets, autonomous mode",
+    "ipsec_throughput_text": "SD-WAN up to 17 Gbps (1400 bytes); 6.3 Gbps IMIX",
+    "wan_interfaces": "2 x 10GE + 4 x 1GE",
+    "modules_or_slots": "1 SM, 1 NIM, 1 PIM",
+    "power_supply_redundancy": true,
+    "sd_wan": true,
+    "notable_features": [
+      "Cisco IOS XE SD-WAN",
+      "LTE and 5G Wireless WAN",
+      "Survivable Remote Site Telephony (SRST)"
+    ],
+    "field_replaceable_parts": [
+      "MEM-C8300-8GB: 8 GB memory",
+      "MEM-C8300-16GB: 16 GB memory",
+      "MEM-C8300-32GB: 32 GB memory",
+      "C8300-FAN-1R: fan tray",
+      "PWR-CC1-250WAC: AC PSU"
+    ],
+    "best_for": "Medium and large enterprise branch offices",
+    "source_url": "https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8300-series-edge-platforms/datasheet-c78-744088.pdf",
+    "source_pages": [
+      3,
+      4,
+      6,
+      7,
+      10,
+      15,
+      16,
+      17
+    ]
+  },
+  {
+    "id": "c8300-2n2s-6t",
+    "family": "Catalyst 8300",
+    "model": "C8300-2N2S-6T",
+    "form_factor": "physical",
+    "deployment": "branch",
+    "max_throughput_text": "Up to 19.7 Gbps IPv4 forwarding, 1400-byte packets, autonomous mode",
+    "ipsec_throughput_text": "SD-WAN up to 2 Gbps (1400 bytes); 1.8 Gbps IMIX",
+    "wan_interfaces": "6 x 1GE",
+    "modules_or_slots": "2 SM, 2 NIM, 1 PIM",
+    "power_supply_redundancy": true,
+    "sd_wan": true,
+    "notable_features": [
+      "Cisco IOS XE SD-WAN",
+      "LTE and 5G Wireless WAN",
+      "Survivable Remote Site Telephony (SRST)"
+    ],
+    "field_replaceable_parts": [
+      "MEM-C8300-8GB: 8 GB memory",
+      "MEM-C8300-16GB: 16 GB memory",
+      "MEM-C8300-32GB: 32 GB memory",
+      "C8300-FAN-2R: fan tray",
+      "PWR-CC1-650WAC: AC PSU"
+    ],
+    "best_for": "Medium and large enterprise branch offices",
+    "source_url": "https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8300-series-edge-platforms/datasheet-c78-744088.pdf",
+    "source_pages": [
+      3,
+      4,
+      6,
+      7,
+      10,
+      15,
+      16,
+      17
+    ]
+  },
+  {
+    "id": "c8300-1n1s-6t",
+    "family": "Catalyst 8300",
+    "model": "C8300-1N1S-6T",
+    "form_factor": "physical",
+    "deployment": "branch",
+    "max_throughput_text": "Up to 19.7 Gbps IPv4 forwarding, 1400-byte packets, autonomous mode",
+    "ipsec_throughput_text": "SD-WAN up to 2 Gbps (1400 bytes); 1.8 Gbps IMIX",
+    "wan_interfaces": "6 x 1GE",
+    "modules_or_slots": "1 SM, 1 NIM, 1 PIM",
+    "power_supply_redundancy": true,
+    "sd_wan": true,
+    "notable_features": [
+      "Cisco IOS XE SD-WAN",
+      "LTE and 5G Wireless WAN",
+      "Survivable Remote Site Telephony (SRST)"
+    ],
+    "field_replaceable_parts": [
+      "MEM-C8300-8GB: 8 GB memory",
+      "MEM-C8300-16GB: 16 GB memory",
+      "MEM-C8300-32GB: 32 GB memory",
+      "C8300-FAN-1R: fan tray",
+      "PWR-CC1-250WAC: AC PSU"
+    ],
+    "best_for": "Medium and large enterprise branch offices",
+    "source_url": "https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8300-series-edge-platforms/datasheet-c78-744088.pdf",
+    "source_pages": [
+      3,
+      4,
+      6,
+      7,
+      10,
+      15,
+      16,
+      17
+    ]
+  },
+  {
+    "id": "catalyst-8200",
+    "family": "Catalyst 8200",
+    "model": null,
+    "form_factor": "physical",
+    "deployment": "branch",
+    "max_throughput_text": null,
+    "ipsec_throughput_text": null,
+    "wan_interfaces": null,
+    "modules_or_slots": null,
+    "power_supply_redundancy": null,
+    "sd_wan": true,
+    "notable_features": [
+      "Cisco IOS XE SD-WAN",
+      "LTE and 5G wireless WAN"
+    ],
+    "field_replaceable_parts": [],
+    "best_for": "Small enterprise branch offices",
+    "source_url": "https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8200-series-edge-platforms/nb-06-cat8200-series-edge-plat-ds-cte-en.pdf",
+    "source_pages": [
+      3,
+      5,
+      6,
+      12,
+      13
+    ]
+  },
+  {
+    "id": "c8200-1n-4t",
+    "family": "Catalyst 8200",
+    "model": "C8200-1N-4T",
+    "form_factor": "physical",
+    "deployment": "branch",
+    "max_throughput_text": "Up to 3.8 Gbps IPv4 forwarding, 1400-byte packets, autonomous mode",
+    "ipsec_throughput_text": "SD-WAN up to 1 Gbps (1400 bytes); 900 Mbps IMIX",
+    "wan_interfaces": "4 x 1GE",
+    "modules_or_slots": "1 NIM, 1 PIM",
+    "power_supply_redundancy": null,
+    "sd_wan": true,
+    "notable_features": [
+      "Cisco IOS XE SD-WAN",
+      "LTE and 5G wireless WAN"
+    ],
+    "field_replaceable_parts": [
+      "MEM-C8200-8GB: 8 GB memory",
+      "MEM-C8200-16GB: 16 GB memory",
+      "MEM-C8200-32GB: 32 GB memory",
+      "NIM-1T: 1-port serial WAN interface",
+      "PWR-CC1-150WAC: external PSU for PoE only (not redundancy)"
+    ],
+    "best_for": "Small enterprise branch offices",
+    "source_url": "https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8200-series-edge-platforms/nb-06-cat8200-series-edge-plat-ds-cte-en.pdf",
+    "source_pages": [
+      3,
+      5,
+      6,
+      12,
+      13
+    ]
+  },
+  {
+    "id": "c8200l-1n-4t",
+    "family": "Catalyst 8200",
+    "model": "C8200L-1N-4T",
+    "form_factor": "physical",
+    "deployment": "branch",
+    "max_throughput_text": "Up to 3.8 Gbps IPv4 forwarding, 1400-byte packets, autonomous mode",
+    "ipsec_throughput_text": "SD-WAN up to 500 Mbps (1400 bytes); 400 Mbps IMIX",
+    "wan_interfaces": "4 x 1GE",
+    "modules_or_slots": "1 NIM, 1 PIM",
+    "power_supply_redundancy": null,
+    "sd_wan": true,
+    "notable_features": [
+      "Cisco IOS XE SD-WAN",
+      "LTE and 5G wireless WAN"
+    ],
+    "field_replaceable_parts": [
+      "MEM-C8200-8GB: 8 GB memory",
+      "MEM-C8200-16GB: 16 GB memory",
+      "MEM-C8200-32GB: 32 GB memory",
+      "NIM-1T: 1-port serial WAN interface",
+      "PWR-CC1-150WAC: external PSU for PoE only (not redundancy)"
+    ],
+    "best_for": "Small enterprise branch offices",
+    "source_url": "https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8200-series-edge-platforms/nb-06-cat8200-series-edge-plat-ds-cte-en.pdf",
+    "source_pages": [
+      3,
+      5,
+      6,
+      12,
+      13
+    ]
+  },
+  {
+    "id": "catalyst-8000v",
+    "family": "Catalyst 8000V",
+    "model": null,
+    "form_factor": "virtual",
+    "deployment": "cloud, branch edge, data center edge",
+    "max_throughput_text": null,
+    "ipsec_throughput_text": null,
+    "wan_interfaces": "KVM maximum 26; VMware ESXi maximum 8; public clouds depend on instance, maximum 8",
+    "modules_or_slots": "Virtual machine: 2, 4, 8 or 16 vCPU; 4, 8 or 16 GB memory",
+    "power_supply_redundancy": null,
+    "sd_wan": true,
+    "notable_features": [
+      "AWS, Azure, Google Cloud, OCI and Alibaba Cloud",
+      "NAT and NAT64",
+      "MPLS VPN",
+      "Forward Error Correction and Packet Duplication",
+      "SD-WAN Controller and autonomous modes"
+    ],
+    "field_replaceable_parts": [],
+    "best_for": "Multicloud connectivity and virtual routing",
+    "source_url": "https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8000v-edge-software/catalyst-8000v-edge-software-ds.pdf",
+    "source_pages": [
+      5,
+      6,
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  {
+    "id": "isr-4000",
+    "family": "ISR 4000",
+    "model": null,
+    "form_factor": "physical",
+    "deployment": "branch",
+    "max_throughput_text": null,
+    "ipsec_throughput_text": null,
+    "wan_interfaces": null,
+    "modules_or_slots": null,
+    "power_supply_redundancy": null,
+    "sd_wan": true,
+    "notable_features": [
+      "Cisco IOS XE",
+      "Cisco Catalyst SD-WAN",
+      "SRST telephony survivability",
+      "Modular WAN interfaces"
+    ],
+    "field_replaceable_parts": [],
+    "best_for": "Converged branch routing, security and unified communications",
+    "source_url": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.pdf",
+    "source_pages": [
+      4,
+      5,
+      9,
+      24,
+      25
+    ]
+  },
+  {
+    "id": "isr4461",
+    "family": "ISR 4000",
+    "model": "ISR4461",
+    "form_factor": "physical",
+    "deployment": "branch",
+    "max_throughput_text": "1.5 Gbps default; 3 Gbps performance license; up to 10 Gbps CEF-only IMIX boost license (Table 8)",
+    "ipsec_throughput_text": null,
+    "wan_interfaces": "4 x 1GE; 2 x 10GE",
+    "modules_or_slots": "3 SM, 3 NIM",
+    "power_supply_redundancy": true,
+    "sd_wan": true,
+    "notable_features": [
+      "Cisco IOS XE",
+      "Cisco Catalyst SD-WAN",
+      "SRST telephony survivability",
+      "Modular WAN interfaces"
+    ],
+    "field_replaceable_parts": [],
+    "best_for": "Converged branch routing, security and unified communications",
+    "source_url": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.pdf",
+    "source_pages": [
+      4,
+      5,
+      9,
+      24,
+      25
+    ]
+  },
+  {
+    "id": "isr4451",
+    "family": "ISR 4000",
+    "model": "ISR4451",
+    "form_factor": "physical",
+    "deployment": "branch",
+    "max_throughput_text": "1 Gbps default; 2 Gbps performance license; up to 3.8 Gbps CEF-only IMIX boost license (Table 8)",
+    "ipsec_throughput_text": null,
+    "wan_interfaces": "4 x 1GE",
+    "modules_or_slots": "2 SM, 3 NIM",
+    "power_supply_redundancy": true,
+    "sd_wan": true,
+    "notable_features": [
+      "Cisco IOS XE",
+      "Cisco Catalyst SD-WAN",
+      "SRST telephony survivability",
+      "Modular WAN interfaces"
+    ],
+    "field_replaceable_parts": [],
+    "best_for": "Converged branch routing, security and unified communications",
+    "source_url": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.pdf",
+    "source_pages": [
+      4,
+      5,
+      9,
+      24,
+      25
+    ]
+  },
+  {
+    "id": "isr4431",
+    "family": "ISR 4000",
+    "model": "ISR4431",
+    "form_factor": "physical",
+    "deployment": "branch",
+    "max_throughput_text": "500 Mbps default; 1 Gbps performance license; up to 3.4 Gbps CEF-only IMIX boost license (Table 8)",
+    "ipsec_throughput_text": null,
+    "wan_interfaces": "4 x 1GE",
+    "modules_or_slots": "0 SM, 3 NIM",
+    "power_supply_redundancy": true,
+    "sd_wan": true,
+    "notable_features": [
+      "Cisco IOS XE",
+      "Cisco Catalyst SD-WAN",
+      "SRST telephony survivability",
+      "Modular WAN interfaces"
+    ],
+    "field_replaceable_parts": [],
+    "best_for": "Converged branch routing, security and unified communications",
+    "source_url": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.pdf",
+    "source_pages": [
+      4,
+      5,
+      9,
+      24,
+      25
+    ]
+  },
+  {
+    "id": "isr4351",
+    "family": "ISR 4000",
+    "model": "ISR4351",
+    "form_factor": "physical",
+    "deployment": "branch",
+    "max_throughput_text": "200 Mbps default; 400 Mbps performance license; up to 2 Gbps CEF-only IMIX boost license (Table 8)",
+    "ipsec_throughput_text": null,
+    "wan_interfaces": "3 x 1GE",
+    "modules_or_slots": "2 SM, 3 NIM",
+    "power_supply_redundancy": null,
+    "sd_wan": true,
+    "notable_features": [
+      "Cisco IOS XE",
+      "Cisco Catalyst SD-WAN",
+      "SRST telephony survivability",
+      "Modular WAN interfaces"
+    ],
+    "field_replaceable_parts": [],
+    "best_for": "Converged branch routing, security and unified communications",
+    "source_url": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.pdf",
+    "source_pages": [
+      4,
+      5,
+      9,
+      24,
+      25
+    ]
+  },
+  {
+    "id": "isr4331",
+    "family": "ISR 4000",
+    "model": "ISR4331",
+    "form_factor": "physical",
+    "deployment": "branch",
+    "max_throughput_text": "100 Mbps default; 300 Mbps performance license; up to 1.8 Gbps CEF-only IMIX boost license (Table 8)",
+    "ipsec_throughput_text": null,
+    "wan_interfaces": "3 x 1GE",
+    "modules_or_slots": "1 SM, 2 NIM",
+    "power_supply_redundancy": null,
+    "sd_wan": true,
+    "notable_features": [
+      "Cisco IOS XE",
+      "Cisco Catalyst SD-WAN",
+      "SRST telephony survivability",
+      "Modular WAN interfaces"
+    ],
+    "field_replaceable_parts": [],
+    "best_for": "Converged branch routing, security and unified communications",
+    "source_url": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.pdf",
+    "source_pages": [
+      4,
+      5,
+      9,
+      24,
+      25
+    ]
+  },
+  {
+    "id": "isr4331-dc",
+    "family": "ISR 4000",
+    "model": "ISR4331-DC",
+    "form_factor": "physical",
+    "deployment": "branch",
+    "max_throughput_text": "100 Mbps default; 300 Mbps performance license; up to 1.8 Gbps CEF-only IMIX boost license (Table 8)",
+    "ipsec_throughput_text": null,
+    "wan_interfaces": "3 x 1GE",
+    "modules_or_slots": "1 SM, 2 NIM",
+    "power_supply_redundancy": null,
+    "sd_wan": true,
+    "notable_features": [
+      "Cisco IOS XE",
+      "Cisco Catalyst SD-WAN",
+      "SRST telephony survivability",
+      "Modular WAN interfaces"
+    ],
+    "field_replaceable_parts": [],
+    "best_for": "Converged branch routing, security and unified communications",
+    "source_url": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.pdf",
+    "source_pages": [
+      4,
+      5,
+      9,
+      24,
+      25
+    ]
+  },
+  {
+    "id": "isr4321",
+    "family": "ISR 4000",
+    "model": "ISR4321",
+    "form_factor": "physical",
+    "deployment": "branch",
+    "max_throughput_text": "50 Mbps default; 100 Mbps performance license; up to 1.6 Gbps CEF-only IMIX boost license (Table 8)",
+    "ipsec_throughput_text": null,
+    "wan_interfaces": "2 x 1GE",
+    "modules_or_slots": "0 SM, 2 NIM",
+    "power_supply_redundancy": null,
+    "sd_wan": true,
+    "notable_features": [
+      "Cisco IOS XE",
+      "Cisco Catalyst SD-WAN",
+      "SRST telephony survivability",
+      "Modular WAN interfaces"
+    ],
+    "field_replaceable_parts": [],
+    "best_for": "Converged branch routing, security and unified communications",
+    "source_url": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.pdf",
+    "source_pages": [
+      4,
+      5,
+      9,
+      24,
+      25
+    ]
+  },
+  {
+    "id": "isr4221",
+    "family": "ISR 4000",
+    "model": "ISR4221",
+    "form_factor": "physical",
+    "deployment": "branch",
+    "max_throughput_text": "35 Mbps default; 75 Mbps performance license; up to 1.2 Gbps CEF-only IMIX boost license (Table 8)",
+    "ipsec_throughput_text": null,
+    "wan_interfaces": "2 x 1GE",
+    "modules_or_slots": "0 SM, 2 NIM",
+    "power_supply_redundancy": null,
+    "sd_wan": true,
+    "notable_features": [
+      "Cisco IOS XE",
+      "Cisco Catalyst SD-WAN",
+      "SRST telephony survivability",
+      "Modular WAN interfaces"
+    ],
+    "field_replaceable_parts": [],
+    "best_for": "Converged branch routing, security and unified communications",
+    "source_url": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.pdf",
+    "source_pages": [
+      4,
+      5,
+      9,
+      24,
+      25
+    ]
+  },
+  {
+    "id": "isr4221x",
+    "family": "ISR 4000",
+    "model": "ISR4221X",
+    "form_factor": "physical",
+    "deployment": "branch",
+    "max_throughput_text": "35 Mbps default; 75 Mbps performance license; up to 1.2 Gbps CEF-only IMIX boost license (Table 8)",
+    "ipsec_throughput_text": null,
+    "wan_interfaces": "2 x 1GE",
+    "modules_or_slots": "0 SM, 2 NIM",
+    "power_supply_redundancy": null,
+    "sd_wan": true,
+    "notable_features": [
+      "Cisco IOS XE",
+      "Cisco Catalyst SD-WAN",
+      "SRST telephony survivability",
+      "Modular WAN interfaces"
+    ],
+    "field_replaceable_parts": [],
+    "best_for": "Converged branch routing, security and unified communications",
+    "source_url": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.pdf",
+    "source_pages": [
+      4,
+      5,
+      9,
+      24,
+      25
+    ]
+  },
+  {
+    "id": "asr-1000",
+    "family": "ASR 1000",
+    "model": null,
+    "form_factor": "physical",
+    "deployment": "data center/aggregation, large office WAN edge, service provider POP",
+    "max_throughput_text": "2.5 to 200 Gbps, depending on platform and ESP",
+    "ipsec_throughput_text": "Up to 78 Gbps with ASR1000-ESP200",
+    "wan_interfaces": null,
+    "modules_or_slots": null,
+    "power_supply_redundancy": true,
+    "sd_wan": true,
+    "notable_features": [
+      "Cisco IOS XE SD-WAN",
+      "Hardware accelerated encryption, QoS and ACLs",
+      "High availability"
+    ],
+    "field_replaceable_parts": [
+      "ASR1000-ESP200: 200 Gb embedded services processor",
+      "ASR1000-RP2: Route Processor 2",
+      "ASR1000-RP3: Route Processor 3",
+      "ASR1000-SIP40: SPA interface processor",
+      "EPA-1X100GE: Ethernet port adapter"
+    ],
+    "best_for": "WAN aggregation and enterprise data center edge",
+    "source_url": "https://www.cisco.com/c/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.pdf",
+    "source_pages": [
+      3,
+      4,
+      5,
+      12,
+      13,
+      14,
+      27,
+      28,
+      29,
+      9
+    ]
+  },
+  {
+    "id": "asr1001-x",
+    "family": "ASR 1000",
+    "model": "ASR1001-X",
+    "form_factor": "physical",
+    "deployment": "data center/aggregation, large office WAN edge, service provider POP",
+    "max_throughput_text": null,
+    "ipsec_throughput_text": null,
+    "wan_interfaces": "6 x 1GE SFP; 2 x 10GE SFP+",
+    "modules_or_slots": "1 single-height SPA slot; NIM support",
+    "power_supply_redundancy": true,
+    "sd_wan": true,
+    "notable_features": [
+      "Cisco IOS XE SD-WAN",
+      "Hardware accelerated encryption, QoS and ACLs",
+      "High availability"
+    ],
+    "field_replaceable_parts": [],
+    "best_for": "WAN aggregation and enterprise data center edge",
+    "source_url": "https://www.cisco.com/c/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.pdf",
+    "source_pages": [
+      3,
+      4,
+      5,
+      12,
+      13,
+      14,
+      27,
+      28,
+      29
+    ]
+  },
+  {
+    "id": "asr1002-x",
+    "family": "ASR 1000",
+    "model": "ASR1002-X",
+    "form_factor": "physical",
+    "deployment": "data center/aggregation, large office WAN edge, service provider POP",
+    "max_throughput_text": null,
+    "ipsec_throughput_text": null,
+    "wan_interfaces": "6 x 1GE SFP",
+    "modules_or_slots": "3 SPA slots",
+    "power_supply_redundancy": true,
+    "sd_wan": true,
+    "notable_features": [
+      "Cisco IOS XE SD-WAN",
+      "Hardware accelerated encryption, QoS and ACLs",
+      "High availability"
+    ],
+    "field_replaceable_parts": [],
+    "best_for": "WAN aggregation and enterprise data center edge",
+    "source_url": "https://www.cisco.com/c/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.pdf",
+    "source_pages": [
+      3,
+      4,
+      5,
+      12,
+      13,
+      14,
+      27,
+      28,
+      29
+    ]
+  },
+  {
+    "id": "asr1001-hx",
+    "family": "ASR 1000",
+    "model": "ASR1001-HX",
+    "form_factor": "physical",
+    "deployment": "data center/aggregation, large office WAN edge, service provider POP",
+    "max_throughput_text": "Up to 60 Gbps",
+    "ipsec_throughput_text": null,
+    "wan_interfaces": "8 x 1GE; 4 x 10GE; 4 configurable 1GE/10GE",
+    "modules_or_slots": null,
+    "power_supply_redundancy": true,
+    "sd_wan": true,
+    "notable_features": [
+      "Cisco IOS XE SD-WAN",
+      "Hardware accelerated encryption, QoS and ACLs",
+      "High availability"
+    ],
+    "field_replaceable_parts": [],
+    "best_for": "WAN aggregation and enterprise data center edge",
+    "source_url": "https://www.cisco.com/c/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.pdf",
+    "source_pages": [
+      3,
+      4,
+      5,
+      12,
+      13,
+      14,
+      27,
+      28,
+      29
+    ]
+  },
+  {
+    "id": "asr1002-hx",
+    "family": "ASR 1000",
+    "model": "ASR1002-HX",
+    "form_factor": "physical",
+    "deployment": "data center/aggregation, large office WAN edge, service provider POP",
+    "max_throughput_text": "Up to 100 Gbps",
+    "ipsec_throughput_text": null,
+    "wan_interfaces": "8 x 1GE; 8 x 10GE",
+    "modules_or_slots": "1 EPA slot; NIM support",
+    "power_supply_redundancy": true,
+    "sd_wan": true,
+    "notable_features": [
+      "Cisco IOS XE SD-WAN",
+      "Hardware accelerated encryption, QoS and ACLs",
+      "High availability"
+    ],
+    "field_replaceable_parts": [],
+    "best_for": "WAN aggregation and enterprise data center edge",
+    "source_url": "https://www.cisco.com/c/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.pdf",
+    "source_pages": [
+      3,
+      4,
+      5,
+      12,
+      13,
+      14,
+      27,
+      28,
+      29
+    ]
+  },
+  {
+    "id": "asr1004",
+    "family": "ASR 1000",
+    "model": "ASR1004",
+    "form_factor": "physical",
+    "deployment": "data center/aggregation, large office WAN edge, service provider POP",
+    "max_throughput_text": null,
+    "ipsec_throughput_text": null,
+    "wan_interfaces": null,
+    "modules_or_slots": "8 SPA; 1 ESP; 1 route processor slot",
+    "power_supply_redundancy": true,
+    "sd_wan": true,
+    "notable_features": [
+      "Cisco IOS XE SD-WAN",
+      "Hardware accelerated encryption, QoS and ACLs",
+      "High availability"
+    ],
+    "field_replaceable_parts": [],
+    "best_for": "WAN aggregation and enterprise data center edge",
+    "source_url": "https://www.cisco.com/c/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.pdf",
+    "source_pages": [
+      3,
+      4,
+      5,
+      12,
+      13,
+      14,
+      27,
+      28,
+      29
+    ]
+  },
+  {
+    "id": "asr1006",
+    "family": "ASR 1000",
+    "model": "ASR1006",
+    "form_factor": "physical",
+    "deployment": "data center/aggregation, large office WAN edge, service provider POP",
+    "max_throughput_text": null,
+    "ipsec_throughput_text": null,
+    "wan_interfaces": null,
+    "modules_or_slots": "12 SPA; 2 ESP; 2 route processor slots",
+    "power_supply_redundancy": true,
+    "sd_wan": true,
+    "notable_features": [
+      "Cisco IOS XE SD-WAN",
+      "Hardware accelerated encryption, QoS and ACLs",
+      "High availability"
+    ],
+    "field_replaceable_parts": [],
+    "best_for": "WAN aggregation and enterprise data center edge",
+    "source_url": "https://www.cisco.com/c/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.pdf",
+    "source_pages": [
+      3,
+      4,
+      5,
+      12,
+      13,
+      14,
+      27,
+      28,
+      29
+    ]
+  },
+  {
+    "id": "asr1006-x",
+    "family": "ASR 1000",
+    "model": "ASR1006-X",
+    "form_factor": "physical",
+    "deployment": "data center/aggregation, large office WAN edge, service provider POP",
+    "max_throughput_text": null,
+    "ipsec_throughput_text": null,
+    "wan_interfaces": null,
+    "modules_or_slots": "8 SPA or 4 EPA; 2 ESP; 2 route processor slots",
+    "power_supply_redundancy": true,
+    "sd_wan": true,
+    "notable_features": [
+      "Cisco IOS XE SD-WAN",
+      "Hardware accelerated encryption, QoS and ACLs",
+      "High availability"
+    ],
+    "field_replaceable_parts": [],
+    "best_for": "WAN aggregation and enterprise data center edge",
+    "source_url": "https://www.cisco.com/c/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.pdf",
+    "source_pages": [
+      3,
+      4,
+      5,
+      12,
+      13,
+      14,
+      27,
+      28,
+      29
+    ]
+  },
+  {
+    "id": "asr1009-x",
+    "family": "ASR 1000",
+    "model": "ASR1009-X",
+    "form_factor": "physical",
+    "deployment": "data center/aggregation, large office WAN edge, service provider POP",
+    "max_throughput_text": null,
+    "ipsec_throughput_text": null,
+    "wan_interfaces": null,
+    "modules_or_slots": "12 SPA or 6 EPA; 2 ESP; 2 route processor slots",
+    "power_supply_redundancy": true,
+    "sd_wan": true,
+    "notable_features": [
+      "Cisco IOS XE SD-WAN",
+      "Hardware accelerated encryption, QoS and ACLs",
+      "High availability"
+    ],
+    "field_replaceable_parts": [],
+    "best_for": "WAN aggregation and enterprise data center edge",
+    "source_url": "https://www.cisco.com/c/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.pdf",
+    "source_pages": [
+      3,
+      4,
+      5,
+      12,
+      13,
+      14,
+      27,
+      28,
+      29
+    ]
+  },
+  {
+    "id": "asr1013",
+    "family": "ASR 1000",
+    "model": "ASR1013",
+    "form_factor": "physical",
+    "deployment": "data center/aggregation, large office WAN edge, service provider POP",
+    "max_throughput_text": null,
+    "ipsec_throughput_text": null,
+    "wan_interfaces": null,
+    "modules_or_slots": "24 SPA or 12 EPA; 2 ESP; 2 route processor slots",
+    "power_supply_redundancy": true,
+    "sd_wan": true,
+    "notable_features": [
+      "Cisco IOS XE SD-WAN",
+      "Hardware accelerated encryption, QoS and ACLs",
+      "High availability"
+    ],
+    "field_replaceable_parts": [],
+    "best_for": "WAN aggregation and enterprise data center edge",
+    "source_url": "https://www.cisco.com/c/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.pdf",
+    "source_pages": [
+      3,
+      4,
+      5,
+      12,
+      13,
+      14,
+      27,
+      28,
+      29
+    ]
+  }
+]
