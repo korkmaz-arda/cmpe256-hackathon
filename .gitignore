@@ -20,3 +20,4 @@ index/
 # course data stays local (public repo): unzip the Canvas zips into data/
 data/
 sources/*.pdf
+*.zip

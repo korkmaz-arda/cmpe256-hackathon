@@ -36,6 +36,10 @@ echo "OPENAI_API_KEY=sk-..." > .env            # never committed
 
 CLI: `.venv/bin/python -m app.agents.manager "your question"` prints the full answer as Markdown.
 
+- Demo video plan: [docs/VIDEO_SCRIPT.md](docs/VIDEO_SCRIPT.md)
+- Canvas zip of all tracked source: `./scripts/make_submission.sh`
+- Tests: `.venv/bin/python -m tests.test_basket`, `.venv/bin/python tests/test_trials.py`, `.venv/bin/python tests/test_product_recommender.py`
+
 ## How each Section 5 deliverable is met
 
 ### 1. Multi-agent orchestration
