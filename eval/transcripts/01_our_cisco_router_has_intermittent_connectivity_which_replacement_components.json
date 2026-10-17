@@ -8,191 +8,160 @@
     "sub_questions": [
       {
         "route": "technology",
-        "question": "For a Cisco router with intermittent connectivity, which replacement components should we order first, and what diagnostic checks should we run before replacing parts? Please tailor the answer to Cisco enterprise routers and include model-specific guidance if relevant."
+        "question": "For a Cisco enterprise router with intermittent connectivity, which replacement components should we order first, and what diagnostic checks should we run before replacing parts?"
       }
     ],
-    "reason": "The request is entirely about Cisco router troubleshooting and replacement parts, which falls under the Technology specialist scope.",
+    "reason": "The request is entirely about Cisco router troubleshooting and replacement components, which falls squarely under the technology specialist scope.",
     "confidence": 0.98,
     "model": "gpt-5.4-mini",
-    "seconds": 1.2
+    "seconds": 1.1
   },
   "agents": {
     "technology": {
       "domain": "technology",
       "agent": "Technology Agent",
-      "question": "For a Cisco router with intermittent connectivity, which replacement components should we order first, and what diagnostic checks should we run before replacing parts? Please tailor the answer to Cisco enterprise routers and include model-specific guidance if relevant.",
+      "question": "For a Cisco enterprise router with intermittent connectivity, which replacement components should we order first, and what diagnostic checks should we run before replacing parts?",
       "answer": {
-        "summary": "Do not order replacement parts solely on the symptom “intermittent connectivity.” For Cisco enterprise routers, the first spares to prioritize are the lowest-risk, commonly field-replaceable items that match the installed platform: approved optics/transceivers, patch cables, redundant/compatible power supplies, and—only after interface evidence—NIM/SM/PIM interface modules. Confirm the exact router model, module inventory, power state, interface counters, logs, and recent changes before replacing hardware.",
+        "summary": "Do not order a full set of replacement parts until you identify the exact router model, interface type, logs, and hardware health. For intermittent connectivity, the first spares to stage are usually low-risk, high-failure-probability field-replaceable items such as optics/SFPs, patch cables, and—if your platform supports redundant or replaceable power—power supplies; but compatibility must be confirmed against the exact chassis and module inventory before purchase.",
         "findings": [
           {
-            "claim": "Catalyst 8300 platforms support modular SM, NIM, and PIM slots, and all Catalyst 8300 platforms ship with dual power supplies for redundancy.",
-            "status": "confirmed",
-            "sources": [
-              "S7",
-              "S1",
-              "S9"
-            ]
-          },
-          {
-            "claim": "Catalyst 8300 optics/transceiver ordering must be validated against Cisco’s supported optics list; the retrieved datasheet points to a dedicated optics/transceivers list rather than embedding all part numbers.",
+            "claim": "Optics/transceivers are relevant replacement candidates on Cisco enterprise routers because Cisco platforms support SFP-based fiber/copper connectivity depending on platform, and Catalyst 8300 documentation explicitly references optics and transceiver modules.",
             "status": "confirmed",
             "sources": [
               "S1",
-              "S8"
-            ]
-          },
-          {
-            "claim": "ISR 4400 models including ISR 4461, ISR 4451, and ISR 4431 support dual integrated power supplies for backup, and the ISR 4000 family supports modular network interfaces with online removal and insertion for module upgrades.",
-            "status": "confirmed",
-            "sources": [
-              "S4",
-              "S10",
-              "S11",
-              "S12"
-            ]
-          },
-          {
-            "claim": "ISR 4000 platforms have AC/DC power supply considerations: ISR4331 has separate AC and DC SKUs, while ISR4400 can support AC or DC power supply on the same chassis.",
-            "status": "confirmed",
-            "sources": [
               "S5"
             ]
           },
           {
-            "claim": "Cisco 4000 Series ISR is end-of-sale as of January 20, 2025, with end-of-support January 31, 2030; Cisco positions Catalyst 8200 and 8300 Series Edge Platforms as replacement/upgrade options.",
+            "claim": "Power should be checked before replacing parts: Catalyst 8300 platforms have dual power supply by default for backup if the primary power supply fails, while Cisco 4000 ISR power redundancy is available by installing an optional power supply on supported models.",
             "status": "confirmed",
             "sources": [
+              "S1",
               "S2"
             ]
           },
           {
-            "claim": "Intermittent connectivity may be caused by optics/SFP issues, cabling, dirty fiber, WAN handoff instability, interface module faults, power/fan/environment problems, software defects, configuration changes, or capacity/licensing limits; these are plausible causes, not confirmed faults.",
-            "status": "hypothesis",
+            "claim": "Fan/thermal issues should be checked: Catalyst 8300 ships with a fan tray by default, and Catalyst 8200 documentation describes power and thermal management capabilities.",
+            "status": "confirmed",
             "sources": [
               "S1",
-              "S4",
-              "S6",
-              "S7"
+              "S4"
             ]
           },
           {
-            "claim": "If the router is an ASR 1000 used for aggregation or data-center/large WAN edge, redundant power supply availability is relevant, but exact field-replaceable part choices must be matched to the specific ASR model and installed modules.",
+            "claim": "If the router is a Cisco 4000 Series ISR, note that the platform is end-of-sale with end-of-support listed as January 31, 2030, and Cisco positions Catalyst 8200/8300 as replacement/upgrade platforms.",
             "status": "confirmed",
             "sources": [
-              "S13"
+              "S3"
+            ]
+          },
+          {
+            "claim": "For an intermittent outage, the failed component is not yet known; likely causes include bad optics/SFPs, dirty fiber, failing copper patch cable, marginal power supply, overheating/fan issues, interface module fault, software bug, duplex/speed mismatch, WAN carrier issue, or capacity/congestion.",
+            "status": "hypothesis",
+            "sources": [
+              "S1",
+              "S2",
+              "S4",
+              "S5"
             ]
           }
         ],
         "recommendations": [
           {
-            "action": "Order first: approved spare optics/transceivers and known-good patch cables for the affected WAN/LAN media type, but only after confirming the exact router model, interface type, speed, and Cisco-supported optic list.",
+            "action": "Order or stage compatible spare optics/SFPs and patch cables first, but only after confirming the exact interface type, speed, media, and supported transceiver list for the router/module.",
             "priority": "high",
-            "why": "Intermittent links are often physical-layer related, optics are fast to swap, and Catalyst 8300 documentation explicitly separates optics/transceivers as a compatibility area requiring validation.",
+            "why": "Intermittent connectivity is often physical-layer related, and optics/transceivers are field-replaceable and explicitly supported as a component category on Cisco platforms; however, the exact part number must match the platform and interface.",
             "sources": [
               "S1",
-              "S8"
+              "S5"
             ]
           },
           {
-            "action": "Order a compatible redundant power supply only if diagnostics show PSU alarms, power events, environmental instability, or the chassis lacks redundancy.",
+            "action": "If the platform has redundant or replaceable power supplies, stage the correct power supply model as the next priority after optics/cabling.",
             "priority": "high",
-            "why": "Catalyst 8300 ships with dual power supplies for redundancy, and ISR 4400 models support dual integrated power supplies; however AC/DC and PoE requirements must match the chassis.",
+            "why": "Power instability can cause intermittent failures. Catalyst 8300 includes dual power supplies by default, and Cisco 4000 ISR supports optional power redundancy on supported models, but the correct PSU depends on chassis and power requirements.",
             "sources": [
               "S1",
-              "S4",
-              "S5",
-              "S7"
+              "S2"
             ]
           },
           {
-            "action": "Do not order a NIM, SM, or PIM replacement until interface counters, logs, or module diagnostics point to a specific slot or module.",
+            "action": "Do not order NIM/SM/interface modules until diagnostics show errors isolated to a specific module or port group.",
             "priority": "medium",
-            "why": "Catalyst 8300 supports SM/NIM/PIM slots and ISR 4000 supports modular network interfaces, but replacing modules without slot-level evidence risks misdiagnosis and unnecessary outage.",
-            "sources": [
-              "S4",
-              "S7"
-            ]
-          },
-          {
-            "action": "If the platform is Cisco 4000 Series ISR and repair costs or part availability are poor, evaluate a Catalyst 8200 or Catalyst 8300 upgrade instead of only replacing parts.",
-            "priority": "medium",
-            "why": "Cisco lists the 4000 Series ISR as end-of-sale and identifies Catalyst 8200/8300 as replacement/upgrade platforms for SD-WAN, SASE, 5G, modularity, security, and analytics.",
+            "why": "Cisco routers support modular interfaces, but replacing a module without port-level evidence risks replacing a healthy part. Cisco 4000 ISR service modules support online insertion/removal on supported models, which can reduce disruption when a replacement is justified.",
             "sources": [
               "S2",
-              "S3",
-              "S9"
+              "S4"
             ]
           },
           {
-            "action": "For Catalyst 8300 branches, maintain spares for compatible optics, one matching PSU type, blank panels where needed, and critical NIM/PIM modules only if they are installed and business-critical.",
+            "action": "If the device is a Cisco 4000 Series ISR and hardware is aging or near lifecycle planning windows, evaluate Catalyst 8200 or Catalyst 8300 as an upgrade path rather than only buying break/fix spares.",
             "priority": "medium",
-            "why": "The datasheet identifies C8300 NIM/PIM blanks, optics/transceivers, dual PSU resiliency, and SM/NIM/PIM modularity as relevant platform elements.",
+            "why": "Cisco lists the 4000 Series ISR as end-of-sale and identifies Catalyst 8200/8300 as replacement/upgrade platforms.",
+            "sources": [
+              "S3"
+            ]
+          },
+          {
+            "action": "Run diagnostics before replacing parts: collect `show version`, `show logging`, `show interfaces`, `show environment`, optics/SFP status, and recent change history.",
+            "priority": "high",
+            "why": "These checks separate confirmed faults from hypotheses: interface counters identify physical-layer errors, logs show link flaps or hardware alarms, environment checks show power/fan/temperature conditions, and version/change data helps identify software or configuration causes.",
             "sources": [
               "S1",
-              "S7",
-              "S8"
-            ]
-          },
-          {
-            "action": "For ISR 4431/4451/4461, prioritize PSU redundancy verification and interface-module evidence before procurement; use model-specific throughput/licensing data when deciding whether to replace a failed unit or upgrade.",
-            "priority": "medium",
-            "why": "ISR 4431/4451/4461 have documented redundant PSU support, modular network interfaces, and distinct throughput/licensing characteristics.",
-            "sources": [
+              "S2",
               "S4",
-              "S10",
-              "S11",
-              "S12"
+              "S5"
             ]
           }
         ],
         "next_steps": [
-          "Collect exact chassis model, serial number, IOS XE version, uptime, installed modules, and power-supply inventory using `show version`, `show inventory`, and `show platform`.",
-          "Check physical/interface health with `show interfaces`, focusing on input errors, CRC, frame errors, carrier transitions, drops, resets, speed/duplex, and link flap timestamps.",
-          "Check hardware and environmental health with `show environment`, `show platform`, `show logging`, and any PSU/fan/temperature alarms.",
-          "For fiber links, inspect/clean fiber, reseat optics, compare DOM levels if supported, and test with known-good Cisco-supported optics and patch leads.",
-          "Correlate failures with WAN-provider events, power events, recent config changes, IOS XE upgrades, SD-WAN policy changes, or traffic peaks.",
-          "If a module or PSU is suspected, move the circuit to a known-good port/module where supported, or swap with a lab/maintenance-window spare to confirm before ordering production replacements."
+          "Identify the exact router model, chassis PID, IOS XE version, installed modules, and affected interface names from `show version` and inventory output.",
+          "Check `show logging` for link flaps, power events, fan/temperature alarms, module resets, or crash messages around the outage times.",
+          "Check `show interfaces <interface>` for CRC, input errors, output drops, carrier transitions, speed/duplex, and link reset counters.",
+          "Check `show environment` or equivalent platform health output for power-supply, fan, and temperature state.",
+          "Inspect or swap the lowest-risk physical components first: fiber/copper patch cable, optic/SFP, patch-panel port, and provider handoff—one variable at a time.",
+          "If errors follow a port/module rather than the cable or optic, then plan a compatible NIM/SM/interface-module replacement or chassis upgrade."
         ],
         "kpis": [
           {
-            "metric": "Link-flap count",
-            "how_to_measure": "Track interface up/down events from `show logging` or monitoring system before and after remediation."
-          },
-          {
             "metric": "Interface error rate",
-            "how_to_measure": "Compare CRC/input/frame/error counters from `show interfaces` over fixed intervals."
+            "how_to_measure": "Track CRC, input errors, output errors, and carrier transitions before and after cable/SFP/module changes."
           },
           {
-            "metric": "Mean time to repair",
-            "how_to_measure": "Measure time from incident open to stable service after spare replacement or corrective action."
+            "metric": "Link flap frequency",
+            "how_to_measure": "Count link up/down events in `show logging` or syslog per 24-hour period."
           },
           {
-            "metric": "Power/environment alarm count",
-            "how_to_measure": "Monitor PSU, fan, and temperature alarms from `show environment` and NMS/SNMP telemetry."
+            "metric": "Hardware health alarms",
+            "how_to_measure": "Monitor power, fan, and temperature status from platform environment commands or NMS."
           },
           {
-            "metric": "Repeat incident rate",
-            "how_to_measure": "Count recurring connectivity tickets for the same site/interface over 30–90 days."
+            "metric": "Mean time between incidents",
+            "how_to_measure": "Compare number of user-impacting connectivity incidents per week before and after remediation."
+          },
+          {
+            "metric": "Packet loss/latency on affected path",
+            "how_to_measure": "Use IP SLA, NMS polling, or continuous ping toward WAN next hop and critical applications."
           }
         ],
         "missing_information": [
-          "Exact Cisco router model, e.g., Catalyst 8300, Catalyst 8200, ISR 4431/4451/4461, ISR 4331, ASR 1001/1002-X, etc.",
-          "Affected interface type and media: copper, fiber, LTE/5G, serial, MPLS handoff, Internet handoff, or switch-facing LAN.",
-          "Current outputs of `show version`, `show inventory`, `show interfaces`, `show logging`, and `show environment`.",
-          "Installed optics/transceiver part numbers and module part numbers from `show inventory`.",
-          "Whether the router has redundant PSUs installed and whether AC, DC, or PoE power is required.",
-          "Timeline of recent changes: IOS XE upgrade, SD-WAN migration, provider change, cabling work, power event, or configuration change."
+          "Exact Cisco router model and chassis PID, for example Catalyst 8300, Catalyst 8200, ISR 4000, or ASR 1000.",
+          "Affected interface names, media type, optic/SFP type, and connected provider or switch handoff.",
+          "Current IOS XE/software version and uptime from `show version`.",
+          "Recent configuration, circuit, optic, cabling, power, or software changes.",
+          "Relevant `show logging`, `show interfaces`, `show environment`, and inventory/output for installed modules.",
+          "Whether the outage is a physical link flap, routing adjacency reset, tunnel/SD-WAN issue, packet loss, or complete router reboot."
         ],
         "risks_assumptions": [
-          "Assumption: the router is a Cisco enterprise edge or aggregation platform covered by the retrieved Cisco sources; exact component compatibility still depends on the specific chassis and module inventory.",
-          "Risk: ordering optics, PSUs, or interface modules before checking compatibility may result in unusable parts.",
-          "Risk: replacing hardware without checking interface counters, logs, optics levels, and power/environment status can leave the root cause unresolved.",
-          "Risk: for ISR 4000 platforms, end-of-sale status may affect procurement strategy even though support continues until the published end-of-support date.",
-          "Risk: intermittent faults can be external to the router, including provider circuits, upstream switches, cabling, rack power, or environmental conditions."
+          "Assumption: the issue is on a Cisco enterprise router covered by the available Cisco documentation; exact platform is not yet known.",
+          "Risk: ordering optics, power supplies, or modules before confirming model compatibility can result in unusable spares.",
+          "Risk: replacing hardware before checking logs and counters may miss software, configuration, carrier, or congestion causes.",
+          "Risk: if the router is a Cisco 4000 Series ISR, spares may be affected by lifecycle status because the platform is end-of-sale.",
+          "Risk: swapping multiple parts at once can obscure the true root cause."
         ],
         "confidence": {
           "level": "medium",
-          "reason": "The platform capabilities and lifecycle guidance are directly supported by Cisco sources, but the failed component cannot be confirmed without the client’s model, logs, counters, inventory, and environmental data."
+          "reason": "The component categories and platform capabilities are source-supported, but the correct replacement part numbers cannot be confirmed without the exact router model, installed modules, interface type, and diagnostic outputs."
         }
       },
       "sources": [
@@ -205,10 +174,21 @@
           "path": "data/web/technology/datasheet-c78-744088-pdf-fba0e7cb22.pdf",
           "source": "Cisco datasheet",
           "text": "© 2026 Cisco and/or its affiliates. All rights reserved. Page 16 of 24 - Product number Description C8300-NIM-BLANK Cisco C8300 NIM Blank C8300-PIM-BLANK Cisco C8300 PIM Blank The fan tray is shipped default with the Cisco Catalyst 8300 Edge Series Platforms. Optics and transceivers modules Find a full list of optics and transceivers here. Resiliency and high availability Platform redundancy is critical for branch operations, as any downtime has direct impact to a customer’s business. To address that priority, Cisco makes a dual power supply default on all the Catalyst 8300 platforms to ensure that there is always a backup power supply module in case the primary power supply fails. Power supplies Important notice: To address the precarious component situation during the pandemics, Cisco shipped PWR-CC1-400WAC as a temporary substitute power supply in place of the current 250-watt power supply, PWR-CC1- 250WAC, used on our Catalyst 8300 1RU platforms. PWR-CC1-400WAC is no longer shipped with our Catalyst 8300 1RU platforms but retains the same support as the PWR-CC1-250WAC power supply. For more information this, previous, temporary measure, please visit https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8300-series-edge- platforms/catalyst-8300-series-pb.html. Table 9.",
-          "cosine": 0.672
+          "cosine": 0.6296
         },
         {
           "id": "S2",
+          "kind": "document",
+          "title": "Cisco 4000 Series Integrated Services Routers Data Sheet",
+          "page": 6,
+          "url": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.pdf",
+          "path": "data/web/technology/data_sheet-c78-732542-pdf-18a1967ed4.pdf",
+          "source": "Cisco datasheet",
+          "text": "SR 4400 Series, power redundancy is available by installing an optional power supply, protecting the network from power failures. ● Optional PoE boost mode increases total PoE capacity to up to 1000W. Cisco Enhanced Services Module (SM-X) ● Each service-module slot offers high data-throughput capability of up to 10 Gbps toward the system and up to 1 Gbps to other module slots. ● Support for both single- and double-wide service modules provides flexibility in deployment options. ● An SM-X slot can be converted into a Network Interface Module (NIM) slot using an optional carrier card. ● Service modules support Online Insertion and Removal (OIR), avoiding network disruption when installing new or replacement modules1. 1 Not supported on ISR4221 2 ISR4221 supports shared Console & Auxiliary ports",
+          "cosine": 0.6102
+        },
+        {
+          "id": "S3",
           "kind": "document",
           "title": "Cisco 4000 Series Integrated Services Routers",
           "page": null,
@@ -216,155 +196,65 @@
           "path": "data/web/technology/index-html-e2d8f17042.txt",
           "source": "Cisco product page",
           "text": "Skip to main content Skip to search Skip to footer End-of-Sale and End-of-Life Announcement Cisco 4000 Series Integrated Services Routers (ISR) End-of-sale date: January 20, 2025 End-of-support date: January 31, 2030 Get support Go to end-of-life listing Replacement/upgrade The Catalyst 8200 and 8300 Series Edge Platforms are high-performance, cloud-ready routers designed for SD-WAN, SASE, and 5G, supporting modularity, security, and advanced analytics. See Cisco Catalyst 8200 Edge Routers See Cisco Catalyst 8300 Edge Routers Show more Cisco 4000 Series Integrated Services Routers (ISR) Build your digital branch to be secure, fast, and scalable Get routing, hosting, security, switching, and enhanced application visibility—all in a single, trustworthy platform—with Cisco 4000 Series Integrated Services Routers (ISRs). View data sheet Overview Resources Primary CTA -- Small See more, protect more, and simplify Enjoy better threat protection and application visibility while you save time with streamlined network management. Improve application visibility Extend your visibility across the internet, cloud, and Software as a Service (SaaS). Pinpoint application issues and get actionable insights with Cisco ThousandEyes integration on select ISR 4000 Series models.",
-          "cosine": 0.6492
+          "cosine": 0.5918
         },
         {
-          "id": "S3",
+          "id": "S4",
           "kind": "document",
           "title": "Cisco Catalyst 8200 Series Edge Platforms Data Sheet",
           "page": 10,
           "url": "https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8200-series-edge-platforms/nb-06-cat8200-series-edge-plat-ds-cte-en.pdf",
           "path": "data/web/technology/nb-06-cat8200-series-edge-plat-ds-cte-en-pdf-ded6fd1e7d.pdf",
           "source": "Cisco datasheet",
-          "text": "© 2026 Cisco and/or its affiliates. All rights reserved. Page 10 of 20 Voice modules The Catalyst 8200 Series continues Cisco’s support for a variety of voice modules for the different voice needs at the branch. Voice module examples include Foreign Exchange Station (FXS), Foreign Exchange Office (FXO), Digital Signal Processor (DSP), etc. Sustainability The Cisco Catalyst 8200 Series Edge Platforms are designed ground-up with sustainability in mind. These platforms are standardized on highly efficient power supplies and common form factors for sharing tooling and accessories. We have eliminated the use of plastic bezels as well as the need for wet paint, thereby reducing hazardous chemicals, and facilitating recyclability. All platforms are designed for maximizing efficient use of PCBs and material in motherboard designs and for employing common modules across platforms. Over 70% of the ISR4000 platform family’s modules are being reused by the Cisco Catalyst 8200 and 8300 Series Edge Platforms. We standardize on integration of features to a single, very power effective, System on a Chip (SoC) architecture across the platform portfolio. It offers dynamic power management plus added power and thermal management capabilities on modules. All platforms furthermore include a barometer to sense atmospheric pressure and estimate installation altitude.",
-          "cosine": 0.6416
-        },
-        {
-          "id": "S4",
-          "kind": "document",
-          "title": "Cisco 4000 Series Integrated Services Routers Data Sheet",
-          "page": 5,
-          "url": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.pdf",
-          "path": "data/web/technology/data_sheet-c78-732542-pdf-18a1967ed4.pdf",
-          "source": "Cisco datasheet",
-          "text": "ware authentication protects against hardware counterfeiting by using an on-board tamper-proof silicon, including field replaceable modules. If authentication fails, the module is not allowed to boot. IT consolidation, space savings, and improved Total Cost of Ownership (TCO) ● Single converged branch platform integrates routing, switching, virtual server, storage, security, unified communications, WAN optimization, and performance management tools. Business continuity and increased resiliency ● ISR 4400 Series models (4461, 4451, and 4431 ISRs) support dual integrated power supplies for backup. The entire ISR 4000 Family supports optional power supply capable of delivering additional PoE power to endpoints. ● Modular network interfaces with diverse connection options for load- balancing and network resiliency. ● Modular interfaces with online removal and insertion (OIR) for module upgrades without network disruption. ● Cisco Unified Survivable Remote Site Telephony (SRST), which serves as a resiliency complement to Cisco Hosted Collaboration Solution (HCS), a Cisco cloud-based UC service. ● Support for multiple, diverse access links: T1/E1, T3/E3, Serial, xDSL, Gigabit and Ten-Gigabit Ethernet. Lower telephony costs with VoIP and rich media experiences ● High-performance analog/digital gateway, allowing VoIP over less expensive Session Initiation Protocol (SIP) trunks.",
-          "cosine": 0.6397
+          "text": "ynamic power management plus added power and thermal management capabilities on modules. All platforms furthermore include a barometer to sense atmospheric pressure and estimate installation altitude. Fan speeds can thereby be reduced in installations at lower altitudes, yielding significant energy savings. Throughput Efficiency (Gbps per Watt) By using a single, effective, SoC architecture, the Cisco Catalyst 8200 Series Edge family provides significantly higher performance per consumed wattage than its predecessors. Supported modules Table 7. Modules supported on Cisco Catalyst 8200 Series Edge Platforms Product number Description Ethernet Layer 3 modules C-NIM-1M 1-port 2.5/1Gbps RJ-45 WAN, 90W Poe 802.3 af/at/bt NIM C-NIM-2T 2-port 100Mbps/1Gbps dual-mode RJ45/SFP, NIM with WAN MACSec LAN / LANWAN modules C-NIM-8T 8-port 100Mbps/1Gbps switch NIM, LAN/WAN MACSec and Optional L3 C-NIM-8M* 8-port 100M/1/2.5Gbps switch NIM, UPoE+, LAN/WAN MACSec and Optional L3 NIM-ES2-4 Cisco 4-port Gigabit Ethernet LAN switch NIM NIM-ES2-8 Cisco 8-port Gigabit Ethernet LAN switch NIM NIM-ES2-8-P Cisco 8-port Gigabit Ethernet LAN switch NIM with PoE support Voice modules NIM-2FXO 2-port FXO NIM",
+          "cosine": 0.5923
         },
         {
           "id": "S5",
           "kind": "document",
           "title": "Cisco 4000 Series Integrated Services Routers Data Sheet",
-          "page": 18,
+          "page": 6,
           "url": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.pdf",
           "path": "data/web/technology/data_sheet-c78-732542-pdf-18a1967ed4.pdf",
           "source": "Cisco datasheet",
-          "text": "frastructure Software (NFVIS) – a virtualization infrastructure that integrates full VM lifecycle management, monitoring, device programmability, and service chaining in a single, installable package. For more information on Enterprise NFV and NFVIS, please refer to the link at https://www.cisco.com/c/en/us/solutions/enterprise-networks/enterprise-network- functions-virtualization-nfv/index.html#~stickynav=2. Support for DC Power ISR4000 platforms support both DC and AC power supplies as options. Specifically, the ISR 4331 has two separate product SKU’s – the ISR4331/K9 and the ISR4331-DC/K9 which support AC and DC power respectively, The ISR4400 can independently support an AC or a DC power supply on the same chassis. While the 4300 supports between 24V and 60Vdc, the 4400 supports between 48V and 60Vdc. The 4331 provides for up to 250W of power rating while the 4400 provides up to 437W. ISR4461 also supports dual 650W DC reverse-air power supplies which are included in the NEBS installation kit. It is important to note that when DC power supplies are installed on the router, PoE based modules may not be used. More details about the DC power supplies and its capabilities can be found at the below url https://www.cisco.com/c/en/us/td/docs/routers/access/4400/hardware/installation/guide4400- 4300/C4400_isr/FRUs_Modules.html#49534.",
-          "cosine": 0.6276
+          "text": "rnet ports for WAN or LAN. ● Depending on platform, Ethernet ports can support Small Form-Factor Pluggable (SFP)-based connectivity as well as RJ-45 connections, enabling fiber or copper connectivity. ● Optionally, depending on the platform, up to 30W PoE+ can be enabled on two of the built-in front panel Gigabit Ethernet interfaces to provide power to external devices such as 4G/LTE/5G Cellular Gateways. ● An additional dedicated Gigabit Ethernet port is provided for device management1. USB-based console access ● A mini type-B USB console port1 supports management connectivity when traditional serial ports are not available. ● Traditional console and auxiliary ports are also available2. Optional integrated power supply for distribution of PoE ● An optional upgrade to the internal power supply provides inline power (802.3af- compliant PoE or 802.3at-compliant PoE+) to optional integrated switch modules. ● Redundant PoE conversion modules provide an additional layer of fault tolerance. Optional integrated Redundant Power Supply (RPS) ● For the ISR 4400 Series, power redundancy is available by installing an optional power supply, protecting the network from power failures. ● Optional PoE boost mode increases total PoE capacity to up to 1000W.",
+          "cosine": 0.5866
         },
         {
           "id": "S6",
           "kind": "document",
-          "title": "Cisco 4000 Series Integrated Services Routers Data Sheet",
-          "page": 18,
-          "url": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.pdf",
-          "path": "data/web/technology/data_sheet-c78-732542-pdf-18a1967ed4.pdf",
-          "source": "Cisco datasheet",
-          "text": "DC power supplies and its capabilities can be found at the below url https://www.cisco.com/c/en/us/td/docs/routers/access/4400/hardware/installation/guide4400- 4300/C4400_isr/FRUs_Modules.html#49534. Product Performance and Scalability The Cisco 4000 Family is built on a multicore CPU architecture. It runs modular Cisco IOS XE Software, which allows the platform to use to full advantage a distributed multicore architecture. The architecture of the Cisco 4000 separates control- and data-plane operations and integrates an industry-first services plane. This design delivers full-featured integrated services up to Layer 7 at high performance with the ability to deliver application-aware network services while maintaining a stable platform and a high level of performance during periods of heavy network traffic.",
-          "cosine": 0.6349
-        },
-        {
-          "id": "S7",
-          "kind": "document",
           "title": "Cisco Catalyst 8300 Series Edge Platforms Data Sheet",
-          "page": 4,
+          "page": 11,
           "url": "https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8300-series-edge-platforms/datasheet-c78-744088.pdf",
           "path": "data/web/technology/datasheet-c78-744088-pdf-fba0e7cb22.pdf",
           "source": "Cisco datasheet",
-          "text": "t dual power supplies ● All Catalyst 8300 platforms ship with dual power supplies for redundancy. ● AC Power over Ethernet (PoE), DC and Reversed-airflow DC (NEBS) options are available on all models. ● Enabling PoE ports on Network Interface Modules (NIM) or on Service Modules (SM) requires at least one PoE supporting PSU to be installed Modularity and form factor ● 1RU and 2RU form factor ● Supports SM, NIM, and Pluggable Interface Module (PIM) slots Integrated security ● Advanced security features available on-box, including Next-Generation Firewall (NGFW) with Application Awareness, IPS/IDS, Advanced Malware Protection, URL filtering, and Cisco Umbrella® Secure Internet Gateway (SIG) (Secure Access Service Edge [SASE]) ● Hardware-anchored Secure Boot and Secure Unique Device Identification (SUDI) support for Plug and Play to verify the identity of the hardware and software Dedicated management for netops and secops ● Netops: manage routers through Catalyst SD-WAN manager or Cisco DNA Center ● Secops: option to combine security policy management and visibility of the integrated NGFW with standalone Cisco Secure Firewalls as well as other security technologies through Cisco Security Cloud Control ◦ Unified security enforcement and visibility across all Cisco NGFWs-standalone and router-integrated ◦ Create objects that can be shared across Cisco security technologies as well a",
-          "cosine": 0.6496
-        },
-        {
-          "id": "S8",
-          "kind": "document",
-          "title": "Cisco Catalyst 8300 Series Edge Platforms Data Sheet",
-          "page": 2,
-          "url": "https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8300-series-edge-platforms/datasheet-c78-744088.pdf",
-          "path": "data/web/technology/datasheet-c78-744088-pdf-fba0e7cb22.pdf",
-          "source": "Cisco datasheet",
-          "text": "© 2026 Cisco and/or its affiliates. All rights reserved. Page 2 of 24 - Contents Product overview 3 Platform details 5 Platform Performance 6 Overall platform benefits 8 Supported modules 12 Memory, storage, and accessory options 15 Optics and transceivers modules 16 Resiliency and high availability 16 Power supplies 16 Software requirements 18 Software features 18 Licensing 20 Cisco Smart Licensing 20 Specifications 20 Ordering information 22 Cisco Services 22 Cisco Capital 23 For more information 23 Document history 24",
-          "cosine": 0.6299
-        },
-        {
-          "id": "S9",
-          "kind": "product",
-          "title": "Catalog: Catalyst 8300",
-          "url": "https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8300-series-edge-platforms/datasheet-c78-744088.pdf",
-          "page": null,
-          "text": "{\"id\": \"catalyst-8300\", \"name\": \"Catalyst 8300\", \"model\": null, \"similarity\": 0.1867977110581688, \"context_adjustment\": 0.15, \"final_score\": 0.3367977110581688, \"matched_terms\": [\"8300\", \"catalyst\", \"enterprise\", \"power\", \"supplies\", \"cisco\"], \"why\": \"Matches 8300, catalyst, enterprise, power, supplies, cisco; -0.10 deployment mismatch; +0.25 redundant PSU documented.\", \"source_url\": \"https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8300-series-edge-platforms/datasheet-c78-744088.pdf\", \"family\": \"Catalyst 8300\", \"deployment\": \"branch\", \"power_supply_redundancy\": true, \"field_replaceable_parts\": [], \"max_throughput_text\": null, \"best_for\": \"Medium and large enterprise branch offices\", \"source_pages\": [3, 4, 6, 7, 10, 15, 16, 17]}",
-          "source": "Product catalog (from datasheets)"
-        },
-        {
-          "id": "S10",
-          "kind": "product",
-          "title": "Catalog: ISR4451",
-          "url": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.pdf",
-          "page": null,
-          "text": "{\"id\": \"isr4451\", \"name\": \"ISR4451\", \"model\": \"ISR4451\", \"similarity\": 0.15987072038750963, \"context_adjustment\": 0.15, \"final_score\": 0.3098707203875096, \"matched_terms\": [\"4000\", \"isr\", \"catalyst\", \"cisco\", \"power\", \"supplies\"], \"why\": \"Matches 4000, isr, catalyst, cisco, power, supplies; -0.10 deployment mismatch; +0.25 redundant PSU documented.\", \"source_url\": \"https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.pdf\", \"family\": \"ISR 4000\", \"deployment\": \"branch\", \"power_supply_redundancy\": true, \"field_replaceable_parts\": [], \"max_throughput_text\": \"1 Gbps default; 2 Gbps performance license; up to 3.8 Gbps CEF-only IMIX boost license (Table 8)\", \"best_for\": \"Converged branch routing, security and unified communications\", \"source_pages\": [4, 5, 9, 24, 25]}",
-          "source": "Product catalog (from datasheets)"
-        },
-        {
-          "id": "S11",
-          "kind": "product",
-          "title": "Catalog: ISR4431",
-          "url": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.pdf",
-          "page": null,
-          "text": "{\"id\": \"isr4431\", \"name\": \"ISR4431\", \"model\": \"ISR4431\", \"similarity\": 0.1556607253740298, \"context_adjustment\": 0.15, \"final_score\": 0.3056607253740298, \"matched_terms\": [\"4000\", \"isr\", \"catalyst\", \"cisco\", \"power\", \"supplies\"], \"why\": \"Matches 4000, isr, catalyst, cisco, power, supplies; -0.10 deployment mismatch; +0.25 redundant PSU documented.\", \"source_url\": \"https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.pdf\", \"family\": \"ISR 4000\", \"deployment\": \"branch\", \"power_supply_redundancy\": true, \"field_replaceable_parts\": [], \"max_throughput_text\": \"500 Mbps default; 1 Gbps performance license; up to 3.4 Gbps CEF-only IMIX boost license (Table 8)\", \"best_for\": \"Converged branch routing, security and unified communications\", \"source_pages\": [4, 5, 9, 24, 25]}",
-          "source": "Product catalog (from datasheets)"
-        },
-        {
-          "id": "S12",
-          "kind": "product",
-          "title": "Catalog: ISR4461",
-          "url": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.pdf",
-          "page": null,
-          "text": "{\"id\": \"isr4461\", \"name\": \"ISR4461\", \"model\": \"ISR4461\", \"similarity\": 0.1464978036362594, \"context_adjustment\": 0.15, \"final_score\": 0.2964978036362594, \"matched_terms\": [\"4000\", \"isr\", \"catalyst\", \"cisco\", \"power\", \"supplies\"], \"why\": \"Matches 4000, isr, catalyst, cisco, power, supplies; -0.10 deployment mismatch; +0.25 redundant PSU documented.\", \"source_url\": \"https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.pdf\", \"family\": \"ISR 4000\", \"deployment\": \"branch\", \"power_supply_redundancy\": true, \"field_replaceable_parts\": [], \"max_throughput_text\": \"1.5 Gbps default; 3 Gbps performance license; up to 10 Gbps CEF-only IMIX boost license (Table 8)\", \"best_for\": \"Converged branch routing, security and unified communications\", \"source_pages\": [4, 5, 9, 24, 25]}",
-          "source": "Product catalog (from datasheets)"
-        },
-        {
-          "id": "S13",
-          "kind": "product",
-          "title": "Catalog: ASR1002-X",
-          "url": "https://www.cisco.com/c/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.pdf",
-          "page": null,
-          "text": "{\"id\": \"asr1002-x\", \"name\": \"ASR1002-X\", \"model\": \"ASR1002-X\", \"similarity\": 0.1362124661690305, \"context_adjustment\": 0.15, \"final_score\": 0.2862124661690305, \"matched_terms\": [\"1000\", \"asr\", \"enterprise\", \"power\", \"supplies\", \"cisco\"], \"why\": \"Matches 1000, asr, enterprise, power, supplies, cisco; -0.10 deployment mismatch; +0.25 redundant PSU documented.\", \"source_url\": \"https://www.cisco.com/c/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.pdf\", \"family\": \"ASR 1000\", \"deployment\": \"data center/aggregation, large office WAN edge, service provider POP\", \"power_supply_redundancy\": true, \"field_replaceable_parts\": [], \"max_throughput_text\": null, \"best_for\": \"WAN aggregation and enterprise data center edge\", \"source_pages\": [3, 4, 5, 12, 13, 14, 27, 28, 29]}",
-          "source": "Product catalog (from datasheets)"
+          "text": "fully up-to-date, compute module built for today’s more demanding compute applications. It comes with 3GHz clocked 10-core architecture and 2x 10Gbps connections both internally as well as externally. This will support very effective compute operations while also eliminating any bottlenecks for traffic flowing between the module and the host router. Voice modules The Cisco Catalyst 8300 Series Edge Platforms will continue to support a variety of voice modules for the different voice needs at the branch. Voice module examples include Foreign Exchange Station (FXS), Foreign Exchange Office (FXO), Digital Signal Processor (DSP), etc. NEBS (Network Equipment-Building System) The Cisco Catalyst 8300 Series Edge Platforms 2RU versions can be made NEBS compliant by choosing the optional PWR-CC1-650WDCR power supplies with reverse airflow. This will automatically include C8300-FAN-2R-R, the NEBS compliant fan assembly, which will make the C8300 system NEBS compliant. Sustainability The Cisco Catalyst 8300 Series Edge Platforms are designed ground-up with sustainability in mind. These platforms are standardized on highly efficient power supplies and common form factors for sharing tooling & accessories. We have eliminated use of plastic bezels as well as the need for wet paint, thereby reducing hazardous chemicals, and facilitating recyclability.",
+          "cosine": 0.588
         }
       ],
       "tool_calls": [
         {
           "tool": "search_knowledge",
           "args": {
-            "query": "Cisco enterprise routers Catalyst 8300 8200 ISR 4000 ASR 1000 modules power supplies optics diagnostics show environment interfaces connectivity replacement components",
+            "query": "Cisco enterprise router intermittent connectivity diagnostics replacement components power supply fan modules SFP optics interface errors show logging show environment ISR Catalyst 8300 8200 ASR 1000",
             "company": "Cisco",
-            "k": 8
-          }
-        },
-        {
-          "tool": "recommend_products",
-          "args": {
-            "catalog": "cisco",
-            "requirements": "Cisco enterprise router intermittent connectivity replacement components diagnostics model-specific guidance Catalyst 8300 Catalyst 8200 ISR 4000 ASR 1000 optics power supplies modules",
-            "constraints": {
-              "deployment": "enterprise branch/edge router",
-              "needs_redundancy": true
-            },
-            "k": 5
+            "k": 6
           }
         }
       ],
       "grounding": {
-        "findings": 7,
-        "confirmed": 6,
+        "findings": 5,
+        "confirmed": 4,
         "hypotheses": 1,
         "citation_coverage": 1.0,
         "invalid_citations": [],
-        "top3_retrieval_cosine": 0.657,
-        "grounding_score": 0.95,
-        "sources_retrieved": 13
+        "top3_retrieval_cosine": 0.611,
+        "grounding_score": 0.89,
+        "sources_retrieved": 6
       },
-      "seconds": 23.5
+      "seconds": 19.7
     }
   },
   "synthesis": null,
-  "seconds": 24.6
+  "seconds": 20.8
 }

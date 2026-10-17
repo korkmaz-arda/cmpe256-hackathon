@@ -166,8 +166,10 @@ def build(domain: str) -> None:
     vectors = llm.embed([f"{c['title']} | {c['text']}" for c in chunks])
     folder = config.INDEX / domain
     folder.mkdir(parents=True, exist_ok=True)
-    (folder / "chunks.json").write_text(json.dumps(chunks))
-    np.save(folder / "vectors.npy", vectors)
+    (folder / "chunks.tmp.json").write_text(json.dumps(chunks))
+    np.save(folder / "vectors.tmp.npy", vectors)
+    (folder / "chunks.tmp.json").replace(folder / "chunks.json")
+    (folder / "vectors.tmp.npy").replace(folder / "vectors.npy")
     print(f"[{domain}] saved {len(chunks)} chunks in {time.time() - t0:.0f}s")
 
 

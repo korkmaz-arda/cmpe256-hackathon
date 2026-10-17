@@ -1,79 +1,78 @@
 ## Q: Explain malnutrition in war zones
 
-**Route** (gpt-5.4-mini, 1.1s): csr: The question is about malnutrition in war zones, which falls squarely within the UN FAO SOFI food security and nutrition evidence base handled by the CSR specialist. (confidence 0.97)
+**Route** (gpt-5.4-mini, 1.3s): csr: The request is about hunger, food insecurity, and malnutrition in conflict settings, which falls squarely within the CSR specialist’s SOFI evidence base. (confidence 0.96)
 
-### Corporate Responsibility Agent (25.9s)
-*Sub-question:* Explain malnutrition in war zones using the UN FAO SOFI 2023 and 2024 reports: what are the main drivers, how conflict affects food security and nutrition, and what evidence is available on affected populations and trends?
+### Corporate Responsibility Agent (28.2s)
+*Sub-question:* Explain malnutrition in war zones, including the main drivers, how conflict disrupts food access and nutrition, who is most affected, and any relevant evidence from the UN FAO SOFI 2023 and 2024 reports.
 
-SOFI 2023 and 2024 identify conflict as one of the major drivers of hunger, food insecurity and malnutrition, often interacting with climate extremes, economic downturns, food-price inflation, unaffordable healthy diets and inequality. In war zones, conflict affects nutrition through disrupted livelihoods and markets, higher food/input/energy prices, displacement and reduced access to health, water, sanitation and humanitarian support. The available SOFI evidence is strongest at country and regional levels: hunger remains above pre-pandemic levels, acute food insecurity and chronic undernourishment moved upward in comparable crisis countries from 2021 to 2022, and countries with limited financing access face higher undernourishment and stunting burdens.
+In war zones, malnutrition is typically driven by conflict interacting with other SOFI-identified drivers: climate extremes, economic slowdowns, high inequality, unaffordable healthy diets and weak food environments. Conflict disrupts food access by damaging livelihoods, markets, supply chains, infrastructure, institutions and humanitarian access, while households cope by selling assets and cutting health, education and diet quality—raising risks of acute and chronic malnutrition. SOFI 2024 highlights that nearly 282 million people faced high acute food insecurity in 59 food-crisis countries/territories in 2023, with severe conflict-affected crises including Gaza, South Sudan, Yemen, Syria and Haiti [S26].
 
 **Findings**
-- (✅ confirmed) Conflict is a core driver of food insecurity and malnutrition in SOFI 2023 and SOFI 2024, alongside climate extremes/variability, economic slowdowns and downturns, and inequality; these drivers often occur in combination and push countries off track for SDG 2. [S2, S3, S4, S9, S10]
-- (✅ confirmed) SOFI defines conflict broadly as struggles between interdependent groups with incompatible needs, values, goals, resources or intentions; this includes, but is broader than, armed conflict between state or non-state actors. [S6]
-- (✅ confirmed) War affects food security not only locally but through global market channels: SOFI 2023 notes the war in Ukraine, together with soaring food, agricultural input and energy prices, contributed to hunger remaining far above pre-pandemic levels globally and in all regions. [S1, S4]
-- (✅ confirmed) In 2022, about 55 percent of the world’s undernourished people lived in Asia, about 38 percent—282 million people—lived in Africa, and about 6 percent—43 million people—lived in Latin America and the Caribbean, showing major regional differences in the burden of hunger. [S7]
-- (✅ confirmed) Evidence from SOFI 2023 comparing the same 48 countries covered by the Global Report on Food Crises shows both acute and chronic food insecurity worsened from 2021 to 2022: IPC Phase 3 or above acute food insecurity rose from 21.8 percent to 22.5 percent, while prevalence of undernourishment rose from 20.8 percent to 21.3 percent. [S8]
-- (✅ confirmed) SOFI 2024 shows conflict is especially concentrated among countries with limited ability to access financing: 48 percent of countries with limited access to financing are affected by conflict, compared with smaller shares in countries with moderate or high access; conflict affects more limited-access countries than countries with better financing options. [S14]
-- (✅ confirmed) SOFI 2024 reports that low- and middle-income countries with limited financing access have worse food security and nutrition averages: 23.1 percent prevalence of undernourishment in 2023, 23.9 percent child stunting in 2022 and 4.9 percent child overweight in 2022; countries with high financing access had 6.9 percent PoU, 13.3 percent stunting and 7.7 percent child overweight. [S15]
-- (✅ confirmed) SOFI 2024 finds around 63 percent of countries with high and/or increasing hunger, food insecurity and malnutrition struggle to access financing, and most of these countries—82 percent—are affected by one or more major drivers; this suggests war-affected and fragile contexts face a double burden of high need and limited financing access. [S16]
+- (✅ confirmed) Confirmed: SOFI identifies conflict as one of the major drivers of food insecurity and malnutrition, alongside climate variability/extremes and economic slowdowns/downturns, compounded by unaffordable healthy diets, unhealthy food environments and persistent inequality. [S3, S5, S6]
+- (✅ confirmed) Confirmed: In 2023, nearly 282 million people faced high levels of acute food insecurity in 59 food-crisis countries/territories; the largest absolute numbers were in DRC, Nigeria, Sudan, Afghanistan and Ethiopia, while the largest shares of analysed populations were in Gaza Strip, South Sudan, Yemen, Syria and Haiti. SOFI notes 100% of Gaza Strip’s population faced high acute food insecurity. [S26]
+- (✅ confirmed) Confirmed: Protracted major food-crisis countries are severely affected by multiple drivers and have among the highest levels of chronic food insecurity. SOFI 2024 reports 19 protracted major food-crisis countries, 14 of them low-income food-deficit countries; six—Afghanistan, DRC, Ethiopia, Nigeria, Syria and Yemen—consistently ranked among the top ten by affected population, with 108 million people facing high acute food insecurity. [S21]
+- (✅ confirmed) Confirmed: Conflict zones require urgent humanitarian aid—including emergency agriculture, nutrition and food assistance—together with ending hostilities, access to populations in need, and rebuilding essential infrastructure and institutions needed for livelihoods and access to basic necessities. [S23]
+- (✅ confirmed) Confirmed: SOFI 2024 calls for integrating humanitarian and development approaches and financing in protracted food-crisis countries to address immediate acute food insecurity while also tackling chronic food insecurity and building agrifood-system resilience. [S19, S22, S24]
+- (✅ confirmed) Confirmed: Women are more affected by food insecurity than men in every region; SOFI 2023 reports that the gender gap widened in 2020–2021 and narrowed in 2022 but remained above pre-pandemic levels. [S11, S13]
+- (✅ confirmed) Confirmed: Poor urban, peri-urban and rural populations can all face elevated risk. SOFI 2023 warns that the assumed “urban advantage” does not benefit the poorest, who face disproportionate barriers to healthy diets and increased risk of food insecurity and malnutrition; in LICs, rural and peri-urban populations are more food insecure than urban populations. [S13, S16]
+- (🔍 hypothesis) Hypothesis: In war zones, the most nutrition-vulnerable groups are typically infants and young children, pregnant and lactating women, displaced people, older people, people with disabilities, and poor households because they have higher nutrient needs, lower purchasing power, weaker access to services, or reduced mobility. This is consistent with SOFI’s evidence on gender, poverty and crisis exposure, but the specific ranking by group is context-dependent. [S13, S16, S23, S26]
 
 **Recommendations**
-- **[high] For companies or donors operating near war-affected markets, prioritize programmes that stabilize food access: cash/voucher assistance, local procurement where feasible, and support to last-mile food distribution.**: This addresses conflict-related market disruption and price/access shocks; impact should be tracked through food insecurity measures such as IPC Phase 3+ where available, FIES moderate/severe food insecurity, and household dietary diversity. [S8, S9, S10]
-- **[high] Invest in nutrition-specific support for children and pregnant/lactating women, including screening and treatment referral for wasting, micronutrient support and protection of infant and young child feeding.**: Conflict-affected countries with limited financing access show high undernourishment and stunting burdens; child nutrition indicators are key SOFI outcome measures. [S15, S16]
-- **[high] Use a humanitarian–development–peace nexus approach: combine short-term food/nutrition assistance with longer-term livelihood, agriculture and resilience investments.**: SOFI 2024 explicitly calls for strengthening this nexus where conflict is relevant, especially in countries with limited access to financing. [S11, S14]
-- **[medium] Design programmes for compound risks, not conflict alone: integrate climate resilience, price-shock response and livelihood recovery into food-security interventions.**: SOFI repeatedly emphasizes that conflict, climate extremes and economic shocks often interact, so single-driver interventions may miss the real causes of malnutrition. [S2, S3, S9, S13]
-- **[medium] Target financing to fragile countries and communities with the highest hunger and malnutrition burdens, using concessional, blended or grant finance where commercial capital is unsuitable.**: SOFI 2024 finds that countries with the greatest food security and nutrition needs often have limited or moderate financing access. [S12, S16]
+- **[high] Prioritize conflict-sensitive emergency food, nutrition and agricultural assistance in active war zones, including therapeutic feeding, micronutrient support, infant and young-child feeding support, and protection of local food production where feasible.**: Addresses the conflict driver directly and supports SOFI indicators such as high acute food insecurity, prevalence of undernourishment, and child wasting/stunting where measured. [S23, S26]
+- **[high] Fund integrated humanitarian–development–peace programmes rather than stand-alone short-term relief: pair food assistance with livelihood recovery, resilient supply chains, local procurement and peace-sensitive community programming.**: SOFI 2024 explicitly recommends a humanitarian–development–peace nexus in conflict-affected and protracted food-crisis settings to meet immediate needs while reducing chronic food insecurity. [S1, S19, S22, S24]
+- **[high] Invest in market-access and supply-chain restoration—safe transport corridors, storage, cold chains, market rehabilitation and digital cash/voucher delivery where markets function.**: Conflict disrupts supply chains and purchasing power; restoring access can improve affordability and availability of nutritious foods, trackable through FIES food insecurity, cost/affordability of a healthy diet, and PoU. [S1, S5, S23]
+- **[medium] Target women and poorest households explicitly through cash-plus nutrition, maternal nutrition, and social protection measures.**: SOFI 2023 confirms women face higher food insecurity than men globally and poor populations face disproportionate barriers to healthy diets. [S11, S13, S16]
+- **[medium] Use early-action financing tied to food-security triggers, rather than waiting for famine declarations.**: SOFI 2024 notes many deaths can occur before famine classification and that early action can be more cost-effective than delayed response. [S25]
 
 **Next steps**
-- Map the company’s operating countries or supply-chain geographies against conflict exposure, PoU, FIES/IPC data, child stunting and wasting data.
-- Identify whether affected populations are displaced, host communities, smallholder suppliers, urban poor, or children under five, because delivery models differ.
-- Partner with credible humanitarian and nutrition actors to avoid duplication and ensure conflict-sensitive targeting.
-- Set a baseline before intervention using available SOFI-aligned indicators: IPC/FIES, PoU proxies, diet affordability, stunting, wasting and dietary diversity.
-- Separate emergency response budgets from resilience and livelihood-recovery budgets, but manage them under one food security and nutrition strategy.
-- Establish safeguards for neutrality, access, anti-diversion, gender inclusion and protection risks.
+- Map the specific conflict setting against SOFI drivers: conflict intensity, market disruption, displacement, climate shocks, inflation and inequality.
+- Segment affected populations by age, gender, displacement status, livelihood and location across rural–urban/peri-urban areas.
+- Select indicators before intervention: IPC acute food insecurity, FIES, PoU, child wasting/stunting, diet diversity and affordability of healthy diets.
+- Coordinate with humanitarian clusters, local authorities and community organizations to ensure access and conflict sensitivity.
+- Design financing that combines immediate nutrition response with 12–36 month livelihood and food-system recovery.
+- Establish third-party monitoring where access or security limits direct verification.
 
 **Information needed from you**
-- Which countries or war zones the client is focused on.
-- Whether the question is for corporate ESG strategy, humanitarian giving, supply-chain risk or policy analysis.
-- Target population: employees, suppliers, smallholders, refugees/IDPs, host communities or children.
-- Available budget, time horizon and risk tolerance.
-- Existing partners and whether operations can access conflict-affected areas safely.
-- Which indicators the client can realistically collect or fund.
+- Which war zone or countries are in scope.
+- Whether the client is designing a CSR programme, investment strategy, grant portfolio or risk assessment.
+- Target population: children, women, displaced people, smallholder farmers, urban poor or general population.
+- Operational footprint and access constraints, including security and partners on the ground.
+- Budget, time horizon and risk tolerance for humanitarian versus development financing.
+- Available baseline data on IPC, FIES, malnutrition, prices, displacement and health-service access.
 
 **Risks and assumptions**
-- SOFI evidence is generally reported at global, regional and country levels; local war-zone conditions can differ sharply within a country.
-- Conflict effects on malnutrition are often indirect and compounded by climate, economic shocks, health-system collapse and inequality.
-- Humanitarian access, security, sanctions and diversion risks can constrain programme delivery.
-- The link from corporate investment to national SOFI indicators may be hard to attribute unless programmes are large or evaluated rigorously.
-- Recommendations are hypotheses based on SOFI drivers and should be tailored with local needs assessments.
+- Access restrictions and insecurity may prevent aid delivery or monitoring.
+- Food aid or cash can unintentionally distort markets or be diverted without strong safeguards.
+- Nutrition outcomes depend not only on food but also health care, water, sanitation, disease burden and caregiving practices.
+- Conflict often overlaps with climate shocks and economic downturns, so single-driver interventions may underperform.
+- Regional and within-country variation is large; SOFI global evidence should be localized before investment decisions.
 
 **How to measure impact (KPIs)**
-- Moderate or severe food insecurity prevalence: Use FIES-based household surveys or comparable partner data in target areas before and after intervention.
-- Acute food insecurity severity: Track share of target population in IPC Phase 3 or above where IPC analysis is available.
-- Child wasting and stunting: Use MUAC/weight-for-height screening for wasting and periodic anthropometric surveys for stunting among children under five.
-- Diet quality and affordability: Track household dietary diversity and the local cost/affordability of a healthy diet where data are available.
-- Reach of nutrition-sensitive assistance: Number and share of conflict-affected households, children under five and pregnant/lactating women receiving food, cash or nutrition support.
+- High acute food insecurity caseload: Track IPC Phase 3 or worse population, where IPC/GRFC data are available, disaggregated by location and population group.
+- Household food insecurity: Use Food Insecurity Experience Scale or comparable household survey before, during and after intervention.
+- Child acute malnutrition: Measure wasting/GAM and treatment recovery, default and mortality rates through nutrition surveillance and CMAM programme data.
+- Diet quality and access: Track household dietary diversity, minimum dietary diversity for women/children, and market prices for nutritious food baskets or healthy diets.
+- Livelihood and market recovery: Monitor functioning markets, food availability, household income sources, asset depletion, and use of negative coping strategies.
 
-**Confidence:** high: The core claims about drivers, affected populations and trends are directly supported by SOFI 2023 and 2024 passages; programme recommendations are grounded in those drivers but require local context to confirm design choices.
+**Confidence:** high: Core claims are directly supported by SOFI 2023 and 2024 passages on conflict as a driver, protracted food crises, acute food insecurity evidence, gender disparities and recommended humanitarian–development–peace financing. Vulnerable-group prioritization beyond women and poor populations is partly inferential and should be validated with country-level data.
 
-*Grounding:* 16 sources, 8 confirmed / 0 hypotheses, citation coverage 100%, grounding score 1.00
-*Tools used:* `search_knowledge`, `search_knowledge`
+*Grounding:* 26 sources, 7 confirmed / 1 hypotheses, citation coverage 100%, grounding score 1.00
+*Tools used:* `search_knowledge`, `search_knowledge`, `search_knowledge`
 
 **Sources cited**
-- **S1**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.45 `data/FoodSecurity/SOFI-2023.pdf`
-- **S2**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.31 `data/FoodSecurity/SOFI-2023.pdf`
-- **S3**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.173 `data/FoodSecurity/SOFI-2023.pdf`
-- **S4**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.20 `data/FoodSecurity/SOFI-2023.pdf`
-- **S6**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.275 `data/FoodSecurity/SOFI-2023.pdf`
-- **S7**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.41 `data/FoodSecurity/SOFI-2023.pdf`
-- **S8**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.45 `data/FoodSecurity/SOFI-2023.pdf`
-- **S9**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.24 `data/FoodSecurity/SOFI-2024.pdf`
-- **S10**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.23 `data/FoodSecurity/SOFI-2024.pdf`
-- **S11**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.141 `data/FoodSecurity/SOFI-2024.pdf`
-- **S12**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.141 `data/FoodSecurity/SOFI-2024.pdf`
-- **S13**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.97 `data/FoodSecurity/SOFI-2024.pdf`
-- **S14**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.140 `data/FoodSecurity/SOFI-2024.pdf`
-- **S15**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.141 `data/FoodSecurity/SOFI-2024.pdf`
-- **S16**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.179 `data/FoodSecurity/SOFI-2024.pdf`
+- **S1**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.99 `data/FoodSecurity/SOFI-2024.pdf`
+- **S3**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.20 `data/FoodSecurity/SOFI-2024.pdf`
+- **S5**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.24 `data/FoodSecurity/SOFI-2024.pdf`
+- **S6**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.9 `data/FoodSecurity/SOFI-2024.pdf`
+- **S11**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.54 `data/FoodSecurity/SOFI-2023.pdf`
+- **S13**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.55 `data/FoodSecurity/SOFI-2023.pdf`
+- **S16**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.96 `data/FoodSecurity/SOFI-2023.pdf`
+- **S19**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.96 `data/FoodSecurity/SOFI-2024.pdf`
+- **S21**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.96 `data/FoodSecurity/SOFI-2024.pdf`
+- **S22**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.168 `data/FoodSecurity/SOFI-2024.pdf`
+- **S23**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.43 `data/FoodSecurity/SOFI-2024.pdf`
+- **S24**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.141 `data/FoodSecurity/SOFI-2024.pdf`
+- **S25**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.130 `data/FoodSecurity/SOFI-2024.pdf`
+- **S26**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.43 `data/FoodSecurity/SOFI-2024.pdf`
 
-*Total time: 27.0s*
+*Total time: 29.5s*

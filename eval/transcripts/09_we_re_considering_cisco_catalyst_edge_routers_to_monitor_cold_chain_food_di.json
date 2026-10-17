@@ -10,202 +10,195 @@
     "sub_questions": [
       {
         "route": "technology",
-        "question": "Which Cisco Catalyst edge router model best fits a cold-chain food distribution monitoring use case, considering edge deployment, reliability, connectivity needs, and any relevant Catalyst 8200/8300/8000V/ISR 4000/ASR 1000 options?"
+        "question": "Which Cisco Catalyst edge router model is the best fit for monitoring cold-chain food distribution, considering edge connectivity, reliability, and deployment at distributed logistics sites?"
       },
       {
         "route": "sec",
-        "question": "What risks and disclosures in Cisco’s 10-K should be considered for deploying Catalyst edge routers in a cold-chain food distribution monitoring program, especially around supply chain, cybersecurity, product availability, and operational execution?"
+        "question": "What risks does Cisco disclose in its latest 10-K that are most relevant to deploying Catalyst edge routers in a cold-chain food distribution use case?"
       },
       {
         "route": "csr",
-        "question": "According to SOFI 2024, how could improved cold-chain food distribution monitoring supported by Cisco Catalyst edge routers contribute to food-security outcomes, including reducing food loss, improving availability, and supporting nutrition access?"
+        "question": "According to SOFI 2024, how could better-connected cold-chain food distribution supported by edge routers contribute to food-security outcomes, and what sustainability or equity considerations should be noted?"
       }
     ],
-    "reason": "The request requires a router recommendation (technology), disclosure/risk context from Cisco’s 10-K (SEC), and an assessment of food-security impact per SOFI 2024 (CSR), so it is clearly cross-domain.",
-    "confidence": 0.94,
+    "reason": "The request spans product fit, financial/risk disclosure, and food-security impact, so it requires technology, SEC, and CSR evidence together.",
+    "confidence": 0.95,
     "model": "gpt-5.4-mini",
-    "seconds": 1.8
+    "seconds": 2.0
   },
   "agents": {
     "technology": {
       "domain": "technology",
       "agent": "Technology Agent",
-      "question": "Which Cisco Catalyst edge router model best fits a cold-chain food distribution monitoring use case, considering edge deployment, reliability, connectivity needs, and any relevant Catalyst 8200/8300/8000V/ISR 4000/ASR 1000 options?",
+      "question": "Which Cisco Catalyst edge router model is the best fit for monitoring cold-chain food distribution, considering edge connectivity, reliability, and deployment at distributed logistics sites?",
       "answer": {
-        "summary": "For a cold-chain food distribution monitoring site, the best fit is generally the Cisco Catalyst 8200 Series Edge Platform—specifically C8200-1N-4T if you need more headroom, or C8200L-1N-4T for smaller branches. It is purpose-built for small branch/edge deployments, SD-WAN, cloud security/SASE, and flexible WAN/LAN module options. Catalyst 8000V is better as a virtual/cloud WAN edge companion, while ASR 1000 and larger ISR 4000 models are usually more appropriate for aggregation or larger branch use cases than a typical warehouse/food distribution edge site.",
+        "summary": "Best fit: Cisco Catalyst 8200 Series Edge Platforms, specifically C8200-1N-4T for typical small-to-midsize logistics sites, or C8200L-1N-4T for smaller sites with lower throughput needs. The Catalyst 8200 is better aligned than ASR 1000-class routers for distributed cold-chain locations because Cisco positions it for lean/small and midsize branch connectivity with SD-WAN, cloud security, centralized management, and visibility features useful for monitoring distributed operations.",
         "findings": [
           {
-            "claim": "Cisco Catalyst 8200 Series Edge Platforms are designed for small branch cloud edge use cases with SD-WAN, SD-Routing, SASE, multilayer security, and flexible interface options.",
+            "claim": "Cisco positions the Catalyst 8200 Series as edge platforms for the lean branch with flexible connectivity, multilayer security, cloud-native agility, centralized management through Cisco Catalyst SD-WAN Manager, and application/cloud visibility using Cisco Catalyst SD-WAN Analytics and Cisco ThousandEyes.",
             "status": "confirmed",
             "sources": [
-              "S1",
-              "S2"
+              "S4"
             ]
           },
           {
-            "claim": "The C8200-1N-4T is a 1RU modular router with 4 x 1G WAN, 8 CPU cores, up to 32 GB DRAM, and 1G SD-WAN throughput; the C8200L-1N-4T has 4 CPU cores and 500 Mbps SD-WAN throughput.",
+            "claim": "The C8200-1N-4T is a 1RU Catalyst SD-WAN modular router for small and midsize branches, with 4 x 1G WAN ports and 1G SD-WAN throughput.",
             "status": "confirmed",
             "sources": [
               "S1"
             ]
           },
           {
-            "claim": "Catalyst 8200 Series supports a wide variety of interface options and backward compatibility with existing WAN, LAN, and voice modules, which is useful when connecting sensors, gateways, WAN circuits, LTE/5G backup, or existing branch infrastructure.",
+            "claim": "The C8200L-1N-4T is a 1RU Catalyst SD-WAN modular router for small branches, with 4 x 1G WAN ports and 500-Mbps SD-WAN throughput.",
+            "status": "confirmed",
+            "sources": [
+              "S1"
+            ]
+          },
+          {
+            "claim": "Catalyst 8200 supports branch multicloud access and SD-WAN capabilities including TCP optimization, Forward Error Correction, and packet duplication to improve application performance during network problems.",
             "status": "confirmed",
             "sources": [
               "S2"
             ]
           },
           {
-            "claim": "Catalyst SD-WAN can route traffic dynamically across the best available WAN link based on current application and network conditions, improving reliability and availability for distributed sites.",
+            "claim": "Catalyst 8200 supports secure Direct Internet Access for branch-to-internet/cloud connectivity with integrated security against major web attacks.",
+            "status": "confirmed",
+            "sources": [
+              "S2"
+            ]
+          },
+          {
+            "claim": "Catalyst 8300 is a stronger fit where a logistics hub needs higher branch scale, optimized 5G, SD-WAN, software-defined routing, multicloud access, multilayer security, and enhanced visibility.",
             "status": "confirmed",
             "sources": [
               "S3"
             ]
           },
           {
-            "claim": "Catalyst 8000V is optimized for virtual/cloud deployment and is available in major cloud marketplaces including Google Cloud, making it suitable as a cloud-side SD-WAN or multicloud connectivity component rather than the primary physical warehouse router.",
+            "claim": "ASR 1000 models appeared in catalog matching, but their documented deployment fit is data center/aggregation, large-office WAN edge, or service-provider POP, making them less appropriate for many distributed logistics branch sites.",
             "status": "confirmed",
             "sources": [
-              "S3",
-              "S4",
-              "S5",
-              "S7"
+              "S7",
+              "S8",
+              "S9"
             ]
           },
           {
-            "claim": "ASR 1000 Series routers are positioned for high-scale WAN aggregation, enterprise data center edge, large office WAN edge, or service provider POP environments, which may be oversized for a typical cold-chain monitoring branch site.",
-            "status": "confirmed",
-            "sources": [
-              "S6",
-              "S11",
-              "S12",
-              "S13"
-            ]
-          },
-          {
-            "claim": "ISR 4000 models such as ISR4431 and ISR4451 remain viable branch routers with documented redundant power supply support, but Catalyst 8200 is the more current fit when the priority is SD-WAN/SASE-ready edge deployment.",
-            "status": "confirmed",
-            "sources": [
-              "S9",
-              "S10",
-              "S1",
-              "S2"
-            ]
-          },
-          {
-            "claim": "The exact model should be finalized only after confirming site bandwidth, WAN circuit count, sensor/IoT gateway topology, environmental constraints, cellular needs, and required service license features.",
+            "claim": "For cold-chain monitoring, the router itself does not monitor temperature; it provides resilient WAN/SD-WAN connectivity for sensors, gateways, cloud applications, and operational telemetry.",
             "status": "hypothesis",
-            "sources": []
+            "sources": [
+              "S1",
+              "S2",
+              "S4"
+            ]
           }
         ],
         "recommendations": [
           {
-            "action": "Use Cisco Catalyst C8200-1N-4T as the default recommendation for a cold-chain distribution center or warehouse edge router.",
+            "action": "Standardize on Cisco Catalyst C8200-1N-4T for most distributed cold-chain logistics sites.",
             "priority": "high",
-            "why": "It provides higher headroom than C8200L-1N-4T, including 1G SD-WAN throughput, 8 CPU cores, up to 32 GB DRAM, 1RU form factor, and 4 x 1G WAN, while being purpose-built for secure small-branch/cloud edge deployments.",
+            "why": "It is explicitly positioned for small and midsize branches, provides 4 x 1G WAN, 1G SD-WAN throughput, SD-WAN management, programmable APIs, and integrated NGFW capabilities suitable for distributed site connectivity and security.",
             "sources": [
               "S1",
-              "S2"
+              "S4"
             ]
           },
           {
-            "action": "Use C8200L-1N-4T only for smaller sites with lower bandwidth and simpler edge requirements.",
+            "action": "Use C8200L-1N-4T for smaller depots or monitoring-only sites with lower WAN demand.",
             "priority": "medium",
-            "why": "It has the same 1RU/4 x 1G WAN positioning but lower SD-WAN throughput at 500 Mbps and fewer CPU cores, so it is a cost/right-sizing option if traffic volume and security services are modest.",
+            "why": "It is targeted at small branches and provides 500-Mbps SD-WAN throughput with the same general branch SD-WAN/security positioning, which may be adequate for sensor telemetry and basic site operations.",
             "sources": [
               "S1"
             ]
           },
           {
-            "action": "Pair the physical Catalyst 8200 with Catalyst SD-WAN if uptime and application reliability are important for temperature telemetry, alerting, and inventory systems.",
-            "priority": "high",
-            "why": "Catalyst SD-WAN can select the best WAN path based on current network/application conditions, supporting better availability across diverse WAN links.",
+            "action": "Use Catalyst 8300 Series only for larger regional hubs or sites requiring higher performance, more scale, or advanced WAN options such as optimized 5G.",
+            "priority": "medium",
+            "why": "Cisco positions Catalyst 8300 for branch networking at cloud scale with optimized 5G, SD-WAN, software-defined routing, multicloud access, multilayer security, and enhanced visibility.",
             "sources": [
               "S3"
             ]
           },
           {
-            "action": "Use Cisco Catalyst 8000V in the cloud if the monitoring platform or analytics stack runs in public cloud and you need virtual WAN extension or cloud connectivity.",
+            "action": "Avoid ASR 1000 for standard distributed cold-chain branch sites unless the site is actually a WAN aggregation or data-center edge location.",
             "priority": "medium",
-            "why": "Catalyst 8000V supports enterprise routing/VPN features, SD-WAN Manager management, and marketplace deployment in clouds including Google Cloud.",
+            "why": "The catalog fit identifies ASR 1000 models as data center/aggregation, large office WAN edge, or service provider POP platforms rather than lean distributed branches.",
             "sources": [
-              "S4",
-              "S5",
-              "S7"
+              "S7",
+              "S8",
+              "S9"
             ]
           },
           {
-            "action": "Avoid ASR 1000 unless this is a regional aggregation hub, data center edge, or very large distribution campus.",
-            "priority": "medium",
-            "why": "ASR 1000 is positioned for aggregation, data center edge, large office WAN edge, and service provider POP scale rather than ordinary branch/warehouse edge use.",
+            "action": "Design the deployment around SD-WAN visibility and centralized operations from day one.",
+            "priority": "high",
+            "why": "Catalyst 8200 supports Cisco Catalyst SD-WAN Manager, SD-WAN Analytics, ThousandEyes visibility, and programmable APIs, which are useful for managing many logistics sites consistently.",
             "sources": [
-              "S6",
-              "S11",
-              "S12",
-              "S13"
-            ]
-          },
-          {
-            "action": "Consider ISR4431/ISR4451 only if you are standardizing on legacy ISR 4000, need migration continuity, or already own compatible modules/licenses.",
-            "priority": "low",
-            "why": "ISR4431/ISR4451 are branch-capable and support redundant power, but the Catalyst 8200 family is the stronger fit for current SD-WAN/SASE-oriented edge deployments.",
-            "sources": [
-              "S9",
-              "S10",
               "S1",
-              "S2"
+              "S4"
+            ]
+          },
+          {
+            "action": "Confirm physical WAN options, redundancy expectations, and environmental/site constraints before final BOM ordering.",
+            "priority": "high",
+            "why": "The retrieved sources confirm platform positioning and base WAN throughput, but final component selection depends on carriers, LTE/5G needs, power design, rack space, and required interfaces.",
+            "sources": [
+              "S1",
+              "S3",
+              "S4"
             ]
           }
         ],
         "next_steps": [
-          "Confirm whether each cold-chain site is a small branch, warehouse, regional hub, or data center/aggregation location.",
-          "Size WAN throughput: internet/MPLS/cellular bandwidth, encrypted throughput, SD-WAN throughput, and expected sensor/video/telemetry volume.",
-          "List required physical interfaces: copper Ethernet, fiber/SFP, LTE/5G backup, serial/legacy, PoE switch handoff, or voice modules.",
-          "Confirm reliability requirements: dual WAN, cellular failover, redundant power, local logging during WAN outage, and environmental monitoring alert paths.",
-          "Validate licensing and management model: Catalyst SD-WAN Manager, Cisco Catalyst Center, autonomous IOS XE, SASE/security services, and cloud security integration.",
-          "For cloud-hosted monitoring applications, design whether Catalyst 8000V is needed as the cloud-side SD-WAN endpoint."
+          "Classify sites into small depot, midsize distribution site, and regional hub profiles.",
+          "For each profile, document WAN circuits, cellular backup needs, expected telemetry/application traffic, and security requirements.",
+          "Validate whether 500 Mbps, 1 Gbps, or higher SD-WAN throughput is required per site.",
+          "Map small sites to C8200L-1N-4T, typical sites to C8200-1N-4T, and large hubs to Catalyst 8300 evaluation.",
+          "Confirm required modules/interfaces, power options, licensing, and management mode with your Cisco partner before procurement.",
+          "Pilot one or two representative sites and test sensor telemetry, cloud application performance, failover, and remote manageability."
         ],
         "kpis": [
           {
-            "metric": "WAN availability for telemetry and alerting",
-            "how_to_measure": "Track percentage uptime for primary and backup WAN paths and number/duration of monitoring data gaps."
+            "metric": "WAN availability per logistics site",
+            "how_to_measure": "Track monthly router/WAN uptime and SD-WAN tunnel availability from the SD-WAN manager or NOC monitoring."
           },
           {
-            "metric": "Temperature/condition alert delivery latency",
-            "how_to_measure": "Measure time from sensor event to central platform alert before and after SD-WAN/edge deployment."
+            "metric": "Cold-chain telemetry delivery success",
+            "how_to_measure": "Measure percentage of sensor/gateway messages delivered to the monitoring platform within required latency."
           },
           {
             "metric": "Failover time",
-            "how_to_measure": "Test primary WAN failure and measure time until traffic resumes over secondary WAN or cellular path."
+            "how_to_measure": "Test primary WAN failure and record time for telemetry/application recovery over backup transport."
           },
           {
-            "metric": "Router utilization headroom",
-            "how_to_measure": "Monitor CPU, memory, interface throughput, and encrypted/SD-WAN throughput during peak warehouse operations."
+            "metric": "Application performance",
+            "how_to_measure": "Use SD-WAN analytics or ThousandEyes-style monitoring to track latency, packet loss, and SaaS/cloud reachability."
           },
           {
-            "metric": "Packet loss and application experience",
-            "how_to_measure": "Use SD-WAN/application monitoring or interface statistics to track loss, jitter, drops, and retransmissions for telemetry applications."
+            "metric": "Operational consistency",
+            "how_to_measure": "Track percentage of sites deployed from standard templates and number of configuration drift exceptions."
           }
         ],
         "missing_information": [
-          "Number and type of sites: small depot, large warehouse, regional hub, or data center.",
-          "Required bandwidth per site, including encrypted and SD-WAN traffic.",
-          "WAN design: single internet, dual internet, MPLS, LTE/5G backup, or private APN.",
-          "Interface needs: copper/fiber ports, SFP count, cellular module need, legacy modules, or IoT gateway handoff.",
-          "Required security stack: NGFW, IPS, URL filtering, AMP, SASE, VPN, PCI or food-safety compliance logging.",
-          "Power and environmental constraints: rack space, redundant power, UPS availability, temperature/humidity conditions."
+          "Number and type of logistics sites: small depots, distribution centers, regional hubs.",
+          "Expected WAN bandwidth and number of carriers per site.",
+          "Whether cellular LTE/5G backup is required.",
+          "Required LAN/WAN interface types beyond the base 4 x 1G WAN ports.",
+          "Security requirements: NGFW, SASE, segmentation, PCI/food-safety compliance constraints.",
+          "Power, rack, environmental, and high-availability requirements at each site."
         ],
         "risks_assumptions": [
-          "Assumption: the cold-chain monitoring site is a branch/warehouse edge, not a data center aggregation point.",
-          "Assumption: the router will support business-critical telemetry/alerting and therefore benefits from dual-WAN or cellular failover.",
-          "Risk: choosing C8200L-1N-4T without validating throughput and security-service load may limit future growth.",
-          "Risk: ASR 1000 may add unnecessary cost/complexity if the site is not an aggregation hub.",
-          "Risk: Catalyst 8000V cannot replace the need for a physical edge router at a warehouse unless all connectivity is already virtualized or cloud-based."
+          "Assumption: cold-chain monitoring traffic is mostly sensor telemetry plus cloud application access, not high-volume video or local analytics.",
+          "Assumption: distributed sites need centralized SD-WAN management and secure cloud access.",
+          "Risk: choosing C8200L for sites that later add cameras, local analytics, or high-volume applications may under-size throughput.",
+          "Risk: final BOM may require modules or licenses not determined from the high-level model choice alone.",
+          "Risk: environmental conditions at logistics facilities may require additional enclosure, UPS, or out-of-band management planning."
         ],
         "confidence": {
           "level": "medium",
-          "reason": "The platform positioning and model capabilities are directly supported by Cisco sources, but final model selection needs site-specific bandwidth, interface, redundancy, and security requirements."
+          "reason": "The recommendation is well supported for branch/distributed-site routing by Cisco Catalyst 8200 sources, but exact model sizing depends on missing site bandwidth, carrier, redundancy, and interface requirements."
         }
       },
       "sources": [
@@ -218,40 +211,40 @@
           "path": "data/web/technology/index-html-30278ead90.txt",
           "source": "Cisco product page",
           "text": "lt-in Cisco Catalyst SD-WAN Analytics and Cisco ThousandEyes solutions. Do cloud your way Deliver cloud resources securely and flexibly across customer branch locations with Cisco Umbrella technology. Catalyst 8200 Series models Find your router C8200-1N-4T 1 rack unit, 4 x 1G WAN Catalyst SD-WAN modular router for small and midsize branches that need higher throughput 8 CPU cores Up to 32 GB of DRAM 1G SD-WAN throughput SD-WAN Manager, Cisco Catalyst Center management, programmable APIs Integrated NGFW managed through Catalyst SD-WAN Manager or Cisco Security Cloud Control C8200L-1N-4T 1 rack unit, 4 x 1G WAN Catalyst SD-WAN modular router for small branches with SASE-compliant, cloud-based security requirements 4 CPU cores Up to 32 GB of DRAM 500-Mbps SD-WAN throughput SD-WAN Manager, Cisco Catalyst Center management, programmable APIs Integrated NGFW managed through Catalyst SD-WAN Manager or Cisco Security Cloud Control Previous Next Powered by Cisco DNA Software Get licensing and support for Cisco Catalyst 8200 and Cisco SD-WAN through flexible subscriptions. Explore software View data sheet View interfaces and modules 01:01 Meet your next edge platform Catalyst 8200 Series Edge Platforms provide secure, flexible, and scalable connectivity to cloud applications.",
-          "cosine": 0.7361
+          "cosine": 0.711
         },
         {
           "id": "S2",
           "kind": "document",
           "title": "Cisco Catalyst 8200 Series Edge Platforms Data Sheet",
-          "page": 3,
+          "page": 8,
           "url": "https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8200-series-edge-platforms/nb-06-cat8200-series-edge-plat-ds-cte-en.pdf",
           "path": "data/web/technology/nb-06-cat8200-series-edge-plat-ds-cte-en-pdf-ded6fd1e7d.pdf",
           "source": "Cisco datasheet",
-          "text": "© 2026 Cisco and/or its affiliates. All rights reserved. Page 3 of 20 The Cisco Catalyst 8200 Series Edge Platforms are 5G-ready cloud edge platforms designed for Secure Access Service Edge (SASE), multilayer security, and cloud-native agility to accelerate your journey to cloud. The Cisco® Catalyst® 8200 Series Edge Platforms with Cisco IOS® XE SD-WAN software deliver Cisco’s secure, cloud-scale SD-WAN and SD-Routing solutions to the small branch. The platforms are purpose- built for performance and integrated SD-WAN services along with flexibility to deliver security and networking services together from the cloud or on premises. They have a wide variety of interface options to choose from, with backward compatibility to existing WAN, LAN, and voice modules. Powered by Cisco IOS XE, a fully programmable software architecture, and API support, the Catalyst 8200 Series can facilitate automation at scale in both SD-WAN and SD-Routing deployments to achieve zero-touch IT capability while migrating workloads to the cloud. The platforms also come with a trustworthy solutions 2.0 infrastructure that secures them against threats and vulnerabilities through advanced integrity verification and remediation of threats. The 8200 Series is well suited for small and medium-sized enterprise branch offices at optimal price/performance with integrated SD-WAN and SD-Routing services.",
-          "cosine": 0.7284
+          "text": "g performance, even if network problems occur. With branch multicloud access, you can accelerate your Software-as-a- Service (SaaS) applications with a simple template push from the SD-WAN controller. Features such as TCP optimization, Forward Error Correction (FEC), and packet duplication enhance application performance for a better user experience. Multilayer security You can now move your traditional and complex WAN networks into an agile, software-defined WAN with integrated security. The Catalyst 8200 Series Edge Platforms connect branch offices to the internet and cloud with industry-leading protection against major web attacks. Secure Direct Internet Access (DIA) from the branches helps optimize branch workloads for improved performance, specifically for cloud-hosted applications. At the same time, secure DIA helps ensure that your branch is protected from external threats. Application visibility Applications and users are more distributed than ever, and the internet has effectively become the new enterprise WAN. As organizations continue to embrace internet, cloud, and SaaS, network and IT teams are challenged to deliver consistent and reliable connectivity and application performance over networks and services they don’t own or directly control. The Catalyst 8200 Series Edge Platforms are integrated with Cisco ThousandEyes internet and cloud intelligence.",
+          "cosine": 0.7142
         },
         {
           "id": "S3",
           "kind": "document",
-          "title": "Cisco Catalyst 8000V Edge Software Data Sheet",
-          "page": 8,
-          "url": "https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8000v-edge-software/catalyst-8000v-edge-software-ds.pdf",
-          "path": "data/web/technology/catalyst-8000v-edge-software-ds-pdf-7cc46b771d.pdf",
-          "source": "Cisco datasheet",
-          "text": "© 2025 Cisco and/or its affiliates. All rights reserved. Page 8 of 19 - Cisco Catalyst SD-WAN Cisco Catalyst SD-WAN is a set of intelligent software services that allows you to connect users, devices, branch office locations, and cloud deployments reliably and securely across a diverse set of WAN transport links. SD-WAN-enabled routers like the Catalyst 8000V dynamically route traffic across the “best” link based on up-to-the-minute application and network conditions for great application experiences. You get tight control over application performance, bandwidth usage, data privacy, and availability of your WAN links. The Catalyst 8000V is optimized for Catalyst SD-WAN. For enterprises, this means that business-critical applications run faster, with more reliability and reduced Operating Expenditures (OpEx). SD -WAN achieves this by giving all branches, data centers, and cloud deployments the ability to monitor, control, move, and report on streams of application data, such as specific web (HTTP) traffic. The Catalyst 8000V has deep packet inspection capability and can accurately identify and control thousands of differen t applications, including custom in-house enterprise applications. The entire Catalyst SD-WAN implementation can be managed from either the cloud or on-premises-based management software, through multiple levels of throughput-based licenses.",
-          "cosine": 0.7247
+          "title": "Cisco Catalyst 8300 Series Edge Platforms",
+          "page": null,
+          "url": "https://www.cisco.com/c/en/us/products/routers/catalyst-8300-series-edge-platforms/index.html",
+          "path": "data/web/technology/index-html-a43bd4c463.txt",
+          "source": "Cisco product page",
+          "text": "Skip to main content Skip to search Skip to footer Cisco Catalyst 8300 Series Edge Platforms Power your branch at cloud scale Transform your branch networking with cloud-native agility, multilayer security, and enhanced visibility. Read analyst report Overview Resources Read analyst report Boost performance and scale—from branch to cloud Build a WAN edge that's flexible and secure, with optimized 5G, SD-WAN, software-defined routing, and multicloud access. See more to solve more Spot application issues and get actionable insights across the internet, cloud, and software as a service (SaaS) with built-in Cisco Catalyst SD-WAN Analytics and Cisco ThousandEyes solutions. Take control over your security Improve protection through policy consolidation and proactive identification of misconfigurations with unified management of all Cisco next-generation firewalls (NGFWs) in Cisco Security Cloud Control . ​Get advanced connectivity​ Transform your branch with 5G connectivity and other cutting-edge wireless network standards. Automate with ease Accelerate your network rollout and simplify your operations in a visualized manner with Cisco Catalyst SD-WAN Manager.",
+          "cosine": 0.7069
         },
         {
           "id": "S4",
           "kind": "document",
-          "title": "Cisco Catalyst 8000V Edge Software Data Sheet",
-          "page": 18,
-          "url": "https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8000v-edge-software/catalyst-8000v-edge-software-ds.pdf",
-          "path": "data/web/technology/catalyst-8000v-edge-software-ds-pdf-7cc46b771d.pdf",
-          "source": "Cisco datasheet",
-          "text": "S Clouds ● Cisco Catalyst 8000V listings in Amazon AWS Marketplace ● Cisco Catalyst 8000V listings in Amazon AWS China Marketplace ● Cisco Catalyst 8000V listings in Microsoft Azure Marketplace ● Cisco Catalyst 8000V listings in Microsoft Azure China Marketplace ● Cisco Catalyst 8000V listings in Google GCP Marketplace ● Cisco Catalyst 8000V listings in Oracle Cloud Infrastructure (OCI) Marketplace ● Cisco Catalyst 8000V listings in Alibaba Cloud Marketplace Other related Cisco products ● Cisco Catalyst 8300 Series Edge uCPE platform data sheet ● Cisco Catalyst 8200 Series Edge uCPE platform data sheet ● Cisco Catalyst SD-WAN Manager orchestrator software",
-          "cosine": 0.7063
+          "title": "Cisco Catalyst 8200 Series Edge Platforms",
+          "page": null,
+          "url": "https://www.cisco.com/c/en/us/products/routers/catalyst-8200-series-edge-platforms/index.html",
+          "path": "data/web/technology/index-html-30278ead90.txt",
+          "source": "Cisco product page",
+          "text": "Skip to main content Skip to search Skip to footer Cisco Catalyst 8200 Series Edge Platforms Flexible connectivity for the lean branch Accelerate your cloud journey with edge platforms designed for multilayer security and cloud-native agility. Read IDC report Overview Resources Read IDC report Your SASE journey, streamlined Build an optimized multicloud SD-WAN branch with multilayer security and optimized routing. Connect wherever you are Flexibly connect to the SD-WAN fabric, allowing for simple, plug-and-play deployments. Take control of your security Improve protection through policy consolidation and proactive identification of misconfigurations with unified management of all Cisco NGFWs in Cisco Security Cloud Control . See more, solve more Centrally manage your environment with Cisco Catalyst SD-WAN Manager. Get actionable insights across the internet, cloud, and applications with built-in Cisco Catalyst SD-WAN Analytics and Cisco ThousandEyes solutions. Do cloud your way Deliver cloud resources securely and flexibly across customer branch locations with Cisco Umbrella technology.",
+          "cosine": 0.7121
         },
         {
           "id": "S5",
@@ -262,84 +255,44 @@
           "path": "data/web/technology/catalyst-8000v-edge-software-ds-pdf-7cc46b771d.pdf",
           "source": "Cisco datasheet",
           "text": "thousands of branch-office sites. The network is either hub-and-spoke or fully meshed. By extending the data center to the cloud, the enterprise wants the cloud to act as another node in its network. ● IPsec ● DMVPN ● FlexVPN ● GetVPN ● Border Gateway Protocol (BGP) ● Open Shortest Path First (OSPF) ● Enhanced Interior Gateway Routing Protocol (EIGRP) ● NGFW ● Access Control List (ACL) ● Authentication, Authorization, And Accounting (AAA) ● NAT ● Dynamic Host Configuration Protocol (DHCP) ● Ownership: An enterprise can deploy a Catalyst 8000V in the cloud, access its command-line interface (CLI), and manage it using Cisco Catalyst SD-WAN Manager. ● Smooth connectivity and enterprise-class scalability: With its range of VPN and routing features, the Catalyst 8000V can fit into any enterprise network topology. An enterprise can directly and dynamically connect its distributed sites to its cloud deployment, avoiding the latency caused by the typical backhaul through the data center while overcoming the management complexity of point-to- point IPsec VPNs. ● Consistent WAN architecture: The Cisco IOS XE software-based Catalyst 8000V complements the new Catalyst 8000 router portfolio as well as existing Cisco® Aggregated Services Router (ASR) and Integrated Services Router (ISR)",
-          "cosine": 0.708
+          "cosine": 0.6942
         },
         {
           "id": "S6",
           "kind": "document",
-          "title": "Cisco ASR 1000 Series Aggregation Services Routers",
-          "page": null,
-          "url": "https://www.cisco.com/c/en/us/products/routers/asr-1000-series-aggregation-services-routers/index.html",
-          "path": "data/web/technology/index-html-29210e9988.txt",
-          "source": "Cisco product page",
-          "text": "es integration. Secure with integrity Leading encryption performance, layered security services, and a tamper-resistant design help ASR 1000 routers reduce your attack surface and secure edge traffic. Create always-on architecture Boost performance with our unique chipset architecture that splits control and data plane operations so even the busiest edges run better. With routers built to scale, your network can grow as you do. Keep up with advanced silicon Deliver consistent edge performance with our latest application-specific integrated circuit (ASIC) technology. Even during heavy bursts of connectivity, your network stays reliable and responsive. Find the right ASR 1000 model Explore router selector ASR 1001-X Catalyst SD-WAN-ready SD-Access-ready Software redundancy 2 Small Form Factor Pluggable (SFP) built-in 10GE ports ASR 1002-HX Catalyst SD-WAN-ready SD-Access-ready Software redundancy 6 SFP built-in GE ports ASR 1006-X Catalyst SD-WAN-ready Hardware redundancy 4 Ethernet port adapters 8 shared port adapters ASR 1009-X SD-Access-ready Hardware redundancy 6 Ethernet port adapters 12 shared port adapters Previous Next Powered by Cisco DNA Software Simple, flexible software subscriptions give you the latest in SD-WAN technology. Manage everything from one place with security, application-aware policies, segmentation, and optimization for cloud connectivity.",
-          "cosine": 0.7133
-        },
-        {
-          "id": "S7",
-          "kind": "document",
-          "title": "Cisco Catalyst 8000V Edge Software Data Sheet",
-          "page": 9,
-          "url": "https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8000v-edge-software/catalyst-8000v-edge-software-ds.pdf",
-          "path": "data/web/technology/catalyst-8000v-edge-software-ds-pdf-7cc46b771d.pdf",
-          "source": "Cisco datasheet",
-          "text": "est Internet traffic from the corporate WAN with enhanced security. ● Direct cloud access: Offload Software-as-a-Service (SaaS) traffic from premium WAN connections and improve application experience. ● Payment Card Industry (PCI) compliance: Protect sensitive information against data breaches (such as cardholder or patient information). Multicloud connectivity Automated deployments of the Catalyst 8000V in different public clouds enable enterprises to extend their WAN. Table 8. Cisco Catalyst 8000V enables rapid connectivity to multiple public clouds Customer problem Features Benefits of Cisco Catalyst 8000V As a network operator in a growing enterprise, I need to: ● Set up cross-cloud connectivity using middle-mile providers ● Use backbone networks of public cloud providers for low-latency global connectivity ● Cloud OnRamp automation in Catalyst SD-WAN Manager ● Set up multicloud connectivity in minutes. WAN optimization Catalyst 8000V in SD-WAN mode includes an Application Quality of Experience (AppQoE) solution that offers a suite of capabilities that help overcome WAN link limitations and optimizes your network and application performance: ● TCP optimizations address latency issues. ● Bandwidth optimizations are achieved with Data Redundancy Elimination (DRE) and LZW compression.",
-          "cosine": 0.7104
-        },
-        {
-          "id": "S8",
-          "kind": "document",
           "title": "Cisco Catalyst 8200 Series Edge Platforms Data Sheet",
-          "page": 6,
+          "page": 1,
           "url": "https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8200-series-edge-platforms/nb-06-cat8200-series-edge-plat-ds-cte-en.pdf",
           "path": "data/web/technology/nb-06-cat8200-series-edge-plat-ds-cte-en-pdf-ded6fd1e7d.pdf",
           "source": "Cisco datasheet",
-          "text": "50% (DIA w. NAT + NGFW + IPS + URLF + AMP) 950Mbps DIA w. NAT + NGFW + IPS + URLF + AMP 980Mbps * Tested with IOS XE release 17.12.2. All NGFW + UTD tests with Firewall EMIX traffic profile. Table 5. Cisco Catalyst 8200 Series autonomous mode (non SD-WAN) performance specifications Feature C8200-1N-4T C8200L-1N-4T IPv4 Forwarding Throughput (1400Bytes) Up to 3.8Gbps Up to 3.8Gbps IPsec Throughput (1400Bytes) Up to 1Gbps Up to 500Mbps IPsec Throughput (IMIX*) 900Mbps 400Mbps * IMIX is average packet size of 352 Bytes packet size Table 6. Cisco Catalyst 8200 Series autonomous mode (non SD-WAN) system scalability Feature C8200-1N-4T C8200L-1N-4T Number of IPsec SVTI Tunnels 2500 1500 Number of ACLs per system 4000 4000 Number of IPv4 ACEs per system 72K 72K Number of IPv4 Routes 1.6M w/ default 8GB, up to 4M w/ 32GB 800k w/ default 4GB, up to 4M w/ 32GB Number of IPv6 Routes 1.5M w/ default 8GB, up to 4M w/ 32GB 800k w/ default 4GB, up to 4M w/ 32GB Number of Queues 8K 8K",
-          "cosine": 0.724
+          "text": "© 2026 Cisco and/or its affiliates. All rights reserved. Page 1 of 20 Cisco Catalyst 8200 Series Edge Platforms Data sheet Cisco public",
+          "cosine": 0.7689
         },
         {
-          "id": "S9",
-          "kind": "product",
-          "title": "Catalog: ISR4451",
-          "url": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.pdf",
-          "page": null,
-          "text": "{\"id\": \"isr4451\", \"name\": \"ISR4451\", \"model\": \"ISR4451\", \"similarity\": 0.19071389459182164, \"context_adjustment\": 0.15, \"final_score\": 0.34071389459182166, \"matched_terms\": [\"4000\", \"isr\", \"security\", \"wan\", \"branch\", \"sd\"], \"why\": \"Matches 4000, isr, security, wan, branch, sd; -0.10 deployment mismatch; +0.25 redundant PSU documented.\", \"source_url\": \"https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.pdf\", \"family\": \"ISR 4000\", \"deployment\": \"branch\", \"power_supply_redundancy\": true, \"field_replaceable_parts\": [], \"max_throughput_text\": \"1 Gbps default; 2 Gbps performance license; up to 3.8 Gbps CEF-only IMIX boost license (Table 8)\", \"best_for\": \"Converged branch routing, security and unified communications\", \"source_pages\": [4, 5, 9, 24, 25]}",
-          "source": "Product catalog (from datasheets)"
-        },
-        {
-          "id": "S10",
-          "kind": "product",
-          "title": "Catalog: ISR4431",
-          "url": "https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.pdf",
-          "page": null,
-          "text": "{\"id\": \"isr4431\", \"name\": \"ISR4431\", \"model\": \"ISR4431\", \"similarity\": 0.185691683249515, \"context_adjustment\": 0.15, \"final_score\": 0.335691683249515, \"matched_terms\": [\"4000\", \"isr\", \"security\", \"wan\", \"branch\", \"sd\"], \"why\": \"Matches 4000, isr, security, wan, branch, sd; -0.10 deployment mismatch; +0.25 redundant PSU documented.\", \"source_url\": \"https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.pdf\", \"family\": \"ISR 4000\", \"deployment\": \"branch\", \"power_supply_redundancy\": true, \"field_replaceable_parts\": [], \"max_throughput_text\": \"500 Mbps default; 1 Gbps performance license; up to 3.4 Gbps CEF-only IMIX boost license (Table 8)\", \"best_for\": \"Converged branch routing, security and unified communications\", \"source_pages\": [4, 5, 9, 24, 25]}",
-          "source": "Product catalog (from datasheets)"
-        },
-        {
-          "id": "S11",
+          "id": "S7",
           "kind": "product",
           "title": "Catalog: ASR1002-X",
           "url": "https://www.cisco.com/c/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.pdf",
           "page": null,
-          "text": "{\"id\": \"asr1002-x\", \"name\": \"ASR1002-X\", \"model\": \"ASR1002-X\", \"similarity\": 0.1801015100643155, \"context_adjustment\": 0.15, \"final_score\": 0.3301015100643155, \"matched_terms\": [\"edge\", \"wan\", \"1000\", \"asr\", \"sd\"], \"why\": \"Matches edge, wan, 1000, asr, sd; -0.10 deployment mismatch; +0.25 redundant PSU documented.\", \"source_url\": \"https://www.cisco.com/c/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.pdf\", \"family\": \"ASR 1000\", \"deployment\": \"data center/aggregation, large office WAN edge, service provider POP\", \"power_supply_redundancy\": true, \"field_replaceable_parts\": [], \"max_throughput_text\": null, \"best_for\": \"WAN aggregation and enterprise data center edge\", \"source_pages\": [3, 4, 5, 12, 13, 14, 27, 28, 29]}",
+          "text": "{\"id\": \"asr1002-x\", \"name\": \"ASR1002-X\", \"model\": \"ASR1002-X\", \"similarity\": 0.23247119256625184, \"context_adjustment\": 0.15, \"final_score\": 0.38247119256625184, \"matched_terms\": [\"edge\", \"wan\", \"sd\", \"cisco\"], \"why\": \"Matches edge, wan, sd, cisco; -0.10 deployment mismatch; +0.25 redundant PSU documented.\", \"source_url\": \"https://www.cisco.com/c/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.pdf\", \"family\": \"ASR 1000\", \"deployment\": \"data center/aggregation, large office WAN edge, service provider POP\", \"power_supply_redundancy\": true, \"field_replaceable_parts\": [], \"max_throughput_text\": null, \"best_for\": \"WAN aggregation and enterprise data center edge\", \"source_pages\": [3, 4, 5, 12, 13, 14, 27, 28, 29]}",
           "source": "Product catalog (from datasheets)"
         },
         {
-          "id": "S12",
+          "id": "S8",
           "kind": "product",
           "title": "Catalog: ASR1004",
           "url": "https://www.cisco.com/c/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.pdf",
           "page": null,
-          "text": "{\"id\": \"asr1004\", \"name\": \"ASR1004\", \"model\": \"ASR1004\", \"similarity\": 0.17751294592227393, \"context_adjustment\": 0.15, \"final_score\": 0.3275129459222739, \"matched_terms\": [\"edge\", \"wan\", \"1000\", \"asr\", \"sd\"], \"why\": \"Matches edge, wan, 1000, asr, sd; -0.10 deployment mismatch; +0.25 redundant PSU documented.\", \"source_url\": \"https://www.cisco.com/c/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.pdf\", \"family\": \"ASR 1000\", \"deployment\": \"data center/aggregation, large office WAN edge, service provider POP\", \"power_supply_redundancy\": true, \"field_replaceable_parts\": [], \"max_throughput_text\": null, \"best_for\": \"WAN aggregation and enterprise data center edge\", \"source_pages\": [3, 4, 5, 12, 13, 14, 27, 28, 29]}",
+          "text": "{\"id\": \"asr1004\", \"name\": \"ASR1004\", \"model\": \"ASR1004\", \"similarity\": 0.2291299291147697, \"context_adjustment\": 0.15, \"final_score\": 0.3791299291147697, \"matched_terms\": [\"edge\", \"wan\", \"sd\", \"cisco\"], \"why\": \"Matches edge, wan, sd, cisco; -0.10 deployment mismatch; +0.25 redundant PSU documented.\", \"source_url\": \"https://www.cisco.com/c/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.pdf\", \"family\": \"ASR 1000\", \"deployment\": \"data center/aggregation, large office WAN edge, service provider POP\", \"power_supply_redundancy\": true, \"field_replaceable_parts\": [], \"max_throughput_text\": null, \"best_for\": \"WAN aggregation and enterprise data center edge\", \"source_pages\": [3, 4, 5, 12, 13, 14, 27, 28, 29]}",
           "source": "Product catalog (from datasheets)"
         },
         {
-          "id": "S13",
+          "id": "S9",
           "kind": "product",
           "title": "Catalog: ASR1006",
           "url": "https://www.cisco.com/c/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.pdf",
           "page": null,
-          "text": "{\"id\": \"asr1006\", \"name\": \"ASR1006\", \"model\": \"ASR1006\", \"similarity\": 0.1771477039639627, \"context_adjustment\": 0.15, \"final_score\": 0.3271477039639627, \"matched_terms\": [\"edge\", \"wan\", \"1000\", \"asr\", \"sd\"], \"why\": \"Matches edge, wan, 1000, asr, sd; -0.10 deployment mismatch; +0.25 redundant PSU documented.\", \"source_url\": \"https://www.cisco.com/c/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.pdf\", \"family\": \"ASR 1000\", \"deployment\": \"data center/aggregation, large office WAN edge, service provider POP\", \"power_supply_redundancy\": true, \"field_replaceable_parts\": [], \"max_throughput_text\": null, \"best_for\": \"WAN aggregation and enterprise data center edge\", \"source_pages\": [3, 4, 5, 12, 13, 14, 27, 28, 29]}",
+          "text": "{\"id\": \"asr1006\", \"name\": \"ASR1006\", \"model\": \"ASR1006\", \"similarity\": 0.22865848257557342, \"context_adjustment\": 0.15, \"final_score\": 0.37865848257557344, \"matched_terms\": [\"edge\", \"wan\", \"sd\", \"cisco\"], \"why\": \"Matches edge, wan, sd, cisco; -0.10 deployment mismatch; +0.25 redundant PSU documented.\", \"source_url\": \"https://www.cisco.com/c/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.pdf\", \"family\": \"ASR 1000\", \"deployment\": \"data center/aggregation, large office WAN edge, service provider POP\", \"power_supply_redundancy\": true, \"field_replaceable_parts\": [], \"max_throughput_text\": null, \"best_for\": \"WAN aggregation and enterprise data center edge\", \"source_pages\": [3, 4, 5, 12, 13, 14, 27, 28, 29]}",
           "source": "Product catalog (from datasheets)"
         }
       ],
@@ -347,21 +300,21 @@
         {
           "tool": "search_knowledge",
           "args": {
-            "query": "Cisco Catalyst 8200 8300 8000V ISR 4000 ASR 1000 edge deployment reliability connectivity SD-WAN datasheet",
+            "query": "Cisco Catalyst edge router distributed branch logistics sites edge connectivity reliability Catalyst 8200 8300 datasheet",
             "company": "Cisco",
-            "k": 8
+            "k": 6
           }
         },
         {
           "tool": "recommend_products",
           "args": {
             "catalog": "cisco",
-            "requirements": "cold-chain food distribution monitoring edge deployment reliable branch/warehouse router connectivity SD-WAN security compare Catalyst 8200 8300 8000V ISR 4000 ASR 1000",
+            "requirements": "Best Cisco Catalyst edge router for distributed logistics sites monitoring cold-chain food distribution; needs reliable edge connectivity at many branch/logistics locations, likely SD-WAN/security, moderate throughput, compact branch deployment",
             "constraints": {
-              "deployment": "edge branch warehouse physical router",
+              "deployment": "distributed logistics branch sites",
               "needs_redundancy": true
             },
-            "k": 5
+            "k": 3
           }
         }
       ],
@@ -369,206 +322,210 @@
         "findings": 8,
         "confirmed": 7,
         "hypotheses": 1,
-        "citation_coverage": 0.88,
+        "citation_coverage": 1.0,
         "invalid_citations": [],
-        "top3_retrieval_cosine": 0.73,
-        "grounding_score": 0.94,
-        "sources_retrieved": 13
+        "top3_retrieval_cosine": 0.732,
+        "grounding_score": 1.0,
+        "sources_retrieved": 9
       },
-      "seconds": 23.7
+      "seconds": 20.9
     },
     "sec": {
       "domain": "sec",
       "agent": "SEC Agent",
-      "question": "What risks and disclosures in Cisco’s 10-K should be considered for deploying Catalyst edge routers in a cold-chain food distribution monitoring program, especially around supply chain, cybersecurity, product availability, and operational execution?",
+      "question": "What risks does Cisco disclose in its latest 10-K that are most relevant to deploying Catalyst edge routers in a cold-chain food distribution use case?",
       "answer": {
-        "summary": "For a cold-chain food distribution monitoring program using Cisco Catalyst edge routers, the most decision-relevant Cisco 10-K disclosures are supply-chain dependency, component availability, cybersecurity vulnerability management, regulatory/procurement requirements, and product quality/execution risk. Cisco’s FY2026 10-K highlights reliance on contract manufacturers and component suppliers, limited/single-source components, added purchase commitments, and cybersecurity risks that could affect customers if products are not patched, configured securely, or remediated quickly.",
+        "summary": "Cisco’s latest available filing in the knowledge base is the FY2026 Form 10-K. For a cold-chain food distribution deployment using Catalyst edge routers, the most relevant disclosed risks are supply availability/cost, cybersecurity and vulnerability management, compliance requirements for critical infrastructure-like operations, and exposure to geopolitical/natural-disaster disruptions that could affect support or spares. The filing does not state risks specific to “Catalyst edge routers” or cold-chain food distribution in the retrieved text.",
         "findings": [
           {
-            "claim": "Financial risk: Cisco states that supply chain issues, financial problems of contract manufacturers or component suppliers, shortages of adequate component supply or manufacturing capacity, or misestimation of customer demand could increase costs, delay order fulfillment, and negatively affect gross margins.",
+            "claim": "Cisco — operational risk: Cisco relies on contract manufacturers, component suppliers and distributors, and says reduction or interruption in supply can be caused by geopolitical tensions, public health emergencies, significant natural disasters including climate change, tariffs/trade barriers, component price increases, supplier delivery failures, IT disruption, or failures to adjust requirements. This is relevant because cold-chain sites need predictable router availability, spares and replacement lead times.",
             "status": "confirmed",
             "sources": [
-              "S9"
-            ]
-          },
-          {
-            "claim": "Financial risk: Cisco disclosed that in fiscal 2025 and 2026 it entered into additional purchase commitments with contract manufacturers and suppliers related to manufacturing Cisco Silicon One, memory components and other products to meet expected demand from hyperscalers and other customers, and expects to continue these commitments in fiscal 2027; Cisco says these commitments and prepayments significantly increased supply chain exposure.",
-            "status": "confirmed",
-            "sources": [
-              "S3"
-            ]
-          },
-          {
-            "claim": "Operational/product availability risk: Cisco states that certain components are available only from limited or single sources, and that it may not be able to diversify sources in a timely manner, which could harm its ability to deliver products to customers and seriously impact present and future sales.",
-            "status": "confirmed",
-            "sources": [
-              "S6"
-            ]
-          },
-          {
-            "claim": "Operational execution risk: Cisco discloses that it does not own or operate the bulk of its manufacturing facilities and is reliant on an extended supply chain, which could adversely affect its business and results of operations if supply-chain partners have financial, capacity, or component-supply issues.",
-            "status": "confirmed",
-            "sources": [
-              "S9"
-            ]
-          },
-          {
-            "claim": "Cybersecurity risk: Cisco says it regularly experiences cyber attacks and attempts to gain unauthorized access; incidents affecting Cisco solutions, IT environment, customer networks, third-party providers, or third-party products Cisco uses could disrupt operations, create liability, trigger legal/regulatory action, damage reputation, or materially harm the business.",
-            "status": "confirmed",
-            "sources": [
-              "S12",
+              "S10",
               "S11"
             ]
           },
           {
-            "claim": "Cybersecurity execution risk: Cisco warns that failure to promptly mitigate vulnerabilities, failure of third-party providers to remedy vulnerabilities, customers not deploying security updates in a timely manner, customers declining upgrades, or customers configuring solutions insecurely could result in legal/regulatory claims, reputational harm, or other business harm.",
+            "claim": "Cisco — operational/financial risk: Cisco disclosed that manufacturing capacity and supply constraints remain significant risks, specifically noting “memory shortages experienced in fiscal 2026” and that it expects to continue being adversely impacted by rising costs of constrained memory components. This can affect procurement timing and total cost for edge-router rollouts.",
             "status": "confirmed",
             "sources": [
+              "S16"
+            ]
+          },
+          {
+            "claim": "Cisco — financial risk: Cisco entered into additional purchase commitments in fiscal 2025 and 2026 with contract manufacturers and suppliers for Cisco Silicon One, memory components and other products, and expects to continue additional purchase commitments in fiscal 2027. Cisco says these commitments and prepayments significantly increased supply-chain exposure and had negative impacts on product gross margin; this may affect pricing discipline and availability for networking hardware programs.",
+            "status": "confirmed",
+            "sources": [
+              "S8",
               "S13"
             ]
           },
           {
-            "claim": "Product quality risk: Cisco states that its complex hardware and software may contain bugs or quality/reliability issues that can unexpectedly disrupt intended operations, and that pre-release testing may not detect all isolated or systemic defects affecting shipments.",
+            "claim": "Cisco — operational risk: Cisco states that failures to maintain digital security infrastructure, timely mitigate/apply security fixes, or vulnerabilities in its solutions could lead to cyber attacks, data breaches, legal/regulatory action, reputation damage, direct or indirect liability, or material harm to the business. For cold-chain distribution, router compromise or delayed patching could affect network segmentation, telemetry integrity and uptime.",
             "status": "confirmed",
             "sources": [
-              "S8"
+              "S14"
             ]
           },
           {
-            "claim": "Competitive/regulatory/procurement risk: Cisco discloses that evolving customer procurement requirements and regulations around privacy, cybersecurity, operational resilience, data governance, sourcing, encryption, localization, national security, and product certification could limit its ability to sell products and services, including to public sector, critical infrastructure, and other customers.",
+            "claim": "Cisco — operational/regulatory risk: Cisco says customer procurement requirements and regulations may involve privacy, cybersecurity, operational resilience, data governance and other obligations, and failure or delay in meeting and maintaining compliance could limit its ability to sell to public sector, critical infrastructure and other customers. Cold-chain food distribution may impose similar resilience, auditability and cybersecurity requirements even where not formally public-sector.",
             "status": "confirmed",
             "sources": [
-              "S16",
+              "S9"
+            ]
+          },
+          {
+            "claim": "Cisco — competitive risk: The retrieved FY2026 passages do not state a Catalyst-specific competitive risk; however, they do state that product demand conditions can be difficult to predict and customer requirements or technology architectures may change. For a deployment decision, this points to architecture-lifecycle risk if edge networking requirements shift during rollout.",
+            "status": "confirmed",
+            "sources": [
+              "S3",
+              "S12"
+            ]
+          },
+          {
+            "claim": "Cisco — operational risk: Cisco identifies international tensions, tariffs, government disruptions, import/export restrictions, environmental regulations and natural disasters as political/economic factors that could materially harm results. This matters where deployments span regions or depend on cross-border logistics for routers, licenses, replacement units or support.",
+            "status": "confirmed",
+            "sources": [
               "S15"
+            ]
+          },
+          {
+            "claim": "Cisco — missing specificity: The filing excerpts retrieved do not state cold-temperature operating limits, ingress protection ratings, food-safety certifications, or Catalyst edge-router model-specific environmental specifications.",
+            "status": "confirmed",
+            "sources": [
+              "S10",
+              "S14",
+              "S16"
             ]
           }
         ],
         "recommendations": [
           {
-            "action": "Require firm delivery, substitution, and lifecycle-support commitments for the specific Catalyst router SKUs selected for the cold-chain deployment.",
+            "action": "Require Cisco or the reseller to provide model-specific environmental specifications for the exact Catalyst edge router SKU, including temperature range, humidity, condensation tolerance, power requirements and enclosure guidance.",
             "priority": "high",
-            "why": "Cisco discloses dependence on contract manufacturers, limited/single-source components, and risks of delayed fulfillment; a cold-chain monitoring program may be operationally exposed if routers are unavailable for depot rollouts, replacements, or expansion.",
+            "why": "Cisco’s 10-K discloses supply-chain and broad operational risks, but the filing does not state cold-chain environmental suitability for Catalyst edge routers.",
             "sources": [
-              "S6",
-              "S9"
-            ]
-          },
-          {
-            "action": "Build a spares and RMA buffer sized to route critical cold-chain sites around product delays or field failures.",
-            "priority": "high",
-            "why": "Cisco acknowledges possible product quality or reliability issues and supply-chain constraints; spare units reduce downtime risk for temperature monitoring and alerting infrastructure.",
-            "sources": [
-              "S8",
-              "S9"
-            ]
-          },
-          {
-            "action": "Mandate a security operations plan covering secure configuration baselines, patch SLAs, vulnerability monitoring, and emergency change windows for all edge routers.",
-            "priority": "high",
-            "why": "Cisco states customer failure to deploy security updates timely or insecure configuration of solutions can create security and liability risks; cold-chain monitoring networks may carry operational and compliance-sensitive data.",
-            "sources": [
-              "S13",
-              "S12"
-            ]
-          },
-          {
-            "action": "Confirm regulatory and procurement requirements before final architecture approval, including data governance, cybersecurity, operational resilience, sourcing, encryption, and country-of-origin requirements.",
-            "priority": "medium",
-            "why": "Cisco discloses that evolving requirements in these areas can affect product sales and use, especially for critical infrastructure or regulated customers.",
-            "sources": [
-              "S15",
+              "S10",
               "S16"
             ]
           },
           {
-            "action": "Include acceptance testing and staged pilots in refrigerated warehouses, vehicles, and distribution hubs before full rollout.",
-            "priority": "medium",
-            "why": "Cisco warns that hardware/software defects may not be found in pre-release testing and can disrupt intended operations; environmental and connectivity conditions in cold-chain operations should be validated under real operating conditions.",
+            "action": "Build a spares and replacement-unit plan before deployment, including minimum local inventory, RMA response times and alternatives for constrained components.",
+            "priority": "high",
+            "why": "Cisco discloses dependence on contract manufacturers and suppliers, supply interruptions, memory shortages in fiscal 2026, and rising constrained-component costs.",
             "sources": [
-              "S8"
+              "S10",
+              "S11",
+              "S16"
             ]
           },
           {
-            "action": "Negotiate visibility into end-of-sale/end-of-support notices, software maintenance periods, and replacement-path options for selected router models.",
-            "priority": "medium",
-            "why": "Cisco’s filings flag supply-chain exposure and evolving technology/customer requirements; deployment plans should avoid stranded hardware or unsupported security posture.",
+            "action": "Include cybersecurity patching, vulnerability notification, configuration hardening and incident-response SLAs in procurement terms.",
+            "priority": "high",
+            "why": "Cisco discloses that vulnerabilities, delayed fixes or security infrastructure failures could lead to cyber incidents, liability and material harm.",
             "sources": [
-              "S3",
-              "S13"
+              "S14"
+            ]
+          },
+          {
+            "action": "Validate compliance requirements for food distribution operations, including cybersecurity, operational resilience, data governance, country-of-origin and product certification needs.",
+            "priority": "medium",
+            "why": "Cisco discloses evolving requirements around cybersecurity, operational resilience, data, sovereignty/localization, product certification, sourcing and national security controls.",
+            "sources": [
+              "S9"
+            ]
+          },
+          {
+            "action": "Design network redundancy for cold-chain sites—dual WAN, failover routing, out-of-band management and monitoring of router health and environmental conditions.",
+            "priority": "high",
+            "why": "Cold-chain operations are uptime-sensitive, and Cisco discloses risks from supply disruption, IT-related disruption and cyber incidents that could impair continuity.",
+            "sources": [
+              "S10",
+              "S14"
+            ]
+          },
+          {
+            "action": "Lock deployment pricing, delivery milestones and substitution rights in contracts where possible.",
+            "priority": "medium",
+            "why": "Cisco disclosed increased purchase commitments, inventory exposure and constrained component costs that can affect gross margin and potentially customer pricing or lead times.",
+            "sources": [
+              "S8",
+              "S13",
+              "S16"
             ]
           }
         ],
         "next_steps": [
-          "Identify the exact Catalyst router models, software images, support tier, and geographic deployment scope.",
-          "Ask Cisco or the reseller for current lead times, allocation status, lifecycle dates, and approved substitutes for each SKU.",
-          "Define cold-chain criticality tiers and map router redundancy/spares requirements by warehouse, vehicle, and hub.",
-          "Create a router security baseline: management-plane isolation, MFA/admin controls, logging, patch cadence, certificate handling, and incident response escalation.",
-          "Run a pilot covering cold rooms, loading docks, vehicles, and network failover scenarios before committing to fleetwide deployment.",
-          "Document contractual remedies for late delivery, recurring defects, security advisories requiring urgent patching, and support-response failures."
+          "Identify the exact Catalyst edge router models, software images and licensing bundle under consideration.",
+          "Ask Cisco/reseller for environmental datasheets and deployment references in refrigerated warehouses, trucks or distribution depots.",
+          "Map the cold-chain network architecture, including telemetry systems, warehouse management systems, IoT sensors and failover paths.",
+          "Request current lead times, RMA terms, spares availability and end-of-sale/end-of-support timelines.",
+          "Define security baseline: segmentation, secure boot, patch cadence, logging, remote access and incident escalation.",
+          "Confirm whether any customer, food-safety, insurance or public-sector requirements impose operational-resilience or cybersecurity controls."
         ],
         "kpis": [
           {
-            "metric": "Router availability at monitored cold-chain sites",
-            "how_to_measure": "Track percentage uptime for each edge router and aggregate uptime by warehouse, vehicle route, and distribution hub."
+            "metric": "Router availability at cold-chain sites",
+            "how_to_measure": "Track monthly uptime percentage and unplanned outage minutes per site."
+          },
+          {
+            "metric": "Spare replacement time",
+            "how_to_measure": "Measure time from device failure ticket to restored service, including RMA and field replacement."
           },
           {
             "metric": "Patch compliance",
-            "how_to_measure": "Measure percentage of routers running approved software versions within the defined patch SLA after Cisco security advisories."
+            "how_to_measure": "Percentage of routers on approved software versions within the required patch window."
           },
           {
-            "metric": "Deployment lead-time variance",
-            "how_to_measure": "Compare actual delivery and installation dates against committed dates for each Catalyst SKU and site wave."
+            "metric": "Procurement lead-time variance",
+            "how_to_measure": "Compare actual delivery dates against contracted delivery dates for routers, power supplies and accessories."
           },
           {
-            "metric": "Mean time to restore monitoring connectivity",
-            "how_to_measure": "Measure elapsed time from router outage detection to restored temperature-monitoring data flow."
-          },
-          {
-            "metric": "Spare coverage ratio",
-            "how_to_measure": "Track available tested spare routers divided by deployed routers, segmented by region and criticality tier."
+            "metric": "Cold-chain telemetry continuity",
+            "how_to_measure": "Measure percentage of temperature/humidity sensor data successfully transmitted to monitoring systems without gaps."
           }
         ],
         "missing_information": [
-          "Exact Catalyst router models and software licenses under consideration.",
-          "Deployment geography and whether any sites are subject to public-sector, food-safety, data-localization, or critical-infrastructure requirements.",
-          "Required uptime and maximum tolerable data-loss window for temperature monitoring.",
-          "Existing network/security architecture, including cloud connectivity, identity, logging, and segmentation.",
-          "Cisco reseller or direct-support terms, including RMA SLA and onsite support coverage.",
-          "Rollout schedule, forecast quantities, and acceptable substitute models."
+          "Exact Catalyst edge router SKU and software release.",
+          "Deployment environment: refrigerated warehouse, freezer, loading dock, vehicle or outdoor enclosure.",
+          "Required operating temperature and humidity/condensation profile.",
+          "Number of sites, rollout schedule and acceptable downtime.",
+          "Cybersecurity/compliance requirements from customers, insurers or regulators.",
+          "Current Cisco support tier, reseller commitments and local spare-parts strategy."
         ],
         "risks_assumptions": [
-          "Assumption: The cold-chain program depends on continuous edge connectivity for temperature, location, or equipment-status monitoring.",
-          "Assumption: The selected Cisco Catalyst routers are subject to the general Cisco supply-chain, cybersecurity, product quality, and regulatory risks disclosed in Cisco’s FY2026 Form 10-K.",
-          "Risk: Cisco’s filing discusses company-level risks and does not state cold-chain-specific performance, environmental tolerances, or lead times for particular Catalyst SKUs.",
-          "Risk: Product availability and support exposure may differ materially by router model, region, reseller allocation, and support contract."
+          "Assumption: the use case requires high network uptime because temperature excursions can spoil inventory.",
+          "Assumption: Catalyst edge routers will support cold-chain telemetry, warehouse systems or IoT connectivity.",
+          "Risk: Cisco’s 10-K is company-level and does not provide product-specific environmental certifications in the retrieved text.",
+          "Risk: supply-chain or component-cost pressure may affect availability, replacement timing or pricing even if demand is stable."
         ],
         "confidence": {
-          "level": "high",
-          "reason": "The key risks are directly supported by Cisco FY2026 10-K passages on supply chain, component availability, cybersecurity, regulatory requirements, and product quality; SKU-specific availability and environmental suitability require client/vendor confirmation."
+          "level": "medium",
+          "reason": "Cisco’s FY2026 10-K directly supports the broad supply-chain, cybersecurity, regulatory and geopolitical risks, but the retrieved filing text does not provide Catalyst-specific or cold-chain-specific operating specifications."
         }
       },
       "sources": [
         {
           "id": "S1",
           "kind": "document",
-          "title": "Cisco Systems 10-K FY2025",
-          "page": 14,
+          "title": "Cisco Systems 10-K FY2026",
+          "page": 42,
           "url": null,
-          "path": "data/SEC/Cisco/6c821d1a-cf4e-4310-9801-df9399aa701b.pdf",
+          "path": "data/SEC/Cisco/028fbac9-c5ba-409b-83ce-dfee9c17fdbc.pdf",
           "source": "SEC 10-K filing",
-          "text": "nger than anticipated. We plan our operating expense levels based primarily on forecasted revenue levels. These expenses and the impact of long-term commitments are relatively fixed in the short term. A shortfall in revenue could lead to operating results being below expectations because we may not be able to quickly reduce these fixed expenses in response to short-term business changes. Any of the above factors could materially harm our operations and financial results. For additional information and a further discussion of impacts and risks related to our inventory commitments and our purchase commitments with contract manufacturers and suppliers, see “Results of Operations—Product Gross Margin—Supply Chain Impacts and Risks”, “Liquidity and Capital Resources—Inventory Supply Chain” under Item 7 and Note 14 to the Consolidated Financial Statements of this report. Supply chain issues, including financial problems of contract manufacturers or component suppliers, or a shortage of adequate component supply or manufacturing capacity that increase our costs or cause a delay in our ability to fulfill orders, could have an adverse impact on our business and operating results, and our failure to estimate customer demand properly may result in excess or obsolete component supply, which could negatively impact our gross margins.",
-          "cosine": 0.6793
+          "text": "Table of Contents CISCO SYSTEMS, INC. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS (Continued) 2025 as a result of a legal dispute with a supplier, which did not recur in fiscal 2026, and to a lesser extent, pricing. The negative impacts from product mix were primarily due to higher Networking revenue. Productivity benefits were adversely impacted by higher memory costs. Supply Chain Impacts and Risks We regularly enter into purchase commitments with contract manufacturers and suppliers and in recent periods have increased such commitments related to manufacturing Cisco Silicon One and other products to meet demand from hyperscalers and other customers. We expect to continue entering into these additional purchase commitments in future periods, including purchase commitments to secure supply and pricing for memory and certain components. We have also increased inventory deposits and prepayments with certain suppliers in connection with these arrangements. These purchase commitments and prepayments have in turn significantly increased our supply chain exposure.",
+          "cosine": 0.678
         },
         {
           "id": "S2",
           "kind": "document",
           "title": "Cisco Systems 10-K FY2025",
-          "page": 42,
+          "page": 10,
           "url": null,
           "path": "data/SEC/Cisco/6c821d1a-cf4e-4310-9801-df9399aa701b.pdf",
           "source": "SEC 10-K filing",
-          "text": "Table of Contents CISCO SYSTEMS, INC. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS (Continued) by the effects of higher shipment volume and lower total provisions for inventory and the liability related to purchase commitments with contract manufacturers and suppliers. Supply Chain Impacts and Risks In past periods, we took multiple actions in order to mitigate component shortages and address significant supply constraints, which resulted in the need to secure long-term supply and increased our inventory supply chain balances compared to historical levels. In fiscal 2025, we entered into additional purchase commitments with contract manufacturers and suppliers related to manufacturing Cisco Silicon One and other products to meet demand from webscale and other customers. We expect to continue entering into these additional purchase commitments in fiscal 2026. These actions and additional purchase commitments have in turn significantly increased our supply chain exposure, which has resulted in negative impacts to our product gross margin in recent periods and may result in further negative impacts in future periods.",
-          "cosine": 0.6638
+          "text": "tion, cybersecurity, operational resilience, AI, tax, trade, encryption technology, environmental sustainability (including climate change), human rights, product certification, and national security. A failure, or alleged failure, by us to comply with regulations or laws could materially harm our business, operating results, or financial condition. For additional information about government regulation and laws applicable to our business, see “Item 1A. Risk Factors,” including the risk factor entitled “Our business, operating results and financial condition could be materially harmed by evolving regulatory uncertainty or obligations applicable to our products and services” and Note 14 to the Consolidated Financial Statements, subsection (f) “Legal Proceedings.” Talent and Culture At Cisco, we value our people and our technology, and we leverage our broader ecosystems to positively impact the world and pursue our Purpose to Power an Inclusive Future for All. Our goal is to attract, retain, and develop talent in order to help our customers connect and secure their infrastructure and accelerate their digital agility. Our relationship with our employees is one of mutual benefit. Our employees bring talent and ingenuity to everything we do, and in turn, we provide employees with meaningful careers and development opportunities.",
+          "cosine": 0.6691
         },
         {
           "id": "S3",
@@ -578,132 +535,33 @@
           "url": null,
           "path": "data/SEC/Cisco/028fbac9-c5ba-409b-83ce-dfee9c17fdbc.pdf",
           "source": "SEC 10-K filing",
-          "text": "d our efforts in procuring components to meet customer expectations, as we have historically done due to supply constraints, which has contributed to an increase in inventory and purchase commitments. For example, in fiscal 2025 and 2026, we entered into additional purchase commitments with contract manufacturers and suppliers related to manufacturing Cisco Silicon One, memory components and other products to meet expected demand from hyperscalers and other customers. We expect to continue entering into these additional purchase commitments in fiscal 2027. We have also increased inventory deposits and prepayments with certain contract manufacturers and suppliers in connection with these arrangements. These past efforts and additional purchase commitments and prepayments significantly increased our supply chain exposure, which resulted in negative impacts to our product gross margin in recent periods and may result in further negative impacts in future periods. These supply chain exposures include potential material excess and obsolete inventory, losses on purchase commitments or other charges if product demand significantly decreases or is delayed for a sustained duration, we are unable to generate demand for certain products planned for development, customer requirements or technology architectures change or we are otherwise unable to mitigate these supply chain exposures.",
-          "cosine": 0.6763
+          "text": "re unable to generate demand for certain products planned for development, customer requirements or technology architectures change or we are otherwise unable to mitigate these supply chain exposures. Product demand conditions for future periods can be difficult to predict, particularly in rapidly evolving sectors such as AI infrastructure. For additional information and a further discussion of impacts and risks related to our inventory commitments and our purchase commitments with contract manufacturers and suppliers, see “Results of Operations—Product Gross Margin—Supply Chain Impacts and Risks”, “Liquidity and Capital Resources— Inventory Supply Chain” and Note 13 to the Consolidated Financial Statements. We expect gross margin to vary over time, and our level of product gross margin may not be sustainable.",
+          "cosine": 0.6639
         },
         {
           "id": "S4",
           "kind": "document",
-          "title": "Cisco Systems 10-K FY2026",
-          "page": 15,
+          "title": "Cisco Systems 10-K FY2025",
+          "page": 13,
           "url": null,
-          "path": "data/SEC/Cisco/028fbac9-c5ba-409b-83ce-dfee9c17fdbc.pdf",
+          "path": "data/SEC/Cisco/6c821d1a-cf4e-4310-9801-df9399aa701b.pdf",
           "source": "SEC 10-K filing",
-          "text": "re unable to generate demand for certain products planned for development, customer requirements or technology architectures change or we are otherwise unable to mitigate these supply chain exposures. Product demand conditions for future periods can be difficult to predict, particularly in rapidly evolving sectors such as AI infrastructure. For additional information and a further discussion of impacts and risks related to our inventory commitments and our purchase commitments with contract manufacturers and suppliers, see “Results of Operations—Product Gross Margin—Supply Chain Impacts and Risks”, “Liquidity and Capital Resources— Inventory Supply Chain” and Note 13 to the Consolidated Financial Statements. We expect gross margin to vary over time, and our level of product gross margin may not be sustainable.",
-          "cosine": 0.6728
+          "text": "f As a consequence, operating results for a particular future period are difficult to predict, and, therefore, prior results are not necessarily indicative of results to be expected in future periods. Any of the foregoing factors, or any other factors discussed elsewhere herein, could materially harm our business, results of operations, and financial condition. Our operating results may be negatively impacted by unfavorable economic and market conditions and the uncertain geopolitical environment. Challenging global economic conditions, including tariffs or other trade barriers, rising inflation, or other changes, have from time to time contributed, and may continue to contribute, to slowdowns in the communications and networking industries at large, as well as in specific segments and markets in which we operate, resulting in: reduced demand for our products as a result of continued constraints on IT-related capital spending by our customers, particularly service provider and cloud as well as enterprise and other customer markets; increased price competition for our products, not only from our competitors but also as a consequence of customers disposing of unutilized products; risk of excess and obsolete inventories; risk of supply constraints; risk of excess facilities and manufacturing capacity; and higher overhead costs as a percentage of revenue and higher interest expense",
+          "cosine": 0.6536
         },
         {
           "id": "S5",
           "kind": "document",
-          "title": "Cisco Systems 10-K FY2026",
-          "page": 21,
-          "url": null,
-          "path": "data/SEC/Cisco/028fbac9-c5ba-409b-83ce-dfee9c17fdbc.pdf",
-          "source": "SEC 10-K filing",
-          "text": "hdrawal from a product or market, damage to our reputation, inventory costs, product reengineering expenses or legal liability, any of which could materially harm our revenue, margins, and net income. For additional information and a further discussion of impacts and risks related to cybersecurity matters, see the risk factors under the “Item 1A. Risk Factors— Risk Related to Cybersecurity, Privacy, and Regulatory Requirements” heading. Due to the global nature of our operations, political or economic changes or other factors in a specific country or region could harm our results of operations or financial condition. We conduct significant sales and customer support operations in countries around the world. As such, our growth depends in part on our increasing sales into emerging countries. We also depend on non-U.S. operations of our contract manufacturers, component suppliers and distribution partners. Our business in emerging countries in the aggregate experienced a decline in orders in certain prior periods. We continue to assess the sustainability of any improvements in our business in these countries and there can be no assurance that our investments in these countries will be successful. Our future results could be negatively 19",
-          "cosine": 0.6477
-        },
-        {
-          "id": "S6",
-          "kind": "document",
-          "title": "Cisco Systems 10-K FY2026",
-          "page": 15,
-          "url": null,
-          "path": "data/SEC/Cisco/028fbac9-c5ba-409b-83ce-dfee9c17fdbc.pdf",
-          "source": "SEC 10-K filing",
-          "text": "of acceptable quality to build new products in a timely manner in the quantities or configurations needed. Accordingly, our revenue and gross margins could suffer until other sources can be developed. Although in many cases we use standard parts and components for our products, certain components are presently available only from limited or single sources, and a global economic downturn and related market uncertainty could negatively impact the availability of components from one or more of these sources, especially during times when there are supplier constraints based on labor and other actions taken during economic downturns. We may not be able to diversify sources in a timely manner, which could harm our ability to deliver products to customers and seriously impact present and future sales. We believe future supply chain challenges may include: rapid growth in new markets in which we participate, which may make it difficult to quickly obtain significant component capacity; dependency on unfamiliar supply chains or relatively small supply partners for the companies and new technologies we acquire; and competition for certain components that are supply-constrained from existing competitors and companies in other markets.",
-          "cosine": 0.691
-        },
-        {
-          "id": "S7",
-          "kind": "document",
-          "title": "Cisco Systems 10-K FY2026",
-          "page": 15,
-          "url": null,
-          "path": "data/SEC/Cisco/028fbac9-c5ba-409b-83ce-dfee9c17fdbc.pdf",
-          "source": "SEC 10-K filing",
-          "text": "Capital Resources— Inventory Supply Chain” and Note 13 to the Consolidated Financial Statements. We expect gross margin to vary over time, and our level of product gross margin may not be sustainable. Our level of product gross margins has declined in certain prior periods and could decline in future periods due to adverse impacts from various factors, including: • Changes in customer, geographic, or product mix, including the mix of hardware and software sales (and the mix of cloud-based and on-premise software sales) • Increases in material, labor or other manufacturing-related costs (i.e., component costs, broker fees, expedited freight and overtime) or higher supply chain logistics costs, any of which could be significant, especially during periods of supply constraints for certain costs, such as those that we have seen impact the market for components in prior periods, including semiconductors and memory (as we saw in fiscal 2026 and expect to continue seeing), and which costs have in the past and may continue to be exacerbated by inflation 13",
-          "cosine": 0.6342
-        },
-        {
-          "id": "S8",
-          "kind": "document",
-          "title": "Cisco Systems 10-K FY2026",
-          "page": 21,
-          "url": null,
-          "path": "data/SEC/Cisco/028fbac9-c5ba-409b-83ce-dfee9c17fdbc.pdf",
-          "source": "SEC 10-K filing",
-          "text": "we could experience delays in product development or other operational difficulties. Joint ventures can also be difficult to manage due to the potentially different interests of the parties involved. Product quality problems could lead to reduced revenue, gross margins, and net income. We produce highly complex hardware and software products that incorporate leading-edge technology. Software typically contains bugs or other quality or reliability issues that can unexpectedly disrupt the intended operations of the product or the systems in which it is installed. Our pre-release testing programs may not detect all isolated or systemic defects, either ones in individual products or ones that could affect numerous shipments, which might interfere with customer satisfaction, reduce sales opportunities, or affect gross margins. From time to time, we have had to replace components and remediate defects or bugs in shipped products. There can be no assurance that such remediation would be successful or, depending on the product involved, have a material impact. An inability to cure a product defect or bug could result in the failure of a product line, temporary or permanent withdrawal from a product or market, damage to our reputation, inventory costs, product reengineering expenses or legal liability, any of which could materially harm our revenue, margins, and net income.",
-          "cosine": 0.6413
-        },
-        {
-          "id": "S9",
-          "kind": "document",
-          "title": "Cisco Systems 10-K FY2026",
-          "page": 14,
-          "url": null,
-          "path": "data/SEC/Cisco/028fbac9-c5ba-409b-83ce-dfee9c17fdbc.pdf",
-          "source": "SEC 10-K filing",
-          "text": "ges or otherwise, may prevent us from adjusting these fixed expenses quickly enough to meet financial expectations. Any of the above factors could materially harm our operations and financial results. Supply chain issues, including financial problems of contract manufacturers or component suppliers, or a shortage of adequate component supply or manufacturing capacity that increase our costs or cause a delay in our ability to fulfill orders, could have an adverse impact on our business and results of operations, and our failure to estimate customer demand properly or significant purchase commitments made in anticipation of such demand may result in excess or obsolete component supply or other charges, which could negatively impact our gross margins. The fact that we do not own or operate the bulk of our manufacturing facilities and that we are reliant on our extended supply chain could have an adverse impact on the supply of our products and on our business and results of operations. Financial problems of either contract manufacturers or component suppliers, reservation of manufacturing capacity at our contract manufacturers by other companies, and industry consolidation occurring within one or more component supplier markets, such as the semiconductor market, in each case, could either limit supply or increase costs.",
-          "cosine": 0.6673
-        },
-        {
-          "id": "S10",
-          "kind": "document",
           "title": "Cisco Systems 10-K FY2025",
-          "page": 15,
+          "page": 27,
           "url": null,
           "path": "data/SEC/Cisco/6c821d1a-cf4e-4310-9801-df9399aa701b.pdf",
           "source": "SEC 10-K filing",
-          "text": "uring components in order to meet customer expectations, such as we have done in past periods due to supply constraints, which in turn contributes to an increase in inventory and purchase commitments. In fiscal 2025, we entered into additional purchase commitments with contract manufacturers and suppliers related to manufacturing Cisco Silicon One and other products to meet demand from webscale and other customers. We expect to continue entering into these additional purchase commitments in fiscal 2026. These past efforts and additional purchase commitments significantly increased our supply chain exposure, which resulted in negative impacts to our product gross margin in recent periods and may result in further negative impacts in future periods. On August 26, 2025, we settled a legal dispute with a supplier relating to purchase obligations arising under long-term supply arrangements, which resulted in a charge to product cost of sales, which is described in Note 21 to the Consolidated Financial Statements. The remaining and new supply chain exposures include potential material excess and obsolete or other charges if product demand significantly decreases for a sustained duration, we are unable to generate demand for certain products planned for development, or we are otherwise unable to mitigate these supply chain exposures.",
-          "cosine": 0.6503
+          "text": "addition, changes in telecommunications regulations could impact our service provider customers’ purchase of our products and services, and they could also impact sales of our own regulated offerings. Government and other customers' procurement policies, priorities, regulations, technology initiatives and/or other obligations often give rise to evolving privacy, cybersecurity, operational resilience, data governance, or other requirements; the failure or delay in meeting and maintaining compliance with such requirements could negatively impact our business, including by limiting our ability to sell products and services, directly or indirectly, to public sector, critical infrastructure, and other customers. Additional areas of uncertainty that could impact sales of our products and services include laws, regulations, or customer procurement requirements related to encryption technology, data, AI, privacy, cybersecurity, operational resilience, environmental sustainability (including climate change), human rights, product certification, product and digital accessibility, country of origin, and national security and other security controls applicable to our offerings and supply chain.",
+          "cosine": 0.6504
         },
         {
-          "id": "S11",
-          "kind": "document",
-          "title": "Cisco Systems 10-K FY2026",
-          "page": 26,
-          "url": null,
-          "path": "data/SEC/Cisco/028fbac9-c5ba-409b-83ce-dfee9c17fdbc.pdf",
-          "source": "SEC 10-K filing",
-          "text": "Table of Contents breach is attributable to a vulnerability in our solutions, a failure by us to timely mitigate or apply a security fix for products we use that are found vulnerable, or a failure to maintain the digital security infrastructure or security tools that protect the integrity of our solutions and IT environment, could, in each case, result in claims of legal and/or regulatory action against us, damage our reputation or otherwise materially harm our business. The occurrence of a cyber attack, data breach or other incident could subject us to direct or indirect liability to our customers, data subjects, suppliers, business partners, employees, and others, give rise to legal and/or regulatory action, could damage our reputation or could otherwise negatively impact our business, any of which could materially harm our business, results of operations, or financial condition. Vulnerabilities and critical security defects, prioritization decisions regarding remedying vulnerabilities or security defects, failure of third-party providers to remedy vulnerabilities or security defects, or customers not deploying security updates in a timely manner or deciding not to upgrade our solutions to those with security updates or security enhancements applied could result in claims of liability against us, damage our reputation, or otherwise materially harm our business.",
-          "cosine": 0.7268
-        },
-        {
-          "id": "S12",
-          "kind": "document",
-          "title": "Cisco Systems 10-K FY2026",
-          "page": 25,
-          "url": null,
-          "path": "data/SEC/Cisco/028fbac9-c5ba-409b-83ce-dfee9c17fdbc.pdf",
-          "source": "SEC 10-K filing",
-          "text": "mercial offerings of software or other intellectual property licensed from third parties on a nonexclusive basis could limit our ability to protect the proprietary rights associated with our products. Risks Related to Cybersecurity, Privacy, and Regulatory Requirements Cyber attacks, data breaches or other incidents impacting our solutions and IT environment may disrupt our operations, harm our results of operations or financial condition, and damage our reputation or otherwise materially harm our business; and cyber attacks, data breaches or other incidents on our customers’ or third-party providers’ networks, or in third-party products we use, could result in claims of liability against us, give rise to legal and/or regulatory action, damage our reputation or otherwise materially harm our business. We experience cyber attacks and other attempts to gain unauthorized access on a regular basis to (i) our products and services (together, our “solutions”) and (ii) the servers, data centers, networks, systems, and cloud-based services operated or enabled by us, or by third parties upon which we rely, on or through which our and third-party data are stored, processed, or can be accessed (collectively, our “IT environment”).",
-          "cosine": 0.726
-        },
-        {
-          "id": "S13",
-          "kind": "document",
-          "title": "Cisco Systems 10-K FY2026",
-          "page": 26,
-          "url": null,
-          "path": "data/SEC/Cisco/028fbac9-c5ba-409b-83ce-dfee9c17fdbc.pdf",
-          "source": "SEC 10-K filing",
-          "text": "stems as it becomes available could render existing cryptographic protections ineffective upon the emergence of viable quantum computing, exposing pre-quantum encrypted data and systems to compromise. Failure to comply with internal security policies and standards, including secure development lifecycle practices, failure to prevent or promptly mitigate vulnerabilities and security defects, failure of companies that we have acquired to have adequate organizational security practices, prioritization errors in remedying vulnerabilities or security defects, failure of third-party providers to remedy vulnerabilities or security defects, or customers not deploying security updates in a timely manner, deciding not to upgrade solutions, or configuring our solutions in insecure ways, could, in each case, result in claims of legal and/or regulatory action against us, damage our reputation, or otherwise materially harm our business. Our actual or perceived failure to adequately protect and appropriately use data could result in claims of legal and/or regulatory action against us, damage our reputation, or otherwise materially harm our business. Global privacy, data, and cybersecurity laws are extensive, complex, and constantly evolving, making compliance both difficult and costly.",
-          "cosine": 0.7002
-        },
-        {
-          "id": "S14",
-          "kind": "document",
-          "title": "Cisco Systems 10-K FY2026",
-          "page": 28,
-          "url": null,
-          "path": "data/SEC/Cisco/028fbac9-c5ba-409b-83ce-dfee9c17fdbc.pdf",
-          "source": "SEC 10-K filing",
-          "text": "year. Our Board of Directors also regularly receives updates from the Audit Committee on its oversight activities and, on occasion, receives updates directly from our Chief Security and Trust Officer. Additionally, the Chief Security and Trust Officer provides more frequent updates to the Board of Directors and Audit Committee if necessary due to a cybersecurity threat, incident, or other development. As of the date of this Annual Report on Form 10-K, we do not believe our business, results of operations, or financial condition have been materially affected by cybersecurity risks, including as a result of previously identified cybersecurity incidents. For more information on our cybersecurity related risks, see “Item 1A. Risk Factors” of this Annual Report on Form 10-K. 26",
-          "cosine": 0.6515
-        },
-        {
-          "id": "S15",
+          "id": "S6",
           "kind": "document",
           "title": "Cisco Systems 10-K FY2026",
           "page": 27,
@@ -711,54 +569,10 @@
           "path": "data/SEC/Cisco/028fbac9-c5ba-409b-83ce-dfee9c17fdbc.pdf",
           "source": "SEC 10-K filing",
           "text": "uirements could negatively impact our business, including by limiting our ability to sell products and services, directly or indirectly, to public sector, critical infrastructure, and other customers. Additional areas of uncertainty that could impact sales of our products and services include laws, regulations, or customer procurement requirements related to encryption technology, data, AI, privacy, cybersecurity, sovereignty, localization, operational resilience, environmental sustainability (including climate change), human rights, product certification, product and digital accessibility, country of origin, sourcing, national security, and other security controls applicable to our offerings and supply chain. Changes in regulatory requirements or our actual or perceived failure to comply (or to enable our customers to comply when using our offerings) with applicable laws, regulations, or other obligations could materially harm our business, results of operations, or financial condition. Risks Related to Ownership of Our Stock Our stock price may be volatile. Historically, our common stock has experienced substantial price volatility, particularly as a result of variations between our actual financial results and the published expectations of analysts and as a result of announcements by our competitors and us.",
-          "cosine": 0.6561
+          "cosine": 0.652
         },
         {
-          "id": "S16",
-          "kind": "document",
-          "title": "Cisco Systems 10-K FY2026",
-          "page": 27,
-          "url": null,
-          "path": "data/SEC/Cisco/028fbac9-c5ba-409b-83ce-dfee9c17fdbc.pdf",
-          "source": "SEC 10-K filing",
-          "text": "vices. Changes in global regulatory requirements applicable to the industries and sectors in which we operate could materially affect our operations and the sales and use of our products and services. In particular, economic sanctions and changes to export and import control requirements have impacted and may continue to impact our ability to sell and support our products and services in certain jurisdictions. In addition, changes in telecommunications regulations could impact our service provider customers’ purchase and use of our products and services, and they could also impact sales of our own regulated offerings. Government and other customers’ procurement policies, priorities, technology initiatives and/or other obligations often give rise to evolving privacy, cybersecurity, operational resilience, data governance, sourcing, or other requirements; the failure or delay in meeting and maintaining compliance with such requirements could negatively impact our business, including by limiting our ability to sell products and services, directly or indirectly, to public sector, critical infrastructure, and other customers.",
-          "cosine": 0.6565
-        },
-        {
-          "id": "S17",
-          "kind": "document",
-          "title": "Cisco Systems 10-K FY2026",
-          "page": 28,
-          "url": null,
-          "path": "data/SEC/Cisco/028fbac9-c5ba-409b-83ce-dfee9c17fdbc.pdf",
-          "source": "SEC 10-K filing",
-          "text": "Table of Contents Item 1B. Unresolved Staff Comments None. Item 1C. Cybersecurity We recognize the critical importance of maintaining the trust and confidence of our customers, employees, and other stakeholders. To help mitigate the cybersecurity risks that we face, we maintain processes for identifying, assessing, and managing such risks. Our incident response functions, which include our Security and Trust Organization (“S&TO”) under the leadership of our Chief Security and Trust Officer, have established internal policies, processes, and procedures to monitor, detect, investigate, respond to, and escalate management of internal and external cybersecurity threats and incidents. We maintain policies and procedures for the escalation of cybersecurity incidents, assessed as potentially being or becoming material, to designated members of our senior management for further assessment. We also, as necessary, inform our independent registered public accounting firm of significant cybersecurity matters and any relevant developments. To help identify, assess, and mitigate cybersecurity threats that we face to our business, S&TO, in addition to its own capabilities, partners with Cisco’s Talos Threat Intelligence Group and third parties, including governments and peer companies, to share and receive threat intelligence and other information.",
-          "cosine": 0.6849
-        },
-        {
-          "id": "S18",
-          "kind": "document",
-          "title": "Cisco Systems 10-K FY2026",
-          "page": 26,
-          "url": null,
-          "path": "data/SEC/Cisco/028fbac9-c5ba-409b-83ce-dfee9c17fdbc.pdf",
-          "source": "SEC 10-K filing",
-          "text": "tances it has taken, and in the future could take, time for us to develop and test a remedy and the remedy may ultimately be insufficient to fully fix the issue or may be found to create other issues. Rapidly accelerating advances in AI technology are enabling threat actors, or autonomous systems, to identify and exploit vulnerabilities across both software and hardware with little or no delay between discovery and exploitation, including so-called “zero-minute” vulnerabilities, increasing the likelihood and speed of successful cyber attacks. These advances also show AI technology can rapidly chain otherwise low-severity, unrelated vulnerabilities into more severe combined exploits, complicating prioritization of security updates. As a result of these advances in AI technology, the time available to detect, assess and remediate vulnerabilities before exploitation has been significantly reduced or eliminated, increasing the risk of unauthorized access to, or compromise of, solutions we sell to customers, the third-party products and components that we integrate into our solutions and use in our operations, and the cloud-based services operated or enabled by us or by third parties upon which we rely.",
-          "cosine": 0.6337
-        },
-        {
-          "id": "S19",
-          "kind": "document",
-          "title": "Cisco Systems 10-K FY2026",
-          "page": 5,
-          "url": null,
-          "path": "data/SEC/Cisco/028fbac9-c5ba-409b-83ce-dfee9c17fdbc.pdf",
-          "source": "SEC 10-K filing",
-          "text": "ive and predictive operations for higher uptime and greater resilience. Cisco enables enterprises and service providers to deliver highly secure connectivity from workplaces to data centers worldwide. Our strength lies in our decades of expertise in helping customers of all sizes and across all industries throughout their technology lifecycle, and in the way we embed and enable AI across our products and services. We deliver the foundational hardware, software and services that every other technology capability is built on, making Cisco the critical infrastructure for the AI era. For a discussion of the risks associated with our Strategy and Priorities, see “Item 1A. Risk Factors,” including the risk factor entitled “We depend upon the development of new products and services, and enhancements to existing products and services, and if we fail to predict and respond to emerging technological trends and customers’ changing needs, our results of operations and market share may suffer.” For information regarding sales of our major products and services, see Note 18 to the Consolidated Financial Statements.",
-          "cosine": 0.6356
-        },
-        {
-          "id": "S20",
+          "id": "S7",
           "kind": "document",
           "title": "Cisco Systems 10-K FY2026",
           "page": 21,
@@ -766,7 +580,106 @@
           "path": "data/SEC/Cisco/028fbac9-c5ba-409b-83ce-dfee9c17fdbc.pdf",
           "source": "SEC 10-K filing",
           "text": "hdrawal from a product or market, damage to our reputation, inventory costs, product reengineering expenses or legal liability, any of which could materially harm our revenue, margins, and net income. For additional information and a further discussion of impacts and risks related to cybersecurity matters, see the risk factors under the “Item 1A. Risk Factors— Risk Related to Cybersecurity, Privacy, and Regulatory Requirements” heading. Due to the global nature of our operations, political or economic changes or other factors in a specific country or region could harm our results of operations or financial condition. We conduct significant sales and customer support operations in countries around the world. As such, our growth depends in part on our increasing sales into emerging countries. We also depend on non-U.S. operations of our contract manufacturers, component suppliers and distribution partners. Our business in emerging countries in the aggregate experienced a decline in orders in certain prior periods. We continue to assess the sustainability of any improvements in our business in these countries and there can be no assurance that our investments in these countries will be successful. Our future results could be negatively 19",
-          "cosine": 0.6782
+          "cosine": 0.7217
+        },
+        {
+          "id": "S8",
+          "kind": "document",
+          "title": "Cisco Systems 10-K FY2026",
+          "page": 15,
+          "url": null,
+          "path": "data/SEC/Cisco/028fbac9-c5ba-409b-83ce-dfee9c17fdbc.pdf",
+          "source": "SEC 10-K filing",
+          "text": "d our efforts in procuring components to meet customer expectations, as we have historically done due to supply constraints, which has contributed to an increase in inventory and purchase commitments. For example, in fiscal 2025 and 2026, we entered into additional purchase commitments with contract manufacturers and suppliers related to manufacturing Cisco Silicon One, memory components and other products to meet expected demand from hyperscalers and other customers. We expect to continue entering into these additional purchase commitments in fiscal 2027. We have also increased inventory deposits and prepayments with certain contract manufacturers and suppliers in connection with these arrangements. These past efforts and additional purchase commitments and prepayments significantly increased our supply chain exposure, which resulted in negative impacts to our product gross margin in recent periods and may result in further negative impacts in future periods. These supply chain exposures include potential material excess and obsolete inventory, losses on purchase commitments or other charges if product demand significantly decreases or is delayed for a sustained duration, we are unable to generate demand for certain products planned for development, customer requirements or technology architectures change or we are otherwise unable to mitigate these supply chain exposures.",
+          "cosine": 0.674
+        },
+        {
+          "id": "S9",
+          "kind": "document",
+          "title": "Cisco Systems 10-K FY2026",
+          "page": 27,
+          "url": null,
+          "path": "data/SEC/Cisco/028fbac9-c5ba-409b-83ce-dfee9c17fdbc.pdf",
+          "source": "SEC 10-K filing",
+          "text": "uirements could negatively impact our business, including by limiting our ability to sell products and services, directly or indirectly, to public sector, critical infrastructure, and other customers. Additional areas of uncertainty that could impact sales of our products and services include laws, regulations, or customer procurement requirements related to encryption technology, data, AI, privacy, cybersecurity, sovereignty, localization, operational resilience, environmental sustainability (including climate change), human rights, product certification, product and digital accessibility, country of origin, sourcing, national security, and other security controls applicable to our offerings and supply chain. Changes in regulatory requirements or our actual or perceived failure to comply (or to enable our customers to comply when using our offerings) with applicable laws, regulations, or other obligations could materially harm our business, results of operations, or financial condition. Risks Related to Ownership of Our Stock Our stock price may be volatile. Historically, our common stock has experienced substantial price volatility, particularly as a result of variations between our actual financial results and the published expectations of analysts and as a result of announcements by our competitors and us.",
+          "cosine": 0.6743
+        },
+        {
+          "id": "S10",
+          "kind": "document",
+          "title": "Cisco Systems 10-K FY2026",
+          "page": 14,
+          "url": null,
+          "path": "data/SEC/Cisco/028fbac9-c5ba-409b-83ce-dfee9c17fdbc.pdf",
+          "source": "SEC 10-K filing",
+          "text": "ers by other companies, and industry consolidation occurring within one or more component supplier markets, such as the semiconductor market, in each case, could either limit supply or increase costs. A reduction or interruption in supply, including disruptions on our global supply chain, caused in part by geopolitical tensions; public health emergencies; significant natural disasters (including as a result of climate change); tariffs or other trade barriers or disruptions; a significant increase in the price of components (including as a result of inflation); a failure to adequately authorize procurement of inventory by our contract manufacturers; a failure by suppliers to deliver on our contracts; IT-related failure or disruption; a failure to appropriately cancel, reschedule, or adjust our requirements based on our business needs; or a decrease in demand for our products could materially harm our business, results of operations, or financial condition and could materially damage customer relationships. Furthermore, as a result of binding price or purchase commitments with suppliers, we may be obligated to purchase components at prices that are higher than those available in the current market or in quantities that exceed our actual requirements if customer demand is lower than anticipated, delayed or shifts to different products or technologies.",
+          "cosine": 0.6879
+        },
+        {
+          "id": "S11",
+          "kind": "document",
+          "title": "Cisco Systems 10-K FY2026",
+          "page": 14,
+          "url": null,
+          "path": "data/SEC/Cisco/028fbac9-c5ba-409b-83ce-dfee9c17fdbc.pdf",
+          "source": "SEC 10-K filing",
+          "text": "ges or otherwise, may prevent us from adjusting these fixed expenses quickly enough to meet financial expectations. Any of the above factors could materially harm our operations and financial results. Supply chain issues, including financial problems of contract manufacturers or component suppliers, or a shortage of adequate component supply or manufacturing capacity that increase our costs or cause a delay in our ability to fulfill orders, could have an adverse impact on our business and results of operations, and our failure to estimate customer demand properly or significant purchase commitments made in anticipation of such demand may result in excess or obsolete component supply or other charges, which could negatively impact our gross margins. The fact that we do not own or operate the bulk of our manufacturing facilities and that we are reliant on our extended supply chain could have an adverse impact on the supply of our products and on our business and results of operations. Financial problems of either contract manufacturers or component suppliers, reservation of manufacturing capacity at our contract manufacturers by other companies, and industry consolidation occurring within one or more component supplier markets, such as the semiconductor market, in each case, could either limit supply or increase costs.",
+          "cosine": 0.6916
+        },
+        {
+          "id": "S12",
+          "kind": "document",
+          "title": "Cisco Systems 10-K FY2026",
+          "page": 15,
+          "url": null,
+          "path": "data/SEC/Cisco/028fbac9-c5ba-409b-83ce-dfee9c17fdbc.pdf",
+          "source": "SEC 10-K filing",
+          "text": "re unable to generate demand for certain products planned for development, customer requirements or technology architectures change or we are otherwise unable to mitigate these supply chain exposures. Product demand conditions for future periods can be difficult to predict, particularly in rapidly evolving sectors such as AI infrastructure. For additional information and a further discussion of impacts and risks related to our inventory commitments and our purchase commitments with contract manufacturers and suppliers, see “Results of Operations—Product Gross Margin—Supply Chain Impacts and Risks”, “Liquidity and Capital Resources— Inventory Supply Chain” and Note 13 to the Consolidated Financial Statements. We expect gross margin to vary over time, and our level of product gross margin may not be sustainable.",
+          "cosine": 0.6779
+        },
+        {
+          "id": "S13",
+          "kind": "document",
+          "title": "Cisco Systems 10-K FY2026",
+          "page": 42,
+          "url": null,
+          "path": "data/SEC/Cisco/028fbac9-c5ba-409b-83ce-dfee9c17fdbc.pdf",
+          "source": "SEC 10-K filing",
+          "text": "Table of Contents CISCO SYSTEMS, INC. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS (Continued) 2025 as a result of a legal dispute with a supplier, which did not recur in fiscal 2026, and to a lesser extent, pricing. The negative impacts from product mix were primarily due to higher Networking revenue. Productivity benefits were adversely impacted by higher memory costs. Supply Chain Impacts and Risks We regularly enter into purchase commitments with contract manufacturers and suppliers and in recent periods have increased such commitments related to manufacturing Cisco Silicon One and other products to meet demand from hyperscalers and other customers. We expect to continue entering into these additional purchase commitments in future periods, including purchase commitments to secure supply and pricing for memory and certain components. We have also increased inventory deposits and prepayments with certain suppliers in connection with these arrangements. These purchase commitments and prepayments have in turn significantly increased our supply chain exposure.",
+          "cosine": 0.6563
+        },
+        {
+          "id": "S14",
+          "kind": "document",
+          "title": "Cisco Systems 10-K FY2026",
+          "page": 26,
+          "url": null,
+          "path": "data/SEC/Cisco/028fbac9-c5ba-409b-83ce-dfee9c17fdbc.pdf",
+          "source": "SEC 10-K filing",
+          "text": "Table of Contents breach is attributable to a vulnerability in our solutions, a failure by us to timely mitigate or apply a security fix for products we use that are found vulnerable, or a failure to maintain the digital security infrastructure or security tools that protect the integrity of our solutions and IT environment, could, in each case, result in claims of legal and/or regulatory action against us, damage our reputation or otherwise materially harm our business. The occurrence of a cyber attack, data breach or other incident could subject us to direct or indirect liability to our customers, data subjects, suppliers, business partners, employees, and others, give rise to legal and/or regulatory action, could damage our reputation or could otherwise negatively impact our business, any of which could materially harm our business, results of operations, or financial condition. Vulnerabilities and critical security defects, prioritization decisions regarding remedying vulnerabilities or security defects, failure of third-party providers to remedy vulnerabilities or security defects, or customers not deploying security updates in a timely manner or deciding not to upgrade our solutions to those with security updates or security enhancements applied could result in claims of liability against us, damage our reputation, or otherwise materially harm our business.",
+          "cosine": 0.6928
+        },
+        {
+          "id": "S15",
+          "kind": "document",
+          "title": "Cisco Systems 10-K FY2026",
+          "page": 22,
+          "url": null,
+          "path": "data/SEC/Cisco/028fbac9-c5ba-409b-83ce-dfee9c17fdbc.pdf",
+          "source": "SEC 10-K filing",
+          "text": "Table of Contents impacted by a variety of political, economic or other factors relating to our operations inside and outside the United States, any or all of which could materially harm our results of operations or financial condition, including the following: • Challenging and uncertain global macroeconomic environments, central bank policies, currency exchange rates, and regional economic instability (including economic challenges in China and their resulting global ramifications) • International tensions (including China-Taiwan relations), U.S. foreign relations impacting customer willingness to buy U.S. products or our ability to procure components, trade protection measures such as tariffs, and government disruptions or shutdowns • Import/export restrictions, environmental regulations (including climate change laws), and adverse tax consequences (such as withholding taxes) • Natural disasters, pandemics, political or social unrest • Difficulties managing international operations We are exposed to the credit risk of some of our customers and to credit exposures in weakened markets, which could result in material losses. Most of our sales are on an open credit basis, and, in addition to varying payment terms globally, we provide financing and facilitation of leasing arrangements for our products, services, and related installation costs.",
+          "cosine": 0.6849
+        },
+        {
+          "id": "S16",
+          "kind": "document",
+          "title": "Cisco Systems 10-K FY2026",
+          "page": 15,
+          "url": null,
+          "path": "data/SEC/Cisco/028fbac9-c5ba-409b-83ce-dfee9c17fdbc.pdf",
+          "source": "SEC 10-K filing",
+          "text": "ly small supply partners for the companies and new technologies we acquire; and competition for certain components that are supply-constrained from existing competitors and companies in other markets. Manufacturing capacity and supply constraints, such as the memory shortages experienced in fiscal 2026, remain significant risks, and we expect to continue to be adversely impacted by the rising costs of currently constrained memory components. We purchase components from a variety of suppliers and use several contract manufacturers to provide manufacturing services for our products. During the normal course of business, in order to improve manufacturing lead-time performance and to help ensure adequate component supply, we enter into agreements with contract manufacturers and suppliers that either allow them to procure inventory based upon criteria as defined by us or that establish the parameters defining our requirements. In certain instances, these agreements allow us the option to cancel, reschedule, and adjust our requirements based on our business needs prior to firm orders being placed. In recent periods, we have increased our efforts in procuring components to meet customer expectations, as we have historically done due to supply constraints, which has contributed to an increase in inventory and purchase commitments.",
+          "cosine": 0.6575
         }
       ],
       "tool_calls": [
@@ -774,8 +687,7 @@
           "tool": "search_knowledge",
           "args": {
             "company": "Cisco",
-            "query": "Cisco 10-K Catalyst edge routers supply chain cybersecurity product availability operational execution risk factors inventory backlog component shortages product quality security vulnerabilities",
-            "k": 10
+            "query": "latest 10-K Cisco risk factors supply chain cybersecurity product quality warranty networking products environmental conditions availability tariffs regulations AI cloud edge"
           }
         },
         {
@@ -783,7 +695,7 @@
           "args": {
             "company": "Cisco",
             "year": "FY2026",
-            "query": "Cisco FY2026 10-K cybersecurity privacy security vulnerabilities unauthorized access products services critical infrastructure risk factors",
+            "query": "Cisco FY2026 10-K risk factors cybersecurity vulnerabilities outages interruptions defects products services networks supply chain inventory contract manufacturers components climate environmental sustainability product certification",
             "k": 10
           }
         }
@@ -794,163 +706,177 @@
         "hypotheses": 0,
         "citation_coverage": 1.0,
         "invalid_citations": [],
-        "top3_retrieval_cosine": 0.718,
+        "top3_retrieval_cosine": 0.702,
         "grounding_score": 1.0,
-        "sources_retrieved": 20
+        "sources_retrieved": 16
       },
-      "seconds": 25.1
+      "seconds": 26.2
     },
     "csr": {
       "domain": "csr",
       "agent": "Corporate Responsibility Agent",
-      "question": "According to SOFI 2024, how could improved cold-chain food distribution monitoring supported by Cisco Catalyst edge routers contribute to food-security outcomes, including reducing food loss, improving availability, and supporting nutrition access?",
+      "question": "According to SOFI 2024, how could better-connected cold-chain food distribution supported by edge routers contribute to food-security outcomes, and what sustainability or equity considerations should be noted?",
       "answer": {
-        "summary": "SOFI 2024 does not specifically discuss Cisco Catalyst edge routers or cold-chain monitoring. However, it confirms that reducing nutritious food loss and waste, increasing efficiency of nutritious-food value chains, and improving storage and infrastructure are part of the recommended pathway for lowering the cost of nutritious foods and improving food-security and nutrition outcomes. Cisco-supported cold-chain monitoring is therefore a plausible technology investment to strengthen agrifood supply chains, especially for perishable nutritious foods, if deployed with measurable loss, availability, affordability and nutrition-access indicators.",
+        "summary": "SOFI 2024 does not specifically discuss edge routers or cold-chain networking as a named intervention. However, it does support investments that strengthen agrifood supply chains, market linkages, climate/economic resilience, data systems, and access to affordable nutritious foods—so better-connected cold-chain distribution can be framed as a targeted agrifood-systems investment if it improves availability, affordability, stability, and safety of nutritious foods.",
         "findings": [
           {
-            "claim": "SOFI 2024 identifies 'intervening along agrifood supply chains to lower the cost of nutritious foods' as a transformative pathway, including increasing efficiency of nutritious food value chains, reducing nutritious food loss and waste, and improving rural roads and infrastructure such as nutritious food storage facilities.",
+            "claim": "SOFI 2024 frames food-security financing around resilience to conflict, climate variability/extremes, and economic slowdowns, while addressing structural factors including unaffordability of nutritious foods and high inequality.",
             "status": "confirmed",
             "sources": [
-              "S1",
-              "S3",
-              "S4"
+              "S6",
+              "S7"
             ]
           },
           {
-            "claim": "SOFI 2024 frames financing for food security and nutrition as investments that strengthen the resilience of agrifood systems to conflict, climate variability and extremes, and economic slowdowns, while addressing lack of access to and unaffordability of nutritious foods and unhealthy food environments.",
+            "claim": "SOFI 2024 includes strengthening market linkages and intervening along agrifood supply chains among pathways relevant to food security and nutrition outcomes.",
             "status": "confirmed",
             "sources": [
-              "S6"
+              "S3"
             ]
           },
           {
-            "claim": "Improved cold-chain monitoring could contribute to food-security outcomes by reducing spoilage of perishable nutritious foods such as dairy, fruits, vegetables, fish and meat, thereby increasing effective market availability and helping lower the delivered cost of nutritious foods.",
-            "status": "hypothesis",
+            "claim": "Food security in SOFI 2024 includes physical, social and economic access to sufficient, safe and nutritious food at all times; relevant dimensions include availability, access, utilization and stability.",
+            "status": "confirmed",
             "sources": [
-              "S1",
-              "S4",
-              "S6"
+              "S8"
             ]
           },
           {
-            "claim": "Cisco Catalyst edge routers could support this by enabling resilient connectivity for sensors, temperature logs, vehicle/location telemetry and exception alerts across warehouses, rural aggregation points and last-mile distribution routes.",
-            "status": "hypothesis",
-            "sources": [
-              "S1",
-              "S4"
-            ]
-          },
-          {
-            "claim": "If cold-chain monitoring reduces loss and improves consistency of supply, it could support nutrition access by making nutrient-dense foods more available and potentially more affordable, aligning with SOFI 2024's emphasis on lowering the cost of nutritious foods and ensuring access to healthy diets.",
-            "status": "hypothesis",
-            "sources": [
-              "S1",
-              "S5",
-              "S6"
-            ]
-          },
-          {
-            "claim": "SOFI 2024 emphasizes better tracking, measurement and implementation of food security and nutrition financing; a digitally monitored cold chain would be stronger as an ESG investment if it includes transparent measurement of food loss, service uptime, availability and nutrition-access outcomes.",
+            "claim": "Affordability in SOFI 2024 is assessed relative to incomes and the cost of a healthy diet plus basic non-food goods and services, making consumer price and income effects central to evaluating food-security impact.",
             "status": "confirmed",
             "sources": [
               "S5"
+            ]
+          },
+          {
+            "claim": "AI and data systems are identified by SOFI 2024 as tools to inform targeted allocation of financing and track progress in agrifood-systems transformation for SDG 2.1 and 2.2.",
+            "status": "confirmed",
+            "sources": [
+              "S2"
+            ]
+          },
+          {
+            "claim": "Connected cold chains supported by edge routers could reduce spoilage, improve route reliability, monitor temperatures, and increase market reach for perishable nutritious foods, thereby contributing to availability, safety, stability and potentially affordability.",
+            "status": "hypothesis",
+            "sources": [
+              "S3",
+              "S6",
+              "S8"
+            ]
+          },
+          {
+            "claim": "If deployed without equity safeguards, connected cold chains could primarily benefit larger distributors or higher-income urban markets and fail to improve affordability or access for vulnerable groups.",
+            "status": "hypothesis",
+            "sources": [
+              "S5",
+              "S6",
+              "S7"
             ]
           }
         ],
         "recommendations": [
           {
-            "action": "Deploy cold-chain monitoring in priority perishable-food corridors, starting with nutrient-dense foods and locations where temperature excursions and spoilage are highest.",
+            "action": "Prioritize edge-router-enabled cold-chain pilots for nutritious perishables—such as dairy, fruit, vegetables, fish or other locally relevant foods—in areas with high spoilage, weak market linkages, or climate-related disruption.",
             "priority": "high",
-            "why": "Addresses the SOFI 2024 pathway of improving nutritious-food value chains, reducing nutritious food loss and waste, and improving food storage infrastructure.",
-            "sources": [
-              "S1",
-              "S4"
-            ]
-          },
-          {
-            "action": "Use Cisco Catalyst edge routers to connect temperature, humidity, power, door-opening and vehicle-location sensors, with automated alerts for temperature excursions and delayed deliveries.",
-            "priority": "high",
-            "why": "This is a practical technology mechanism for reducing avoidable food loss and improving availability of perishable nutritious foods; the technology mechanism is a recommendation, while the supply-chain pathway is supported by SOFI 2024.",
-            "sources": [
-              "S1",
-              "S4"
-            ]
-          },
-          {
-            "action": "Target deployments in areas exposed to climate variability, unreliable power or weak infrastructure, and combine monitoring with backup power and maintenance protocols.",
-            "priority": "medium",
-            "why": "SOFI 2024 identifies climate variability and extremes as a major driver of food insecurity and calls for resilience-building investments across agrifood systems.",
+            "why": "This links the investment to SOFI 2024 pathways on supply-chain intervention, market linkages, and resilience to climate and economic shocks.",
             "sources": [
               "S3",
-              "S6"
+              "S6",
+              "S7"
             ]
           },
           {
-            "action": "Design the programme as a nutrition-sensitive ESG investment, not only a logistics project: prioritize foods that contribute to healthy diets and track whether availability and affordability improve for low-income consumers.",
+            "action": "Design the connectivity layer to capture temperature, energy use, delivery reliability, stock-outs, and route data at distribution points.",
             "priority": "high",
-            "why": "SOFI 2024 highlights lack of access to and unaffordability of nutritious foods as an underlying structural factor of food insecurity and malnutrition.",
+            "why": "SOFI 2024 highlights AI and data systems for targeting financing and tracking progress; edge routers can provide the operational data needed to manage and evaluate the intervention.",
             "sources": [
-              "S4",
-              "S6"
+              "S2"
             ]
           },
           {
-            "action": "Partner with SMEs, cooperatives, retailers and public agencies so monitoring data can trigger operational fixes, financing decisions and infrastructure upgrades.",
-            "priority": "medium",
-            "why": "SOFI 2024 stresses the need for better financing architecture, tracking and implementation to increase flows toward food security and nutrition outcomes.",
+            "action": "Tie commercial performance metrics to food-security outcomes, especially affordability of healthy diets and access to safe nutritious foods in target communities.",
+            "priority": "high",
+            "why": "SOFI 2024 defines affordability in relation to income and the cost of a healthy diet, so lower losses only matter socially if benefits reach consumers or producers.",
             "sources": [
-              "S5"
+              "S5",
+              "S8"
+            ]
+          },
+          {
+            "action": "Include smallholder suppliers, SMEs, informal retailers and underserved geographies in the operating model, not only large logistics firms.",
+            "priority": "medium",
+            "why": "SOFI 2024 identifies high and persistent inequality as an underlying structural factor; inclusive access helps prevent the technology from widening market concentration.",
+            "sources": [
+              "S6",
+              "S7"
+            ]
+          },
+          {
+            "action": "Use renewable or high-efficiency refrigeration and monitor emissions and refrigerant leakage.",
+            "priority": "medium",
+            "why": "SOFI 2024 emphasizes climate resilience; cold-chain expansion should not undermine climate goals through inefficient energy use or high-emission cooling.",
+            "sources": [
+              "S6",
+              "S7"
+            ]
+          },
+          {
+            "action": "Blend finance where appropriate—grants or concessional capital for public-good components, commercial capital for viable logistics assets.",
+            "priority": "medium",
+            "why": "SOFI 2024 discusses a spectrum of financing instruments for food security and nutrition; the right mix depends on risk, affordability and who captures benefits.",
+            "sources": [
+              "S1"
             ]
           }
         ],
         "next_steps": [
-          "Map the target value chain: commodities, origin points, storage facilities, transport routes, markets and loss hotspots.",
-          "Establish a baseline for spoilage, temperature excursions, delivery delays, stockouts and price volatility before deploying routers and sensors.",
-          "Select pilot corridors serving low-income or nutritionally vulnerable populations.",
-          "Define data governance: who owns temperature and logistics data, who receives alerts, and who is accountable for corrective action.",
-          "Run a 6–12 month pilot and compare monitored versus unmonitored routes or facilities.",
-          "Report results using both logistics metrics and food-security/nutrition-access indicators."
+          "Map target foods, geographies, loss points and vulnerable consumer groups before selecting routes or facilities.",
+          "Define whether the main objective is lower food loss, lower consumer prices, higher farmer income, safer food, or improved emergency resilience.",
+          "Set a baseline for product losses, cold-chain uptime, prices, stock-outs and household food-access indicators.",
+          "Select local partners such as producer groups, logistics SMEs, retailers, health/nutrition programmes and public agencies.",
+          "Pilot in a limited corridor, then compare outcomes against similar non-connected cold-chain routes.",
+          "Publish an ESG impact dashboard separating operational results from food-security outcomes."
         ],
         "kpis": [
           {
-            "metric": "Food loss rate for monitored perishable nutritious foods",
-            "how_to_measure": "Percentage of volume rejected, spoiled or discarded before retail/consumption, compared with baseline and control routes."
+            "metric": "Cold-chain integrity",
+            "how_to_measure": "Percentage of shipments maintained within required temperature range; temperature excursions per 1,000 shipment-hours."
           },
           {
-            "metric": "Cold-chain compliance",
-            "how_to_measure": "Share of shipments or storage hours maintained within required temperature range; number and duration of temperature excursions."
+            "metric": "Food loss reduction",
+            "how_to_measure": "Change in spoilage or rejection rates for targeted perishable foods versus baseline."
           },
           {
-            "metric": "Availability of nutritious foods",
-            "how_to_measure": "Stockout frequency, days of availability, and delivered volume of target nutrient-dense foods in served markets."
+            "metric": "Affordability of nutritious foods",
+            "how_to_measure": "Change in retail prices of targeted foods relative to local incomes or cost-of-healthy-diet basket components."
           },
           {
-            "metric": "Affordability/access proxy",
-            "how_to_measure": "Retail price changes for target foods relative to local income or cost of a healthy diet where available."
+            "metric": "Access and reliability",
+            "how_to_measure": "Stock-out frequency, delivery lead time, and number of underserved outlets or communities reached."
           },
           {
-            "metric": "Nutrition-sensitive reach",
-            "how_to_measure": "Number of low-income consumers, schools, clinics, small retailers or vulnerable communities served with monitored nutritious-food distribution."
+            "metric": "Equity of benefit",
+            "how_to_measure": "Share of participating suppliers, retailers or consumers who are smallholder-linked, low-income, rural, peri-urban, women-led or otherwise priority groups."
           }
         ],
         "missing_information": [
-          "Target country or region, since SOFI 2024 stresses that drivers and financing needs vary by context.",
-          "Food categories to be covered by the cold chain.",
-          "Current baseline rates of spoilage, rejection, stockouts and temperature excursions.",
-          "Whether the programme serves commercial markets, schools, clinics, humanitarian supply chains or small retailers.",
-          "Existing connectivity, power reliability and cold-storage infrastructure.",
-          "Client’s ESG reporting framework and required impact-assurance standard."
+          "Target country or region.",
+          "Foods to be covered by the cold chain.",
+          "Current spoilage rates, price levels and distribution bottlenecks.",
+          "Whether the client is a technology provider, food company, investor or donor.",
+          "Energy source and refrigeration technology to be used.",
+          "Priority beneficiary groups and affordability goals."
         ],
         "risks_assumptions": [
-          "Assumption: cold-chain failures are a material contributor to food loss in the target value chain; this must be validated with baseline data.",
-          "Assumption: reduced loss will translate into improved availability or affordability rather than only higher margins for intermediaries.",
-          "Risk: connectivity alone will not improve outcomes without maintenance, power reliability, trained operators and response protocols.",
-          "Risk: benefits may bypass low-income or nutritionally vulnerable consumers unless inclusion criteria are built into the programme.",
-          "Risk: data gaps or weak partner accountability could limit credible ESG impact measurement."
+          "SOFI 2024 does not directly validate edge routers as a food-security intervention; the link is an application of SOFI’s broader agrifood-systems and data-systems framing.",
+          "Reduced losses may increase margins rather than lower prices unless contracts or incentives pass benefits to producers or consumers.",
+          "Cold-chain expansion can raise energy demand and emissions if not designed efficiently.",
+          "Connectivity may exclude informal or remote actors if device, data or service costs are too high.",
+          "Food-security impact depends on whether the foods moved are nutritious and affordable, not merely higher-value perishables."
         ],
         "confidence": {
           "level": "medium",
-          "reason": "The SOFI 2024 sources directly support the supply-chain, food-loss, infrastructure, affordability and measurement rationale, but the specific role of Cisco Catalyst edge routers and cold-chain monitoring is an applied recommendation rather than a finding stated in the report."
+          "reason": "The food-security pathways, drivers, affordability concepts and data-system relevance are directly supported by SOFI 2024 sources; the specific role of edge routers and connected cold chains is a reasoned application rather than a stated SOFI 2024 finding."
         }
       },
       "sources": [
@@ -958,23 +884,23 @@
           "id": "S1",
           "kind": "document",
           "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
-          "page": 99,
+          "page": 143,
           "url": null,
           "path": "data/FoodSecurity/SOFI-2024.pdf",
           "source": "UN FAO report",
-          "text": "table and diversified value chains helped farmers transition away from groundnut production by investing in poultry rearing and vegetable growing, which lead to more stable and increased crop incomes. 33 PATHWAY 4: INTERVENING ALONG AGRIFOOD SUPPLY CHAINS TO LOWER THE COST OF NUTRITIOUS FOODS  Increasing investments for nutrition-sensitive agricultural production and productivity; increasing efficiency of nutritious food value chains; reducing nutritious food loss and waste; promoting food biofortification; enacting mandatory food fortification; improving rural roads and infrastructure (e.g. nutritious food storage facilities).  For example, in Myanmar, small and medium enterprises have received direct transfers, increased access to new technologies and training in sustainable production techniques to diversify food production. More than half of the programme’s participants have seen their incomes increase by 50 percent, while the expansion of their production to include fresh vegetables has significantly increased the supply of nutritious foods in local markets. 30 | 67 |",
-          "cosine": 0.6535
+          "text": "ncing Commercial rate loans Bonds Equity investments Debt swaps/relief Low-interest or no-interest loans Grants − + −+ SOURCE: Zoubek, S., Lateef, A., Carrasco Azzini, G. & Holleman, C. (forthcoming). Reorientation, innovation and the global architecture for financing for food security and nutrition – Background paper for The State of Food Security and Nutrition in the World 2024 . FAO Agricultural Development Economics Working Paper. Rome, FAO. | 111 |",
+          "cosine": 0.6792
         },
         {
           "id": "S2",
           "kind": "document",
           "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
-          "page": 161,
+          "page": 173,
           "url": null,
           "path": "data/FoodSecurity/SOFI-2024.pdf",
           "source": "UN FAO report",
-          "text": "THE STATE OF FOOD SECURITY AND NUTRITION IN THE WORLD 2024 commercial dairy farms. It offered capacity building, training and financial support in the form of credit lines to dairy processing enterprises for production and processing activities ( food availability and Pathway 3). Findings from the project’s impact assessment show that credit provided by the project increased recipients’ total income by 36 percent. More specifically, credit led to an 84 percent increase in livestock income, a 55 percent increase in crop income and a 27 percent increase in agricultural wage income. 130 Among those who received the credit, milk sales increased by 41 percent, and the share of milk sales in total production was 13 percent higher. Food security was found to be 26 percent higher in households that received the credit compared to households that did not. In addition, for both smallholder farmers and agrifood SMEs, supply chain innovations can be adopted to reduce the barriers to access financing flows in a timely manner. For instance, contractual arrangements between agrifood supply chain actors can enable suppliers to access transaction funds faster and under favourable terms.",
-          "cosine": 0.6398
+          "text": "THE STATE OF FOOD SECURITY AND NUTRITION IN THE WORLD 2024 BOX 17 LEVERAGING TOOLS TO TRACK PROGRESS IN FINANCING FOR FOOD SECURITY AND NUTRITION AND AGRIFOOD SYSTEMS Analytics and tools to inform targeted allocation of public financing and track progress in mobilizing financing flows for agrifood systems transformation for meeting SDG Targets 2.1 and 2.2 are critical; these include artificial intelligence (AI) and data systems (see Section 4.1). Financial Flows to Food Systems (3FS) is a financial tracking tool co-developed by IFAD and the World Bank in collaboration with the United Nations Food Systems Coordination Hub and the ecosystems of support.* The 3FS provides countries and stakeholders with a methodology to help decision-makers track financing flows to agrifood systems at the country and global level in a systemic manner. Drawing on the High Level Panel of Experts on Food Security and Nutrition definition of food systems and aligning with the Classification of the Functions of Government, the 3FS measures financing flows to agrifood systems in a systemic manner across five interconnected expenditure components: agricultural development and value chains, infrastructure for food systems, nutrition and health, social assistance including emergency assistance, and climate change and natural resources.",
+          "cosine": 0.6567
         },
         {
           "id": "S3",
@@ -985,29 +911,29 @@
           "path": "data/FoodSecurity/SOFI-2024.pdf",
           "source": "UN FAO report",
           "text": "THWAYS EXTENDED DEFINITION – ADDRESSING THE MAJOR DRIVERS AND UNDERLYING STRUCTURAL FACTORS CONFLICT CLIMATE VARIABILITY AND EXTREMES ECONOMIC SLOWDOWNS AND DOWNTURNS HIGH AND PERSISTENT INEQUALITY 1. Integrating humanitarian, development and peacebuilding policies in conﬂict-aﬀected areas Integrate conﬂict-sensitive policies, livelihood support, nutrition-sensitive social protection, community-based approaches and resilience-building programmes. 2. Scaling up climate resilience across agrifood systems Increase climate risk monitoring, early warning systems, climate risk insurance, climate-smart agriculture, landscape restoration and sustainable water management. 3. Strengthening economic resilience of the most vulnerable to economic adversity Strengthen social protection, cash/in-kind transfers, employment creation and strengthening market linkages. 4. Intervening along agrifood supply chains to lower the cost of nutritious foods Nutrition-sensitive agricultural production and productivity, nutrition-sensitive value chains, reduce nutritious food loss and waste, nutrition-sensitive food handling and processing, urban and peri-urban agriculture, food fortiﬁcation and subsidization of nutritious foods. 5.",
-          "cosine": 0.6601
+          "cosine": 0.6678
         },
         {
           "id": "S4",
           "kind": "document",
           "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
-          "page": 98,
+          "page": 161,
           "url": null,
           "path": "data/FoodSecurity/SOFI-2024.pdf",
           "source": "UN FAO report",
-          "text": "ive value chains, reduce nutritious food loss and waste, nutrition-sensitive food handling and processing, urban and peri-urban agriculture, food fortiﬁcation and subsidization of nutritious foods. 5. Shifting food environments towards healthier dietary patterns with positive impact on human health Shift to healthy public food procurement, nutrition-oriented trade standards, food labelling, food reformulation and regulation of food marketing. 6. Tackling structural inequalities, ensuring interventions are pro-poor and inclusive Increase women's empowerment, youth inclusion, equitable access to productive resources and assets, access to essential services, and ﬁscal reform to improve income distribution. COUNTRY CONTEXT Major drivers and underlying structural factors of food insecurity and malnutrition LACK OF ACCESS TO AND UNAFFORDABILITY OF NUTRITIOUS FOODS AND UNHEALTHY FOOD ENVIRONMENTS SOURCE: Adapted from FAO, IFAD, UNICEF, WFP & WHO. 2021. The State of Food Security and Nutrition in the World 2021. Transforming food systems for food security, improved nutrition and affordable healthy diets for all . Rome, FAO. https://doi.org/10.4060/cb4474en » » | 66 |",
-          "cosine": 0.6446
+          "text": "THE STATE OF FOOD SECURITY AND NUTRITION IN THE WORLD 2024 commercial dairy farms. It offered capacity building, training and financial support in the form of credit lines to dairy processing enterprises for production and processing activities ( food availability and Pathway 3). Findings from the project’s impact assessment show that credit provided by the project increased recipients’ total income by 36 percent. More specifically, credit led to an 84 percent increase in livestock income, a 55 percent increase in crop income and a 27 percent increase in agricultural wage income. 130 Among those who received the credit, milk sales increased by 41 percent, and the share of milk sales in total production was 13 percent higher. Food security was found to be 26 percent higher in households that received the credit compared to households that did not. In addition, for both smallholder farmers and agrifood SMEs, supply chain innovations can be adopted to reduce the barriers to access financing flows in a timely manner. For instance, contractual arrangements between agrifood supply chain actors can enable suppliers to access transaction funds faster and under favourable terms.",
+          "cosine": 0.6556
         },
         {
           "id": "S5",
           "kind": "document",
           "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
-          "page": 286,
+          "page": 251,
           "url": null,
           "path": "data/FoodSecurity/SOFI-2024.pdf",
           "source": "UN FAO report",
-          "text": "icult to track. The report provides timely and relevant recommendations regarding the efficient use of innovative financing tools and reforms to the food security and nutrition financing architecture. Establishing a common ground on how food security and nutrition financing is defined, along with methods for its tracking, measurement and implementation, is an important first step towards sustainably increasing the financing flows needed to end hunger, food insecurity and all forms of malnutrition, and to ensure access to healthy diets for all, today and tomorrow. To this end, insights of this report are particularly important in light of the next Summit of the Future in September 2024 and the Fourth International Conference on Financing for Development in June and July 2025. 2024 The State of Food Security and Nutrition in the World 2024 (supplementary material)",
-          "cosine": 0.6403
+          "text": "| 219 | Acute food insecurity Food insecurity found in a specified area at a specific point in time and of a severity that threatens lives or livelihoods, or both, regardless of the causes, context or duration. It has relevance in providing strategic guidance to actions that focus on short-term objectives to prevent, mitigate or decrease severe food insecurity. 18 Affordability The ability of people to buy foods in their local environment. In this report, cost refers to what people have to pay to secure a healthy diet, while affordability refers to the cost relative to a person’s income, minus other required expenses. In Section 2.2 , unaffordability is determined by comparing the cost of a healthy diet plus the cost of basic non-food goods and services with income distributions available in the Poverty and Inequality Platform (PIP) of the World Bank. This allows for a computation of the percentage and number of people in each country who are not able to afford a healthy diet. bp Agrifood systems A term increasingly used in the context of transforming food systems for sustainability and inclusivity, agrifood systems encompass both agricultural and food systems and focus on both food and non-food agricultural products, with clear overlaps.",
+          "cosine": 0.6597
         },
         {
           "id": "S6",
@@ -1018,238 +944,157 @@
           "path": "data/FoodSecurity/SOFI-2024.pdf",
           "source": "UN FAO report",
           "text": "to ensure that all individuals are protected against short-term or long-term instability in food security and nutrition, caused by various climatic, economic, social, commercial and political factors. Financing therefore encompasses all the interventions aligned with the six transformative policy pathways designed to strengthen the resilience of agrifood systems to the major drivers behind hunger, food insecurity and malnutrition – namely conflicts, climate variability and extremes, and economic slowdowns and downturns – and address the underlying structural factors: lack of access to and unaffordability of nutritious foods and unhealthy food environments, and high and persistent inequality. That is, investments to: i) integrate humanitarian, development and peacebuilding policies in conflict-affected areas; ii) scale up climate resilience across agrifood systems; iii) strengthen the economic resilience of the most vulnerable to economic adversity; iv) intervene along agrifood supply chains to lower the cost of nutritious foods; v) shifting food environments towards healthier dietary patterns with positive impacts on human health; and vi) tackle structural inequalities, ensuring interventions are well targeted and inclusive. As such, investments in food security and nutrition span a wide variety of sectors.",
-          "cosine": 0.6414
+          "cosine": 0.6554
         },
         {
           "id": "S7",
           "kind": "document",
           "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
-          "page": 103,
+          "page": 24,
           "url": null,
           "path": "data/FoodSecurity/SOFI-2024.pdf",
           "source": "UN FAO report",
-          "text": "ity, and insufficient progress will have been made to meet all global nutrition targets. Addressing the social, economic and environmental repercussions of this failure will cost several trillion USD. è Executing fully and more effectively national budgets and repurposing existing public support to enable more resilient, sustainable and equitable agrifood systems will help reduce the financing gap. | 71 |",
-          "cosine": 0.687
+          "text": "to ensure that all individuals are protected against short-term or long-term instability in food security and nutrition, caused by various climatic, economic, social, commercial and political factors. Financing therefore encompasses all the interventions aligned with the six transformative policy pathways designed to strengthen the resilience of agrifood systems to the major drivers behind hunger, food insecurity and malnutrition – namely conflict, climate variability and extremes, and economic slowdowns and downturns – and address the underlying structural factors: lack of access to and unaffordability of nutritious foods, unhealthy food environments, and high and persistent inequality. To generate a framework for increased financing and improved finance targeting, it is imperative to gain an understanding of the major drivers of food insecurity and malnutrition, and of the countries affected by these major drivers. In the last ten years, the frequency and intensity of conflict, climate extremes and economic downturns have increased, undermining food security and nutrition around the world. Furthermore, high levels of income inequality exacerbate the effects of these drivers. While each of these major drivers is unique, they often interact to create multiple compounding impacts transmitted through agrifood systems to the detriment of food security and nutrition.",
+          "cosine": 0.6502
         },
         {
           "id": "S8",
           "kind": "document",
           "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
-          "page": 33,
+          "page": 254,
           "url": null,
           "path": "data/FoodSecurity/SOFI-2024.pdf",
           "source": "UN FAO report",
-          "text": "s a deep dive into the options for innovative and synergetic scalable financing based on a typology of countries defined by their food security and nutrition situation and ability to obtain financing. It also looks at how to achieve better alignment and synergies between different sources of financing to achieve SDG Targets 2.1 and 2.2, including climate finances, emergency funding and development finances, and the changes needed in the current financing architecture to achieve the scalable and innovative financing needed to achieve food security and address all forms of malnutrition. n | 1 |",
-          "cosine": 0.6847
+          "text": "floods. 25 Food environment The physical, economic, political and sociocultural context in which consumers engage with agrifood systems to make decisions about acquiring, preparing and consuming food. 35 Food Insecurity Experience Scale An experience-based food security scale used to produce a measure of access to food at different levels of severity that can be compared across contexts. It relies on data obtained by asking people, directly in surveys, about the occurrence of conditions and behaviours that are known to reflect constrained access to food. Food security A situation that exists when all people, at all times, have physical, social and economic access to sufficient, safe and nutritious food that meets their dietary needs and food preferences for an active and healthy life. Based on this definition, four food security dimensions can be identified: food availability, economic and physical access to food, food utilization, and stability over time. The concept of food security is evolving to also recognize the centrality of agency and sustainability (see Food security dimensions [e] and [f] below for the definition of these two additional dimensions). Food sec urity dimensions In this report, food security dimensions refer to the four traditional dimensions of food security: a.",
+          "cosine": 0.6418
         }
       ],
       "tool_calls": [
         {
           "tool": "search_knowledge",
           "args": {
-            "query": "SOFI 2024 food loss availability nutrition access food security supply chains financing technology infrastructure cold chain post-harvest losses",
-            "k": 8,
-            "year": "2024"
+            "query": "SOFI 2024 food security cold chain food distribution connectivity infrastructure food loss perishable foods markets equity sustainability financing agrifood systems indicators",
+            "year": "2024",
+            "k": 8
           }
         }
       ],
       "grounding": {
-        "findings": 6,
-        "confirmed": 3,
-        "hypotheses": 3,
+        "findings": 7,
+        "confirmed": 5,
+        "hypotheses": 2,
         "citation_coverage": 1.0,
         "invalid_citations": [],
-        "top3_retrieval_cosine": 0.677,
-        "grounding_score": 0.97,
+        "top3_retrieval_cosine": 0.669,
+        "grounding_score": 0.96,
         "sources_retrieved": 8
       },
-      "seconds": 22.0
+      "seconds": 22.7
     }
   },
   "synthesis": {
-    "executive_summary": "Use Cisco Catalyst C8200-1N-4T as the default physical edge router for cold-chain warehouses and distribution sites, with C8200L-1N-4T reserved for lower-bandwidth depots and Catalyst 8000V used only as a cloud-side virtual WAN companion. The business case is strongest where resilient connectivity reduces temperature-monitoring gaps, enables faster exception response, and cuts loss of perishable nutritious foods—an outcome aligned with SOFI 2024 pathways on improving nutritious-food value chains, reducing food loss and waste, and strengthening storage/infrastructure. However, the deployment should be governed as an operational-resilience and food-security program, not a hardware refresh: Cisco’s 10-K risks around supply-chain constraints, limited-source components, product quality, cybersecurity, patching, and regulatory/procurement requirements require contractual protections, spares, secure configuration, staged pilots, and impact measurement.",
+    "executive_summary": "Standardize most distributed cold-chain sites on Cisco Catalyst C8200-1N-4T, using C8200L-1N-4T only for low-throughput depots and Catalyst 8300 for larger regional hubs. The business case should not be framed as “routers monitor temperature,” but as resilient SD-WAN connectivity that enables sensor telemetry, cloud visibility, failover, and data-driven cold-chain operations. Cisco’s 10-K risks make spares, lead-time control, cybersecurity patching, and compliance clauses essential to procurement. Food-security value is plausible under SOFI 2024 when the deployment targets nutritious perishables, reduces spoilage, improves market access, and passes benefits to vulnerable consumers or suppliers; SOFI does not specifically endorse edge routers as a food-security intervention.",
     "integrated_recommendations": [
       {
-        "action": "Standardize on Cisco Catalyst C8200-1N-4T for typical cold-chain warehouses and distribution-center edge sites; use C8200L-1N-4T only for small depots with validated lower throughput needs.",
+        "action": "Adopt C8200-1N-4T as the standard router for typical distributed cold-chain logistics sites; use C8200L-1N-4T for small telemetry-only depots and assess Catalyst 8300 for high-scale hubs.",
         "priority": "high",
-        "why": "The C8200-1N-4T provides stronger headroom—1G SD-WAN throughput, 8 CPU cores, up to 32 GB DRAM, 1RU form factor, and 4 x 1G WAN—while fitting secure small-branch/cloud-edge use cases. This headroom matters because cold-chain monitoring is operationally critical: telemetry, temperature alerts, and inventory systems should not be constrained by undersized edge routing. The lighter C8200L is viable where bandwidth, security services, and growth requirements are modest.",
+        "why": "Catalyst 8200 is positioned for small and midsize branches with SD-WAN, centralized management, security, and visibility; 8300 is better reserved for larger hubs requiring higher scale or advanced WAN such as optimized 5G.",
         "sources": [
           "TECH-S1",
-          "TECH-S2"
-        ]
-      },
-      {
-        "action": "Deploy Catalyst SD-WAN with dual WAN and/or cellular backup for sites where temperature telemetry and exception alerts are mission-critical.",
-        "priority": "high",
-        "why": "Catalyst SD-WAN can dynamically route traffic across the best available WAN link based on network and application conditions, improving availability for distributed cold-chain sites. This directly supports the food-security objective: fewer monitoring gaps and faster alerts should reduce avoidable spoilage of perishable nutritious foods.",
-        "sources": [
           "TECH-S3",
-          "CSR-S1",
-          "CSR-S4"
+          "TECH-S4"
         ]
       },
       {
-        "action": "Use Catalyst 8000V as a cloud-side SD-WAN or virtual routing endpoint if the monitoring, analytics, or alerting platform runs in public cloud; do not treat it as a substitute for the physical warehouse router.",
-        "priority": "medium",
-        "why": "Catalyst 8000V is optimized for virtual/cloud deployment and marketplace availability, including Google Cloud, making it suitable for connecting cloud-hosted monitoring platforms to the physical edge. The physical Catalyst 8200 remains the better fit at warehouses, rural aggregation points, and distribution locations that need local sensor and WAN connectivity.",
-        "sources": [
-          "TECH-S4",
-          "TECH-S5",
-          "TECH-S7"
-        ]
-      },
-      {
-        "action": "Avoid ASR 1000 for ordinary cold-chain sites; reserve it for regional aggregation hubs, data-center edges, or very large distribution campuses.",
-        "priority": "medium",
-        "why": "ASR 1000 is positioned for high-scale WAN aggregation, enterprise data-center edge, large office WAN edge, and service-provider POP environments. Using it at normal depots or warehouses risks unnecessary cost and complexity without improving food-security outcomes.",
-        "sources": [
-          "TECH-S6",
-          "TECH-S11",
-          "TECH-S12",
-          "TECH-S13"
-        ]
-      },
-      {
-        "action": "Contract for firm delivery, approved substitutions, lifecycle visibility, RMA terms, and a tested spares buffer before scaling deployment.",
+        "action": "Build the deployment architecture around resilient telemetry transport: SD-WAN templates, dual WAN or cellular backup where justified, centralized monitoring, failover testing, and cloud/application visibility.",
         "priority": "high",
-        "why": "Cisco discloses reliance on contract manufacturers and suppliers, limited/single-source components, and potential supply-chain or capacity issues that could delay fulfillment. It also flags product quality and reliability risks. A cold-chain rollout could be exposed if routers or replacements are unavailable when new depots are commissioned or failed units need replacement.",
+        "why": "Cold-chain outcomes depend on continuous sensor and operations data; Catalyst SD-WAN capabilities such as analytics, ThousandEyes-style visibility, TCP optimization, FEC, packet duplication, and secure direct internet access support distributed reliability.",
         "sources": [
-          "SEC-S6",
-          "SEC-S8",
-          "SEC-S9",
-          "SEC-S3"
+          "TECH-S2",
+          "TECH-S4"
         ]
       },
       {
-        "action": "Mandate a router security operations plan covering secure configuration baselines, management-plane isolation, logging, patch SLAs, vulnerability monitoring, and emergency change windows.",
+        "action": "Mitigate Cisco disclosed risks contractually and operationally through spares inventory, RMA SLAs, delivery milestones, substitution rights, and price/lead-time controls.",
         "priority": "high",
-        "why": "Cisco’s 10-K highlights cybersecurity risks, including attacks, vulnerabilities, third-party remediation challenges, customers failing to deploy updates, and insecure customer configurations. Because cold-chain networks may carry operational, location, inventory, and compliance-sensitive data, the router program needs active security governance from day one.",
+        "why": "Cisco discloses dependence on contract manufacturers and suppliers, possible supply interruptions, memory shortages, constrained-component cost pressure, and increased purchase commitments that could affect rollout timing and replacement availability.",
         "sources": [
-          "SEC-S12",
+          "SEC-S10",
           "SEC-S11",
+          "SEC-S16",
+          "SEC-S8",
           "SEC-S13"
         ]
       },
       {
-        "action": "Run a staged 6–12 month pilot across representative cold-chain environments before fleetwide rollout: cold rooms, loading docks, warehouses, vehicles, rural aggregation points, and cloud connectivity paths.",
+        "action": "Include cybersecurity, compliance, and operational-resilience requirements in procurement and run-state governance.",
         "priority": "high",
-        "why": "A pilot reduces technical, operational, and impact risk. Cisco discloses that complex hardware and software may contain defects not found in pre-release testing, while SOFI 2024-aligned impact depends on proving that monitoring reduces loss, improves availability, and supports access to nutritious foods—not merely that routers are installed.",
+        "why": "Cisco discloses risks from vulnerabilities, delayed fixes, cyber incidents, evolving cybersecurity/privacy/data-governance requirements, and resilience obligations, all of which are material where router compromise could disrupt cold-chain telemetry or integrity.",
         "sources": [
-          "SEC-S8",
-          "CSR-S1",
-          "CSR-S4",
-          "CSR-S5"
+          "SEC-S14",
+          "SEC-S9"
         ]
       },
       {
-        "action": "Prioritize deployment corridors based on food-security value: perishable nutrient-dense foods, high spoilage rates, weak infrastructure, climate/power exposure, and service to low-income or nutritionally vulnerable populations.",
+        "action": "Tie the technology pilot to measurable food-security outcomes, not just network uptime: prioritize nutritious perishables, underserved routes, high-spoilage corridors, and affordability/access targets.",
         "priority": "high",
-        "why": "SOFI 2024 supports interventions along agrifood supply chains to lower the cost of nutritious foods, including increasing value-chain efficiency, reducing nutritious-food loss and waste, and improving storage infrastructure. The Cisco deployment will have the clearest societal and ESG case where connectivity enables corrective action for foods such as dairy, fruits, vegetables, fish, and meat and where benefits reach consumers facing poor access or affordability.",
+        "why": "SOFI 2024 supports strengthening agrifood supply chains, market linkages, resilience, data systems, and access to safe nutritious food, but the social impact depends on reduced losses translating into availability, stability, affordability, and equitable access.",
         "sources": [
-          "CSR-S1",
           "CSR-S3",
-          "CSR-S4",
-          "CSR-S6"
-        ]
-      },
-      {
-        "action": "Design the program as a nutrition-sensitive ESG investment with transparent measurement of food loss, cold-chain compliance, availability, affordability, and reach—not only network uptime.",
-        "priority": "high",
-        "why": "SOFI 2024 emphasizes financing and tracking investments that strengthen agrifood-system resilience and address lack of access to and unaffordability of nutritious foods. Measuring only router or sensor performance would understate whether the program contributes to food-security outcomes.",
-        "sources": [
+          "CSR-S6",
+          "CSR-S7",
+          "CSR-S8",
           "CSR-S5",
-          "CSR-S6"
-        ]
-      },
-      {
-        "action": "Confirm regulatory, procurement, data-governance, encryption, sourcing, and country-specific requirements before final architecture approval.",
-        "priority": "medium",
-        "why": "Cisco discloses that evolving requirements around privacy, cybersecurity, operational resilience, data governance, sourcing, encryption, localization, national security, and product certification can affect product use and sales, especially for critical infrastructure, public-sector, or regulated customers. Cold-chain food distribution may intersect with food-safety, public procurement, humanitarian, or data-localization requirements depending on geography.",
-        "sources": [
-          "SEC-S15",
-          "SEC-S16"
+          "CSR-S2"
         ]
       }
     ],
     "cross_domain_links": [
-      "Router sizing affects food-security impact: choosing C8200-1N-4T over C8200L-1N-4T creates more capacity for SD-WAN, security services, telemetry, and future sensors, reducing the risk that network bottlenecks undermine cold-chain monitoring outcomes.",
-      "Cisco’s disclosed supply-chain and product-quality risks turn the technology recommendation into a resilience-design requirement: spares, RMA commitments, and approved substitutes are necessary to protect continuity of temperature monitoring.",
-      "Cybersecurity is not just an IT risk; insecure router configuration or delayed patching could compromise operational data, disrupt alerts, and weaken trust in food-safety and ESG reporting.",
-      "SOFI 2024 strengthens the investment rationale but also raises the bar for targeting: routers should be deployed first where reduced spoilage can improve availability and affordability of nutritious foods, rather than where logistics efficiency alone is easiest to capture.",
-      "Catalyst 8000V becomes relevant if the food-security monitoring platform is cloud-hosted: it connects the physical cold-chain edge to analytics and reporting systems that track loss, availability, and affordability outcomes."
+      "Router sizing affects food-security impact: undersizing C8200L at sites that later add cameras, analytics, or higher traffic could interrupt telemetry and weaken cold-chain integrity outcomes.",
+      "Cisco’s disclosed supply-chain and component-cost risks mean the recommended Catalyst standard must be paired with spares and lead-time controls, otherwise food-distribution resilience could be undermined during failures or rollout delays.",
+      "Cybersecurity risk is operational and social: a compromised edge router could disrupt temperature data, inventory routing, and trust in safe-food delivery, so SEC risk controls directly protect SOFI-aligned outcomes.",
+      "SOFI’s equity lens changes the deployment plan: connectivity should prioritize corridors and partners where reduced spoilage improves access to affordable nutritious food, rather than only improving margins for large distributors."
     ],
     "conflicts_or_gaps": [
-      "SOFI 2024 does not specifically endorse Cisco, Catalyst routers, or cold-chain networking; the food-security linkage is an applied hypothesis based on SOFI’s support for reducing nutritious-food loss, improving value-chain efficiency, and strengthening storage/infrastructure.",
-      "Final router model selection cannot be completed without site-level bandwidth, encrypted throughput, WAN design, interface needs, cellular requirements, security-service load, rack/power conditions, and support model.",
-      "Cisco’s 10-K disclosures are company-level risks, not SKU-specific lead-time, environmental-tolerance, or failure-rate evidence for Catalyst 8200 models.",
-      "The assumption that reduced spoilage will improve consumer availability or affordability must be validated; without pricing, access, and partner-accountability mechanisms, benefits could accrue mainly as higher intermediary margins.",
-      "Connectivity alone will not improve outcomes unless paired with functioning sensors, backup power, maintenance, trained operators, escalation protocols, and corrective-action authority."
+      "SOFI 2024 does not specifically discuss Cisco routers or edge networking; the food-security link is a reasoned application of SOFI’s supply-chain, resilience, affordability, and data-systems framing.",
+      "Cisco’s 10-K does not provide Catalyst model-specific environmental specifications, cold-temperature ratings, ingress protection, or food-safety certifications.",
+      "The router does not monitor temperature directly; sensors, gateways, applications, and operating procedures must be included in the full solution.",
+      "Exact sizing remains uncertain without site counts, bandwidth, WAN carriers, cellular/5G needs, interface requirements, physical environment, and uptime targets."
     ],
     "next_steps": [
-      "Segment sites into small depots, warehouses, regional hubs, vehicles, and data-center/cloud endpoints; assign default C8200-1N-4T, C8200L-1N-4T, Catalyst 8000V, or aggregation-class architecture accordingly.",
-      "Collect technical requirements per site: WAN bandwidth, encrypted/SD-WAN throughput, number of circuits, LTE/5G backup need, copper/fiber/SFP interfaces, sensor/IoT gateway topology, rack/power constraints, and security services.",
-      "Ask Cisco or the reseller for SKU lead times, allocation status, lifecycle dates, support tier, RMA SLA, software maintenance terms, and approved substitute models.",
-      "Define cold-chain criticality tiers and set redundancy/spares rules by tier, including tested spare ratios and emergency replacement procedures.",
-      "Create the security baseline: hardened configuration, MFA/admin controls, management-plane isolation, certificate handling, logging/SIEM integration, patch cadence, advisory monitoring, and incident escalation.",
-      "Map the food value chain and select pilot corridors based on perishability, spoilage baseline, nutritional value, climate/power exposure, and reach to vulnerable or low-income consumers.",
-      "Run a 6–12 month pilot comparing monitored versus unmonitored routes/facilities, including WAN failover tests, temperature-excursion response drills, and operator training.",
-      "Establish data governance and accountability: who owns telemetry, who receives alerts, who must act, how exceptions are closed, and how food-security outcomes are reported.",
-      "Prepare the scale-up business case using both operating metrics—uptime, alert latency, loss reduction—and ESG/food-security metrics—availability, affordability, and nutrition-sensitive reach."
+      "Segment sites into small depots, midsize distribution sites, and regional hubs; map each to C8200L, C8200, or Catalyst 8300 evaluation.",
+      "Request Cisco/reseller environmental datasheets, lead times, RMA terms, end-of-support timelines, licensing details, and references for refrigerated or logistics environments.",
+      "Design a reference architecture covering sensors/gateways, SD-WAN, dual WAN or cellular failover, cloud monitoring, segmentation, logging, patching, and incident escalation.",
+      "Select one pilot corridor focused on nutritious perishables with high spoilage or weak market linkage, including underserved suppliers or retailers where possible.",
+      "Set baseline measures for temperature excursions, spoilage, stock-outs, prices, delivery reliability, and network performance before deployment.",
+      "Negotiate procurement terms for spares, substitution rights, delivery milestones, cybersecurity SLAs, and configuration/patch compliance reporting."
     ],
     "kpis": [
       {
-        "metric": "WAN availability for telemetry and alerting",
-        "how_to_measure": "Track percentage uptime for each site’s primary and backup WAN paths and count number/duration of monitoring data gaps."
+        "metric": "Cold-chain telemetry continuity",
+        "how_to_measure": "Percentage of temperature/humidity sensor messages delivered to the monitoring platform within required latency and without data gaps."
       },
       {
-        "metric": "Temperature/condition alert delivery latency",
-        "how_to_measure": "Measure elapsed time from sensor event to central alert and corrective-action ticket before and after deployment."
+        "metric": "Router and WAN availability",
+        "how_to_measure": "Monthly SD-WAN tunnel uptime, router uptime, and unplanned outage minutes per site."
       },
       {
-        "metric": "Failover time",
-        "how_to_measure": "Simulate primary WAN failure and measure time until traffic resumes over secondary WAN or cellular path."
+        "metric": "Temperature integrity and food loss",
+        "how_to_measure": "Temperature excursions per 1,000 shipment-hours and change in spoilage/rejection rates versus baseline."
       },
       {
-        "metric": "Router utilization headroom",
-        "how_to_measure": "Monitor CPU, memory, interface throughput, encrypted throughput, and SD-WAN throughput during peak operations."
+        "metric": "Patch and security compliance",
+        "how_to_measure": "Percentage of routers on approved software/configuration baselines within the required patch window."
       },
       {
-        "metric": "Patch compliance",
-        "how_to_measure": "Measure percentage of routers running approved software versions within defined SLA after Cisco security advisories."
-      },
-      {
-        "metric": "Spare coverage ratio",
-        "how_to_measure": "Track tested spare routers divided by deployed routers, segmented by region and criticality tier."
-      },
-      {
-        "metric": "Deployment lead-time variance",
-        "how_to_measure": "Compare actual delivery and installation dates against committed dates for each Catalyst SKU and rollout wave."
-      },
-      {
-        "metric": "Food loss rate for monitored perishable nutritious foods",
-        "how_to_measure": "Measure percentage of volume rejected, spoiled, or discarded before retail/consumption versus baseline and control routes."
-      },
-      {
-        "metric": "Cold-chain compliance",
-        "how_to_measure": "Track share of storage/shipment hours within required temperature range and number/duration of temperature excursions."
-      },
-      {
-        "metric": "Availability of nutritious foods",
-        "how_to_measure": "Track stockout frequency, days of availability, and delivered volume of target nutrient-dense foods in served markets."
-      },
-      {
-        "metric": "Affordability/access proxy",
-        "how_to_measure": "Monitor retail price changes for target foods relative to local income or cost-of-healthy-diet benchmarks where available."
-      },
-      {
-        "metric": "Nutrition-sensitive reach",
-        "how_to_measure": "Count low-income consumers, schools, clinics, small retailers, or vulnerable communities served by monitored nutritious-food distribution."
+        "metric": "Food-security access and affordability",
+        "how_to_measure": "Change in stock-outs, delivery lead time, and retail prices of targeted nutritious foods relative to local incomes or cost-of-healthy-diet components."
       }
     ],
     "confidence": {
       "level": "medium",
-      "reason": "The Cisco platform fit and 10-K risk themes are well supported, and SOFI 2024 supports the food-loss/value-chain rationale. Confidence is medium because final model choice, SKU availability, site resilience design, and actual food-security impact require site-level technical data, vendor commitments, and baseline/pilot evidence."
+      "reason": "The router-fit, Cisco 10-K risks, and SOFI food-security pathways are supported by the specialist evidence, but final model sizing and impact claims depend on missing site, environmental, operating, and beneficiary data."
     }
   },
-  "seconds": 55.7
+  "seconds": 44.5
 }

@@ -27,6 +27,8 @@ class DomainStore:
         folder = root / domain
         self.chunks: list[dict] = json.loads((folder / "chunks.json").read_text())
         self.vectors = np.load(folder / "vectors.npy")
+        if not self.chunks or len(self.chunks) != len(self.vectors):
+            raise ValueError(f"index for {domain} is empty or inconsistent; rebuild with python -m app.rag.ingest")
         self.bm25 = BM25Okapi([tokenize(c["text"]) for c in self.chunks])
 
     def search(self, query: str, k: int = 6, filters: dict | None = None, pool: int = 40) -> list[dict]:
@@ -77,4 +79,9 @@ def get_store(domain: str) -> DomainStore:
 
 
 def available_domains() -> list[str]:
-    return [d for d in config.DOMAINS if (config.INDEX / d / "vectors.npy").exists()]
+    ok = []
+    for d in config.DOMAINS:
+        folder = config.INDEX / d
+        if all((folder / f).exists() and (folder / f).stat().st_size > 0 for f in ("vectors.npy", "chunks.json")):
+            ok.append(d)
+    return ok

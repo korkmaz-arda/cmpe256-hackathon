@@ -1,211 +1,198 @@
 ## Q: Which technology investments could improve food security and sustainability outcomes?
 
-**Route** (gpt-5.4-mini, 2.2s): technology, csr (cross-domain): This is a cross-domain question: CSR evidence is needed to identify the food-security/sustainability problem drivers, and technology evidence is needed to identify which tech investments could realistically help address them. (confidence 0.88)
+**Route** (gpt-5.4-mini, 1.6s): technology, csr (cross-domain): This is cross-domain because it asks for technology investments and their potential impact on food security and sustainability, which requires both technology options and evidence on food-security drivers and sustainability priorities from SOFI. (confidence 0.93)
 
 ### Consolidated consulting recommendation (Manager Agent)
 
-Invest in a layered “resilient food systems digital backbone”: (1) climate- and shock-resilient agrifood infrastructure and supply chains, (2) reliable WAN/SD-WAN and cloud connectivity across farms, processors, warehouses, ports, retailers and distribution sites, and (3) governed RAG/MCP AI platforms that convert trusted agronomy, weather, logistics, inventory, market and policy data into decision support. The highest-impact investments are not technology for its own sake, but technology applied to SOFI’s main food-security drivers: climate extremes, conflict, economic shocks, unaffordable healthy diets, unhealthy food environments and inequality. Prioritize cold-chain and logistics digitization, early-warning systems, data-enabled local procurement and inventory visibility, and AI-enabled advisory and affordability tools—while treating governance, data quality, last-mile connectivity and local partnerships as critical success factors.
+Invest in a targeted portfolio that combines rural–urban agrifood infrastructure with resilient digital connectivity, governed data/AI decision support, and financing models focused on high-need, underfinanced geographies. The strongest near-term technology plays are SD-WAN/SASE-enabled edge connectivity, multicloud networking, cold-chain and market-access data platforms, and RAG/MCP-enabled decision workflows. These should be aimed at the food-security drivers identified by SOFI: conflict, climate extremes, economic shocks, unaffordable nutritious foods, inequality, and weak rural–urban infrastructure. Evidence is strongest for the enabling technology capabilities and for food-security intervention priorities; quantified food-sector outcome improvements from the specific technologies remain a gap.
 
 **Integrated recommendations**
-- **[high] Build resilient digital connectivity across priority food-system nodes: farms, aggregation points, cold stores, processors, warehouses, ports, retailers and emergency distribution hubs.**: Food-security outcomes depend on reliable movement of data on production, weather, inventory, cold-chain status, logistics and demand. WAN/SD-WAN and secure cloud extension capabilities can underpin early warning, stock visibility, routing, spoilage reduction and emergency response. This directly supports SOFI’s call for resilience to climate extremes, economic shocks and supply disruptions. [TECH-S1, TECH-S5, TECH-S6, CSR-S10, CSR-S11, CSR-S15, CSR-S16]
-- **[high] Prioritize cold-chain, storage and logistics technology for nutritious foods, especially fruits, vegetables, pulses, animal-source foods and fortified staples.**: Both SOFI 2023 and 2024 identify unaffordability of nutritious foods as a structural driver of food insecurity and malnutrition. Digital connectivity, routing, sensors and analytics can reduce spoilage, improve load utilization, monitor temperature excursions and strengthen last-mile distribution, helping improve availability and affordability of healthy diets. [CSR-S5, CSR-S8, CSR-S9, CSR-S10, CSR-S11, TECH-S1, TECH-S6]
-- **[high] Deploy cloud/virtual routing, including Cisco Catalyst 8000V where appropriate, to connect distributed food-system operations securely to cloud analytics and partner platforms.**: Catalyst 8000V supports virtual routing, SD-WAN, secure VPN, multicloud connectivity, NGFW, NAT and WAN optimization. This is valuable where food-security workloads run across public cloud, multicloud or virtualized edge environments—for example, inventory platforms, weather-risk analytics, supplier-risk monitoring and logistics control towers. [TECH-S1, TECH-S2, TECH-S4, TECH-S5, TECH-S6, TECH-S13]
-- **[high] Invest in RAG-based decision-support tools for agronomy guidance, market intelligence, policy lookup, supplier documentation, sustainability reporting and emergency-response playbooks.**: RAG is suited to knowledge-heavy workflows that require factual retrieval, summarization, question-answering and hallucination reduction. Applied to food security, it can help farmers, procurement teams, logistics managers and programme staff access trusted guidance on weather risks, crop advisories, food-safety procedures, local procurement rules and sustainability requirements—provided the underlying data is authoritative and current. [TECH-S10, TECH-S12, TECH-S8, TECH-S11]
-- **[medium] Use MCP-enabled AI agents selectively for controlled operational actions, such as querying inventory, triggering logistics workflows, sending alerts or updating partner systems.**: MCP standardizes how AI applications connect to external tools and data sources, and Google Cloud remote MCP servers provide governance, security and access control. This can improve response speed in food distribution, cold-chain incidents or stockout prevention, but should be limited to well-governed actions because agents can affect operational systems. [TECH-S8, TECH-S9, TECH-S11]
-- **[high] Target technology investments at climate resilience: early-warning systems, climate-risk dashboards, water and crop monitoring, resilient routing and shock-response inventory planning.**: SOFI 2024 identifies climate variability and extremes as a major and highly prevalent driver of hunger, food insecurity and malnutrition. Technology investments should therefore prioritize forecasting, monitoring and response capabilities that reduce yield volatility, post-harvest losses and supply interruptions. [CSR-S10, CSR-S11, CSR-S15, CSR-S16, TECH-S10, TECH-S12]
-- **[high] In conflict-affected or fragile markets, combine technology with humanitarian-development-peace partnerships rather than deploying standalone digital tools.**: SOFI 2024 stresses that conflict-affected contexts require stronger humanitarian, development and peacebuilding approaches and longer-term investment perspectives. Connectivity, inventory visibility, local procurement platforms and distribution analytics can support these programmes, but cannot substitute for humanitarian access, market rebuilding or peacebuilding. [CSR-S15, CSR-S16, TECH-S1, TECH-S5]
-- **[medium] Use a rural–urban continuum lens when selecting investments, connecting smallholders, peri-urban processors, logistics providers, retailers and urban consumers.**: SOFI 2023 shows urbanization is reshaping production, processing, distribution, marketing, procurement and diets. Digital investments should therefore connect the full value chain instead of optimizing isolated rural or urban nodes. This is especially relevant for fresh-food access in rapidly urbanizing and peri-urban markets. [CSR-S4, CSR-S7, CSR-S8, CSR-S2]
-- **[high] Design security, data governance and AI controls before scaling RAG/MCP platforms into operational food systems.**: RAG and MCP value depends on source quality, permissions, freshness and authorization. Weak governance can produce stale recommendations, biased retrieval, unauthorized tool calls or operational errors. For food systems, these risks can translate into missed deliveries, unsafe stock decisions or inequitable service allocation. [TECH-S8, TECH-S9, TECH-S10, TECH-S11, TECH-S12]
-- **[medium] Evaluate physical WAN edge or aggregation routers only after deployment sizing and site segmentation are complete.**: Physical Cisco platforms such as ASR1002-HX, ASR1001-X or ISR4451 may fit branch, aggregation or WAN edge roles, but model choice depends on throughput, interfaces, redundancy, lifecycle, licensing, power and support requirements. Premature procurement risks overspending or underbuilding critical sites. [TECH-S14, TECH-S15, TECH-S16]
+- **[high] Prioritize resilient connectivity and digital infrastructure for farms, warehouses, food banks, ports, SMEs, and cold-chain nodes.**: SOFI identifies rural–urban infrastructure, cold storage, warehousing, electrification, digital tools, and market linkages as critical to food-security outcomes; Cisco SD-WAN/SASE-capable branch platforms can provide the secure, resilient edge connectivity needed to operate these assets reliably. [CSR-S8, TECH-S2, TECH-S3, TECH-S7]
+- **[high] Build a governed food-security data platform for supply, demand, climate, inventory, price, logistics, and sustainability data.**: A shared data layer can support affordability, resilience, and market-access interventions while Google Cloud RAG-related services and BigQuery can ground AI outputs in fresh, private, and specialized datasets. [CSR-S10, CSR-S11, CSR-S14, TECH-S11, TECH-S12, TECH-S16]
+- **[high] Deploy analytics and AI pilots focused on cold-chain loss reduction, stockout prevention, climate-risk planning, healthy-diet affordability, and supplier sustainability reporting.**: These use cases connect directly to SOFI drivers—climate shocks, economic stress, food loss, affordability, and inequality—while RAG can improve decision support and MCP can enable governed actions into logistics, inventory, or partner systems. [CSR-S3, CSR-S5, CSR-S12, TECH-S12, TECH-S14, TECH-S18, TECH-S19]
+- **[medium] Use virtual cloud edge networking where food-system platforms span multiple clouds, agencies, NGOs, logistics partners, or private-sector systems.**: Food-security programmes often require cross-partner data exchange; Catalyst 8000V and Cloud OnRamp-style models can standardize secure multicloud connectivity and automation across Google Cloud, AWS, Azure, OCI, and partner networks. [TECH-S4, TECH-S5, TECH-S9, TECH-S10]
+- **[high] Target financing and deployment to high-need communities with weak access to capital, and pair infrastructure with nutrition, women’s empowerment, and social-protection partners.**: SOFI warns that the places most affected by food insecurity and multiple malnutrition drivers often have the least access to finance; technology investments will have limited nutrition impact unless combined with affordability, education, inclusion, and local delivery models. [CSR-S4, CSR-S6, CSR-S9, CSR-S13, CSR-S16]
 
 **How the domains connect**
-- CSR defines the impact priorities—climate resilience, affordability of healthy diets, conflict resilience and rural–urban food-system integration—while the technology findings identify the enabling architecture: connectivity, cloud/virtual routing, RAG and MCP.
-- Cold-chain and logistics investments are a strong cross-domain fit: CSR identifies affordability and access to nutritious foods as a structural food-security problem, while technology investments in connectivity, sensors, routing and analytics can reduce spoilage and improve distribution reliability.
-- RAG/MCP should be aimed at SOFI-relevant use cases—early warning, advisory services, emergency distribution, local procurement and sustainability reporting—not generic AI experimentation.
-- In conflict-affected markets, technology should be treated as an enabler of humanitarian-development-peace programmes. The CSR evidence warns that corporate or digital interventions alone cannot overcome conflict, access constraints or market breakdowns.
-- Cloud/virtual routing choices affect sustainability outcomes indirectly: stronger connectivity enables better inventory placement, fewer emergency shipments, lower waste, better load utilization and faster response to climate or supply shocks.
-- AI governance is not just an IT control; it is a food-security safeguard because poor data quality or unauthorized MCP tool actions could worsen stockouts, misallocate assistance or create unsafe cold-chain decisions.
+- CSR’s emphasis on cold storage, warehousing, roads, electrification, water, and digital tools determines where TECH’s edge connectivity and SD-WAN investments should be deployed first.
+- TECH’s RAG and data-platform capabilities are most valuable when grounded in CSR’s priority datasets: food prices, climate exposure, food insecurity, nutrition indicators, and rural–urban market access.
+- CSR’s financing mismatch means technology investments should not be allocated only to easiest-to-serve sites; deployment models must include concessional, blended, or partner-funded approaches for high-risk geographies.
+- TECH’s cybersecurity, observability, and governance recommendations are essential because CSR-priority programmes may involve vulnerable populations, public agencies, NGOs, and cross-border partner data.
 
 **Conflicts and gaps**
-- No direct conflict between specialists: the CSR evidence identifies what outcomes matter, while the technology evidence identifies how digital infrastructure could support those outcomes.
-- The technology agent rates several food-security applications as hypotheses because impact depends on client-specific workflows, data quality, permissions, site footprint and operating constraints.
-- The exact router or cloud architecture cannot be specified without throughput, interface, redundancy, latency, bandwidth, cloud-region and support requirements.
-- The investment case cannot be fully prioritized without knowing the client type—food producer, retailer, technology provider, investor, employer, NGO partner or public-sector actor.
-- Nutrition outcomes such as stunting, wasting or dietary diversity require longer time horizons, qualified public-health partners and careful attribution.
-- Corporate technology investments cannot substitute for public policy, humanitarian access, peacebuilding or consumer affordability mechanisms in high-conflict or highly unequal markets.
+- The technology evidence supports capabilities and deployment models, but does not quantify food-security or sustainability impact from these specific platforms.
+- SOFI provides global intervention priorities, but geography-specific programme design requires local data on climate, conflict, markets, nutrition, infrastructure, and governance.
+- Infrastructure and data platforms may improve availability and efficiency, but nutrition outcomes require affordability, health, WASH, education, and inclusion components.
+- MCP-enabled AI agents create operational value but require strict identity, authorization, logging, and human approval before modifying logistics or inventory systems.
 
 **Next steps**
-- Map the client’s footprint and value chain against food-security risk drivers: climate extremes, conflict exposure, economic shocks, high food prices, weak cold chains and underserved rural/peri-urban/urban markets.
-- Select 2–3 priority use cases where technology can plausibly affect SOFI-aligned outcomes—for example cold-chain assurance, climate early warning, stockout prevention, local procurement, food-bank distribution, farmer advisory or sustainability reporting.
-- Inventory current technology readiness: sites, last-mile connectivity, WAN links, cloud providers, bandwidth, latency, outage history, existing Cisco platforms, data sources, IoT systems, ERP/WMS/TMS platforms and security controls.
-- Segment use cases into four technology layers: connectivity-only, cloud/virtual routing, RAG retrieval and MCP tool-action workflows.
-- Design a pilot in one value chain or geography with baseline measures for food availability, affordability, spoilage, supply disruption and user adoption.
-- For Cisco platform selection, confirm throughput, interfaces, redundancy, security features, licensing, SD-WAN requirements and whether each deployment is branch, aggregation, data center, virtual edge or cloud edge.
-- For RAG/MCP, identify authoritative data sources, refresh cycles, access controls, audit requirements, permitted tool actions and escalation paths for human review.
-- Build partnerships with local governments, producer organizations, humanitarian actors, development finance institutions and community organizations where conflict, affordability or financing constraints are material.
-- Create an investment governance model that screens projects for SDG 2.1 and 2.2 contribution, climate-resilience co-benefits, inclusion of smallholders and women, and avoidance of maladaptation.
-- Scale only after the pilot demonstrates measurable reductions in stockouts, spoilage, response time or healthy-diet affordability gaps.
+- Map target geographies by food-security drivers: conflict, climate extremes, economic shocks, inequality, healthy-diet affordability, and financing access.
+- Segment priority sites—farms, warehouses, cold-chain assets, food banks, ports, processors, SMEs, and cloud/data centers—by connectivity, power, security, and resilience needs.
+- Select 3–5 outcome-led pilots such as cold-chain spoilage reduction, food-bank inventory optimization, climate-risk advisory, market-price monitoring, or supplier sustainability reporting.
+- Inventory current WAN, 5G/cellular, satellite, IoT, cloud, ERP, logistics, inventory, and data-governance environments.
+- Define data sources, access controls, freshness requirements, human-review rules, and whether each AI use case needs RAG only or MCP-enabled actions.
+- Create a baseline and impact dashboard linking technology metrics to SOFI-aligned food-security, nutrition, market-access, and sustainability outcomes.
 
 **How to measure impact (KPIs)**
-- Connectivity uptime for critical food-system sites: Track WAN/SD-WAN availability, failover events, packet loss, latency and mean time to restore across farms, warehouses, plants, ports and distribution hubs.
-- Data freshness for operational decisions: Measure the lag between field sensor, inventory, logistics, weather or market updates and availability in analytics or AI systems.
-- Cold-chain performance: Track number, duration and severity of temperature excursions; spoilage rates; rejected shipments; and corrective-action time.
-- Post-harvest loss and food waste reduction: Compare loss rates by product and site before and after storage, routing, inventory and monitoring improvements.
-- Food insecurity prevalence among target communities: Use Food Insecurity Experience Scale-style household surveys to track moderate or severe food insecurity before and after intervention.
-- Affordability of a healthy diet: Track local cost of a healthy diet versus income or purchasing power for target consumer groups.
-- Access to nutritious foods: Measure availability, price stability and retail or distribution proximity for fruits, vegetables, pulses, animal-source foods and fortified staples.
-- Climate resilience of food supply: Track yield stability, post-shock recovery time, days of supply disruption, water-use efficiency and continuity of distribution after climate events.
-- AI answer and action quality: Evaluate RAG citation accuracy, retrieval precision, hallucination rate, MCP tool-call success and error rates, and percentage of high-risk actions requiring human approval.
-- Sustainability impact: Track reduced truck miles, improved load utilization, lower energy use, lower waste and emissions proxies linked to better routing and inventory decisions.
-- Inclusion and equity: Measure participation and benefits for smallholders, women, low-income consumers and vulnerable households across programme geographies.
+- Critical-site connectivity availability: Track WAN/SD-WAN uptime, latency, packet loss, failover events, and application reachability by site type.
+- Food loss and cold-chain performance: Measure spoilage rate, rejected shipments, temperature excursions, and post-harvest losses before and after deployment.
+- Food-security and affordability outcomes: Track FIES moderate/severe food insecurity, cost of a healthy diet versus household income, and local price volatility.
+- AI decision-support quality: Measure RAG groundedness, citation accuracy, forecast error, human approval rate, and exception-resolution time.
+- Sustainability performance: Track energy use per facility or shipment, route miles avoided, emissions estimates, water-use efficiency, and waste diverted.
 
-**Confidence:** medium: The CSR evidence is strong on food-security drivers and investment pathways, and the technology evidence is strong on connectivity, cloud routing, RAG and MCP capabilities. Confidence is medium overall because the specific technology portfolio and quantified impact depend on the client’s geography, role, budget, data maturity, site footprint and target communities.
+**Confidence:** medium: The recommendation is well supported on technology capabilities and SOFI intervention priorities, but the magnitude of food-security impact from specific technology deployments requires local baselines and pilot evidence.
 
-### Technology Agent (27.1s)
-*Sub-question:* Which technology investments—within digital connectivity, cloud/virtual routing, or RAG/MCP platform infrastructure—could support food security and sustainability outcomes, and what are their practical capabilities and limitations?
+### Technology Agent (29.0s)
+*Sub-question:* Which technology investments (for example network, cloud, edge, or data-platform investments) could most effectively improve food security and sustainability outcomes, and what capabilities or deployment models are most relevant?
 
-Investments that can support food security and sustainability outcomes fall into three practical layers: resilient digital connectivity for farms, warehouses, ports, and food-distribution sites; cloud/virtual routing to connect those sites securely to cloud analytics and partner networks; and RAG/MCP-based AI infrastructure to turn agronomy, logistics, weather, inventory, and policy data into decision support. The strongest near-term pattern is not a single product, but a layered architecture: physical or virtual WAN/SD-WAN connectivity plus governed AI access to trusted data and tools. The main limitations are last-mile availability, operational skills, security/governance, data quality, and the fact that AI/RAG/MCP does not by itself fix missing or poor source data.
+The highest-impact technology investments for food security and sustainability are usually a layered portfolio: resilient rural/edge connectivity, cloud and multicloud access, data platforms with AI/RAG for decision support, and secure agent/tool integration for operational workflows. The most relevant deployment models are secure SD-WAN/SASE at field sites and branches, virtual cloud edge routers for multicloud connectivity, and managed cloud AI/search services for grounding decisions in fresh private and public data.
 
 **Findings**
-- (✅ confirmed) Cisco Catalyst 8000V is a virtual machine form-factor cloud router that provides SD-WAN, WAN gateway, and traditional routing services for virtualized on-premises and cloud environments, allowing enterprises to extend WANs into provider-hosted clouds. [S5]
-- (✅ confirmed) Catalyst 8000V supports use cases relevant to distributed food systems, including traditional routing, secure VPN gateway, Cisco Catalyst SD-WAN, next-generation firewall, multicloud connectivity, WAN optimization, and voice services. [S1, S3, S6]
-- (✅ confirmed) Catalyst 8000V can help connect distributed sites directly to cloud deployments using route-based IPsec VPNs, NGFW, access control, NAT, MPLS, and Layer 2/Layer 3 extensions. [S1]
-- (✅ confirmed) Catalyst 8000V supports multicloud connectivity and automated deployments in public clouds, which can help enterprises extend WAN connectivity across clouds and use public-cloud backbones for low-latency global connectivity. [S2]
-- (✅ confirmed) Google Cloud remote MCP servers let AI applications use Google and Google Cloud services with governance, security, and access control, and MCP standardizes how AI applications connect to external tools and data sources. [S8]
-- (✅ confirmed) MCP is better suited for AI agents that need to invoke tools or take actions, while RAG is better suited for passive retrieval to improve factual responses, question-answering, summarization, and hallucination reduction. [S10, S12]
-- (🔍 hypothesis) For food security, RAG/MCP infrastructure could support decision tools such as querying crop advisories, weather-risk documents, inventory records, cold-chain logs, or logistics systems, but the value depends on the quality, permissions, and freshness of the underlying data. [S8, S10, S11]
-- (🔍 hypothesis) Physical routing platforms such as Cisco ASR1002-HX, ASR1001-X, or ISR4451 may be appropriate where food-sector organizations need branch or aggregation WAN edge infrastructure, but the exact fit depends on throughput, site role, interfaces, redundancy, and lifecycle requirements. [S14, S15, S16]
+- (✅ confirmed) Edge/branch network modernization is a strong foundation for food-system operations because Cisco Catalyst 8200 platforms are described as secure, flexible, scalable cloud-edge platforms for cloud applications, SASE, multilayer security, SD-WAN, and cloud-native agility. [S3, S7]
+- (✅ confirmed) For larger or more demanding branch-to-cloud environments, Cisco Catalyst 8300 platforms are positioned for cloud-scale branch networking with optimized 5G, SD-WAN, software-defined routing, multicloud access, multilayer security, and enhanced visibility. [S2]
+- (✅ confirmed) Virtual cloud edge investment can support multicloud food-system platforms: Cisco Catalyst 8000V is available for public clouds including AWS, Microsoft Azure, Google Cloud Platform, Oracle Cloud Infrastructure, and Alibaba Cloud, and supports SD-WAN Manager plus IOS XE CLI, REST, and NETCONF management. [S4, S9]
+- (✅ confirmed) Multicloud connectivity is relevant where food-security programs need to connect analytics, logistics, ERP, IoT, and partner platforms across clouds; Catalyst 8000V documentation describes Cloud OnRamp automation, cross-cloud connectivity, and low-latency global connectivity use cases. [S5, S10]
+- (✅ confirmed) RAG is relevant for food security and sustainability decision support because Google Cloud describes RAG as combining retrieval systems such as search/databases with LLMs, improving grounded generation with fresh, private, or specialized data. [S12, S14, S16]
+- (✅ confirmed) Google Cloud identifies RAG-related services including RAG Engine in Gemini platform, Agent Search, Vector Search, and BigQuery, which are relevant capabilities for building search, analytics, and grounded AI over agricultural, supply-chain, climate, and policy data. [S11]
+- (✅ confirmed) MCP is relevant when AI systems must do more than answer questions; Google Cloud describes MCP as an open standard for connecting AI applications to external tools and data sources, with governance, security, and access control through remote MCP servers. [S18, S19]
+- (🔍 hypothesis) Likely high-impact use cases include precision agriculture, cold-chain monitoring, demand/supply forecasting, climate-risk planning, food-loss reduction, and compliance reporting, but these are hypotheses because the retrieved sources describe the enabling network/cloud/AI capabilities rather than food-sector outcome studies directly. [S1, S2, S11, S12, S19]
 
 **Recommendations**
-- **[high] Prioritize resilient WAN/SD-WAN connectivity for farms, processing plants, warehouses, and distribution hubs.**: Food security use cases depend on reliable movement of sensor, logistics, market, and inventory data. Catalyst 8000V and related Cisco WAN platforms support SD-WAN, VPN, routing, QoS, security, failover, and hybrid cloud extension capabilities that can underpin these services. [S1, S5, S6]
-- **[high] Use cloud/virtual routing, especially Cisco Catalyst 8000V, where workloads run in public cloud, multicloud, or virtualized edge environments.**: Catalyst 8000V is purpose-built as a virtual routing platform for cloud and virtualized environments and supports multicloud connectivity, SD-WAN, secure VPN, NGFW, NAT, and WAN optimization. [S1, S2, S4, S5, S6, S13]
-- **[medium] Evaluate physical WAN edge or aggregation routers only after sizing the deployment.**: The catalog match identified ASR1002-HX, ASR1001-X, and ISR4451 as possible options for physical WAN edge or branch/aggregation roles, but model selection must be based on required throughput, interfaces, redundancy, and site criticality. [S14, S15, S16]
-- **[high] Invest in RAG for knowledge-heavy food-security workflows such as agronomy guidance, policy lookup, supplier documentation, sustainability reporting, and incident response playbooks.**: RAG is suited to retrieving relevant information to improve factuality, support question-answering, summarize documents, and reduce hallucinations in generated responses. [S10, S12]
-- **[medium] Use MCP when AI agents need to securely call tools or act on external systems, such as inventory systems, logistics platforms, databases, or notification services.**: MCP standardizes AI application connections to external tools and data sources; Google Cloud remote MCP servers provide governance, security, access control, IAM-based authorization, and discovery of tools, prompts, and resources. [S8, S9, S11]
-- **[high] Design governance and security controls before scaling AI agents into operational food systems.**: MCP-enabled agents can invoke tools and perform actions, so identity, authorization, policy enforcement, error handling, and response scanning are critical to prevent incorrect or unauthorized actions. [S9, S11]
+- **[high] Invest first in resilient edge connectivity for farms, warehouses, food banks, ports, and distribution centers using SD-WAN/SASE-capable branch platforms such as Cisco Catalyst 8200 for lean/small branches or Cisco Catalyst 8300 for higher-scale branch-to-cloud needs.**: Food-security operations depend on reliable field and branch connectivity for sensors, logistics, payments, inventory, and cloud analytics; the cited platforms support secure cloud-edge connectivity, SD-WAN, multilayer security, and flexible branch deployment. [S2, S3, S7]
+- **[high] Use virtual cloud edge networking, such as Cisco Catalyst 8000V, where workloads span Google Cloud, AWS, Azure, OCI, or partner networks.**: This model helps standardize secure WAN extension into public clouds and supports multicloud connectivity and automation through Cisco Catalyst SD-WAN Manager and Cloud OnRamp. [S4, S5, S9, S10]
+- **[high] Build a governed data platform for operational and sustainability data, with BigQuery and RAG-capable services where Google Cloud is in scope.**: RAG benefits from fresh, private, and specialized data; Google Cloud identifies BigQuery, RAG Engine, Agent Search, and Vector Search as related products for retrieval-augmented generation and enterprise search over large datasets. [S11, S12, S16]
+- **[medium] Deploy RAG for decision-support workflows such as agronomist knowledge assistants, food-bank inventory Q&A, climate-risk briefings, supplier compliance search, and policy/program guidance.**: Google Cloud states RAG improves accuracy, relevance, and freshness by grounding LLM output in retrieved external data; it is especially useful for agents and chatbots needing private or specialized information. [S12, S14, S16]
+- **[medium] Use MCP for AI agents that need to take controlled actions, such as querying databases, opening tickets, updating logistics systems, or calling partner APIs.**: Google Cloud describes MCP as a standardized way for AI applications to connect to external tools and data sources, with remote MCP servers supporting governance, security, and access control. [S17, S18, S19, S20]
+- **[high] Treat cybersecurity and observability as core sustainability infrastructure, not add-ons: include SD-WAN analytics, ThousandEyes-style visibility, NGFW/SASE controls, and configuration governance.**: Cisco sources emphasize visibility into internet, cloud, and SaaS application issues, SD-WAN analytics, and integrated security controls for direct cloud/internet access. [S1, S2, S6, S8]
 
 **Next steps**
-- Map the food-security outcome to concrete workflows: crop monitoring, cold-chain assurance, logistics resilience, emergency food distribution, supplier-risk monitoring, or sustainability reporting.
-- Inventory sites and connectivity constraints: farm/field locations, warehouses, vehicles, cloud regions, bandwidth, latency, outage tolerance, and available last-mile providers.
-- Classify workloads into connectivity-only, cloud-routing, RAG retrieval, and MCP tool-action use cases.
-- For Cisco platform selection, confirm throughput, interfaces, redundancy, security features, SD-WAN needs, and whether deployment is branch, data center/aggregation, or cloud/virtual edge.
-- For RAG/MCP, identify authoritative data sources, freshness requirements, access controls, audit requirements, and which actions agents may or may not perform.
-- Run a pilot with measurable outcomes, such as reduced stockout time, faster recall response, lower spoilage, or improved advisory accuracy.
+- Map priority food-system locations and classify them by connectivity need: farm/field, warehouse, cold chain, retail/food bank, port, processing plant, and cloud/data center.
+- Inventory current WAN, cellular/5G, satellite, LAN, IoT gateways, cloud regions, data stores, and security controls.
+- Define 3–5 outcome-led pilots, for example cold-chain loss reduction, drought-risk advisory, food-bank inventory optimization, or supplier sustainability reporting.
+- For each site class, size the network platform requirements: throughput, number/type of WAN links, 5G need, redundancy, interface modules, cloud connectivity, and security policy.
+- For AI/data pilots, identify authoritative data sources, freshness requirements, access controls, and whether the use case needs RAG only or MCP-enabled actions.
+- Create a measurement plan before deployment, linking technology metrics to operational outcomes such as spoilage, stockout rate, delivery delay, and energy use.
 
 **Information needed from you**
-- Target use case: farm connectivity, logistics, cold chain, food bank distribution, market intelligence, sustainability reporting, or another workflow.
-- Current network footprint: number of sites, cloud providers, WAN links, bandwidth, latency, outage history, and existing Cisco platforms.
-- Required throughput, interface types, redundancy, and security/compliance requirements for each site.
-- Whether workloads are primarily physical branch edge, data center/aggregation, virtualized on-premises, public cloud, or multicloud.
-- Authoritative data sources for RAG/MCP: documents, databases, APIs, IoT platforms, ERP, WMS, TMS, or weather/market feeds.
-- Governance model for AI: who can access data, which tools agents may call, audit needs, and acceptable risk thresholds.
+- Target geography and site types: farms, warehouses, food banks, ports, processors, retail, or government agencies.
+- Current network architecture, carrier links, cloud providers, and whether SD-WAN or SASE is already deployed.
+- Scale requirements: number of sites, users, sensors, applications, throughput, availability targets, and latency-sensitive workloads.
+- Data sources available: IoT telemetry, weather, satellite imagery, ERP, logistics, inventory, market prices, compliance documents, and partner data.
+- Security and governance requirements, including data residency, partner access, auditability, and regulatory constraints.
+- Primary outcome goals: yield improvement, food-loss reduction, affordability, traceability, resilience, emissions, water efficiency, or emergency response.
 
 **Risks and assumptions**
-- Assumption: The organization has or can obtain reliable last-mile connectivity; Cisco routing and SD-WAN cannot compensate for every physical access-network limitation.
-- Assumption: Food-security value depends on integrating operational data sources; RAG/MCP infrastructure alone does not create high-quality data.
-- Risk: AI agents using MCP can take actions in external systems, so weak authorization or poor tool design could create operational or safety issues.
-- Risk: RAG systems may retrieve stale, incomplete, or biased documents unless data governance and refresh processes are maintained.
-- Risk: Physical router recommendations are preliminary; exact Cisco model and components must be confirmed against throughput, interfaces, licensing, power, and support requirements before procurement.
+- The food-security impact examples are inferred from the capabilities of the cited technologies; the retrieved sources do not quantify food-sector-specific outcome improvements.
+- Product selection must be validated against exact throughput, interface, redundancy, environmental, and lifecycle requirements before procurement.
+- AI decision-support systems can produce incorrect outputs if source data is incomplete, stale, biased, or poorly governed, so RAG quality evaluation and human review are required.
+- Rural and remote sites may need carrier diversity, 5G, satellite, or offline-tolerant designs; the best access model depends on local coverage and power reliability.
+- MCP-enabled agents should be restricted by identity, authorization, logging, and approval workflows before being allowed to modify operational systems.
 
 **How to measure impact (KPIs)**
-- Connectivity uptime for critical food-system sites: Track WAN/SD-WAN availability, failover events, packet loss, latency, and mean time to restore across farms, plants, warehouses, and distribution hubs.
-- Data freshness for operational decisions: Measure lag between field sensor/logistics/inventory updates and availability in analytics or AI systems.
-- Reduction in spoilage or cold-chain excursions: Compare number and duration of temperature excursions, spoilage rates, and rejected shipments before and after connectivity and analytics improvements.
-- AI answer/action quality: Evaluate RAG answer citation accuracy, retrieval precision, hallucination rate, and MCP tool-call success/error rates.
-- Sustainability impact: Track reduced truck miles, lower energy use, lower waste, improved load utilization, or emissions proxies tied to better routing and inventory decisions.
+- Connectivity availability at critical food-system sites: Track WAN/SD-WAN uptime, packet loss, latency, failover events, and application reachability by site class.
+- Food loss or spoilage reduction: Compare spoilage percentage, cold-chain temperature excursions, and rejected shipments before and after connectivity/IoT/data-platform deployment.
+- Forecast and decision-support quality: Measure forecast error, RAG answer groundedness, citation accuracy, and human approval rate for AI-generated recommendations.
+- Operational response time: Track time to detect and resolve logistics exceptions, stockouts, equipment alarms, and weather/climate disruptions.
+- Sustainability performance: Measure energy use per shipment or facility, route miles avoided, emissions estimates, water-use efficiency, and waste diverted.
 
-**Confidence:** medium: The capabilities of Cisco Catalyst 8000V and Google Cloud MCP/RAG concepts are directly supported by retrieved sources, but the sustainability and food-security applications are architecture-level hypotheses that require the client’s specific workflows, sites, data sources, and operating constraints to validate.
+**Confidence:** medium: The recommended capabilities and deployment models are directly supported by Cisco and Google Cloud sources, but the question asks about food security and sustainability outcomes; specific sector outcome evidence was not present in the retrieved sources, so impact prioritization is partly inferential.
 
-*Grounding:* 16 sources, 6 confirmed / 2 hypotheses, citation coverage 100%, grounding score 1.00
-*Tools used:* `search_knowledge`, `search_knowledge`, `recommend_products`
-
-**Sources cited**
-- **TECH-S1**: Cisco Catalyst 8000V Edge Software Data Sheet, p.4 <https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8000v-edge-software/catalyst-8000v-edge-software-ds.pdf>
-- **TECH-S2**: Cisco Catalyst 8000V Edge Software Data Sheet, p.9 <https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8000v-edge-software/catalyst-8000v-edge-software-ds.pdf>
-- **TECH-S3**: Cisco Catalyst 8000V Edge Software Data Sheet, p.2 <https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8000v-edge-software/catalyst-8000v-edge-software-ds.pdf>
-- **TECH-S4**: Cisco Catalyst 8000V Edge Software <https://www.cisco.com/c/en/us/products/routers/catalyst-8000v-edge-software/index.html>
-- **TECH-S5**: Cisco Catalyst 8000V Edge Software Data Sheet, p.3 <https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8000v-edge-software/catalyst-8000v-edge-software-ds.pdf>
-- **TECH-S6**: Cisco Catalyst 8000V Edge Software Data Sheet, p.3 <https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8000v-edge-software/catalyst-8000v-edge-software-ds.pdf>
-- **TECH-S8**: Google Cloud MCP servers overview  |  Google Cloud Documentation <https://docs.cloud.google.com/mcp/overview>
-- **TECH-S9**: What is Model Context Protocol (MCP)? A guide | Google Cloud <https://cloud.google.com/discover/what-is-model-context-protocol>
-- **TECH-S10**: What is Model Context Protocol (MCP)? A guide | Google Cloud <https://cloud.google.com/discover/what-is-model-context-protocol>
-- **TECH-S11**: Google Cloud MCP servers overview  |  Google Cloud Documentation <https://docs.cloud.google.com/mcp/overview>
-- **TECH-S12**: What is Model Context Protocol (MCP)? A guide | Google Cloud <https://cloud.google.com/discover/what-is-model-context-protocol>
-- **TECH-S13**: Catalog: Catalyst 8000V <https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8000v-edge-software/catalyst-8000v-edge-software-ds.pdf>
-- **TECH-S14**: Catalog: ASR1002-HX <https://www.cisco.com/c/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.pdf>
-- **TECH-S15**: Catalog: ASR1001-X <https://www.cisco.com/c/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.pdf>
-- **TECH-S16**: Catalog: ISR4451 <https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.pdf>
-
-### Corporate Responsibility Agent (24.6s)
-*Sub-question:* According to SOFI 2023 and 2024, what are the main drivers of food insecurity and malnutrition, and which types of investments are most likely to improve food security and sustainability outcomes?
-
-SOFI 2023 and 2024 identify the core drivers of food insecurity and malnutrition as conflict, climate variability and extremes, and economic slowdowns/downturns, interacting with structural factors: unaffordable nutritious foods, unhealthy food environments, and persistent inequality. SOFI 2023 adds that urbanization is transforming agrifood systems across the rural–urban continuum, affecting food production, processing, distribution, procurement and diets. The most promising investments are those that build agrifood-system resilience to these drivers: climate-resilient food systems, humanitarian–development–peace approaches in conflict settings, measures to improve affordability and access to healthy diets, and financing that mainstreams food security and nutrition into climate and other sectoral investment.
-
-**Findings**
-- (✅ confirmed) Confirmed: SOFI 2024 states that conflict, climate variability and extremes, and economic slowdowns and downturns are major drivers of hunger, food insecurity and malnutrition, and that they increasingly occur together. [S10, S12]
-- (✅ confirmed) Confirmed: SOFI 2024 identifies underlying structural factors: lack of access to and unaffordability of nutritious/healthy foods, unhealthy food environments, and high and persistent inequality. [S9, S10, S11, S13]
-- (✅ confirmed) Confirmed: SOFI 2023 similarly says the interaction of conflict, climate extremes and economic slowdowns/downturns, combined with highly unaffordable nutritious foods and growing inequality, is pushing the world off track for SDG 2. [S5, S8]
-- (✅ confirmed) Confirmed: SOFI 2023 highlights urbanization as a megatrend reshaping agrifood systems across the rural–urban continuum, including production, processing, distribution, marketing, procurement and consumer behaviour, with effects on access to affordable healthy diets. [S4, S7, S8]
-- (✅ confirmed) Confirmed: SOFI 2023 notes that urbanization and related changes are associated with more processed foods, convenience foods and food away from home, while food purchases are becoming widespread even in rural areas. [S2]
-- (✅ confirmed) Confirmed: SOFI 2024 argues that financing should cover interventions aligned with six transformative policy pathways to strengthen resilience to conflict, climate extremes and economic shocks, while addressing affordability, food environments and inequality. [S11, S16]
-- (✅ confirmed) Confirmed: SOFI 2024 highlights climate extremes as the most prevalent driver across country groups, creating an opportunity to combine food security, nutrition and climate finance objectives. [S15]
-- (✅ confirmed) Confirmed: SOFI 2024 notes that conflict is particularly relevant in countries with limited access to financing, requiring stronger humanitarian–development–peace approaches and longer-term investment perspectives. [S15, S16]
-
-**Recommendations**
-- **[high] Prioritize climate-resilient agrifood investments: drought- and flood-resilient production, diversified crops, climate-smart storage, water management, resilient logistics and early-warning systems.**: Addresses the driver SOFI 2024 identifies as highly prevalent: climate variability and extremes. Impact should be visible through reduced instability in food security, improved availability of diverse foods, and better affordability of healthy diets. [S10, S11, S15, S16]
-- **[high] In conflict-affected markets, fund programmes that combine humanitarian food assistance, livelihood recovery, local procurement, peacebuilding and market-system rebuilding.**: SOFI 2024 explicitly calls for integrating humanitarian, development and peacebuilding policies in conflict-affected areas and bridging short-term humanitarian responses with long-term investment. [S15, S16]
-- **[high] Invest in affordability of healthy diets: local production of nutrient-dense foods, cold chains, aggregation, wholesale markets, last-mile distribution and targeted affordability mechanisms for low-income consumers.**: Both SOFI 2023 and 2024 identify unaffordability of nutritious or healthy foods as a key structural driver; better supply chains and access can reduce cost and improve diet quality. [S5, S8, S9, S10, S11]
-- **[medium] Support healthier food environments, especially in rapidly urbanizing and peri-urban areas, through retail access to fresh foods, responsible marketing, nutritious school/workplace meals and healthier product portfolios.**: SOFI 2023 shows urbanization is changing food environments and diets, including growth in processed foods and food away from home; SOFI 2024 identifies unhealthy food environments as an underlying driver. [S2, S4, S10, S13]
-- **[medium] Use a rural–urban continuum lens when selecting investments: connect smallholders, peri-urban processors, logistics providers, retailers and urban consumers rather than treating rural and urban food security separately.**: SOFI 2023 states that effective policies and investments must go beyond sectoral silos and administrative borders because urbanization affects agrifood systems across the continuum. [S7, S8]
-- **[medium] Blend ESG, climate and development finance, and mainstream food security and nutrition targets into climate, infrastructure and inclusion investments.**: SOFI 2024 says scaling resources requires mainstreaming food security and nutrition objectives across sectors and creating synergies with climate objectives to help close financing gaps. [S13, S15]
-
-**Next steps**
-- Map the company’s footprint against countries or regions exposed to conflict, climate extremes, economic shocks and high food-price vulnerability.
-- Select 2–3 priority value chains where the company can improve availability and affordability of nutritious foods.
-- Screen proposed investments for contribution to SDG Targets 2.1 and 2.2 and for climate-resilience co-benefits.
-- Partner with local governments, producer organizations, humanitarian actors and development finance institutions where conflict or financing constraints are material.
-- Build a measurement framework using food security, nutrition, affordability and resilience indicators before deployment.
-- Pilot investments across rural, peri-urban and urban nodes to reflect the rural–urban continuum emphasized in SOFI 2023.
-
-**Information needed from you**
-- Target countries and communities for investment.
-- Whether the client is a food producer, retailer, technology provider, investor or employer.
-- Current ESG priorities, budget and investment horizon.
-- Exposure of the client’s supply chain to conflict, climate extremes and food-price inflation.
-- Whether programmes will target producers, workers, consumers, children or vulnerable households.
-- Available baseline data on food insecurity, diet affordability and nutrition outcomes.
-
-**Risks and assumptions**
-- Investment impact will vary sharply by region and by exposure to conflict, climate and macroeconomic shocks.
-- Corporate programmes cannot substitute for public policy, humanitarian access or peacebuilding in conflict settings.
-- Food-security gains may be undermined if nutritious foods remain unaffordable to low-income consumers.
-- Climate investments should avoid maladaptation, biodiversity loss or exclusion of smallholders and women.
-- Nutrition outcome indicators such as stunting or wasting require longer time horizons and careful attribution.
-
-**How to measure impact (KPIs)**
-- Food insecurity prevalence among target communities: Use Food Insecurity Experience Scale-style household surveys to track moderate or severe food insecurity before and after intervention.
-- Affordability of a healthy diet: Track local cost of a healthy diet versus income or purchasing power for target consumer groups.
-- Access to nutritious foods: Measure availability, price and retail proximity of fruits, vegetables, pulses, animal-source foods or fortified staples in target markets.
-- Climate resilience of food supply: Track yield stability, post-harvest losses, days of supply disruption, water-use efficiency and recovery time after climate shocks.
-- Nutrition outcomes where appropriate: For community programmes, monitor child wasting, stunting or dietary diversity through qualified public-health or NGO partners.
-
-**Confidence:** high: The main drivers and investment pathways are directly stated in multiple SOFI 2023 and 2024 passages; specific programme design requires client context.
-
-*Grounding:* 16 sources, 8 confirmed / 0 hypotheses, citation coverage 100%, grounding score 1.00
+*Grounding:* 20 sources, 7 confirmed / 1 hypotheses, citation coverage 100%, grounding score 1.00
 *Tools used:* `search_knowledge`, `search_knowledge`
 
 **Sources cited**
-- **CSR-S2**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.84 `data/FoodSecurity/SOFI-2023.pdf`
-- **CSR-S4**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.74 `data/FoodSecurity/SOFI-2023.pdf`
-- **CSR-S5**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.316 `data/FoodSecurity/SOFI-2023.pdf`
-- **CSR-S7**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.33 `data/FoodSecurity/SOFI-2023.pdf`
-- **CSR-S8**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.10 `data/FoodSecurity/SOFI-2023.pdf`
-- **CSR-S9**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.23 `data/FoodSecurity/SOFI-2024.pdf`
-- **CSR-S10**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.20 `data/FoodSecurity/SOFI-2024.pdf`
-- **CSR-S11**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.24 `data/FoodSecurity/SOFI-2024.pdf`
-- **CSR-S12**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.177 `data/FoodSecurity/SOFI-2024.pdf`
-- **CSR-S13**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.9 `data/FoodSecurity/SOFI-2024.pdf`
-- **CSR-S15**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.141 `data/FoodSecurity/SOFI-2024.pdf`
-- **CSR-S16**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.88 `data/FoodSecurity/SOFI-2024.pdf`
+- **TECH-S1**: Cisco Catalyst 8200 Series Edge Platforms <https://www.cisco.com/c/en/us/products/routers/catalyst-8200-series-edge-platforms/index.html>
+- **TECH-S2**: Cisco Catalyst 8300 Series Edge Platforms <https://www.cisco.com/c/en/us/products/routers/catalyst-8300-series-edge-platforms/index.html>
+- **TECH-S3**: Cisco Catalyst 8200 Series Edge Platforms <https://www.cisco.com/c/en/us/products/routers/catalyst-8200-series-edge-platforms/index.html>
+- **TECH-S4**: Cisco Catalyst 8000V Edge Software Data Sheet, p.18 <https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8000v-edge-software/catalyst-8000v-edge-software-ds.pdf>
+- **TECH-S5**: Cisco Catalyst 8000V Edge Software <https://www.cisco.com/c/en/us/products/routers/catalyst-8000v-edge-software/index.html>
+- **TECH-S6**: Cisco Catalyst 8200 Series Edge Platforms <https://www.cisco.com/c/en/us/products/routers/catalyst-8200-series-edge-platforms/index.html>
+- **TECH-S7**: Cisco Catalyst 8200 Series Edge Platforms Data Sheet, p.3 <https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8200-series-edge-platforms/nb-06-cat8200-series-edge-plat-ds-cte-en.pdf>
+- **TECH-S8**: Cisco ASR 1000 Series Aggregation Services Routers Data Sheet, p.4 <https://www.cisco.com/c/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.pdf>
+- **TECH-S9**: Cisco Catalyst 8000V Edge Software Data Sheet, p.12 <https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8000v-edge-software/catalyst-8000v-edge-software-ds.pdf>
+- **TECH-S10**: Cisco Catalyst 8000V Edge Software Data Sheet, p.9 <https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8000v-edge-software/catalyst-8000v-edge-software-ds.pdf>
+- **TECH-S11**: What is Retrieval-Augmented Generation (RAG)? | Google Cloud <https://cloud.google.com/use-cases/retrieval-augmented-generation>
+- **TECH-S12**: What is Retrieval-Augmented Generation (RAG)? | Google Cloud <https://cloud.google.com/use-cases/retrieval-augmented-generation>
+- **TECH-S14**: What is Retrieval-Augmented Generation (RAG)? | Google Cloud <https://cloud.google.com/use-cases/retrieval-augmented-generation>
+- **TECH-S16**: What is Retrieval-Augmented Generation (RAG)? | Google Cloud <https://cloud.google.com/use-cases/retrieval-augmented-generation>
+- **TECH-S17**: What is Model Context Protocol (MCP)? A guide | Google Cloud <https://cloud.google.com/discover/what-is-model-context-protocol>
+- **TECH-S18**: What is Model Context Protocol (MCP)? A guide | Google Cloud <https://cloud.google.com/discover/what-is-model-context-protocol>
+- **TECH-S19**: Google Cloud MCP servers overview  |  Google Cloud Documentation <https://docs.cloud.google.com/mcp/overview>
+- **TECH-S20**: What is Model Context Protocol (MCP)? A guide | Google Cloud <https://cloud.google.com/discover/what-is-model-context-protocol>
 
-*Total time: 60.0s*
+### Corporate Responsibility Agent (22.9s)
+*Sub-question:* According to the UN FAO SOFI 2023 and 2024 reports, what are the main drivers of food insecurity and malnutrition, and which sustainability interventions or financing priorities are identified as most likely to improve outcomes?
+
+SOFI 2023 and 2024 identify the main drivers of food insecurity and malnutrition as conflict, climate variability and extremes, economic slowdowns/downturns, unaffordable nutritious foods, unhealthy food environments, and persistent inequality. SOFI 2023 emphasizes urbanization and the rural–urban continuum: improving infrastructure, diversified food production, social protection, nutrition education, women’s empowerment, and SME/value-chain linkages can improve access to affordable healthy diets. SOFI 2024 emphasizes that financing must be broadened and better targeted to these drivers, especially because the countries most affected by food insecurity, malnutrition and multiple drivers often have the least access to finance.
+
+**Findings**
+- (✅ confirmed) Both reports identify conflict, climate variability and extremes, and economic slowdowns/downturns as major drivers of hunger, food insecurity and malnutrition, compounded by unaffordable nutritious foods and inequality. [S3, S5, S10, S12, S14]
+- (✅ confirmed) SOFI 2024 adds that unhealthy food environments and high, persistent inequality are structural underlying factors that worsen the impact of the major drivers. [S10, S12, S14, S15]
+- (✅ confirmed) SOFI 2024 states that many low- and middle-income countries are affected by at least one major driver, and that multiple drivers have compounding impacts associated with the highest increases in hunger and food insecurity. [S11]
+- (✅ confirmed) SOFI 2024 finds a financing mismatch: countries with the highest food insecurity, multiple forms of malnutrition and exposure to major drivers tend to have the least access to financing. [S9, S16]
+- (✅ confirmed) SOFI 2023 highlights rural–urban disparities in malnutrition linked to access to health care, water, sanitation and services; proximity to agricultural production does not automatically translate into healthier diets for children. [S1]
+- (✅ confirmed) SOFI 2023 identifies infrastructure across the rural–urban continuum—roads, warehousing, cold storage, electrification, digital tools and water supply—as important for stronger agrifood linkages, SME efficiency, resilience, incomes and food security outcomes. [S8]
+- (✅ confirmed) SOFI 2023 identifies cash transfers, especially when paired with nutrition education, as relevant for improving diets and child nutrition/health, and for easing liquidity constraints among poor households. [S4]
+- (✅ confirmed) SOFI 2023 identifies irrigation, diversification beyond staple-focused programmes, biofortification where diverse production is not yet feasible, and women’s empowerment as pathways to improve access to nutritious foods and dietary diversity. [S2, S6]
+
+**Recommendations**
+- **[high] Prioritize resilience investments in countries and communities exposed to conflict, climate extremes and economic shocks.**: These are the repeatedly identified major drivers; SOFI 2024 argues financing should cover interventions that strengthen agrifood-system resilience to them. Track impact through prevalence of undernourishment, moderate/severe food insecurity and child malnutrition indicators. [S10, S11, S14, S15]
+- **[high] Finance rural–urban agrifood infrastructure: cold storage, warehousing, roads, dependable electrification, water supply and digital tools for small farms and SMEs.**: SOFI 2023 identifies these investments as critical for efficient SMEs, stronger rural–urban linkages, resilience to shocks, productivity, incomes and food security outcomes. [S8]
+- **[high] Support social protection packages that combine cash transfers with nutrition education, and where relevant in-kind transfers or school meals.**: SOFI 2023 states income is a key determinant of healthy-diet affordability and that cash transfers with nutrition education have greater chances of improving child nutrition and health. [S4, S6]
+- **[medium] Invest in diversified nutritious food production, irrigation for fruits and vegetables, and biofortified crops where diversified production is not yet feasible.**: SOFI 2023 notes that staple-focused programmes can undermine diversification, while irrigation and biofortification can improve dietary diversity and nutrient intake. [S2]
+- **[medium] Embed women’s empowerment into food production and nutrition programmes, especially in rural areas.**: SOFI 2023 identifies women’s empowerment as one of the important pathways through which food production policies improve access to nutritious foods and household dietary diversity. [S6]
+- **[medium] Use blended or innovative financing only where it is designed to overcome risk and access barriers in high-need countries, not only where projects are easiest to finance.**: SOFI 2024 warns that the countries most in need often face structural limitations and high perceived financial risk, restricting access to finance. [S9, S13, S16]
+
+**Next steps**
+- Map target geographies against the SOFI drivers: conflict exposure, climate extremes, economic shocks, healthy-diet affordability, inequality and food-environment risks.
+- Select interventions by driver: resilience for climate/conflict/economic shocks; affordability measures for income and price barriers; infrastructure for rural–urban market failures; nutrition services for malnutrition risks.
+- Set a baseline using SOFI-aligned indicators: PoU, FIES moderate/severe food insecurity, cost/affordability of a healthy diet, stunting, wasting and child overweight where relevant.
+- Prioritize countries or regions where food-security need is high but financing access is limited.
+- Design programmes with local partners, SMEs, women’s groups and public agencies to avoid isolated CSR projects.
+- Create an impact-financing dashboard that reports both capital mobilized and nutrition/food-security outcomes.
+
+**Information needed from you**
+- Target countries or regions for the company’s CSR/ESG programme.
+- Whether the company wants grantmaking, concessional finance, procurement, technology investment or blended finance.
+- Priority populations: smallholder farmers, urban poor, women, children, displaced people or SMEs.
+- Current company footprint in agrifood value chains, logistics, retail, finance, technology or health.
+- Budget, time horizon and risk appetite.
+- Existing local partners or government programmes to align with.
+
+**Risks and assumptions**
+- SOFI findings are global; intervention design must be adapted to local political economy, climate risk, markets and nutrition profiles.
+- Financing may not reach highest-need countries unless risk barriers are explicitly addressed.
+- Infrastructure investments can improve availability but may not improve nutrition without affordability, health, WASH and behaviour-change components.
+- Biofortification or production diversification should complement, not replace, broader access to diverse healthy diets.
+- Conflict settings may require humanitarian-development-peace coordination and safeguards.
+
+**How to measure impact (KPIs)**
+- Prevalence of moderate or severe food insecurity using FIES: Baseline and follow-up household surveys in target communities, disaggregated by gender, income group and rural–urban location.
+- Affordability of a healthy diet: Track local cost of a healthy diet against household income or food budgets before and after interventions.
+- Child stunting and wasting prevalence: Use health/nutrition surveillance or programme anthropometric screening for children under five.
+- Dietary diversity or consumption of nutritious food groups: Household or individual dietary diversity surveys, especially among women and children.
+- Resilient market access for nutritious foods: Measure cold-storage capacity, post-harvest losses, SME throughput, market availability and price stability for fruits, vegetables and other nutritious foods.
+
+**Confidence:** high: The drivers and broad intervention/financing priorities are directly and repeatedly stated in SOFI 2023 and 2024 passages; programme-level prioritization still requires client geography and operating-context details.
+
+*Grounding:* 16 sources, 8 confirmed / 0 hypotheses, citation coverage 100%, grounding score 0.96
+*Tools used:* `search_knowledge`, `search_knowledge`
+
+**Sources cited**
+- **CSR-S1**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.69 `data/FoodSecurity/SOFI-2023.pdf`
+- **CSR-S2**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.150 `data/FoodSecurity/SOFI-2023.pdf`
+- **CSR-S3**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.173 `data/FoodSecurity/SOFI-2023.pdf`
+- **CSR-S4**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.141 `data/FoodSecurity/SOFI-2023.pdf`
+- **CSR-S5**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.9 `data/FoodSecurity/SOFI-2023.pdf`
+- **CSR-S6**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.150 `data/FoodSecurity/SOFI-2023.pdf`
+- **CSR-S8**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.147 `data/FoodSecurity/SOFI-2023.pdf`
+- **CSR-S9**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.9 `data/FoodSecurity/SOFI-2024.pdf`
+- **CSR-S10**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.84 `data/FoodSecurity/SOFI-2024.pdf`
+- **CSR-S11**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.94 `data/FoodSecurity/SOFI-2024.pdf`
+- **CSR-S12**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.23 `data/FoodSecurity/SOFI-2024.pdf`
+- **CSR-S13**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.141 `data/FoodSecurity/SOFI-2024.pdf`
+- **CSR-S14**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.24 `data/FoodSecurity/SOFI-2024.pdf`
+- **CSR-S15**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.178 `data/FoodSecurity/SOFI-2024.pdf`
+- **CSR-S16**: FAO SOFI 2024: The State of Food Security and Nutrition in the World, p.27 `data/FoodSecurity/SOFI-2024.pdf`
+
+*Total time: 45.8s*

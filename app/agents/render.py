@@ -79,9 +79,10 @@ def to_markdown(result: dict) -> str:
                   f"*Tools used:* " + ", ".join(f"`{t['tool']}`" for t in res["tool_calls"]), ""]
         cited = {s for item in res["answer"].get("findings", []) + res["answer"].get("recommendations", [])
                  for s in item.get("sources", [])}
-        prefix = f"{PREFIX[domain]}-" if result.get("synthesis") else ""
-        refs = [f"- **{prefix}{s['id']}**: {source_label(s)}" for s in res["sources"] if s["id"] in cited]
+        refs = [f"- **{s['id']}**: {source_label(s)}" for s in res["sources"] if s["id"] in cited]
         if refs:
             lines += ["**Sources cited**"] + refs + [""]
+    for name, err in (result.get("errors") or {}).items():
+        lines.append(f"> ⚠️ {config.DOMAIN_LABELS.get(name, name)} failed: {err}")
     lines.append(f"*Total time: {result.get('seconds')}s*")
     return "\n".join(lines)

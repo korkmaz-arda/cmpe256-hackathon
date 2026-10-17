@@ -8,10 +8,10 @@
     "sub_questions": [
       {
         "route": "csr",
-        "question": "Using the UN FAO SOFI 2023 and 2024 reports, explain how increases in food prices affect food security, including impacts on hunger, food insecurity, malnutrition, and the main transmission channels and drivers."
+        "question": "Using the UN FAO SOFI 2023 and 2024 reports, explain how rising food prices affect food security, including impacts on hunger, food insecurity, malnutrition, and the main drivers and vulnerable groups."
       }
     ],
-    "reason": "The request is about the impact of rising prices on food security, which is directly covered by the FAO SOFI reports on hunger, food insecurity, malnutrition, and food prices.",
+    "reason": "The request is about the impact of price increases on food security, which falls squarely within the FAO SOFI sustainability and food-security evidence base.",
     "confidence": 0.98,
     "model": "gpt-5.4-mini",
     "seconds": 1.2
@@ -20,171 +20,173 @@
     "csr": {
       "domain": "csr",
       "agent": "Corporate Responsibility Agent",
-      "question": "Using the UN FAO SOFI 2023 and 2024 reports, explain how increases in food prices affect food security, including impacts on hunger, food insecurity, malnutrition, and the main transmission channels and drivers.",
+      "question": "Using the UN FAO SOFI 2023 and 2024 reports, explain how rising food prices affect food security, including impacts on hunger, food insecurity, malnutrition, and the main drivers and vulnerable groups.",
       "answer": {
-        "summary": "SOFI 2023 and 2024 describe food-price increases as a core channel through which shocks reduce access to food: higher food, energy and input prices raise the cost of a healthy diet, squeeze real incomes, disrupt supply chains, and make nutritious foods less affordable. The effects show up in hunger remaining above pre-pandemic levels, elevated moderate/severe food insecurity, reduced diet quality, and risks of multiple forms of malnutrition. The reports emphasize that price shocks rarely act alone: conflict, climate extremes, economic slowdowns/downturns, inequality, unhealthy food environments and weak affordability of nutritious foods interact and compound impacts.",
+        "summary": "SOFI 2023 and 2024 describe rising food prices as a major transmission channel through which conflict, climate shocks, economic slowdowns, energy/input costs and trade disruptions reduce access to food and healthy diets. The result is higher hunger and food insecurity, poorer diet quality, and greater risk of malnutrition, especially where inflation combines with inequality, import dependence, conflict or climate extremes. Confirmed report findings are separated below from implications for corporate action.",
         "findings": [
           {
-            "claim": "Food prices affect food security mainly through an affordability channel: when food prices rise faster than incomes, households’ economic access to food declines. SOFI 2023 defines affordability as the ability to buy foods locally, with diet cost assessed relative to income after other required expenses.",
+            "claim": "In SOFI 2023, rising prices of food, agricultural inputs and energy—magnified by the war in Ukraine—undermined food security in 2022; 691–783 million people faced hunger in 2022, with a midrange of about 735 million, or 122 million more than in 2019 before the pandemic.",
             "status": "confirmed",
             "sources": [
-              "S5"
+              "S6"
             ]
           },
           {
-            "claim": "SOFI 2024 reports that food prices rose throughout 2022, increasing the global average cost of a healthy diet from 3.56 PPP dollars per person per day in 2021 to 3.96 PPP dollars in 2022; COVID-19 disruptions and the war in Ukraine contributed to higher international food and energy prices and inflationary pressure.",
+            "claim": "SOFI 2023 links high food, fuel and transport prices after the pandemic to stalled progress on food security; in 2022, Asia accounted for about 55% of undernourished people, Africa about 38% or 282 million, and Latin America and the Caribbean about 6% or 43 million.",
             "status": "confirmed",
             "sources": [
-              "S17"
-            ]
-          },
-          {
-            "claim": "SOFI 2023 reports that the cost of a healthy diet rose globally by 4.3 percent, and that from 2020 to 2021 increases were larger in low- and middle-income countries: 6.2 percent in LMICs, 5.1 percent in UMICs, 4.7 percent in LICs, versus 2.1 percent in HICs.",
-            "status": "confirmed",
-            "sources": [
-              "S2",
-              "S4"
-            ]
-          },
-          {
-            "claim": "Higher food prices contributed to unaffordability of healthy diets: SOFI 2023 estimates about 3.14 billion people, or 42 percent of the world population, could not afford a healthy diet in 2021, down from 3.19 billion, or 43 percent, in 2020.",
-            "status": "confirmed",
-            "sources": [
-              "S4",
-              "S8"
-            ]
-          },
-          {
-            "claim": "The effect on hunger depends on the balance between income recovery and price inflation. SOFI 2023 explains that 2022 hunger trends reflected both an income effect from economic recovery and a price effect from high inflation; nevertheless hunger remained far above pre-pandemic levels globally and in all regions.",
-            "status": "confirmed",
-            "sources": [
-              "S1",
-              "S7"
-            ]
-          },
-          {
-            "claim": "Regional impacts differed. In Southern Africa, increased hunger in 2022 stemmed from inflation after international commodity-price increases, plus unemployment and shock vulnerability; in Western Asia, conflict, political instability, disrupted supplies and high domestic inflation made access to food harder; in Southern Asia, sustained growth, especially in agriculture, likely outweighed inflation and improved food-security conditions.",
-            "status": "confirmed",
-            "sources": [
-              "S1",
               "S3"
             ]
           },
           {
-            "claim": "Food-price increases can worsen malnutrition through diet-quality effects. SOFI 2024 states that food insecurity can be associated with lower consumption of all food types, a higher share of dietary energy from staples, lower consumption of nutritious foods, and/or higher consumption of energy-dense foods high in unhealthy fats, sugars and salt—pathways linked to undernutrition, micronutrient deficiencies, overweight and obesity.",
+            "claim": "Food price inflation affects food security mainly by reducing economic access: households with limited income face higher costs for basic food and nutritious diets, while producers may also face higher input and energy costs, limiting supply responses.",
             "status": "confirmed",
             "sources": [
-              "S16"
+              "S1",
+              "S2",
+              "S6"
             ]
           },
           {
-            "claim": "SOFI 2024 frames price-related food insecurity as part of a broader driver system: conflict, climate variability and extremes, economic slowdowns/downturns, lack of access to and unaffordability of nutritious foods, unhealthy food environments, and high persistent inequality. These drivers are occurring more frequently, intensely and concurrently, especially in many low- and middle-income countries.",
+            "claim": "SOFI 2023 identifies conflict, climate variability and extremes, economic slowdowns/downturns and inequality as major drivers of food insecurity and malnutrition; price shocks often interact with these drivers rather than acting alone.",
+            "status": "confirmed",
+            "sources": [
+              "S2",
+              "S7"
+            ]
+          },
+          {
+            "claim": "Regional impacts differ. In Southern Africa, the 2022 rise in hunger was linked to inflation after international commodity price increases, unemployment and vulnerability to shocks; in Western Asia, political instability and conflict disrupted supplies and markets, causing higher prices and shortages; in the Caribbean, import dependence exposed small island states to high food inflation and import bills.",
+            "status": "confirmed",
+            "sources": [
+              "S1",
+              "S5",
+              "S8"
+            ]
+          },
+          {
+            "claim": "SOFI 2024 confirms that the world remains off track on SDG Targets 2.1 and 2.2, with persistently high hunger, food insecurity and malnutrition driven by conflict, climate extremes and economic slowdowns, combined with lack of access to and unaffordability of healthy diets, unhealthy food environments and persistent inequality.",
+            "status": "confirmed",
+            "sources": [
+              "S9",
+              "S10",
+              "S13"
+            ]
+          },
+          {
+            "claim": "Malnutrition impacts arise because high prices and unaffordable healthy diets push households toward cheaper, less diverse and less nutritious foods, while compounding shocks affect care practices, health services, water and sanitation, and child and maternal nutrition determinants.",
             "status": "confirmed",
             "sources": [
               "S13",
-              "S15",
-              "S11"
+              "S15"
+            ]
+          },
+          {
+            "claim": "Vulnerable groups highlighted in SOFI 2024 include rural populations, where extreme poverty and food insecurity remain deeply entrenched, and women, youth and Indigenous Peoples, who are disproportionately affected.",
+            "status": "confirmed",
+            "sources": [
+              "S16"
             ]
           }
         ],
         "recommendations": [
           {
-            "action": "Protect household purchasing power with targeted food or cash transfers indexed to local food-price inflation.",
+            "action": "Prioritize affordability of nutritious foods in CSR programmes, e.g., targeted food vouchers, healthy school meals, maternal/child nutrition support or subsidies for nutrient-dense foods.",
             "priority": "high",
-            "why": "This addresses the affordability channel: when prices rise relative to income, households lose access to healthy diets. Impact should be tracked through cost and affordability of a healthy diet and FIES moderate/severe food insecurity.",
+            "why": "This addresses the driver of unaffordable healthy diets and food price inflation. Impact can be tracked through household food insecurity, diet diversity and affordability of a healthy diet indicators.",
             "sources": [
-              "S5",
-              "S17",
-              "S20"
-            ]
-          },
-          {
-            "action": "Invest in resilient local and regional supply chains for nutritious foods, including storage, cold chains and logistics in climate- and conflict-exposed markets.",
-            "priority": "high",
-            "why": "SOFI links higher prices to supply disruptions from conflict, climate extremes, COVID-19 and the war in Ukraine; improving supply reliability can reduce price spikes and support access to diverse foods.",
-            "sources": [
-              "S1",
-              "S3",
-              "S15",
-              "S17"
-            ]
-          },
-          {
-            "action": "Support smallholder productivity and market access for nutrient-dense foods, not only staple crops.",
-            "priority": "medium",
-            "why": "Food insecurity affects diet quality, including reduced nutritious-food consumption and greater reliance on staples; production and market support for diverse foods can improve diet quality and affordability.",
-            "sources": [
-              "S16",
+              "S6",
+              "S9",
               "S13"
             ]
           },
           {
-            "action": "Prioritize low- and middle-income countries and vulnerable regions where price increases and affordability pressures are highest.",
+            "action": "Support smallholder and local food supply resilience through input access, climate-smart agronomy, storage, logistics and market-linkage investments.",
             "priority": "high",
-            "why": "SOFI 2023 shows cost increases were much larger in LMICs, UMICs and LICs than in HICs, and regional examples show inflation interacting with unemployment, conflict and political instability.",
+            "why": "Higher input, energy and transport costs amplify food price shocks; strengthening local production and supply chains can reduce vulnerability to disruptions and improve availability of nutritious foods.",
             "sources": [
-              "S4",
               "S1",
-              "S3"
+              "S2",
+              "S4",
+              "S12"
             ]
           },
           {
-            "action": "Use gender-, rural/urban- and income-disaggregated monitoring when designing programmes.",
-            "priority": "medium",
-            "why": "SOFI 2024 notes higher food insecurity in rural areas than peri-urban and urban areas, and consistently higher food insecurity among women than men; price shocks can therefore have unequal effects.",
+            "action": "Design programmes specifically for high-risk geographies: conflict-affected markets, climate-exposed rural areas, import-dependent small island states and inflation-hit urban/peri-urban communities.",
+            "priority": "high",
+            "why": "SOFI shows price impacts vary by region and are worst when combined with conflict, climate extremes, import dependence or weak livelihoods.",
             "sources": [
-              "S20"
+              "S5",
+              "S8",
+              "S12",
+              "S15"
+            ]
+          },
+          {
+            "action": "Embed gender, youth and Indigenous Peoples targeting in food security investments.",
+            "priority": "medium",
+            "why": "SOFI 2024 identifies these populations as disproportionately affected, so targeting improves equity and the likelihood of measurable nutrition impact.",
+            "sources": [
+              "S16"
+            ]
+          },
+          {
+            "action": "Use a resilience-financing lens: combine short-term food assistance with longer-term investments in livelihoods, climate adaptation and peace-sensitive market recovery.",
+            "priority": "medium",
+            "why": "SOFI 2024 calls for financing aligned to drivers including conflict, climate extremes and economic shocks, and for linking humanitarian and development approaches.",
+            "sources": [
+              "S12",
+              "S13"
             ]
           }
         ],
         "next_steps": [
-          "Map the company’s operating countries against SOFI risk drivers: conflict, climate extremes, economic slowdown, food inflation, inequality and unaffordability of healthy diets.",
-          "Identify workforce and community groups most exposed to food-price inflation, especially low-income households, women, rural communities and informal workers.",
-          "Select intervention geographies where food-price inflation and healthy-diet unaffordability are highest.",
-          "Define whether the CSR/ESG programme will focus on emergency purchasing power, resilient supply chains, nutritious-food production, or a combination.",
-          "Set a baseline for FIES food insecurity, cost/affordability of a healthy diet, dietary diversity and child nutrition indicators before programme launch.",
-          "Partner with local governments, food banks, producer groups and health/nutrition agencies to avoid duplicating existing social-protection or food-security programmes."
+          "Map company operations and sourcing regions against food price inflation, conflict, climate and import-dependence risks.",
+          "Identify affected stakeholder groups: workers, smallholder suppliers, surrounding communities, women, youth and Indigenous Peoples.",
+          "Choose 2–3 priority intervention areas where the company has leverage: wages/livelihoods, food access, supply-chain resilience or nutrition.",
+          "Set a baseline using food security and nutrition indicators before programme launch.",
+          "Partner with local governments, WFP/FAO/UNICEF actors, NGOs or producer organizations to avoid duplicating existing interventions.",
+          "Report outcomes annually using SOFI-aligned indicators and disaggregate by gender, age, location and livelihood group."
         ],
         "kpis": [
           {
-            "metric": "Cost of a healthy diet and affordability of a healthy diet",
-            "how_to_measure": "Track local cost of a least-cost healthy diet relative to household income; report change in the share of target households unable to afford it."
+            "metric": "Prevalence of moderate or severe food insecurity using FIES",
+            "how_to_measure": "Survey beneficiary households before and after intervention using the Food Insecurity Experience Scale."
           },
           {
-            "metric": "Prevalence of moderate or severe food insecurity",
-            "how_to_measure": "Use the Food Insecurity Experience Scale (FIES) in baseline and follow-up household surveys."
+            "metric": "Affordability of a healthy diet",
+            "how_to_measure": "Track local cost of a healthy diet against household income or wages in target communities."
           },
           {
-            "metric": "Diet quality and diversity",
-            "how_to_measure": "Measure household or individual dietary diversity and consumption frequency of nutritious foods versus staples and ultra-processed foods."
+            "metric": "Household dietary diversity or minimum dietary diversity for women/children",
+            "how_to_measure": "Use 24-hour recall surveys to assess whether higher prices are reducing consumption of nutritious food groups."
           },
           {
-            "metric": "Hunger or undernourishment proxy",
-            "how_to_measure": "Track food consumption gaps, meal skipping, reduced portion sizes and, where available, prevalence of undernourishment at national or subnational level."
+            "metric": "Child malnutrition indicators",
+            "how_to_measure": "Where appropriate and ethically managed, monitor stunting, wasting or minimum acceptable diet through health or nutrition partners."
           },
           {
-            "metric": "Malnutrition outcomes",
-            "how_to_measure": "For relevant programmes, monitor child wasting, stunting, micronutrient deficiency proxies, and overweight/obesity risk indicators through health or nutrition partners."
+            "metric": "Price and supply stability for nutritious foods",
+            "how_to_measure": "Monitor market prices, stockouts and transport/logistics disruptions for priority nutritious foods in intervention areas."
           }
         ],
         "missing_information": [
-          "Target countries or regions for the company’s ESG programme.",
-          "Whether the focus is employees, supply-chain workers, smallholders, consumers or surrounding communities.",
-          "Available budget, time horizon and appetite for emergency relief versus systemic investment.",
-          "Existing partnerships with governments, NGOs, food retailers, farmers or health systems.",
-          "Local food-price, wage and household-income data for target geographies.",
-          "Any priority nutrition outcomes, such as child wasting, stunting, micronutrient deficiencies or diet-related NCD risk."
+          "Target countries or sourcing regions of interest.",
+          "Whether the focus is employees, supply-chain producers, consumers or surrounding communities.",
+          "Available CSR/ESG budget and time horizon.",
+          "Existing partnerships with NGOs, UN agencies, governments or producer groups.",
+          "Current wage, food access or nutrition data for affected stakeholders.",
+          "Risk tolerance for working in conflict-affected or fragile contexts."
         ],
         "risks_assumptions": [
-          "Confirmed SOFI findings describe global and regional patterns; local impacts may differ by market structure, policy response and household income sources.",
-          "Food-price increases can harm consumers but may benefit some net food-producing households if farmgate prices rise and input costs do not offset gains.",
-          "Cash or voucher support may be less effective where conflict, climate shocks or logistics constraints limit food availability.",
-          "Nutrition outcomes respond more slowly than food-price or food-security indicators and require health, sanitation and care-related interventions as well as food access.",
-          "Recommendations are programme hypotheses unless tailored with client-specific geography, population and budget data."
+          "Food price interventions can distort local markets if poorly targeted or not coordinated with public systems.",
+          "Nutrition outcomes require more than food access; health, WASH, care practices and gender dynamics also matter.",
+          "Conflict and climate shocks may overwhelm company-level interventions without public and humanitarian coordination.",
+          "The answer uses SOFI 2023 figures for 2022 hunger and SOFI 2024 for the financing/drivers framing; figures are not mixed without year context."
         ],
         "confidence": {
           "level": "high",
-          "reason": "The main mechanisms and figures are directly supported by SOFI 2023 and 2024 passages on food-price inflation, cost and affordability of healthy diets, hunger, food insecurity, malnutrition pathways and major drivers."
+          "reason": "Findings are directly grounded in SOFI 2023 and 2024 passages on food price inflation, hunger, regional impacts, drivers, malnutrition pathways and vulnerable groups."
         }
       },
       "sources": [
@@ -197,21 +199,43 @@
           "path": "data/FoodSecurity/SOFI-2023.pdf",
           "source": "UN FAO report",
           "text": "THE STATE OF FOOD SECURITY AND NUTRITION IN THE WORLD 2023 repercussions of the war in Ukraine and the price inflation for food, agricultural inputs and energy, together with other drivers of food insecurity such as conflicts and weather-related events. As a result, hunger remains far above pre-pandemic levels globally and in all regions. At the regional level, this dynamic of income and price effect is visible in multiple subregions, with varying results. In Southern Africa , for instance, the uptick of hunger in 2022 stemmed from increasing inflation, following the upsurge in international commodity prices, as well as domestic challenges such as persistently high levels of unemployment and vulnerability to shocks. 11 Although there was sustained GDP growth in 2022, this often did not translate into improved socioeconomic conditions for the poor. Agricultural production, at the same time, suffered from severe droughts and floods, and the surge in international fertilizer prices. In Middle Africa, the increase in hunger has mainly resulted from food inflation and increasing food import bills, as well as extreme climate events, which have counteracted the positive effects of economic growth, driven by buoyant oil export revenues in some countries.",
-          "cosine": 0.7051
+          "cosine": 0.7149
         },
         {
           "id": "S2",
           "kind": "document",
           "title": "FAO SOFI 2023: The State of Food Security and Nutrition in the World",
-          "page": 55,
+          "page": 9,
           "url": null,
           "path": "data/FoodSecurity/SOFI-2023.pdf",
           "source": "UN FAO report",
-          "text": "tage points ( Figure 9).h h See Table A1.4 in Annex 1A for prevalence of moderate or severe food insecurity, and severe food insecurity only, among adult men and women in 2022 by region and subregion. See Annex 2 , Section C for the methodology. There were encouraging improvements in the gender gap in both Asia and Latin America and the Caribbean from 2021 to 2022. The gap narrowed by more than 2 percentage points for moderate or severe food insecurity in both regions, and by about 2 and 1.3 percentage points for severe food insecurity in Asia and in Latin America and the Caribbean, respectively. In Africa and in Northern America and Europe, however, the gap increased marginally for moderate or severe food insecurity and remained about the same for severe food insecurity. n 2.2 COST AND AFFORDABILITY OF A HEALTHY DIET KEY MESSAGES è The cost of a healthy diet rose globally by 4.3 percent in comparison to 2020, and by 6.7 percent compared to the pre-COVID-19-pandemic levels, in 2019. This increase is due to the overall rise in inflation in 2020 and 2021, driven in part by the persisting effects of the pandemic. è Worldwide in 2021, the average cost of a healthy diet was 3.66 PPP dollars per person per day.",
-          "cosine": 0.6818
+          "text": "FOREWORD This report brings our organizations together again to reaffirm that, if we do not redouble and better target our efforts, our goal of ending hunger, food insecurity and malnutrition in all its forms by 2030 will remain out of reach. Although the world is recovering from the global pandemic, this is occurring unevenly across and within countries. On top of this, the world is grappling with the consequences of the ongoing war in Ukraine, which has shaken food and energy markets. Agrifood systems remain highly vulnerable to shocks and disruptions arising from conflict, climate variability and extremes, and economic contraction. These factors, combined with growing inequities, keep challenging the capacity of agrifood systems to deliver nutritious, safe and affordable diets for all. These major drivers of food insecurity and malnutrition are our “new normal”. We have no option but to redouble our efforts to transform agrifood systems and leverage them towards reaching the Sustainable Development Goal 2 (SDG 2) targets. Global hunger is still far above pre-pandemic levels. It is estimated that between 690 and 783 million people in the world faced hunger in 2022. This is 122 million more people than before the COVID-19 pandemic.",
+          "cosine": 0.7026
         },
         {
           "id": "S3",
+          "kind": "document",
+          "title": "FAO SOFI 2023: The State of Food Security and Nutrition in the World",
+          "page": 41,
+          "url": null,
+          "path": "data/FoodSecurity/SOFI-2023.pdf",
+          "source": "UN FAO report",
+          "text": "THE STATE OF FOOD SECURITY AND NUTRITION IN THE WORLD 2023 55 percent of the total number of undernourished people in 2022. About 38 percent (282 million) of undernourished people live in Africa and about 6 percent (43 million) in Latin America and the Caribbean. Economic recovery hampered by new challenges to food security At the end of 2021, global food security was on high alert due to lingering effects of the COVID-19 pandemic as well as new and ongoing conflicts and weather-related shocks. A combination of an unequal economic recovery after a dramatic decrease in economic activity observed in 2020, and rising food, fuel and transportation prices produced by the recovery itself, thwarted progress in food security. Just as global economic conditions appeared to be more favourable for 2022 and the prospects of a reduction in hunger and food insecurity towards pre-pandemic levels seemed possible, the outbreak of the war in Ukraine sent another shock through the global economy.",
+          "cosine": 0.6859
+        },
+        {
+          "id": "S4",
+          "kind": "document",
+          "title": "FAO SOFI 2023: The State of Food Security and Nutrition in the World",
+          "page": 95,
+          "url": null,
+          "path": "data/FoodSecurity/SOFI-2023.pdf",
+          "source": "UN FAO report",
+          "text": "THE STATE OF FOOD SECURITY AND NUTRITION IN THE WORLD 2023 FIGURE 21 CHALLENGES AND OPPORTUNITIES IN ACCESSING AFFORDABLE HEALTHY DIETS ACROSS THE RURAL–URBAN CONTINUUM Widespread diﬀusion of food purchases in rural areas Rising income for farmers well connected to cities due to improved productivity and diversiﬁcation following rising demand Urban and peri-urban agricultural production creating employment, generating opportunities for small businesses and increasing supply of nutritious foods As urban areas grow closer to rural areas – better access to agricultural inputs and services allowing improved productivity, lower prices and rising incomes Greater oﬀ-farm opportunities in midstream food supply chains More employment opportunities in downstream food supply chains More diversiﬁed diets, including dairy, ﬁsh, meat, vegetables, fruits and legumes Greater demand for convenience, pre-prepared, ready-to-eat and fast foods High cost of nutritious foods relative to the cost of processed, energy-dense foods high in fats, sugars and/or salt Spread of processed foods of high energy density and minimal nutritional value that are readily available and cheap Increased supply of diverse nutritious foods but at a very high cost that is unaﬀordable for the poor Large-scale expansion of supermarkets and hypermarkets supplying cheap highly processed foods of minimal nutritional value Food",
+          "cosine": 0.7036
+        },
+        {
+          "id": "S5",
           "kind": "document",
           "title": "FAO SOFI 2023: The State of Food Security and Nutrition in the World",
           "page": 45,
@@ -219,131 +243,43 @@
           "path": "data/FoodSecurity/SOFI-2023.pdf",
           "source": "UN FAO report",
           "text": "inflation and increasing food import bills, as well as extreme climate events, which have counteracted the positive effects of economic growth, driven by buoyant oil export revenues in some countries. 11 In Western Asia, many countries benefited from increased oil revenues, but these did not always translate into lower levels of hunger in 2022. Political instability in some countries and conflicts have continued to disrupt food supplies, markets and distribution systems, resulting in higher food prices and food shortages. In addition, domestic inflation has soared in several countries, making access to food more difficult. 12 In Southern Asia, on the other hand, the outcome of sustained economic growth, especially in agriculture, has likely prevailed over inflation, thus contributing to an overall improvement in food security conditions. More than one country in the region has also enacted policy measures that have contributed to this overall improvement, including BOX 1 (Continued) SOURCES: Food Security Information Network & Global Network Against Food Crises. 2023. Global Report on Food Crises (GRFC) 2023 . Rome. www.fsinplatform.org/global-report-food-crises-2023 ; FAO. 2023. FAOSTAT: Suite of Food Security Indicators. In: FAO . [Cited 12 July 2023].",
-          "cosine": 0.7205
-        },
-        {
-          "id": "S4",
-          "kind": "document",
-          "title": "FAO SOFI 2023: The State of Food Security and Nutrition in the World",
-          "page": 58,
-          "url": null,
-          "path": "data/FoodSecurity/SOFI-2023.pdf",
-          "source": "UN FAO report",
-          "text": "d showed a slowdown in cost inflation compared to the previous period. In Latin America and the Caribbean, the cost increase ranged from 6.4 percent in South America to 4.1 percent in Central America. The COVID-19 pandemic has exacerbated existing inequalities across all regions in the world. Low- and middle-income countries have faced greater challenges related to increases in food prices and food insecurity compared to high-income countries. 29 This is also reflected in the increased cost of a healthy diet from 2020 to 2021, which was much larger in LMICs (6.2 percent increase), UMICs (5.1 percent) and LICs (4.7 percent), compared to HICs (2.1 percent) ( Table 5). About 3.14 billion people in the world – or 42 percent – were unable to afford a healthy diet in 2021; this figure is down somewhat from 3.19 billion people – or 43 percent – in 2020 ( Table 5 and Figure 10 B). In many countries, the increase in the cost of a healthy diet occurred in combination with a decline in disposable income following the persisting effects of the pandemic. Lockdowns, economic downturns, and other pandemic-related disruptions in 2020 led to job losses and reduced incomes for many people, affecting low-income households the most as they spend a higher share of income on food.",
-          "cosine": 0.6881
-        },
-        {
-          "id": "S5",
-          "kind": "document",
-          "title": "FAO SOFI 2023: The State of Food Security and Nutrition in the World",
-          "page": 274,
-          "url": null,
-          "path": "data/FoodSecurity/SOFI-2023.pdf",
-          "source": "UN FAO report",
-          "text": "| 244 | Acute food insecurity Food insecurity found in a specified area at a specific point in time and of a severity that threatens lives or livelihoods, or both, regardless of the causes, context or duration. Has relevance in providing strategic guidance to actions that focus on short-term objectives to prevent, mitigate or decrease severe food insecurity. 54 Affordability Affordability refers to the ability of people to buy foods in their local environment. In this report, cost refers to what people have to pay to secure a healthy diet, while affordability refers to the cost relative to a person’s income, minus other required expenses. In Section 2.2 , affordability is determined by comparing the cost of a healthy diet with income distributions available in the Poverty and Inequality Platform (PIP) of the World Bank. This allows to compute the percentage and number of people in each country who are not able to afford a healthy diet. bp Agrifood systems Agrifood systems, a term increasingly used in the context of transforming food systems for sustainability and inclusivity, are broader as they encompass both agricultural and food systems and focus on both food and non-food agricultural products, with clear overlaps.",
-          "cosine": 0.6894
+          "cosine": 0.7087
         },
         {
           "id": "S6",
           "kind": "document",
           "title": "FAO SOFI 2023: The State of Food Security and Nutrition in the World",
-          "page": 56,
+          "page": 36,
           "url": null,
           "path": "data/FoodSecurity/SOFI-2023.pdf",
           "source": "UN FAO report",
-          "text": "020 and 2021. Estimated ranges of affordability indicators are presented in Table A3.2 for 2021, where lower and upper bounds reflect different assumptions about the share of income reserved for food. Country-level i In last year’s report, affordability in 2020 was obtained by applying the cost of a healthy diet in 2020 to income distributions in 2019, hence accounting for price shocks induced by the pandemic, but not for income shocks. | 26 |",
-          "cosine": 0.7057
+          "text": "that between 691 and 783 million people in the world faced hunger in 2022. Considering the midrange (about 735 million), 122 million more people faced hunger in 2022 than in 2019, before the pandemic. è The economic recovery from the pandemic observed in 2021 slowed in 2022. Rising prices of food, agricultural inputs and energy, magnified by the impact of the war in Ukraine, undermined the | 6 |",
+          "cosine": 0.6982
         },
         {
           "id": "S7",
           "kind": "document",
           "title": "FAO SOFI 2023: The State of Food Security and Nutrition in the World",
-          "page": 43,
+          "page": 31,
           "url": null,
           "path": "data/FoodSecurity/SOFI-2023.pdf",
           "source": "UN FAO report",
-          "text": "THE STATE OF FOOD SECURITY AND NUTRITION IN THE WORLD 2023 and global headline inflation exceeded 9 percent in the second half of the year, the highest level since 1995. 8 In this context, global trends in hunger reflect the combination of two factors interplaying at the household level. First, an income effect produced by the economic recovery in 2022 likely contributed to an increase in household disposable income and improved access to food, particularly for the poorest households that suffered heavy income losses during the pandemic. Globally, employment increased by 2.3 percent in 2022 from a meagre annual growth of 0.2 percent in the period from 2020 to 2021. 9 Employment growth was faster in low-income countries (LICs) and lower-middle-income countries (LMICs) than in upper-middle-income countries (UMICs) and high-income countries (HICs). Concomitantly, global unemployment declined significantly in 2022 to 205 million, down from 216 million in 2021 and 235 million in 2020, but still above its 2019 level. 9 The second factor affecting the trend in hunger is the price effect. Increases in food prices and general inflation can erode income gains and worsen access to food. In the short term, this is particularly true for the poorest segments of the population who spend a larger share of their income on food.",
-          "cosine": 0.6733
+          "text": "ps were not buoyed up by the economic recovery or were bearing the brunt of higher prices of food, inputs and energy – or both. For these reasons, we are still far off track to meet the SDG 2 targets. Beyond the global assessment of food security and nutrition in 2022, this report provides in-depth analysis of the major drivers behind these trends which are challenging our efforts to achieve the SDGs in the context of the 2030 Agenda. Past editions have repeatedly highlighted the intensification of the major drivers of food insecurity and malnutrition – conflict, climate extremes, economic slowdowns and downturns, and growing inequality – often occurring in combination, which have pushed us off track to meet the SDG 2 targets. There is no question these threats will continue, requiring that we remain steadfast in taking bold actions to build resilience against them. However, there are still important megatrends that must be factored into the analysis to fully understand the challenges to and opportunities for meeting the SDG 2 targets. | 1 |",
+          "cosine": 0.6956
         },
         {
           "id": "S8",
           "kind": "document",
           "title": "FAO SOFI 2023: The State of Food Security and Nutrition in the World",
-          "page": 56,
+          "page": 46,
           "url": null,
           "path": "data/FoodSecurity/SOFI-2023.pdf",
           "source": "UN FAO report",
-          "text": "ors in 2017 PPP terms, including income distributions. 26 Consequently, the indicators of affordability are expressed in 2017 PPP rather than 2011 PPP , as in previous years (see Annex 2, Section D ). The cost and affordability of a healthy diet in 2021 The revised analysis presented in this year’s report – which accounts for updated income distributions in 2020 and 2021 – shows that almost 3.2 billion people worldwide could not afford a healthy diet in 2020, with a slight improvement in 2021 (a decrease of 52 million people). Food prices continued to climb throughout 2021, pushing up the average cost of a healthy diet globally. However, a rebound in economic growth in many countries, particularly in Asia, may have translated into larger fiscal space for stimulus packages, social transfers and improved labour markets. 27, 28 These efforts helped to counter the effects of high food inflation, thereby reducing the number of people unable to afford a healthy diet at the global level, largely driven by Asia. Table 5 presents the CoAHD indicators at the global and regional levels, and by country income group, for 2019, 2020 and 2021. Estimated ranges of affordability indicators are presented in Table A3.2 for 2021, where lower and upper bounds reflect different assumptions about the share of income reserved for food.",
-          "cosine": 0.6787
+          "text": "CHAPTER 2 FOOD SECURITY AND NUTRITION AROUND THE WORLD supplying fertilizers to farmers, providing cereal subsidies to vulnerable population groups, and reducing customs duties on imported cereals. 13 In the Caribbean , more than one small island developing state has suffered from high food inflation and increased import bills, given the widespread dependence of the subregion on imported food and agricultural products. At the same time, export revenues have been declining in key sectors, including tourism, resulting in reduced disposable income and increased food insecurit y. 14 On the contrary, the observed decline in hunger in 2022 in South America , a net exporter of food and agricultural products, stemmed largely from positive development in labour markets, which counteracted the surge in inflation, as well as from social protection policies. 14 Additionally, some countries in the region have benefited from the surge in oil and gas prices that boosted export revenues. This has translated into improved public budget resources (which could be used to finance social protection programmes) and investment in agriculture and food distribution systems. At the country level, these countervailing forces have played out in different ways with unequal impacts on trends in hunger.",
+          "cosine": 0.6768
         },
         {
           "id": "S9",
-          "kind": "document",
-          "title": "FAO SOFI 2023: The State of Food Security and Nutrition in the World",
-          "page": 139,
-          "url": null,
-          "path": "data/FoodSecurity/SOFI-2023.pdf",
-          "source": "UN FAO report",
-          "text": "d vegetables and high prices of nutritious foods  Exclusion of farmers from more formal food value chains OPPORTUNITIES  More diversiﬁed diets and mainstreaming of purchasing of processed foods  Increased oﬀ-farm income opportunities  Improved productivity for farmers well connected to cities Progressive interconnectedness and gradual dietary convergence across the rural–urban continuum | 109 |",
-          "cosine": 0.7505
-        },
-        {
-          "id": "S10",
-          "kind": "document",
-          "title": "FAO SOFI 2023: The State of Food Security and Nutrition in the World",
-          "page": 278,
-          "url": null,
-          "path": "data/FoodSecurity/SOFI-2023.pdf",
-          "source": "UN FAO report",
-          "text": "well-being. Nutrition transition As incomes rise and populations become more urban, diets high in complex carbohydrates and fibre give way to more energy-dense diets high in fats, sugars and/or salt. These global dietary trends are accompanied by a demographic transition with a shift towards increased life expectancy and reduced fertility rates. At the same time, disease patterns move away from infectious and nutrient-deficiency diseases towards higher rates of overweight and obesity and diet-related non-communicable diseases",
-          "cosine": 0.7322
-        },
-        {
-          "id": "S11",
-          "kind": "document",
-          "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
-          "page": 177,
-          "url": null,
-          "path": "data/FoodSecurity/SOFI-2024.pdf",
-          "source": "UN FAO report",
-          "text": "rld back on track, moving in the right direction towards meeting the Sustainable Development Goal (SDG) Targets 2.1 and 2.2 of ending hunger, food insecurity and malnutrition in all its forms by 2030. In many low- and middle-income countries in particular, conflicts, climate variability and extremes, and economic slowdowns and downturns continue to occur more frequently and often together. Hunger is higher and has increased the most in countries affected by the major drivers, and hunger increases are | 145 |",
-          "cosine": 0.6913
-        },
-        {
-          "id": "S12",
-          "kind": "document",
-          "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
-          "page": 54,
-          "url": null,
-          "path": "data/FoodSecurity/SOFI-2024.pdf",
-          "source": "UN FAO report",
-          "text": "tion, but the main ones pass through diet. 11 For this reason, it is important to enhance our understanding of how food insecurity, including moderate levels of severity, may be associated with diets. However, the collection of food consumption data in a way that allows for the comparison of diets across countries and cultures is a daunting challenge, and several initiatives are currently underway to meet this challenge. One such initiative is collecting dietary data in many of the same surveys that collect FIES data, providing the unique opportunity to examine the association between food insecurity and diet ( Box 3). The lack of improvement in food security and the uneven progress in the economic access to healthy diets cast a shadow over the possibilities of achieving Zero Hunger in the world, six years away from the 2030 deadline. There is the need to accelerate the transformation of our agrifood systems with greater resilience to the major drivers, addressing inequalities to ensure that healthy diets are affordable and available to all. n 2.2 COST AND AFFORDABILITY OF A HEALTHY DIET KEY MESSAGES è New food price data and methodological improvements have resulted in updated estimates of the cost and more accurate estimates of the affordability of a healthy diet, leading to a revision of the entire series of both sets of indicators.",
-          "cosine": 0.6706
-        },
-        {
-          "id": "S13",
-          "kind": "document",
-          "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
-          "page": 23,
-          "url": null,
-          "path": "data/FoodSecurity/SOFI-2024.pdf",
-          "source": "UN FAO report",
-          "text": "hieve healthy diets and adequate health. However, to date there have been limited efforts to include this range of interventions in comprehensive measures of financing for food security and nutrition. Importantly, the current definitions do not include the financing of interventions more specifically designed to address the major drivers behind the trends in hunger, food insecurity and malnutrition that have been identified in past editions of this report – conflict, climate variability and extremes, and economic slowdowns and downturns, combined with structural underlying factors: lack of access to and unaffordability of nutritious foods, unhealthy food environments, and high and persistent inequality. | xxi |",
-          "cosine": 0.6692
-        },
-        {
-          "id": "S14",
-          "kind": "document",
-          "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
-          "page": 178,
-          "url": null,
-          "path": "data/FoodSecurity/SOFI-2024.pdf",
-          "source": "UN FAO report",
-          "text": "d economic slowdowns and downturns, and their underlying structural factors, lack of access to and unaffordability of nutritious foods, unhealthy food environments, and high and persistent inequality. Assessing public domestic financing for food security and nutrition is problematic as there is no global financial database with sufficient data for the analysis. Public spending on agriculture is available globally, but this accounts for only a fraction, and sometimes a very small one, of all the public spending on food security and nutrition. There are not readily available data for all the countries in the world to estimate the public spending that is supporting food security and nutrition. An analysis of ten low- and middle-income countries shows that public spending on food security and nutrition was growing before the COVID-19 pandemic, with support to food consumption taking the greatest share, but this trend could not be sustained in some countries. Governments in some middle-income countries also seem to be spending relatively larger shares of their budget on addressing the major higher in poor countries affected by more than one major driver. Because agrifood systems in these countries are not resilient to these external forces, hunger, food insecurity and malnutrition are still on the rise and disproportionately affect children.",
-          "cosine": 0.6702
-        },
-        {
-          "id": "S15",
           "kind": "document",
           "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
           "page": 20,
@@ -351,43 +287,21 @@
           "path": "data/FoodSecurity/SOFI-2024.pdf",
           "source": "UN FAO report",
           "text": "EXECUTIVE SUMMARY The reverse in progress and the persistently high levels of hunger, food insecurity and malnutrition in recent years have put the world off track to meet Sustainable Development Goal (SDG) Targets 2.1 and 2.2 – to end hunger, food insecurity and all forms of malnutrition by 2030. Previous editions of this report have repeatedly highlighted the intensification of several major drivers of food insecurity and malnutrition, specifically conflict, climate variability and extremes, and economic slowdowns and downturns, combined with the well-established underlying factors that contribute to food insecurity and malnutrition, such as lack of access to and unaffordability of healthy diets, unhealthy food environments, and high and persistent inequality. Not only are these major drivers increasing in frequency and intensity, they are occurring concurrently more often, and in combination with the underlying factors, resulting in increasing numbers of hungry and food-insecure people. Depending on the major driver or combination of drivers affecting food security and nutrition in a country, addressing them will require a portfolio of policies across six transformative pathways, as outlined in detail in The State of Food Security and Nutrition in the World 2021.",
-          "cosine": 0.6495
+          "cosine": 0.7205
         },
         {
-          "id": "S16",
+          "id": "S10",
           "kind": "document",
           "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
-          "page": 52,
+          "page": 33,
           "url": null,
           "path": "data/FoodSecurity/SOFI-2024.pdf",
           "source": "UN FAO report",
-          "text": "k is not straightforward because of a plethora of factors that differ across contexts, such as those related to food environments, consumer behaviour, and the cost and affordability of a healthy diet. For example, food insecurity has been found to be associated with lower consumption of all types of foods and higher share of dietary energy from staple foods in some contexts, while in others it has been found to be associated with lower consumption of nutritious foods and higher consumption of energy-dense foods high in unhealthy fats, sugars and salt. 20 Food insecurity, therefore, may affect diets in a variety of ways that could potentially contribute to several forms of malnutrition including undernutrition (stunting, wasting and micronutrient deficiencies) but also to overweight and obesity. 11, 21 However, because most studies collect food insecurity and dietary intake data using different samples, data collection modalities and analysis approaches, thus hampering comparison of the results, it has been difficult to explore the associations between the severity of food insecurity and the healthiness of diets across countries. FAO has been collecting food security data annually using the Food Insecurity Experience Scale (FIES) since 2014 through the Gallup © World Poll (GWP).",
-          "cosine": 0.6631
+          "text": "CHAPTER 1 INTRODUCTION The reverse in progress and the persistently high levels of hunger, food insecurity and malnutrition in recent years have taken the world off track to achieve Sustainable Development Goal (SDG) Targets 2.1 and 2.2 – end hunger, food insecurity and all forms of malnutrition by 2030. Progress to address many drivers has been slow, and the increasing occurrence and intensity of several of these drivers will keep us on a worsening trajectory unless the risks are firmly addressed. Previous editions of this report have repeatedly highlighted the intensification of several major drivers of food insecurity and malnutrition, specifically conflict, climate variability and extremes, and economic slowdowns and downturns, combined with the well-established underlying factors that contribute to food insecurity and malnutrition, such as lack of access to and unaffordability of nutritious foods, unhealthy food environments, and high and persistent inequalit y.1–4 Not only are the major drivers increasing in frequency and intensity, they are occurring concurrently more often, and in combination with the underlying factors, resulting in increasing numbers of hungry and food-insecure people (see Chapter 3).5 In this report, these known and intensifying factors, and the complex combinations of them that are behind persistently high levels of hunger, food insecurity and malnu",
+          "cosine": 0.7016
         },
         {
-          "id": "S17",
-          "kind": "document",
-          "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
-          "page": 54,
-          "url": null,
-          "path": "data/FoodSecurity/SOFI-2024.pdf",
-          "source": "UN FAO report",
-          "text": "l improvements have resulted in updated estimates of the cost and more accurate estimates of the affordability of a healthy diet, leading to a revision of the entire series of both sets of indicators. è Food prices rose throughout 2022, pushing up the average cost of a healthy diet globally to 3.96 purchasing power parity (PPP) dollars per person per day, up from 3.56 PPP dollars in 2021. Disruptions from the COVID-19 pandemic and the war in Ukraine contributed to significant increases in international food and energy prices, exacerbating inflationary pressures. » | 22 |",
-          "cosine": 0.6997
-        },
-        {
-          "id": "S18",
-          "kind": "document",
-          "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
-          "page": 181,
-          "url": null,
-          "path": "data/FoodSecurity/SOFI-2024.pdf",
-          "source": "UN FAO report",
-          "text": "THE STATE OF FOOD SECURITY AND NUTRITION IN THE WORLD 2024 millions will have been pushed into crisis or worse levels of acute food insecurity, and insufficient progress will have been made to meet all global nutrition targets. The resulting social, economic and environmental costs will be unmeasurable. There is no time to lose, as the cost of inaction greatly exceeds the cost of action this report calls for. It is hoped that this report’s calls to action will inform the sustainable development and financing discussions at the Summit of the Future in September 2024 and all the upcoming SDG global discussions, including the political processes of the Fourth International Conference on Financing for Development in 2025. A world without hunger, food insecurity and malnutrition is a world worth saving, and a world worth financing and investing in. n | 149 |",
-          "cosine": 0.6489
-        },
-        {
-          "id": "S19",
+          "id": "S11",
           "kind": "document",
           "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
           "page": 1,
@@ -395,35 +309,79 @@
           "path": "data/FoodSecurity/SOFI-2024.pdf",
           "source": "UN FAO report",
           "text": "FOOD SECURITY AND NUTRITION IN THE WORLD THE STATE OF FINANCING TO END HUNGER, FOOD INSECURITY AND MALNUTRITION IN ALL ITS FORMS 2024",
-          "cosine": 0.6778
+          "cosine": 0.7315
         },
         {
-          "id": "S20",
+          "id": "S12",
           "kind": "document",
           "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
-          "page": 21,
+          "page": 141,
           "url": null,
           "path": "data/FoodSecurity/SOFI-2024.pdf",
           "source": "UN FAO report",
-          "text": "f urbanization at the global level. The prevalence of moderate or severe food insecurity was 31.9 percent in rural areas compared with 29.9 percent in peri-urban areas and 25.5 percent in urban areas. A comparison of the food-insecurity status of men and women shows that the prevalence of food insecurity has remained consistently higher among women than among men, globally and in all regions, since data first became available in 2015, although the gender gap has narrowed in most regions in the last two years. Cost and affordability of a healthy diet The cost of a healthy diet (CoHD) indicator provides national-level estimates of the cost of acquiring the cheapest possible healthy diet in a country, defined as a diet comprising a variety of locally available foods that meet energy and nutritional requirements. The CoHD is then compared with national income distributions to estimate the prevalence of unaffordability and the number of people unable to afford a healthy diet. In this year’s edition of the report, the indicators are updated to 2022. a New food price data and methodological improvements have resulted in updated estimates of the cost and more accurate estimates of the affordability of a healthy diet, leading to a revision of the entire series of both sets of indicators.",
-          "cosine": 0.6449
+          "text": "THE STATE OF FOOD SECURITY AND NUTRITION IN THE WORLD 2024 The high proportion of countries affected by at least one major driver builds the case for mainstreaming food security and nutrition objectives across other sector financing where the priorities do not always include meeting SDG Targets 2.1 and 2.2. Considering that climate extremes are the most prevalent driver in all country groups, the opportunity of creating synergies between food security and nutrition and climate objectives will be essential for scaling up enough resources to fill the funding gap. On the other hand, the relevance of conflict as a driver in countries with limited access to financing calls for strengthening the humanitarian–development–peace nexus, as well as for bridging the short ‑term horizon of humanitarian operations with the needed long‑term perspective of investments oriented to eradicating hunger, food insecurity and malnutrition. In addition, the higher PoU and stunting levels found in countries with limited or moderate access to financing emphasize the urgency of scaling up financing flows for ending hunger, food insecurity and malnutrition.",
+          "cosine": 0.692
+        },
+        {
+          "id": "S13",
+          "kind": "document",
+          "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
+          "page": 24,
+          "url": null,
+          "path": "data/FoodSecurity/SOFI-2024.pdf",
+          "source": "UN FAO report",
+          "text": "to ensure that all individuals are protected against short-term or long-term instability in food security and nutrition, caused by various climatic, economic, social, commercial and political factors. Financing therefore encompasses all the interventions aligned with the six transformative policy pathways designed to strengthen the resilience of agrifood systems to the major drivers behind hunger, food insecurity and malnutrition – namely conflict, climate variability and extremes, and economic slowdowns and downturns – and address the underlying structural factors: lack of access to and unaffordability of nutritious foods, unhealthy food environments, and high and persistent inequality. To generate a framework for increased financing and improved finance targeting, it is imperative to gain an understanding of the major drivers of food insecurity and malnutrition, and of the countries affected by these major drivers. In the last ten years, the frequency and intensity of conflict, climate extremes and economic downturns have increased, undermining food security and nutrition around the world. Furthermore, high levels of income inequality exacerbate the effects of these drivers. While each of these major drivers is unique, they often interact to create multiple compounding impacts transmitted through agrifood systems to the detriment of food security and nutrition.",
+          "cosine": 0.7055
+        },
+        {
+          "id": "S14",
+          "kind": "document",
+          "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
+          "page": 3,
+          "url": null,
+          "path": "data/FoodSecurity/SOFI-2024.pdf",
+          "source": "UN FAO report",
+          "text": "FOOD SECURITY AND NUTRITION IN THE WORLD THE STATE OF FINANCING TO END HUNGER, FOOD INSECURITY AND MALNUTRITION IN ALL ITS FORMS ISSN 2663-8061 Food and Agriculture Organization of the United Nations International Fund for Agricultural Development | United Nations Children’s Fund World Food Programme | World Health Organization Rome, 2024 2024",
+          "cosine": 0.6919
+        },
+        {
+          "id": "S15",
+          "kind": "document",
+          "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
+          "page": 94,
+          "url": null,
+          "path": "data/FoodSecurity/SOFI-2024.pdf",
+          "source": "UN FAO report",
+          "text": "ration and handling, infant and young feeding practices, health-seeking behaviour, intra-household resource allocation, and care for girls and women) and health services and environmental health (e.g. immunization, water and sanitation, and availability and affordability of, and access to health services). For instance, a growing body of literature is also demonstrating the direct impact of climate, particularly extreme heat, on the nutritional status. This is corroborated by the association found between the occurrence of these drivers and the food security and nutrition indicators. 30 Alarmingly, the majority of low- and middle-income countries are affected by at least one of the major drivers and, where there are multiple drivers occurring, the compounding impacts lead to the highest increases in hunger and food insecurity ( Figure 18). Countries in a protracted major food crisis are severely affected by multiple drivers and face among the highest level of food insecurity ( Box 8, Figure A1). The extended definition of financing for food security and nutrition encapsulates the interventions that contribute to one or more of the six transformative policy pathways proposed in the 2021 edition of this report 30 to address the major drivers of the current levels of food insecurity and malnutrition.",
+          "cosine": 0.6963
+        },
+        {
+          "id": "S16",
+          "kind": "document",
+          "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
+          "page": 9,
+          "url": null,
+          "path": "data/FoodSecurity/SOFI-2024.pdf",
+          "source": "UN FAO report",
+          "text": "FOREWORD Achieving the Sustainable Development Goals (SDGs) is the responsibility of all countries. Our five organizations support transformative efforts to progress towards a world free from hunger, food insecurity and malnutrition in all its forms by 2030. We are encouraged by the commitment of national governments, partners all over the world and the global community towards this common goal. While we have made some progress, improvements have been uneven and insufficient. We have seen improvement in more populous countries with growing economies, but hunger, food insecurity and malnutrition continue to increase in many countries around the world. This is affecting millions of people especially in rural areas, where extreme poverty and food insecurity remain deeply entrenched. Vulnerable populations, particularly women, youth and Indigenous Peoples, are disproportionately affected. A continuation of the past trends means that by 2030, millions of people will still be undernourished, millions of children will still be affected by malnutrition in its different forms, and the world will still be falling short of reaching the global nutrition targets.",
+          "cosine": 0.6995
         }
       ],
       "tool_calls": [
         {
           "tool": "search_knowledge",
           "args": {
-            "query": "food price increases food security hunger food insecurity malnutrition drivers transmission channels inflation cost affordability healthy diet SOFI 2023",
+            "query": "rising food prices food security hunger food insecurity malnutrition drivers vulnerable groups SOFI 2023",
             "year": "2023",
-            "k": 10
+            "k": 8
           }
         },
         {
           "tool": "search_knowledge",
           "args": {
-            "query": "food price inflation increases affect hunger food insecurity malnutrition transmission channels economic slowdowns cost healthy diet SOFI 2024",
+            "query": "rising food prices food security hunger food insecurity malnutrition drivers vulnerable groups SOFI 2024",
             "year": "2024",
-            "k": 10
+            "k": 8
           }
         }
       ],
@@ -433,13 +391,13 @@
         "hypotheses": 0,
         "citation_coverage": 1.0,
         "invalid_citations": [],
-        "top3_retrieval_cosine": 0.734,
+        "top3_retrieval_cosine": 0.722,
         "grounding_score": 1.0,
-        "sources_retrieved": 20
+        "sources_retrieved": 16
       },
-      "seconds": 25.5
+      "seconds": 23.4
     }
   },
   "synthesis": null,
-  "seconds": 26.7
+  "seconds": 24.6
 }

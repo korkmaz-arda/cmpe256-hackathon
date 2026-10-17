@@ -166,21 +166,24 @@ class DomainAgent:
             msg = llm.chat(messages, config.AGENT_MODEL, tools=self.tools, schema=ANSWER_SCHEMA,
                            schema_name="domain_answer", effort="none")  # tools require effort "none" on chat completions
             if not msg.tool_calls:
-                answer = json.loads(msg.content)
+                answer = _parse_answer(msg.content)
                 break
             messages.append({"role": "assistant", "content": msg.content, "tool_calls": [
                 {"id": tc.id, "type": "function", "function": {"name": tc.function.name, "arguments": tc.function.arguments}}
                 for tc in msg.tool_calls]})
             for tc in msg.tool_calls:
-                args = json.loads(tc.function.arguments or "{}")
-                emit("tool", self.domain, tc.function.name, args)
                 try:
+                    args = json.loads(tc.function.arguments or "{}")
+                    if not isinstance(args, dict):
+                        raise ValueError("arguments must be a JSON object")
+                    emit("tool", self.domain, tc.function.name, args)
                     result = self._call_tool(tc.function.name, args, sources)
-                except Exception as exc:  # report tool errors to the model instead of crashing
+                except Exception as exc:  # report bad arguments / tool errors to the model instead of crashing
+                    args = {"raw_arguments": tc.function.arguments}
                     result = f"Tool error: {exc}"
                 tool_calls.append({"tool": tc.function.name, "args": args})
                 messages.append({"role": "tool", "tool_call_id": tc.id, "content": result})
-        if answer is None:  # ran out of tool rounds: force a final answer
+        if answer is None:  # ran out of tool rounds, or the final message wasn't valid JSON: force an answer
             messages.append({"role": "user", "content": "Answer now using the evidence gathered so far."})
             answer = llm.chat_json(messages, config.AGENT_MODEL, ANSWER_SCHEMA, "domain_answer", "none")
 
@@ -196,12 +199,23 @@ class DomainAgent:
         }
 
 
+def _parse_answer(content: str | None) -> dict | None:
+    """The final message should be schema JSON; return None (to force a retry) if it isn't."""
+    try:
+        answer = json.loads(content or "")
+    except (TypeError, ValueError):
+        return None
+    return answer if isinstance(answer, dict) and "summary" in answer else None
+
+
 def grounding_report(answer: dict, sources: list[dict]) -> dict:
     """Measurable explainability: how much of the answer is backed by retrieved evidence."""
     valid = {s["id"] for s in sources}
     findings = answer.get("findings", [])
-    cited = [f for f in findings if any(s in valid for s in f.get("sources", []))]
-    invalid = sorted({s for f in findings for s in f.get("sources", []) if s not in valid})
+    items = findings + answer.get("recommendations", [])
+    invalid = sorted({s for it in items for s in it.get("sources", []) if s not in valid})
+    # A finding counts as cited only if it has at least one source and every source it names exists.
+    cited = [f for f in findings if f.get("sources") and all(s in valid for s in f["sources"])]
     confirmed = [f for f in findings if f.get("status") == "confirmed"]
     cosines = sorted((s["cosine"] for s in sources if s.get("cosine") is not None), reverse=True)[:3]
     retrieval = sum(cosines) / len(cosines) if cosines else None
@@ -212,6 +226,7 @@ def grounding_report(answer: dict, sources: list[dict]) -> dict:
         "findings": len(findings),
         "confirmed": len(confirmed),
         "hypotheses": len(findings) - len(confirmed),
+        "confirmed_without_evidence": sum(1 for f in confirmed if f not in cited),
         "citation_coverage": round(coverage, 2),
         "invalid_citations": invalid,
         "top3_retrieval_cosine": round(retrieval, 3) if retrieval is not None else None,

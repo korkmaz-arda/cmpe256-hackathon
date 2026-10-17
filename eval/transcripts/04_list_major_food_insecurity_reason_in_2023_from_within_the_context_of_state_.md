@@ -1,34 +1,33 @@
 ## Q: List major Food insecurity reason in 2023 from within the context of State of Food Security and Nutrition in the World 2023 report.
 
-**Route** (gpt-5.4-mini, 1.2s): csr: The request is specifically about food insecurity drivers in the SOFI 2023 report, which falls squarely within the CSR specialist's evidence base. (confidence 0.98)
+**Route** (gpt-5.4-mini, 1.1s): csr: The request is specifically about food insecurity drivers within the SOFI 2023 report, which is covered by the CSR specialist only. (confidence 0.98)
 
-### Corporate Responsibility Agent (8.3s)
-*Sub-question:* According to the State of Food Security and Nutrition in the World 2023 report, what were the major reasons driving food insecurity in 2023, and how did the report frame their relative importance?
+### Corporate Responsibility Agent (7.3s)
+*Sub-question:* According to the State of Food Security and Nutrition in the World 2023 report, what were the major reasons driving food insecurity in 2023?
 
-According to SOFI 2023, the major drivers of food insecurity and malnutrition were conflict, climate extremes, economic slowdowns and downturns, and growing inequality, often interacting with each other. The report also highlighted unaffordable nutritious foods and high food, input and energy prices as important pressures, while framing urbanization as the report’s special “megatrend” lens rather than as a replacement for those core drivers.
+According to SOFI 2023, the major drivers of food insecurity and malnutrition were the intensification and interaction of conflict, climate extremes, economic slowdowns and downturns, and growing inequality. The report also highlights high prices for food, agricultural inputs and energy—linked to the war in Ukraine and post-pandemic economic effects—as key pressures keeping hunger above pre-COVID-19 levels. Urbanization is treated as a major megatrend reshaping agrifood systems and access to affordable healthy diets, rather than a standalone shock driver.
 
 **Findings**
-- (✅ confirmed) SOFI 2023 identified the major drivers of food insecurity and malnutrition as conflict, climate extremes, economic slowdowns and downturns, and growing inequality, often occurring in combination. [S6]
-- (✅ confirmed) The report framed these drivers as intensified and interacting threats that are pushing the world off track to meet SDG 2, not as isolated causes with a single ranked order of importance. [S1, S5, S6]
-- (✅ confirmed) Highly unaffordable nutritious foods were highlighted as compounding the effects of conflict, climate extremes, economic slowdowns and inequality. [S1, S5]
-- (✅ confirmed) The pandemic, the economic rebound, the war in Ukraine, and soaring prices of food, agricultural inputs and energy had differing impacts across regions, with hunger no longer rising globally but still above pre-COVID-19 levels and far off track for SDG 2. [S6]
-- (✅ confirmed) Urbanization was framed as the 2023 report’s thematic megatrend: it is transforming agrifood systems across the rural–urban continuum, affecting food production, processing, distribution, procurement, consumer behaviour, and access to affordable healthy diets. [S1, S3, S4, S5]
-- (✅ confirmed) SOFI 2023 did not present a simple hierarchy saying one driver was universally most important; instead, it emphasized context, regional variation, and the interaction of shocks and structural factors. [S1, S6]
+- (✅ confirmed) SOFI 2023 identifies conflict, climate extremes, economic slowdowns and downturns, and growing inequality as the major drivers of food insecurity and malnutrition, often occurring in combination. [S1, S3]
+- (✅ confirmed) The COVID-19 pandemic, the subsequent economic rebound, the war in Ukraine, and soaring prices of food, agricultural inputs and energy affected regions differently and contributed to hunger remaining far above pre-pandemic levels. [S1, S2]
+- (✅ confirmed) Highly unaffordable nutritious foods, combined with conflict, climate extremes, economic slowdowns/downturns and inequalities, pushed the world off track for SDG 2. [S5]
+- (✅ confirmed) Regional impacts differed: for example, Southern Africa’s hunger increase was linked to inflation from international commodity prices, domestic unemployment, and vulnerability to shocks; Western Asia faced political instability, conflict, supply disruptions, inflation, and food shortages. [S2, S6]
+- (✅ confirmed) Urbanization was highlighted in SOFI 2023 as a megatrend transforming agrifood systems and affecting access to affordable healthy diets across the rural–urban continuum. [S5, S8]
 
 **Risks and assumptions**
-- The answer is limited to the SOFI 2023 passages retrieved and does not incorporate SOFI 2024 or external datasets.
-- The report’s framing is qualitative in these sources: it emphasizes interaction and intensification rather than assigning numeric weights to each driver.
+- The answer reflects the SOFI 2023 report’s framing; where the report discusses 2022 hunger outcomes, those are used as the latest assessment context available in the 2023 publication.
 
-**Confidence:** high: The retrieved SOFI 2023 sources repeatedly state the same set of major drivers and explain how the report frames their interaction and the added urbanization lens.
+**Confidence:** high: The drivers are directly stated in multiple SOFI 2023 passages, with supporting examples of regional variation and price/inflation effects.
 
-*Grounding:* 8 sources, 6 confirmed / 0 hypotheses, citation coverage 100%, grounding score 1.00
+*Grounding:* 8 sources, 5 confirmed / 0 hypotheses, citation coverage 100%, grounding score 1.00
 *Tools used:* `search_knowledge`
 
 **Sources cited**
-- **S1**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.10 `data/FoodSecurity/SOFI-2023.pdf`
-- **S3**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.84 `data/FoodSecurity/SOFI-2023.pdf`
-- **S4**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.74 `data/FoodSecurity/SOFI-2023.pdf`
-- **S5**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.316 `data/FoodSecurity/SOFI-2023.pdf`
-- **S6**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.20 `data/FoodSecurity/SOFI-2023.pdf`
+- **S1**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.20 `data/FoodSecurity/SOFI-2023.pdf`
+- **S2**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.45 `data/FoodSecurity/SOFI-2023.pdf`
+- **S3**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.31 `data/FoodSecurity/SOFI-2023.pdf`
+- **S5**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.10 `data/FoodSecurity/SOFI-2023.pdf`
+- **S6**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.45 `data/FoodSecurity/SOFI-2023.pdf`
+- **S8**: FAO SOFI 2023: The State of Food Security and Nutrition in the World, p.84 `data/FoodSecurity/SOFI-2023.pdf`
 
-*Total time: 9.5s*
+*Total time: 8.4s*

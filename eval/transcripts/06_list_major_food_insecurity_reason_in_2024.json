@@ -8,143 +8,143 @@
     "sub_questions": [
       {
         "route": "csr",
-        "question": "According to the UN FAO SOFI 2024 report, what are the major reasons driving food insecurity in 2024?"
+        "question": "According to the UN FAO State of Food Security and Nutrition in the World (SOFI) 2024, what were the major reasons for food insecurity in 2024?"
       }
     ],
-    "reason": "The request is specifically about food insecurity reasons in 2024, which is covered by the UN FAO SOFI 2024 evidence base handled by the Corporate Responsibility specialist.",
-    "confidence": 0.98,
+    "reason": "The request is about food insecurity drivers in 2024, which falls squarely within the FAO SOFI sustainability and food security domain covered by the CSR specialist.",
+    "confidence": 0.97,
     "model": "gpt-5.4-mini",
-    "seconds": 1.0
+    "seconds": 1.3
   },
   "agents": {
     "csr": {
       "domain": "csr",
       "agent": "Corporate Responsibility Agent",
-      "question": "According to the UN FAO SOFI 2024 report, what are the major reasons driving food insecurity in 2024?",
+      "question": "According to the UN FAO State of Food Security and Nutrition in the World (SOFI) 2024, what were the major reasons for food insecurity in 2024?",
       "answer": {
-        "summary": "According to SOFI 2024, the major drivers of food insecurity and malnutrition are conflict, climate variability and extremes, and economic slowdowns and downturns. These are compounded by structural factors: lack of access to and unaffordability of healthy diets, unhealthy food environments, and high and persistent inequality; the report also stresses that these drivers are increasingly frequent, intense, and occurring together.",
+        "summary": "According to SOFI 2024, the major drivers of food insecurity and malnutrition were conflict, climate variability and extremes, and economic slowdowns and downturns. These were compounded by structural factors: lack of access to and unaffordability of nutritious/healthy foods, unhealthy food environments, and high and persistent inequality; SOFI 2024 also emphasizes that these drivers are occurring together more often and with increasing frequency and intensity.",
         "findings": [
           {
-            "claim": "SOFI 2024 identifies conflict, climate variability and extremes, and economic slowdowns and downturns as the major drivers behind hunger, food insecurity and malnutrition.",
+            "claim": "SOFI 2024 identifies three major drivers behind hunger, food insecurity and malnutrition: conflict, climate variability and extremes, and economic slowdowns and downturns.",
             "status": "confirmed",
             "sources": [
               "S1",
               "S2",
-              "S3"
+              "S4"
             ]
           },
           {
-            "claim": "The report says these drivers are combined with structural underlying factors: lack of access to and unaffordability of nutritious or healthy foods, unhealthy food environments, and high and persistent inequality.",
+            "claim": "Underlying structural factors amplify food insecurity: lack of access to and unaffordability of nutritious/healthy foods, unhealthy food environments, and high and persistent inequality.",
             "status": "confirmed",
             "sources": [
               "S1",
               "S2",
-              "S3",
-              "S5"
-            ]
-          },
-          {
-            "claim": "SOFI 2024 states that these major drivers are increasing in frequency and intensity and are occurring concurrently more often, which worsens food insecurity and malnutrition risks.",
-            "status": "confirmed",
-            "sources": [
-              "S3",
+              "S4",
               "S7"
             ]
           },
           {
-            "claim": "In low- and middle-income countries, hunger is higher and has increased the most in countries affected by these major drivers, especially where conflicts, climate extremes and economic shocks occur together.",
+            "claim": "The report states that these drivers are increasing in frequency and intensity and are occurring concurrently more often, worsening food insecurity and malnutrition trends.",
             "status": "confirmed",
             "sources": [
-              "S6",
-              "S7"
-            ]
-          },
-          {
-            "claim": "For countries facing protracted major food crises, SOFI 2024 notes that 13 countries were affected by multiple drivers, corresponding with very high prevalence of undernourishment in 2023.",
-            "status": "confirmed",
-            "sources": [
+              "S4",
               "S6"
             ]
           },
           {
-            "claim": "The report highlights a financing dimension: policies and investments to address these drivers have not been implemented at scale, and finance and financial inclusion are central constraints.",
+            "claim": "In low- and middle-income countries, hunger is higher and has increased the most where the major drivers are present, especially where conflict, climate extremes and economic slowdowns/downturns occur together.",
             "status": "confirmed",
             "sources": [
-              "S5"
+              "S5",
+              "S6"
+            ]
+          },
+          {
+            "claim": "SOFI 2024 notes regional/country-group relevance: climate extremes are the most prevalent driver across all country groups, while conflict is especially relevant in countries with limited access to financing.",
+            "status": "confirmed",
+            "sources": [
+              "S8"
+            ]
+          },
+          {
+            "claim": "Financing gaps and limited financial inclusion are presented as a central reason why known policies and investments have not been implemented at scale to address these drivers.",
+            "status": "confirmed",
+            "sources": [
+              "S7"
             ]
           }
         ],
         "recommendations": [
           {
-            "action": "Use SOFI 2024’s driver framework when assessing food-security risk exposure: conflict, climate extremes, economic downturns, affordability of healthy diets, food environments and inequality.",
+            "action": "Use the SOFI 2024 driver framework—conflict, climate extremes, economic downturns, diet affordability, food environments and inequality—to diagnose food-security risks in target markets.",
             "priority": "high",
-            "why": "This aligns risk analysis with the report’s stated causal framework for hunger, food insecurity and malnutrition.",
+            "why": "This aligns programme design with the report’s stated causes rather than treating food insecurity as a single-issue problem.",
             "sources": [
               "S1",
-              "S3"
-            ]
-          },
-          {
-            "action": "Prioritize interventions in geographies where multiple drivers overlap, especially low- and middle-income countries and protracted food-crisis contexts.",
-            "priority": "high",
-            "why": "SOFI 2024 indicates hunger is higher and has increased most where major drivers occur, and multiple-driver contexts show especially high undernourishment.",
-            "sources": [
-              "S6",
+              "S4",
               "S7"
             ]
           },
           {
-            "action": "Pair resilience investments with affordability and access measures, such as social protection, market linkages, nutritious food access, and climate resilience in agrifood systems.",
-            "priority": "medium",
-            "why": "The report frames both immediate drivers and underlying structural factors as needing to be addressed together.",
+            "action": "Prioritize climate-resilient food systems investments where operations or supply chains overlap with climate-exposed communities.",
+            "priority": "high",
+            "why": "SOFI 2024 says climate extremes are the most prevalent driver across country groups.",
             "sources": [
-              "S1",
+              "S8"
+            ]
+          },
+          {
+            "action": "In fragile or conflict-affected contexts, link humanitarian support with longer-term livelihood, market and peace-sensitive development investments.",
+            "priority": "medium",
+            "why": "SOFI 2024 calls for strengthening the humanitarian–development–peace nexus where conflict limits financing and drives food insecurity.",
+            "sources": [
               "S8"
             ]
           }
         ],
         "next_steps": [
-          "Map your operating countries or sourcing regions against exposure to conflict, climate extremes and economic downturns.",
-          "Assess whether target communities face unaffordable healthy diets or poor access to nutritious foods.",
-          "Identify where existing CSR or ESG programmes already address resilience, nutrition, social protection or financial inclusion.",
-          "Prioritize locations where multiple SOFI 2024 drivers overlap."
+          "Map company sourcing, workforce and community footprints against countries affected by SOFI 2024’s major drivers.",
+          "Assess whether local food insecurity is primarily driven by conflict, climate shocks, economic downturns, diet unaffordability or inequality.",
+          "Identify partners with capabilities in climate adaptation, nutrition access, and fragile-context programming.",
+          "Define a measurement baseline using SOFI-aligned indicators before committing CSR or ESG capital."
         ],
         "kpis": [
           {
-            "metric": "Prevalence of undernourishment",
-            "how_to_measure": "Track national or subnational PoU trends where available, especially in programme geographies."
+            "metric": "Prevalence of undernourishment (PoU) in target geographies",
+            "how_to_measure": "Track national or subnational PoU where available, especially in countries affected by SOFI 2024’s major drivers."
           },
           {
             "metric": "Moderate or severe food insecurity",
-            "how_to_measure": "Use Food Insecurity Experience Scale-style household surveys or validated local food security surveys."
+            "how_to_measure": "Use Food Insecurity Experience Scale-style survey questions in beneficiary or worker communities."
           },
           {
             "metric": "Affordability of a healthy diet",
-            "how_to_measure": "Monitor the cost of a healthy diet relative to household income or expenditure in target areas."
+            "how_to_measure": "Compare local cost of a healthy diet with household income or wages in target communities."
           },
           {
-            "metric": "Household resilience to shocks",
-            "how_to_measure": "Track share of beneficiary households using climate-risk insurance, savings, cash transfers, or livelihood diversification."
+            "metric": "Diet access and quality",
+            "how_to_measure": "Measure changes in household access to nutritious foods through periodic surveys and market-price monitoring."
           },
           {
-            "metric": "Diet quality or nutritious food access",
-            "how_to_measure": "Measure household dietary diversity and availability of nutritious foods in local markets."
+            "metric": "Resilience to climate/economic shocks",
+            "how_to_measure": "Track beneficiary households maintaining food consumption after climate events or income shocks."
           }
         ],
         "missing_information": [
-          "The countries or regions you are most interested in.",
-          "Whether you need a global summary or business-specific ESG implications.",
-          "The sector and value-chain footprint of your company.",
-          "Whether you want recommendations for philanthropy, supply-chain investment or core-business strategy."
+          "Target countries or regions of interest.",
+          "Whether the question is for corporate strategy, reporting, investment screening or programme design.",
+          "Company sector and value-chain exposure to agrifood systems.",
+          "Whether the focus is employees, suppliers, consumers or surrounding communities.",
+          "Available budget and implementation horizon."
         ],
         "risks_assumptions": [
-          "This answer uses SOFI 2024 sources only, as requested.",
-          "The report’s 2024 discussion includes 2023 indicator observations for some measures, such as prevalence of undernourishment in protracted food-crisis countries.",
-          "No company-specific recommendations can be prioritized without knowing the client’s geography and value chain."
+          "The answer uses SOFI 2024’s terminology; some figures in the report refer to 2023 estimates, because food-security indicators are often reported with a lag.",
+          "Drivers can overlap; assigning a single cause to food insecurity may oversimplify conditions in a given country.",
+          "Corporate interventions may not move national SOFI indicators unless implemented at sufficient scale."
         ],
         "confidence": {
           "level": "high",
-          "reason": "The drivers are directly and repeatedly stated in SOFI 2024 passages, including the executive summary and financing framework sections."
+          "reason": "The major drivers and structural factors are directly and repeatedly stated across SOFI 2024 passages."
         }
       },
       "sources": [
@@ -157,7 +157,7 @@
           "path": "data/FoodSecurity/SOFI-2024.pdf",
           "source": "UN FAO report",
           "text": "to ensure that all individuals are protected against short-term or long-term instability in food security and nutrition, caused by various climatic, economic, social, commercial and political factors. Financing therefore encompasses all the interventions aligned with the six transformative policy pathways designed to strengthen the resilience of agrifood systems to the major drivers behind hunger, food insecurity and malnutrition – namely conflict, climate variability and extremes, and economic slowdowns and downturns – and address the underlying structural factors: lack of access to and unaffordability of nutritious foods, unhealthy food environments, and high and persistent inequality. To generate a framework for increased financing and improved finance targeting, it is imperative to gain an understanding of the major drivers of food insecurity and malnutrition, and of the countries affected by these major drivers. In the last ten years, the frequency and intensity of conflict, climate extremes and economic downturns have increased, undermining food security and nutrition around the world. Furthermore, high levels of income inequality exacerbate the effects of these drivers. While each of these major drivers is unique, they often interact to create multiple compounding impacts transmitted through agrifood systems to the detriment of food security and nutrition.",
-          "cosine": 0.7437
+          "cosine": 0.699
         },
         {
           "id": "S2",
@@ -168,21 +168,10 @@
           "path": "data/FoodSecurity/SOFI-2024.pdf",
           "source": "UN FAO report",
           "text": "hieve healthy diets and adequate health. However, to date there have been limited efforts to include this range of interventions in comprehensive measures of financing for food security and nutrition. Importantly, the current definitions do not include the financing of interventions more specifically designed to address the major drivers behind the trends in hunger, food insecurity and malnutrition that have been identified in past editions of this report – conflict, climate variability and extremes, and economic slowdowns and downturns, combined with structural underlying factors: lack of access to and unaffordability of nutritious foods, unhealthy food environments, and high and persistent inequality. | xxi |",
-          "cosine": 0.7188
+          "cosine": 0.6711
         },
         {
           "id": "S3",
-          "kind": "document",
-          "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
-          "page": 20,
-          "url": null,
-          "path": "data/FoodSecurity/SOFI-2024.pdf",
-          "source": "UN FAO report",
-          "text": "EXECUTIVE SUMMARY The reverse in progress and the persistently high levels of hunger, food insecurity and malnutrition in recent years have put the world off track to meet Sustainable Development Goal (SDG) Targets 2.1 and 2.2 – to end hunger, food insecurity and all forms of malnutrition by 2030. Previous editions of this report have repeatedly highlighted the intensification of several major drivers of food insecurity and malnutrition, specifically conflict, climate variability and extremes, and economic slowdowns and downturns, combined with the well-established underlying factors that contribute to food insecurity and malnutrition, such as lack of access to and unaffordability of healthy diets, unhealthy food environments, and high and persistent inequality. Not only are these major drivers increasing in frequency and intensity, they are occurring concurrently more often, and in combination with the underlying factors, resulting in increasing numbers of hungry and food-insecure people. Depending on the major driver or combination of drivers affecting food security and nutrition in a country, addressing them will require a portfolio of policies across six transformative pathways, as outlined in detail in The State of Food Security and Nutrition in the World 2021.",
-          "cosine": 0.7113
-        },
-        {
-          "id": "S4",
           "kind": "document",
           "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
           "page": 97,
@@ -190,21 +179,21 @@
           "path": "data/FoodSecurity/SOFI-2024.pdf",
           "source": "UN FAO report",
           "text": "THE STATE OF FOOD SECURITY AND NUTRITION IN THE WORLD 2024 BOX 8 (Continued) NOTES: Figure A1 shows the prevalence of undernourishment (PoU) in 2023 for the 119 low- and middle-income countries with countries classified as facing a protracted major food crisis (red/orange/yellow bars) affected by a single driver, multiple drivers or no driver of chronic food insecurity (conflict, climate extremes or economic downturns). Figure A2 shows trends in the PoU for the 18 countries classified as facing a protracted major food crisis in 2023 and affected by the major drivers (conflict, climate extremes and economic downturns), and countries facing high income inequality. Categories are not mutually exclusive, as a country can be affected by more than one driver and/or face high income inequality. PoU estimates are unweighted. Countries not affected by drivers are those not affected by conflict, climate extremes or economic downturns. See Table S3.5 in the Supplementary material to Chapter 3 for methodology. SOURCES: Authors’ (FAO) own elaboration. PoU based on FAO. For list of countries in major food crisis: FSIN (Food Security Information Network) & GNAFC (Global Network Against Food Crises) 2024. Global Report on Food Crises 2024 . Rome.",
-          "cosine": 0.699
+          "cosine": 0.6598
         },
         {
-          "id": "S5",
+          "id": "S4",
           "kind": "document",
           "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
-          "page": 9,
+          "page": 20,
           "url": null,
           "path": "data/FoodSecurity/SOFI-2024.pdf",
           "source": "UN FAO report",
-          "text": "le will still be undernourished, millions of children will still be affected by malnutrition in its different forms, and the world will still be falling short of reaching the global nutrition targets. Conflict, climate variability and extremes, economic slowdowns and downturns, lack of access to and unaffordability of healthy diets, unhealthy food environments, and high and persistent inequality continue to drive food insecurity and malnutrition all over the world. The policies and investments needed to transform agrifood systems and address these drivers along the rural–urban continuum have been identified in previous editions of The State of Food Security and Nutrition in the World . In preparing for this year’s report, we wanted to address the reasons why such policies and investments have not been implemented at scale. A central reason is finance and financial inclusion, which are among the means of implementation of the SDGs and need more consistent political commitment. The countries with the highest levels of food insecurity and multiple forms of malnutrition, and affected by the major drivers of these problems, are the countries with the least access to financing.",
-          "cosine": 0.6968
+          "text": "EXECUTIVE SUMMARY The reverse in progress and the persistently high levels of hunger, food insecurity and malnutrition in recent years have put the world off track to meet Sustainable Development Goal (SDG) Targets 2.1 and 2.2 – to end hunger, food insecurity and all forms of malnutrition by 2030. Previous editions of this report have repeatedly highlighted the intensification of several major drivers of food insecurity and malnutrition, specifically conflict, climate variability and extremes, and economic slowdowns and downturns, combined with the well-established underlying factors that contribute to food insecurity and malnutrition, such as lack of access to and unaffordability of healthy diets, unhealthy food environments, and high and persistent inequality. Not only are these major drivers increasing in frequency and intensity, they are occurring concurrently more often, and in combination with the underlying factors, resulting in increasing numbers of hungry and food-insecure people. Depending on the major driver or combination of drivers affecting food security and nutrition in a country, addressing them will require a portfolio of policies across six transformative pathways, as outlined in detail in The State of Food Security and Nutrition in the World 2021.",
+          "cosine": 0.6687
         },
         {
-          "id": "S6",
+          "id": "S5",
           "kind": "document",
           "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
           "page": 96,
@@ -212,10 +201,10 @@
           "path": "data/FoodSecurity/SOFI-2024.pdf",
           "source": "UN FAO report",
           "text": "t one major driver of food insecurity, such as conflict, climate extremes or economic downturns, between 2013 and 2022. The only exception is Eswatini, which nevertheless faces high income inequality. Thirteen countries are affected by multiple drivers, a factor that mirrors the extremely high level of PoU observed in 2023 in these countries (Figure A1). Over the past decade, protracted major food crisis countries have witnessed a steady rise in the PoU, with those affected by climate extremes or economic downturns facing always higher PoU levels (Figure A2). The increase in PoU between 2019 and 2023 was notably sharper in countries affected by economic downturns (Figure A2 and Supplementary material to Chapter 3, Figure S3.6), and it was three times higher in these protracted major food crisis countries compared to the rest of low- and middle-income countries (2.9 percent versus 1.1 percent). The impact of major drivers on chronic hunger, as measured by the PoU, in protracted major food crisis countries cannot be understated. The gap in PoU between countries affected by conflict, economic downturns or climate extremes and those unaffected has widened over time (Figure A2). The compounding effect of multiple drivers results in higher levels of food insecurity.",
-          "cosine": 0.702
+          "cosine": 0.6603
         },
         {
-          "id": "S7",
+          "id": "S6",
           "kind": "document",
           "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
           "page": 177,
@@ -223,25 +212,36 @@
           "path": "data/FoodSecurity/SOFI-2024.pdf",
           "source": "UN FAO report",
           "text": "rld back on track, moving in the right direction towards meeting the Sustainable Development Goal (SDG) Targets 2.1 and 2.2 of ending hunger, food insecurity and malnutrition in all its forms by 2030. In many low- and middle-income countries in particular, conflicts, climate variability and extremes, and economic slowdowns and downturns continue to occur more frequently and often together. Hunger is higher and has increased the most in countries affected by the major drivers, and hunger increases are | 145 |",
-          "cosine": 0.7313
+          "cosine": 0.6881
+        },
+        {
+          "id": "S7",
+          "kind": "document",
+          "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
+          "page": 9,
+          "url": null,
+          "path": "data/FoodSecurity/SOFI-2024.pdf",
+          "source": "UN FAO report",
+          "text": "le will still be undernourished, millions of children will still be affected by malnutrition in its different forms, and the world will still be falling short of reaching the global nutrition targets. Conflict, climate variability and extremes, economic slowdowns and downturns, lack of access to and unaffordability of healthy diets, unhealthy food environments, and high and persistent inequality continue to drive food insecurity and malnutrition all over the world. The policies and investments needed to transform agrifood systems and address these drivers along the rural–urban continuum have been identified in previous editions of The State of Food Security and Nutrition in the World . In preparing for this year’s report, we wanted to address the reasons why such policies and investments have not been implemented at scale. A central reason is finance and financial inclusion, which are among the means of implementation of the SDGs and need more consistent political commitment. The countries with the highest levels of food insecurity and multiple forms of malnutrition, and affected by the major drivers of these problems, are the countries with the least access to financing.",
+          "cosine": 0.6462
         },
         {
           "id": "S8",
           "kind": "document",
           "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
-          "page": 98,
+          "page": 141,
           "url": null,
           "path": "data/FoodSecurity/SOFI-2024.pdf",
           "source": "UN FAO report",
-          "text": "THWAYS EXTENDED DEFINITION – ADDRESSING THE MAJOR DRIVERS AND UNDERLYING STRUCTURAL FACTORS CONFLICT CLIMATE VARIABILITY AND EXTREMES ECONOMIC SLOWDOWNS AND DOWNTURNS HIGH AND PERSISTENT INEQUALITY 1. Integrating humanitarian, development and peacebuilding policies in conﬂict-aﬀected areas Integrate conﬂict-sensitive policies, livelihood support, nutrition-sensitive social protection, community-based approaches and resilience-building programmes. 2. Scaling up climate resilience across agrifood systems Increase climate risk monitoring, early warning systems, climate risk insurance, climate-smart agriculture, landscape restoration and sustainable water management. 3. Strengthening economic resilience of the most vulnerable to economic adversity Strengthen social protection, cash/in-kind transfers, employment creation and strengthening market linkages. 4. Intervening along agrifood supply chains to lower the cost of nutritious foods Nutrition-sensitive agricultural production and productivity, nutrition-sensitive value chains, reduce nutritious food loss and waste, nutrition-sensitive food handling and processing, urban and peri-urban agriculture, food fortiﬁcation and subsidization of nutritious foods. 5.",
-          "cosine": 0.7047
+          "text": "THE STATE OF FOOD SECURITY AND NUTRITION IN THE WORLD 2024 The high proportion of countries affected by at least one major driver builds the case for mainstreaming food security and nutrition objectives across other sector financing where the priorities do not always include meeting SDG Targets 2.1 and 2.2. Considering that climate extremes are the most prevalent driver in all country groups, the opportunity of creating synergies between food security and nutrition and climate objectives will be essential for scaling up enough resources to fill the funding gap. On the other hand, the relevance of conflict as a driver in countries with limited access to financing calls for strengthening the humanitarian–development–peace nexus, as well as for bridging the short ‑term horizon of humanitarian operations with the needed long‑term perspective of investments oriented to eradicating hunger, food insecurity and malnutrition. In addition, the higher PoU and stunting levels found in countries with limited or moderate access to financing emphasize the urgency of scaling up financing flows for ending hunger, food insecurity and malnutrition.",
+          "cosine": 0.6882
         }
       ],
       "tool_calls": [
         {
           "tool": "search_knowledge",
           "args": {
-            "query": "SOFI 2024 major drivers reasons food insecurity conflict climate extremes economic slowdowns food inflation inequality financing",
+            "query": "SOFI 2024 major reasons drivers food insecurity conflict climate extremes economic slowdowns food price inflation inequality financing",
             "year": "2024",
             "k": 8
           }
@@ -253,13 +253,13 @@
         "hypotheses": 0,
         "citation_coverage": 1.0,
         "invalid_citations": [],
-        "top3_retrieval_cosine": 0.731,
-        "grounding_score": 1.0,
+        "top3_retrieval_cosine": 0.692,
+        "grounding_score": 0.99,
         "sources_retrieved": 8
       },
-      "seconds": 13.3
+      "seconds": 15.1
     }
   },
   "synthesis": null,
-  "seconds": 14.3
+  "seconds": 16.4
 }

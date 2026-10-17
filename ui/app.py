@@ -83,6 +83,8 @@ def describe_event(event: tuple) -> str:
         return f"&nbsp;&nbsp;&nbsp;🔧 {config.DOMAIN_LABELS[event[1]]} → `{event[2]}` {args}"
     if kind == "agent_done":
         return f"✅ **{config.DOMAIN_LABELS[event[1]]}** finished"
+    if kind == "agent_error":
+        return f"⚠️ **{config.DOMAIN_LABELS[event[1]]}** failed: {event[2][:200]}"
     if kind == "synthesis_start":
         return "🧩 **Manager Agent** is synthesizing the cross-domain recommendation"
     return str(event)
@@ -138,6 +140,8 @@ def render_agent(domain: str, res: dict, expanded: bool) -> None:
         cols[2].metric("Citation coverage", f"{g['citation_coverage']:.0%}")
         cols[3].metric("Top-3 retrieval cosine", g["top3_retrieval_cosine"] if g["top3_retrieval_cosine"] is not None else "n/a")
         cols[4].metric("Grounding score", f"{g['grounding_score']:.2f}")
+        if g.get("invalid_citations"):
+            st.warning(f"Cited ids not found in the evidence: {', '.join(g['invalid_citations'])}")
         st.markdown(answer_markdown(res["answer"]))
         t1, t2 = st.tabs(["Evidence (sources)", "Tool calls"])
         with t1:
@@ -159,6 +163,7 @@ def consultant_tab() -> None:
                              placeholder="Describe your business problem ...")
         go = st.button("Ask the consulting team", type="primary", disabled=not query.strip())
     if go:
+        st.session_state.pop("result", None)  # never leave an old answer under a new request
         st.session_state["result"] = run_with_trace(query.strip())
 
     result = st.session_state.get("result")
@@ -166,6 +171,9 @@ def consultant_tab() -> None:
         return
     r = result["route"]
     st.divider()
+    st.markdown(f"**Answer for:** {result['query']}")
+    if result["query"] != st.session_state.get("query", "").strip():
+        st.caption("⚠️ The request box has changed since this answer was produced; press the button to run the new request.")
     cols = st.columns(4)
     cols[0].metric("Routed to", ", ".join(config.DOMAIN_LABELS.get(x, "Out of scope").replace(" Agent", "") for x in r["routes"]))
     cols[1].metric("Cross-domain", "Yes" if r.get("cross_domain") else "No")
@@ -180,6 +188,8 @@ def consultant_tab() -> None:
         st.info("This request is outside our four practice areas (technology, clinical, SEC filings, food security / CSR), "
                 "so the Manager did not engage a specialist.")
         return
+    for name, err in (result.get("errors") or {}).items():
+        st.error(f"{config.DOMAIN_LABELS.get(name, name.title())} failed: {err}")
     if result.get("synthesis"):
         st.subheader("🧩 Consolidated consulting recommendation")
         st.markdown(synthesis_markdown(result["synthesis"]))
