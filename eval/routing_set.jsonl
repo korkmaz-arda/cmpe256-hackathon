@@ -1,0 +1,51 @@
+{"query": "Which replacement components should we order to resolve a Cisco router failure?", "expected": ["technology"]}
+{"query": "Our Cisco router has intermittent connectivity. How should we isolate the fault?", "expected": ["technology"]}
+{"query": "Which Catalyst 8200 model fits a small branch running SD-WAN?", "expected": ["technology"]}
+{"query": "What power supplies are compatible with C8300-1N1S-4T2X?", "expected": ["technology"]}
+{"query": "Compare ASR 1000 platforms for redundant data-center aggregation.", "expected": ["technology"]}
+{"query": "Can Catalyst 8000V provide virtual routing in AWS and Google Cloud?", "expected": ["technology"]}
+{"query": "What is Google Cloud Model Context Protocol and how do its tools work?", "expected": ["technology"]}
+{"query": "Explain retrieval-augmented generation in Google Cloud.", "expected": ["technology"]}
+{"query": "Which ISR 4000 models support redundant power?", "expected": ["technology"]}
+{"query": "Which diagnostic instrument or replacement component best meets our laboratory requirements?", "expected": ["clinical"]}
+{"query": "Our diabetes lab needs mitochondrial respiration measurements in PBMCs. Which Agilent instrument fits?", "expected": ["clinical"]}
+{"query": "Which trials used Seahorse XF for diabetes research?", "expected": ["clinical"]}
+{"query": "We need IVD whole-slide imaging for primary pathology diagnosis. What instrument fits?", "expected": ["clinical"]}
+{"query": "Can Artisan Link Pro automate special histochemical stains?", "expected": ["clinical"]}
+{"query": "What COVID-19 prediction methods are described in the clinical papers?", "expected": ["clinical"]}
+{"query": "Find clinical trials for knee injury rehabilitation.", "expected": ["clinical"]}
+{"query": "What outcomes do heart attack studies measure?", "expected": ["clinical"]}
+{"query": "Compare Agilent instruments for cellular metabolism versus tissue-slide imaging.", "expected": ["clinical"]}
+{"query": "What are the financial, competitive, and operational risks associated with these companies?", "expected": ["sec"]}
+{"query": "What does Cisco FY2026 disclose about operational risks?", "expected": ["sec"]}
+{"query": "Compare Cisco FY2025 and FY2026 revenue mix.", "expected": ["sec"]}
+{"query": "Summarize Agilent FY2025 financial performance.", "expected": ["sec"]}
+{"query": "What competitive pressures does Alphabet FY2025 describe?", "expected": ["sec"]}
+{"query": "How dependent is Google on advertising revenue in its FY2024 10-K?", "expected": ["sec"]}
+{"query": "What supply-chain risks does Cisco disclose in its annual report?", "expected": ["sec"]}
+{"query": "How do tariffs affect Agilent according to its FY2025 filing?", "expected": ["sec"]}
+{"query": "What does Alphabet report about cloud investment costs and margins?", "expected": ["sec"]}
+{"query": "List major Food insecurity reason in 2023 from within the context of State of Food Security and Nutrition in the World 2023 report.", "expected": ["csr"]}
+{"query": "Explain malnutrition in war zones", "expected": ["csr"]}
+{"query": "List major Food insecurity reason in 2024", "expected": ["csr"]}
+{"query": "Explain increase prices impact on food security", "expected": ["csr"]}
+{"query": "How many people faced hunger in 2023 according to SOFI 2024?", "expected": ["csr"]}
+{"query": "How does urbanization change access to healthy diets in SOFI 2023?", "expected": ["csr"]}
+{"query": "What financing gaps prevent ending hunger according to SOFI 2024?", "expected": ["csr"]}
+{"query": "Which SOFI indicators should measure an ESG food-security programme?", "expected": ["csr"]}
+{"query": "Compare SOFI 2023 and 2024 on healthy diet affordability.", "expected": ["csr"]}
+{"query": "Which technology investments could improve food security and sustainability outcomes?", "expected": ["csr", "technology"]}
+{"query": "Select Cisco edge routers for cold-chain food distribution and explain the impact using SOFI 2024.", "expected": ["technology", "csr"]}
+{"query": "Recommend a Cisco branch router and assess procurement risks from Cisco FY2026 10-K.", "expected": ["technology", "sec"]}
+{"query": "Choose Agilent digital pathology equipment and assess vendor risks in its FY2025 10-K.", "expected": ["clinical", "sec"]}
+{"query": "Compare Google Cloud RAG architecture with Alphabet FY2025 cloud business risks.", "expected": ["technology", "sec"]}
+{"query": "Assess Agilent financial resilience and Cisco network hardware for a connected research lab.", "expected": ["sec", "technology"]}
+{"query": "Choose Agilent lab instruments and Cisco routers for a diabetes research site.", "expected": ["clinical", "technology"]}
+{"query": "Plan Cisco cold-chain connectivity, assess Cisco 10-K risks, and link benefits to SOFI hunger indicators.", "expected": ["technology", "sec", "csr"]}
+{"query": "Choose Agilent pathology scanners, Cisco branch networking, and evaluate both vendors using their 10-Ks.", "expected": ["clinical", "technology", "sec"]}
+{"query": "Assess Alphabet 10-K financial risks and design a SOFI-based food-security ESG programme.", "expected": ["sec", "csr"]}
+{"query": "Give me a chocolate cake recipe.", "expected": ["out_of_scope"]}
+{"query": "Who won the baseball game yesterday?", "expected": ["out_of_scope"]}
+{"query": "Write a poem about my cat.", "expected": ["out_of_scope"]}
+{"query": "How do I tune an acoustic guitar?", "expected": ["out_of_scope"]}
+{"query": "Plan a weekend beach vacation.", "expected": ["out_of_scope"]}

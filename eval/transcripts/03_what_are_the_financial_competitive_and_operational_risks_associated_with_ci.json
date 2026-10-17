@@ -1,0 +1,819 @@
+{
+  "query": "What are the financial, competitive, and operational risks associated with Cisco, Agilent and Alphabet?",
+  "route": {
+    "routes": [
+      "sec"
+    ],
+    "cross_domain": false,
+    "sub_questions": [
+      {
+        "route": "sec",
+        "question": "What are the key financial, competitive, and operational risks disclosed in Alphabet's FY2024 and FY2025 10-Ks?"
+      }
+    ],
+    "reason": "The request is specifically about risks disclosed in company annual reports for Cisco, Agilent, and Alphabet, which is covered by the SEC specialist.",
+    "confidence": 0.98,
+    "model": "gpt-5.4-mini",
+    "seconds": 1.8
+  },
+  "agents": {
+    "sec": {
+      "domain": "sec",
+      "agent": "SEC Agent",
+      "question": "What are the key financial, competitive, and operational risks disclosed in Alphabet's FY2024 and FY2025 10-Ks?",
+      "answer": {
+        "summary": "Alphabet’s FY2024 and FY2025 10-Ks disclose a consistent risk profile: heavy advertising dependence, intensifying competition—especially in AI and digital advertising—and operational exposure from cybersecurity, privacy, regulatory/legal scrutiny, and large technical-infrastructure needs. The FY2025 filing updates the mix: advertising remains dominant but declined from “more than 75% of total revenues” in FY2024 to “more than 70% of total revenues” in FY2025, while AI, cloud, subscriptions, devices, debt financing, and data-center leases receive more emphasis as margin, execution, and compliance risks.",
+        "findings": [
+          {
+            "claim": "Financial risk: Alphabet remains highly dependent on advertising. FY2024 states it generated “more than 75% of total revenues from online advertising in 2024,” while FY2025 states it generated “more than 70% of total revenues from online advertising in 2025.” Reduced advertiser spending, loss of partners, ad-blocking, personalization limits, and shifts in ad formats could harm results.",
+            "status": "confirmed",
+            "sources": [
+              "S25",
+              "S36"
+            ]
+          },
+          {
+            "claim": "Financial risk: revenue growth and operating margins may decline. FY2024 cites possible revenue-growth decline from device/modalities changes, geographic mix, advertiser spending declines, competition, pricing pressure, product/policy changes, and shifts to lower-priced products; it also warns of margin pressure from lower-margin devices, Google Cloud, subscriptions, Other Bets, regulation, competition, and costs. FY2025 repeats this and adds that fixed costs may not correlate with revenue and efficiencies may not continue at prior rates.",
+            "status": "confirmed",
+            "sources": [
+              "S26",
+              "S28",
+              "S33",
+              "S34"
+            ]
+          },
+          {
+            "claim": "Financial risk: traffic acquisition costs and mix can pressure margins. FY2024 says TAC and TAC rate are affected by device mix, geographic mix, partner terms, partner mix, paid access points, product mix, relative channel growth, and revenue-share terms; FY2025 says TAC is expected to increase as advertising revenues grow, though the overall TAC rate has been decreasing due to mix shift from Google Network properties to Google Search & other properties.",
+            "status": "confirmed",
+            "sources": [
+              "S24",
+              "S32",
+              "S37"
+            ]
+          },
+          {
+            "claim": "Financial risk: international operations expose Alphabet to foreign-currency movements. FY2024 says international revenues are significant and exchange-rate fluctuations are not fully offset by hedging; FY2025 identifies principal currency exposures as the Australian dollar, British pound, Canadian dollar, Euro, and Japanese yen.",
+            "status": "confirmed",
+            "sources": [
+              "S23",
+              "S20"
+            ]
+          },
+          {
+            "claim": "Competitive risk: Alphabet faces broad competition across search, vertical search/e-commerce, online advertising platforms, offline advertising, digital content/application platforms, enterprise providers, referral/social products, workspace/connectivity products, and digital assistants; FY2025 adds stronger emphasis that competition from developers and providers of AI products and services may affect revenues.",
+            "status": "confirmed",
+            "sources": [
+              "S21",
+              "S29",
+              "S31",
+              "S38"
+            ]
+          },
+          {
+            "claim": "Competitive risk: successful competition depends on retaining users, advertisers, content providers, publishers, customers, and partners. FY2024 notes users are “literally one click away,” and FY2025 reiterates that competitors’ success in compelling products or attracting users, advertisers, publishers, customers, and content providers could harm financial condition and operating results.",
+            "status": "confirmed",
+            "sources": [
+              "S29",
+              "S33",
+              "S38"
+            ]
+          },
+          {
+            "claim": "Operational risk: cybersecurity, privacy, software, and AI-related security exposures are material. FY2025 cites risks from software supply chain and third-party dependencies, product vulnerabilities, theft of intellectual property, attempts to compromise infrastructure, cyberattacks, data exfiltration, state-sponsored actors, and AI-centric security risks; it also warns that data handling or privacy concerns could harm reputation, financial condition, and operating results.",
+            "status": "confirmed",
+            "sources": [
+              "S17",
+              "S19",
+              "S45",
+              "S47"
+            ]
+          },
+          {
+            "claim": "Operational/legal-regulatory risk: Alphabet faces evolving regulation, litigation, investigations, and enforcement in areas including AI, competition, consumer protection, content moderation, data privacy/security, IP, tax, labor, and sustainability. Both filings state regulatory changes and legal matters have resulted in fines and business-practice changes, and FY2025 warns AI development and commercialization could create regulatory action and legal liability.",
+            "status": "confirmed",
+            "sources": [
+              "S6",
+              "S16",
+              "S40",
+              "S41",
+              "S42",
+              "S49"
+            ]
+          }
+        ],
+        "recommendations": [
+          {
+            "action": "For procurement or partnership decisions, require contract protections for service continuity, data security, privacy compliance, audit rights, and incident notification tied to Alphabet services used.",
+            "priority": "high",
+            "why": "Alphabet discloses material cybersecurity, privacy, third-party dependency, infrastructure-compromise, and regulatory risks that could affect service reliability and data handling.",
+            "sources": [
+              "S17",
+              "S19",
+              "S45",
+              "S47"
+            ]
+          },
+          {
+            "action": "Stress-test exposure to Google advertising products under scenarios of reduced personalization, ad-format shifts, higher TAC/margin pressure, and advertiser-spend cyclicality.",
+            "priority": "high",
+            "why": "Alphabet’s revenue base remains heavily advertising-dependent—“more than 75%” in FY2024 and “more than 70%” in FY2025—and filings warn advertiser spending and ad-technology changes could harm results.",
+            "sources": [
+              "S25",
+              "S36",
+              "S39"
+            ]
+          },
+          {
+            "action": "If evaluating Google Cloud or AI services, perform AI governance due diligence: model-risk controls, IP indemnities, privacy safeguards, content-safety controls, and regulatory-change allocation.",
+            "priority": "high",
+            "why": "FY2025 specifically identifies AI risks involving harmful content, inaccuracies, discrimination, IP infringement, privacy, cybersecurity, regulatory action, legal liability, and reputational harm.",
+            "sources": [
+              "S41",
+              "S48",
+              "S50"
+            ]
+          },
+          {
+            "action": "Monitor Alphabet’s legal and regulatory proceedings as a vendor and counterparty risk factor, especially antitrust/competition and privacy matters.",
+            "priority": "medium",
+            "why": "Alphabet states claims, investigations, enforcement actions, fines, and orders have caused and may continue to cause changes to products, services, business practices, and costs.",
+            "sources": [
+              "S40",
+              "S42",
+              "S43",
+              "S44"
+            ]
+          },
+          {
+            "action": "Build a vendor concentration and substitutability plan for key Alphabet services, especially search advertising, cloud, identity, analytics, and AI dependencies.",
+            "priority": "medium",
+            "why": "Alphabet operates in rapidly changing competitive markets and discloses risks around user/customer shifts, competing technologies, and infrastructure/cyber disruptions.",
+            "sources": [
+              "S21",
+              "S33",
+              "S17"
+            ]
+          }
+        ],
+        "next_steps": [
+          "Map your organization’s spend and operational dependency on Alphabet services by product: Ads, Cloud, Workspace, Android/Play, YouTube, Maps, AI/APIs, and analytics.",
+          "Review current Alphabet contracts for uptime SLAs, data-processing terms, breach notification, regulatory-change clauses, termination rights, and price-change protections.",
+          "Assess whether any business-critical workflows rely on Google AI outputs and document human review, audit logging, and fallback procedures.",
+          "Track Alphabet’s FY2025 legal matters note and subsequent filings for updates to competition, privacy, AI, and IP proceedings.",
+          "Benchmark alternative suppliers for the highest-risk Alphabet dependencies."
+        ],
+        "kpis": [
+          {
+            "metric": "Alphabet dependency concentration",
+            "how_to_measure": "Percentage of annual digital-ad spend, cloud spend, productivity-suite seats, or AI/API usage tied to Alphabet products."
+          },
+          {
+            "metric": "Contractual risk coverage",
+            "how_to_measure": "Share of Alphabet contracts with current DPA, SLA, incident-notification, audit, indemnity, termination, and regulatory-change clauses."
+          },
+          {
+            "metric": "Incident resilience",
+            "how_to_measure": "Recovery time objective and tested failover success rate for workflows dependent on Alphabet services."
+          },
+          {
+            "metric": "AI governance compliance",
+            "how_to_measure": "Percentage of Google AI use cases with documented risk assessment, human review, data-classification approval, and output-monitoring controls."
+          },
+          {
+            "metric": "Regulatory exposure tracking",
+            "how_to_measure": "Quarterly review count of material Alphabet legal/regulatory updates affecting services used by the organization."
+          }
+        ],
+        "missing_information": [
+          "Which Alphabet products or services the client uses or is considering.",
+          "Annual spend and revenue dependency tied to Alphabet advertising, cloud, workspace, app distribution, or AI services.",
+          "Data sensitivity and regulated-data categories processed through Alphabet services.",
+          "Geographic footprint, especially EU, UK, US state privacy, and other regulated jurisdictions.",
+          "Current contract terms, SLAs, DPAs, indemnities, and exit rights with Alphabet.",
+          "Tolerance for vendor concentration and availability requirements for business-critical workflows."
+        ],
+        "risks_assumptions": [
+          "This summary is limited to retrieved passages from Alphabet FY2024 and FY2025 10-Ks; detailed financial-statement figures beyond cited passages are not included unless retrieved.",
+          "The filing does not state in the retrieved text a precise dollar amount for advertising revenue, TAC, legal fines, or cybersecurity costs for FY2024 or FY2025.",
+          "Risk severity for a specific client depends on actual Alphabet product usage, data flows, contractual protections, and substitutability."
+        ],
+        "confidence": {
+          "level": "high",
+          "reason": "The key risks are directly supported by multiple cited FY2024 and FY2025 10-K passages, including Item 1A Risk Factors, MD&A trends, cybersecurity disclosure, and market-risk disclosure."
+        }
+      },
+      "sources": [
+        {
+          "id": "S1",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2024",
+          "page": 5,
+          "url": null,
+          "path": "data/SEC/Alphabet/0ca59726-c36c-45fe-a114-e147f8cd7237.pdf",
+          "source": "SEC 10-K filing",
+          "text": "d on current expectations and assumptions that are subject to risks and uncertainties, which could cause our actual results to differ materially from those reflected in the forward-looking statements. Factors that could cause or contribute to such differences include, but are not limited to, those discussed in this Annual Report on Form 10-K, including the risks discussed in Part I, Item 1A \"Risk Factors\" and the trends discussed in Part II, Item 7 \"Management's Discussion and Analysis of Financial Condition and Results of Operations,\" and those discussed in other documents we file with the SEC. We undertake no obligation to revise or publicly release the results of any revision to these forward-looking statements, except as required by law. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. As used herein, \"Alphabet,\" \"the company,\" \"we,\" \"us,\" \"our,\" and similar terms include Alphabet Inc. and its subsidiaries, unless the context indicates otherwise. \"Alphabet,\" \"Google,\" and other trademarks of ours appearing in this report are our property. We do not intend our use or display of other companies' trade names or trademarks to imply an endorsement or sponsorship of us by such companies, or any relationship with any of these companies. PART I ITEM 1.",
+          "cosine": 0.6677
+        },
+        {
+          "id": "S2",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2024",
+          "page": 3,
+          "url": null,
+          "path": "data/SEC/Alphabet/0ca59726-c36c-45fe-a114-e147f8cd7237.pdf",
+          "source": "SEC 10-K filing",
+          "text": "Table of Contents Alphabet Inc. Alphabet Inc. Form 10-K For the Fiscal Year Ended December 31, 2024 TABLE OF CONTENTS Page Note About Forward-Looking Statements 3 PART I Item 1. Business 4 Item 1A. Risk Factors 10 Item 1B. Unresolved Staff Comments 25 Item 1C. Cybersecurity 25 Item 2. Properties 26 Item 3. Legal Proceedings 26 Item 4. Mine Safety Disclosures 26 PART II Item 5. Market for Registrant’s Common Equity, Related Stockholder Matters, and Issuer Purchases of Equity Securities 27 Item 6. [Reserved] 29 Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations 30 Item 7A. Quantitative and Qualitative Disclosures About Market Risk 45 Item 8. Financial Statements and Supplementary Data 48 Item 9. Changes in and Disagreements With Accountants on Accounting and Financial Disclosure 90 Item 9A. Controls and Procedures 90 Item 9B. Other Information 90 Item 9C. Disclosure Regarding Foreign Jurisdictions that Prevent Inspections 91 PART III Item 10. Directors, Executive Officers, and Corporate Governance 92 Item 11. Executive Compensation 92 Item 12. Security Ownership of Certain Beneficial Owners and Management and Related Stockholder Matters 92 Item 13. Certain Relationships and Related Transactions, and Director Independence 92 Item 14. Principal Accountant Fees and Services 92 PART IV Item 15.",
+          "cosine": 0.6421
+        },
+        {
+          "id": "S3",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2024",
+          "page": 11,
+          "url": null,
+          "path": "data/SEC/Alphabet/0ca59726-c36c-45fe-a114-e147f8cd7237.pdf",
+          "source": "SEC 10-K filing",
+          "text": "ficers may also use certain social media channels, such as X and LinkedIn, to communicate information about earnings results and company updates, which may be of interest or material to our investors. Further, corporate governance information, including our certificate of incorporation, bylaws, governance guidelines, board committee charters, and code of conduct, is also available on our investor relations website under the heading \"Governance.\" The information contained on, or that may be accessed through our websites or our executive officers' social media channels, is not incorporated by reference into this Annual Report on Form 10-K or in any other report or document we file with the SEC, and any references to our websites are intended to be inactive textual references only. ITEM 1A. RISK FACTORS Our operations and financial results are subject to various risks and uncertainties, including but not limited to those described below, which could harm our business, reputation, financial condition, and operating results, and affect the trading price of our Class A and Class C stock. Risks Specific to our Company We generate a significant portion of our revenues from advertising. Reduced spending by advertisers, a loss of partners, or new and existing technologies that block ads online and/or affect our ability to personalize ads could harm our business.",
+          "cosine": 0.6422
+        },
+        {
+          "id": "S4",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2024",
+          "page": 27,
+          "url": null,
+          "path": "data/SEC/Alphabet/0ca59726-c36c-45fe-a114-e147f8cd7237.pdf",
+          "source": "SEC 10-K filing",
+          "text": "Table of Contents Alphabet Inc. management makes the final materiality determinations and disclosure and other compliance decisions. Our management apprises Alphabet’s independent public accounting firm of matters and any relevant developments. The Audit and Compliance Committee has oversight responsibility for risks and incidents relating to cybersecurity threats, including compliance with disclosure requirements, cooperation with law enforcement, and related effects on financial and other risks, and it reports any findings and recommendations, as appropriate, to the full Board for consideration. Senior management regularly discusses cyber risks and trends and, should they arise, any material incidents with the Audit and Compliance Committee. Internal Audit maintains a dedicated cybersecurity auditing team that independently tests our cybersecurity controls. Our business strategy, results of operations and financial condition have not been materially affected by risks from cybersecurity threats, including as a result of previously identified cybersecurity incidents, but we cannot provide assurance that they will not be materially affected in the future by such risks or any future material incidents. For more information on our cybersecurity related risks, see Item 1A Risk Factors of this Annual Report on Form 10-K. ITEM 2.",
+          "cosine": 0.6264
+        },
+        {
+          "id": "S5",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2024",
+          "page": 27,
+          "url": null,
+          "path": "data/SEC/Alphabet/0ca59726-c36c-45fe-a114-e147f8cd7237.pdf",
+          "source": "SEC 10-K filing",
+          "text": "lly affected in the future by such risks or any future material incidents. For more information on our cybersecurity related risks, see Item 1A Risk Factors of this Annual Report on Form 10-K. ITEM 2. PROPERTIES Our headquarters are located in Mountain View, California. We own and lease office facilities and data centers around the world, primarily in Asia, Europe, and North America. We believe our existing facilities are in good condition and suitable for the conduct of our business. ITEM 3. LEGAL PROCEEDINGS For a description of our material pending legal proceedings, see Legal Matters in Note 10 of the Notes to Consolidated Financial Statements included in Part II, Item 8 of this Annual Report on Form 10-K, which is incorporated herein by reference. ITEM 4. MINE SAFETY DISCLOSURES Not applicable. 26.",
+          "cosine": 0.6299
+        },
+        {
+          "id": "S6",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2024",
+          "page": 32,
+          "url": null,
+          "path": "data/SEC/Alphabet/0ca59726-c36c-45fe-a114-e147f8cd7237.pdf",
+          "source": "SEC 10-K filing",
+          "text": "evolving regulatory environment, and we are subject to claims, lawsuits, investigations, and other forms of potential legal liability, which could affect our business practices and financial results. Changes in social, political, economic, tax, and regulatory conditions or in laws and policies governing a wide range of topics and related legal matters, including investigations, lawsuits, and regulatory actions, have resulted in fines and caused us to change our business practices. As these global trends continue, our cost of doing business may increase, our products and services may become less useful, our ability to pursue certain business practices or offer certain products or services may be limited, and we may need to change our business models and operations to comply with evolving regulatory and legal matters. For additional information, see Part I, Item 1A Risk Factors and Legal Matters in Note 10 of the Notes to Consolidated Financial Statements included in Item 8 of this Annual Report on Form 10-K. • Our employees are critical to our success and we expect to continue investing in them. Our employees are among our best assets and are critical for our continued success. We expect to continue hiring talented employees around the globe and to provide competitive compensation programs.",
+          "cosine": 0.6322
+        },
+        {
+          "id": "S7",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2024",
+          "page": 5,
+          "url": null,
+          "path": "data/SEC/Alphabet/0ca59726-c36c-45fe-a114-e147f8cd7237.pdf",
+          "source": "SEC 10-K filing",
+          "text": "Table of Contents Alphabet Inc. • our expectation that we will continue to face heightened regulatory scrutiny, and changes in regulatory conditions, laws, and public policies, which could affect our business practices and financial results; • the expected timing, amount, and effect of Alphabet Inc.'s share repurchases and dividends; • our long-term sustainability goals; as well as other statements regarding our future operations, financial condition and prospects, and business strategies. Forward-looking statements may appear throughout this report and other documents we file with the Securities and Exchange Commission (SEC), including without limitation, the following sections: Part I, Item 1 \"Business;\" Part I, Item 1A \"Risk Factors;\" and Part II, Item 7 \"Management’s Discussion and Analysis of Financial Condition and Results of Operations.\" Forward-looking statements generally can be identified by words such as \"anticipates,\" \"believes,\" \"could,\" \"estimates,\" \"expects,\" \"intends,\" \"may,\" \"plans,\" \"predicts,\" \"projects,\" \"will be,\" \"will continue,\" \"will likely result,\" and similar expressions. These forward-looking statements are based on current expectations and assumptions that are subject to risks and uncertainties, which could cause our actual results to differ materially from those reflected in the forward-looking statements.",
+          "cosine": 0.6384
+        },
+        {
+          "id": "S8",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2024",
+          "page": 14,
+          "url": null,
+          "path": "data/SEC/Alphabet/0ca59726-c36c-45fe-a114-e147f8cd7237.pdf",
+          "source": "SEC 10-K filing",
+          "text": "Table of Contents Alphabet Inc. for many aspects of our business, including higher level of investment in technical infrastructure. Further, certain of our costs and expenses are generally less variable in nature and may not correlate to changes in revenue. We may also not be able to continue to execute our efficiency efforts successfully or in a timely manner. Due to these factors and the evolving nature of our business, our historical revenue growth rate and historical operating margin may not be indicative of our future performance. For additional information, see Trends in Our Business and Financial Effect and Revenues and Monetization Metrics in Part II, Item 7 of this Annual Report on Form 10-K. Our intellectual property rights are valuable, and any inability to protect them could reduce the value of our products, services, and brands as well as affect our ability to compete. Our patents, trademarks, trade secrets, copyrights, and other intellectual property rights are important assets for us. Various events outside of our control pose a threat to our intellectual property rights, as well as to our products, services, and technologies. For example, effective intellectual property protection may not be available in every country in which our products and services are distributed or made available through the Internet.",
+          "cosine": 0.6545
+        },
+        {
+          "id": "S9",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2024",
+          "page": 26,
+          "url": null,
+          "path": "data/SEC/Alphabet/0ca59726-c36c-45fe-a114-e147f8cd7237.pdf",
+          "source": "SEC 10-K filing",
+          "text": "from the above teams, are responsible for our overall enterprise risk management system and processes and regularly consider cybersecurity risks in the context of other material risks to the company. As part of our cybersecurity risk management system, our incident management teams track and log privacy and security incidents across Alphabet, our vendors, and other third-party service providers to remediate and resolve any such incidents. Significant incidents are reviewed regularly by a cross-functional working group to determine whether further escalation is appropriate. Any incident assessed as potentially being or potentially becoming material is promptly escalated for further assessment, and then reported to designated members of our senior management. We consult with outside counsel as appropriate, including on materiality analysis and disclosure matters, and our senior 25.",
+          "cosine": 0.6228
+        },
+        {
+          "id": "S10",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2024",
+          "page": 96,
+          "url": null,
+          "path": "data/SEC/Alphabet/0ca59726-c36c-45fe-a114-e147f8cd7237.pdf",
+          "source": "SEC 10-K filing",
+          "text": "10-Q (File No. 001-37580) July 26, 2023 10.08.8 u Alphabet Inc. Amended and Restated 2021 Stock Plan – Form of Alphabet Non-CEO Performance Stock Unit Agreement Quarterly Report on Form 10-Q (File No. 001-37580) April 26, 2024 10.09 u Alphabet Inc. Company Bonus Plan, as amended Annual Report on Form 10-K (File No. 001-37350) February 2, 2023 19.01 * Alphabet Inc. Policy Against Insider Trading 21.01 * Subsidiaries of the Registrant 23.01 * Consent of Independent Registered Public Accounting Firm 24.01 * Power of Attorney (incorporated by reference to the signature page of this Annual Report on Form 10-K) 31.01 * Certification of Chief Executive Officer pursuant to Exchange Act Rules 13a-14(a) and 15d-14(a), as adopted pursuant to Section 302 of the Sarbanes- Oxley Act of 2002 31.02 * Certification of Chief Financial Officer pursuant to Exchange Act Rules 13a-14(a) and 15d-14(a), as adopted pursuant to Section 302 of the Sarbanes- Oxley Act of 2002 32.01 ‡ Certifications of Chief Executive Officer and Chief Financial Officer pursuant to 18 U.S.C. Section 1350, as adopted pursuant to Section 906 of the Sarbanes- Oxley Act of 2002 97.01 u Clawback Policy Annual Report on Form 10-K (File No.",
+          "cosine": 0.6136
+        },
+        {
+          "id": "S11",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 4,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "e global macroeconomic and regulatory environment; as well as other statements regarding our future operations, financial condition and prospects, and actual or potential risk and liability exposures. Forward-looking statements may appear throughout this report and other documents we file with the Securities and Exchange Commission (SEC), including without limitation, the following sections: Part I, Item 1 \"Business;\" Part I, Item 1A \"Risk Factors;\" and Part II, Item 7 \"Management's Discussion and Analysis of Financial Condition and Results of Operations.\" These forward-looking statements are based on current expectations and assumptions that are subject to risks and uncertainties, which could cause our actual results to differ materially from those reflected in the forward-looking statements. Factors that could cause or contribute to such differences include, but are not limited to, those discussed in this Annual Report on Form 10-K, including the risks discussed in Part I, Item 1A \"Risk Factors\" and the trends discussed in Part II, Item 7 \"Management's Discussion and Analysis of Financial Condition and Results of Operations,\" and those discussed in other documents we file with the SEC. We undertake no obligation to revise or publicly release the results of any revision to these forward-looking statements, except as required by law.",
+          "cosine": 0.6805
+        },
+        {
+          "id": "S12",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 10,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "Table of Contents Alphabet Inc. ITEM 1A. RISK FACTORS Our operations and financial results are subject to various risks and uncertainties, including but not limited to those described below, which could harm our business, reputation, financial condition, and operating results, and may affect the trading price and price volatility of our Class A and Class C stock. Risks Specific to our Company We generate a significant portion of our revenues from advertising. Reduced spending by advertisers, a loss of partners, shifts in online advertising, new and evolving advertising formats, or new or existing technologies that block ads online or affect our ability to personalize ads could harm our business. We generated more than 70% of total revenues from online advertising in 2025. Many of our advertisers, companies that distribute our products and services, digital publishers, and content providers can terminate their contracts with us at any time. These partners may not continue to do business with us if we do not create more value (such as increased numbers of users or customers, new sales leads, increased brand awareness, or more effective monetization) than their available alternatives.",
+          "cosine": 0.6804
+        },
+        {
+          "id": "S13",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 3,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "Table of Contents Alphabet Inc. Alphabet Inc. Form 10-K For the Fiscal Year Ended December 31, 2025 TABLE OF CONTENTS Page Note About Forward-Looking Statements 3 PART I Item 1. Business 3 Item 1A. Risk Factors 9 Item 1B. Unresolved Staff Comments 23 Item 1C. Cybersecurity 23 Item 2. Properties 24 Item 3. Legal Proceedings 24 Item 4. Mine Safety Disclosures 24 PART II Item 5. Market for Registrant’s Common Equity, Related Stockholder Matters, and Issuer Purchases of Equity Securities 25 Item 6. [Reserved] 27 Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations 28 Item 7A. Quantitative and Qualitative Disclosures About Market Risk 41 Item 8. Financial Statements and Supplementary Data 44 Item 9. Changes in and Disagreements With Accountants on Accounting and Financial Disclosure 89 Item 9A. Controls and Procedures 89 Item 9B. Other Information 89 Item 9C. Disclosure Regarding Foreign Jurisdictions that Prevent Inspections 90 PART III Item 10. Directors, Executive Officers, and Corporate Governance 91 Item 11. Executive Compensation 91 Item 12. Security Ownership of Certain Beneficial Owners and Management and Related Stockholder Matters 91 Item 13. Certain Relationships and Related Transactions, and Director Independence 91 Item 14. Principal Accountant Fees and Services 91 PART IV Item 15.",
+          "cosine": 0.6468
+        },
+        {
+          "id": "S14",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 4,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "Table of Contents Alphabet Inc. Note About Forward-Looking Statements This Annual Report on Form 10-K contains forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. Forward-looking statements generally can be identified by words such as, but are not limited to, \"anticipates,\" \"believes,\" \"could,\" \"estimates,\" \"expects,\" \"intends,\" \"may,\" \"plans,\" \"predicts,\" \"projects,\" \"will be,\" \"will continue,\" \"will likely result,\" and similar expressions. These include, among other things, expectations regarding the growth of our business and revenues, including factors that may impact such growth, and fluctuations in our revenues and margins; statements relating to plans, expectations, and trends about our core business metrics, costs and expenses, capital expenditures, sources of funding, products and services, strategic business transactions, and other aspects of our business operations and strategies; statements regarding the global macroeconomic and regulatory environment; as well as other statements regarding our future operations, financial condition and prospects, and actual or potential risk and liability exposures.",
+          "cosine": 0.6498
+        },
+        {
+          "id": "S15",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 25,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "nt makes the final materiality determinations and disclosure and other compliance decisions. Our management apprises Alphabet’s independent public accounting firm of relevant matters and developments. The Risk and Compliance Committee has oversight responsibility for risks and incidents relating to cybersecurity threats, including compliance with disclosure requirements, cooperation with law enforcement, and related effects on financial and other risks, and it reports any findings and recommendations, as appropriate, to the full Board for consideration. Senior management regularly discusses cybersecurity risks and trends and, should they arise, any material incidents with the Risk and Compliance Committee. Internal Audit maintains a dedicated cybersecurity auditing team that independently tests our cybersecurity controls. Our business strategy, results of operations and financial condition have not been materially affected by risks from cybersecurity threats, including as a result of previously identified cybersecurity incidents, but we cannot provide assurance that they will not be materially affected in the future by such risks or any future material incidents. For more information on our cybersecurity related risks, see Item 1A Risk Factors of this Annual Report on Form 10-K. ITEM 2. PROPERTIES Our headquarters are located in Mountain View, California.",
+          "cosine": 0.6219
+        },
+        {
+          "id": "S16",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 8,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "ometimes may seem to have conflicting requirements), and even when requirements overlap, the rules are not always consistently implemented, interpreted, and enforced from jurisdiction to jurisdiction. Our compliance with these laws and regulations may be onerous and could, individually or in the aggregate, increase our cost of doing business, make our products and services less useful, limit our ability to pursue certain business practices or offer certain products and services (either in certain geographies or at all), cause us to change our business models and operations, affect our competitive position relative to our peers, or otherwise harm our business, reputation, financial condition, and operating results. For additional information about government regulation applicable to our business, see Item 1A Risk Factors; Trends in Our Business and Financial Effect in Part II, Item 7; and Legal Matters in Note 10 of the Notes to Consolidated Financial Statements included in Part II, Item 8 of this Annual Report on Form 10-K. 7.",
+          "cosine": 0.6273
+        },
+        {
+          "id": "S17",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 25,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "Table of Contents Alphabet Inc. We maintain a comprehensive process for identifying, assessing, and managing material risks from cybersecurity threats as part of our broader risk management system and processes. For example, some risks include our software supply chain and other third-party dependencies, vulnerabilities in our products and services, theft of our intellectual property, and attempts to compromise our infrastructure. We obtain input, as appropriate, for our cybersecurity risk management program on the security industry and threat trends from multiple external experts and internal threat intelligence teams. Teams of dedicated privacy, safety, and security professionals oversee cybersecurity risk management and mitigation, incident prevention, detection, and remediation. These teams comprise professionals with deep cybersecurity expertise across multiple industries and are led by our Vice President of Privacy, Safety, and Security, who has more than 20 years of experience, including roles in technology infrastructure for two other large public companies. Our executive leadership team, along with input from the above teams, are responsible for our overall enterprise risk management system and processes and regularly consider cybersecurity risks in the context of other material risks to the company.",
+          "cosine": 0.6529
+        },
+        {
+          "id": "S18",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 25,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "nts. For more information on our cybersecurity related risks, see Item 1A Risk Factors of this Annual Report on Form 10-K. ITEM 2. PROPERTIES Our headquarters are located in Mountain View, California. We own and lease office facilities and data centers around the world, primarily in Asia, Europe, and North America. We believe our existing facilities are in good condition and suitable for the conduct of our business. ITEM 3. LEGAL PROCEEDINGS For a description of our material pending legal proceedings, see Legal Matters in Note 10 of the Notes to Consolidated Financial Statements included in Part II, Item 8 of this Annual Report on Form 10-K, which is incorporated herein by reference. ITEM 4. MINE SAFETY DISCLOSURES Not applicable. 24.",
+          "cosine": 0.6196
+        },
+        {
+          "id": "S19",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 17,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "Table of Contents Alphabet Inc. and other critical infrastructure, which could affect our or other parties' systems. We expect to continue to experience such incidents or vulnerabilities in the future. Our efforts to prevent security incidents and address undesirable activity on our platform may require us to spend additional resources to prepare and defend against such threats, and could also increase the risk of retaliatory attack. In addition, we face the risk of cyber attacks and data exfiltration or compromise by nation-states and state-sponsored actors. These attacks may target us or our customers, particularly our public sector customers (including federal, state, and local governments). Geopolitical tensions or armed conflicts, such as the ongoing conflict in the Middle East and Ukraine, may increase these risks. We may experience security and privacy issues, whether due to employee or insider error or malfeasance, system errors, or vulnerabilities in our or other parties' systems. While we may not determine some of these issues to be material when they occur and may remedy them quickly, there is no guarantee that these issues will not ultimately result in significant legal, financial, and reputational harm, including government inquiries, enforcement actions, litigation, and negative publicity.",
+          "cosine": 0.67
+        },
+        {
+          "id": "S20",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 42,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "al market risks, including changes in foreign currency exchange rates, interest rates, and equity investment risks. Foreign Currency Exchange Risk We transact business globally in multiple currencies. International revenues, foreign-denominated monetary assets and liabilities, and investments in foreign subsidiaries expose us to the risk of fluctuations in foreign exchange rates against the US dollar. Principal currency exposures include the Australian dollar, British pound, Canadian dollar, Euro, and Japanese yen. 41.",
+          "cosine": 0.663
+        },
+        {
+          "id": "S21",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2024",
+          "page": 9,
+          "url": null,
+          "path": "data/SEC/Alphabet/0ca59726-c36c-45fe-a114-e147f8cd7237.pdf",
+          "source": "SEC 10-K filing",
+          "text": "Bets are generated primarily from the sale of healthcare-related services, and internet services. Competition Our business is characterized by rapid change as well as new and disruptive technologies. We face formidable competition in every aspect of our business, including but not limited to, from: • general purpose search engines and information services; • vertical search engines and e-commerce providers for queries on topics such as those related to travel, jobs, and health, which users may navigate directly to rather than go through Google; • online advertising platforms and networks, including online shopping and streaming services; • other forms of advertising, such as billboards, magazines, newspapers, radio, and television as our advertisers typically advertise in multiple media, both online and offline; • digital content and application platform providers; • providers of enterprise cloud services; • developers and providers of AI products and services; • companies that design, manufacture, and market consumer hardware products, including businesses that have developed proprietary platforms; • providers of digital video services; • social networks, which users may rely on for product or service referrals, rather than seeking information through traditional search engines; • providers of workspace communication and connectivity products; and • digital assistant provider",
+          "cosine": 0.7412
+        },
+        {
+          "id": "S22",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2024",
+          "page": 31,
+          "url": null,
+          "path": "data/SEC/Alphabet/0ca59726-c36c-45fe-a114-e147f8cd7237.pdf",
+          "source": "SEC 10-K filing",
+          "text": "ely as Other Bets. For further details on our segments, see Part I, Item 1 Business and Note 15 of the Notes to Consolidated Financial Statements included in Item 8 of this Annual Report on Form 10-K. Trends in Our Business and Financial Effect The following long-term trends have contributed to the results of our consolidated operations, and we anticipate that they will continue to affect our future results: • Users' behaviors and advertising continue to shift online as the digital economy evolves. The continuing evolution of the online world has contributed to the growth of our business and our revenues since inception. We expect that this evolution will continue to benefit our business and our revenues, although at a slower pace than we have experienced historically. In addition, we face increasing competition for user engagement and advertisers, including from other developers and providers of AI products and services, which may affect our revenues. • Users continue to access our products and services using diverse devices and modalities, which allows for new advertising formats that may benefit our revenues but adversely affect our margins.",
+          "cosine": 0.6894
+        },
+        {
+          "id": "S23",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2024",
+          "page": 32,
+          "url": null,
+          "path": "data/SEC/Alphabet/0ca59726-c36c-45fe-a114-e147f8cd7237.pdf",
+          "source": "SEC 10-K filing",
+          "text": "Table of Contents Alphabet Inc. revenues from emerging markets. We expect that our results will continue to be affected by our performance in these markets, particularly as low-cost mobile devices become more available. This trend could affect our revenues as developing markets initially monetize at a lower rate than more mature markets. International revenues represent a significant portion of our revenues and are subject to fluctuations in foreign currency exchange rates relative to the U.S. dollar. While we have a foreign exchange risk management program designed to reduce our exposure to these fluctuations, this program does not fully offset their effect on our revenues and earnings. • The revenues that we derive beyond advertising are increasing and may adversely affect our margins. Revenues from cloud, consumer subscriptions, platforms, and devices, which may have differing characteristics than our advertising revenues, have grown over time, and we expect this trend to continue as we focus on expanding our products and services. The margins on these revenues vary significantly and are generally lower than the margins on our advertising revenues. For example, sales of our devices adversely affect our consolidated margins due to pressures on pricing and higher cost of sales.",
+          "cosine": 0.6714
+        },
+        {
+          "id": "S24",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2024",
+          "page": 31,
+          "url": null,
+          "path": "data/SEC/Alphabet/0ca59726-c36c-45fe-a114-e147f8cd7237.pdf",
+          "source": "SEC 10-K filing",
+          "text": "ng revenues may be affected. For example, changing dynamics within the global smartphone market, such as increased market saturation in developed countries, can affect our mobile advertising revenues. We expect TAC paid to our distribution partners and Google Network partners to increase as our revenues grow and TAC as a percentage of our advertising revenues (\"TAC rate\") to be affected by changes in device mix; geographic mix; partner agreement terms; partner mix; the percentage of queries channeled through paid access points; product mix; the relative revenue growth rates of advertising revenues from different channels; and revenue share terms. We expect these trends to continue to affect our revenues and put pressure on our margins. • As online advertising evolves, we continue to expand our product offerings, which may affect our monetization. As interactions between users and advertisers change, and as online user behavior evolves, for example with AI, we continue to expand our product offerings to serve these changing needs, which may affect monetization of our products and services. We expect to continue to incorporate AI innovations into our products, such as AI in Search, that could affect our monetization trends. When developing new products and services we generally focus first on user experience and then on monetization.",
+          "cosine": 0.6791
+        },
+        {
+          "id": "S25",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2024",
+          "page": 11,
+          "url": null,
+          "path": "data/SEC/Alphabet/0ca59726-c36c-45fe-a114-e147f8cd7237.pdf",
+          "source": "SEC 10-K filing",
+          "text": "nues from advertising. Reduced spending by advertisers, a loss of partners, or new and existing technologies that block ads online and/or affect our ability to personalize ads could harm our business. We generated more than 75% of total revenues from online advertising in 2024. Many of our advertisers, companies that distribute our products and services, digital publishers, and content providers can terminate their contracts with us at any time. These partners may not continue to do business with us if we do not create more value (such as increased numbers of users or customers, new sales leads, increased brand awareness, or more effective 10.",
+          "cosine": 0.6971
+        },
+        {
+          "id": "S26",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2024",
+          "page": 13,
+          "url": null,
+          "path": "data/SEC/Alphabet/0ca59726-c36c-45fe-a114-e147f8cd7237.pdf",
+          "source": "SEC 10-K filing",
+          "text": "hese investment areas are inherently risky, no assurance can be given that such strategies and offerings will be successful or will not harm our reputation, financial condition, and operating results. Our revenue growth rate could decline over time, and we may experience downward pressure on our operating margin in the future. Our revenue growth rate could decline over time as a result of a number of factors, including changes in the devices and modalities used to access our products and services; changes in geographic mix; deceleration or declines in advertiser spending; competition; changes in customer usage and demand for our existing products and increasing demand for new technologies; decreases in the pricing of our products and services; ongoing product and policy changes; and shifts to lower priced products and services. In addition, we may experience downward pressure on our operating margin resulting from a variety of factors, such as an increase in the mix of lower-margin products and services, in particular from the continued expansion of our business into new fields, including products and services such as our devices, Google Cloud, and consumer subscription products, as well as significant investments in Other Bets, all of which may have margins lower than those we generate from advertising.",
+          "cosine": 0.7125
+        },
+        {
+          "id": "S27",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2024",
+          "page": 31,
+          "url": null,
+          "path": "data/SEC/Alphabet/0ca59726-c36c-45fe-a114-e147f8cd7237.pdf",
+          "source": "SEC 10-K filing",
+          "text": "ues. • Users continue to access our products and services using diverse devices and modalities, which allows for new advertising formats that may benefit our revenues but adversely affect our margins. Our users are accessing our products and services via diverse devices and modalities beyond traditional desktop, such as smartphones, wearables, connected TVs, and smart home devices, and want to be able to be connected no matter where they are or what they are doing. We are focused on expanding our products and services to stay in front of these trends in order to maintain and grow our business. We benefit from advertising revenues generated from different channels, including mobile, and newer advertising formats. The margins from these channels and newer products have generally been lower than those from traditional desktop search. Additionally, as the market for a particular device type or modality matures, our advertising revenues may be affected. For example, changing dynamics within the global smartphone market, such as increased market saturation in developed countries, can affect our mobile advertising revenues.",
+          "cosine": 0.6642
+        },
+        {
+          "id": "S28",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2024",
+          "page": 13,
+          "url": null,
+          "path": "data/SEC/Alphabet/0ca59726-c36c-45fe-a114-e147f8cd7237.pdf",
+          "source": "SEC 10-K filing",
+          "text": "es such as our devices, Google Cloud, and consumer subscription products, as well as significant investments in Other Bets, all of which may have margins lower than those we generate from advertising. In particular, margins on our devices have had, and may continue to have, an adverse effect on our consolidated margins due to pressures on pricing and higher cost of sales. We may also experience downward pressure on our operating margins from increasing regulations, increasing competition, and increasing costs 12.",
+          "cosine": 0.6748
+        },
+        {
+          "id": "S29",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2024",
+          "page": 9,
+          "url": null,
+          "path": "data/SEC/Alphabet/0ca59726-c36c-45fe-a114-e147f8cd7237.pdf",
+          "source": "SEC 10-K filing",
+          "text": "for product or service referrals, rather than seeking information through traditional search engines; • providers of workspace communication and connectivity products; and • digital assistant providers. Competing successfully depends heavily on our ability to develop and distribute innovative products and technologies to the marketplace across our businesses. For example, for advertising, competing successfully depends on attracting and retaining: • users, for whom other products and services are literally one click away, largely on the basis of the relevance of our advertising, as well as the general usefulness, security, and availability of our products and services; • advertisers, primarily based on our ability to generate sales leads, and ultimately customers, and to deliver their advertisements in an efficient and effective manner across a variety of distribution channels; and • content providers, primarily based on the quality of our advertiser base, our ability to help these partners generate revenues from advertising, and the terms of our agreements with them. 8.",
+          "cosine": 0.6681
+        },
+        {
+          "id": "S30",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2024",
+          "page": 4,
+          "url": null,
+          "path": "data/SEC/Alphabet/0ca59726-c36c-45fe-a114-e147f8cd7237.pdf",
+          "source": "SEC 10-K filing",
+          "text": "Table of Contents Alphabet Inc. Note About Forward-Looking Statements This Annual Report on Form 10-K contains forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. These include, among other things, statements regarding: • the growth of our business and revenues and our expectations about the factors that influence our success and trends in our business; • fluctuations in our revenues and margins and various factors contributing to such fluctuations; • our expectation that the continuing shift to an online world as the digital economy evolves will continue to benefit our business; • our expectation that the revenues that we derive beyond advertising will continue to increase and may affect our margins; • our expectation that our traffic acquisition costs (TAC) and the associated TAC rate will fluctuate, which could affect our overall margins; • our expectation that our monetization trends will fluctuate, which could affect our revenues and margins; • fluctuations in paid clicks and cost-per-click as well as impressions and cost-per-impression, and various factors contributing to such fluctuations; • our expectation that we will continue to periodically review, refine, and update our methodologies for monitoring, gathering, and counting the number of paid clicks and impressions, and for identifying the revenues generated by the c",
+          "cosine": 0.6473
+        },
+        {
+          "id": "S31",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 29,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "umer and enterprise offerings which could affect revenue growth rates and margin trends. When developing new products and services we generally focus first on user experience and then on monetization. At the same time, we face increasing competition, including from other developers and providers of AI products and services, which may affect our revenues. Increasing Revenues Beyond Advertising: Revenues from cloud, consumer subscriptions, platforms, and devices, which may have differing characteristics than our advertising revenues, have grown over time. Certain of these revenues have been growing at a rate higher than our advertising revenues, becoming a larger percentage of our consolidated revenues, and we expect this trend to continue. The margins on these revenues vary significantly and are generally lower than the margins on our advertising revenues. Increased Investment in Technical Infrastructure: We continue to invest in capital expenditures as we scale our technical infrastructure, in particular for AI, to meet the demand of our users and enterprise customers and to support research internally. We invested heavily in capital expenditures in 2025 and in 2026, we expect to significantly increase, relative to 2025, our investment in our technical infrastructure, including servers and network equipment, and data centers.",
+          "cosine": 0.7057
+        },
+        {
+          "id": "S32",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 29,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "our use of capital and contribute to the breadth and depth of our offerings, expand our expertise in engineering and other functional areas, and build strong partnerships around strategic initiatives. Traffic Acquisition Costs Growth and Rate Changes: We expect traffic acquisition costs (\"TAC\") paid to our distribution partners and Google Network partners to increase as our advertising revenues grow. Our overall TAC as a percentage of our advertising revenues (\"TAC rate\") has been decreasing primarily due to a revenue mix 28.",
+          "cosine": 0.693
+        },
+        {
+          "id": "S33",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 12,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "e technologies could reduce usage of our products and services, and force us to compete in different ways and expend significant resources to develop and operate equal or better products and services. Competitors' success in providing compelling products and services or in attracting and retaining users, advertisers, publishers, customers, and content providers could harm our financial condition and operating results. Our revenue growth rate could decline over time, and we may experience downward pressure on our operating margin in the future. Our revenue growth rate could decline over time as a result of a number of factors, including changes in customer usage and demand for our existing products and increasing demand for competing technologies; changes in the devices and modalities used to access our products and services; changes in geographic mix; deceleration or declines in advertiser spending; competition; decreases in the pricing of our products and services; ongoing product and policy changes; and shifts to lower priced products and services. We may experience downward pressure on our operating margin resulting from a variety of factors. These include increasing costs for many aspects of our business resulting from a higher level of investment in technical infrastructure, increasing regulations, and increasing competition.",
+          "cosine": 0.6789
+        },
+        {
+          "id": "S34",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 12,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "of factors. These include increasing costs for many aspects of our business resulting from a higher level of investment in technical infrastructure, increasing regulations, and increasing competition. Certain of our costs and expenses are relatively fixed and may not correlate to changes in revenue, and we may also not be able to continue to drive efficiencies at the rate we have in the past. We may also face margin compression from an increase in the mix of lower-margin products and services, in particular from the continued expansion of our business into new fields, including products and services such as Google Cloud, our devices, and consumer subscription products, as well as significant investments in Other Bets. For instance, margins on our devices have had, and may continue to have, an adverse effect on our consolidated margins due to pricing pressures and higher cost of sales. Due to these factors and the evolving nature of our business, our historical revenue growth rate and historical operating margin may not be indicative of our future performance. For additional information, see Trends in Our Business and Financial Effect and Revenues and Monetization Metrics in Part II, Item 7 of this Annual Report on Form 10-K.",
+          "cosine": 0.6698
+        },
+        {
+          "id": "S35",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 29,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "-level activities. For further details on our segments, see Part I, Item 1 Business and Note 15 of the Notes to Consolidated Financial Statements included in Item 8 of this Annual Report on Form 10-K. Trends in Our Business and Financial Effect The following long-term trends have contributed to the results of our consolidated operations, and we anticipate that they will continue to affect our future results: • As we continue to grow our business and meet the evolving behaviors and needs of our users and customers, our revenue growth and mix along with our cost and margin profiles are being influenced by a number of factors, including: Expanded AI Offerings in our Products and Services: The continuing evolution of the online world has contributed to the growth of our business. We expect that this evolution, including user engagement with AI products and services, will continue to benefit our business and our revenues. As we continue to incorporate AI into our products and services, such as with AI Overviews and AI Mode in Search, and with enterprise AI solutions on our Google Cloud Platform, we may monetize differently than our historical consumer and enterprise offerings which could affect revenue growth rates and margin trends. When developing new products and services we generally focus first on user experience and then on monetization.",
+          "cosine": 0.6549
+        },
+        {
+          "id": "S36",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 10,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "Table of Contents Alphabet Inc. ITEM 1A. RISK FACTORS Our operations and financial results are subject to various risks and uncertainties, including but not limited to those described below, which could harm our business, reputation, financial condition, and operating results, and may affect the trading price and price volatility of our Class A and Class C stock. Risks Specific to our Company We generate a significant portion of our revenues from advertising. Reduced spending by advertisers, a loss of partners, shifts in online advertising, new and evolving advertising formats, or new or existing technologies that block ads online or affect our ability to personalize ads could harm our business. We generated more than 70% of total revenues from online advertising in 2025. Many of our advertisers, companies that distribute our products and services, digital publishers, and content providers can terminate their contracts with us at any time. These partners may not continue to do business with us if we do not create more value (such as increased numbers of users or customers, new sales leads, increased brand awareness, or more effective monetization) than their available alternatives.",
+          "cosine": 0.6787
+        },
+        {
+          "id": "S37",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 30,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "Table of Contents Alphabet Inc. shift from Google Network properties to Google Search & other properties. Our TAC rate will continue to be affected by changes in device mix; geographic mix; partner agreement terms; partner mix; the percentage of queries channeled through paid access points; product mix; the relative revenue growth rates of advertising revenues from different channels; and revenue share terms. • We have raised capital through external financing in the form of debt and we may continue to seek debt or other forms of financing in the future to support our capital and operating needs. In 2025, we raised capital through the issuance of debt and we expect to continue to assess the use of debt and other forms of financing in the future. We expect to continue to enter into finance leases, primarily for data centers. Additionally, in 2025, we provided credit support, such as through backstops and guarantees, to certain infrastructure related counterparties and may continue to provide additional credit support in the future. • We face an evolving regulatory environment, and we are subject to claims, lawsuits, investigations, and other forms of potential legal liability, which could affect our business practices and financial results.",
+          "cosine": 0.6594
+        },
+        {
+          "id": "S38",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 8,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "Table of Contents Alphabet Inc. Competing successfully depends heavily on our ability to continually develop and distribute innovative products and technologies to the marketplace across our businesses. For example, for advertising, competing successfully depends on attracting and retaining: • users, for whom other products and services are literally one click away, on the basis of the relevance of our advertising, as well as the general usefulness, security, and availability of our products and services; • advertisers, primarily based on our ability to generate sales leads, and ultimately customers, and to deliver their advertisements in an efficient and effective manner across a variety of distribution channels even as trends in advertising mediums and user preferences change; and • content providers, primarily based on the quality of our advertiser base, our ability to help these partners generate revenues from advertising, and the terms of our agreements with them. For additional information about competition, see Item 1A Risk Factors of this Annual Report on Form 10-K. Culture and Workforce Our people are critical for our continued success, so we work hard to create an environment where employees can have fulfilling careers and perform at a high level.",
+          "cosine": 0.6369
+        },
+        {
+          "id": "S39",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 10,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "tisements effectively and competitively could harm our business, reputation, financial condition, and operating results. Expenditures by advertisers tend to correlate with overall economic conditions. Adverse macroeconomic conditions have affected, and may in the future affect, the demand for advertising, resulting in fluctuations in the amounts our advertisers spend on advertising, which could harm our financial condition and operating results. Our increasing investment in new businesses, products, services, and technologies is inherently risky, and could divert management attention and harm our business, financial condition, and operating results. We have invested and expect to expand our investment in new businesses, products, services, and technologies in a wide range of industries beyond online advertising. The investments that we are making across our businesses — such as building AI-optimized infrastructure, including our custom TPUs, and integrating AI capabilities into new and existing products and services — reflect our ongoing efforts to innovate and provide products and services that are helpful to users, advertisers, publishers, customers, content providers, and distribution partners. Our investments ultimately may not be commercially viable or may not result in an adequate return of capital and, in pursuing new strategies, we may incur unanticipated liabilities.",
+          "cosine": 0.6885
+        },
+        {
+          "id": "S40",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 30,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "evolving regulatory environment, and we are subject to claims, lawsuits, investigations, and other forms of potential legal liability, which could affect our business practices and financial results. Changes in social, political, economic, tax, and regulatory conditions or in laws and policies governing a wide range of topics and related legal matters, including investigations, lawsuits, and regulatory actions, have resulted in fines and caused us to change our business practices. As the regulatory environment continues to evolve, we may continue to incur fines and we expect increased costs associated with compliance, modifications to our products and services, and limitations on our ability to pursue certain business practices. For additional information, see Part I, Item 1A Risk Factors and Legal Matters in Note 10 of the Notes to Consolidated Financial Statements included in Item 8 of this Annual Report on Form 10-K. Revenues and Monetization Metrics We generate revenues by delivering relevant, cost-effective online advertising; cloud-based solutions that provide enterprise customers of all sizes with infrastructure, platform services, and applications; and sales of other products and services, such as fees received for subscription- based products, apps and in-app purchases, and devices.",
+          "cosine": 0.6432
+        },
+        {
+          "id": "S41",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 19,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "tional challenges. There are legislative proposals and pending litigation in the US, EU, and around the world that could diminish or eliminate safe harbor protection for websites and online platforms. Our development, use, and commercialization of AI products and services (including our implementation of AI in our offerings and internal systems) could subject us to regulatory action and legal liability, including under specific legislation regulating AI, as well as new applications of existing data protection, cybersecurity, privacy, intellectual property, and other laws. Further, we are subject to evolving laws, regulations, policies, and international accords relating to matters beyond our core products and services, including environmental sustainability, climate change, human capital, and employment matters. In response, we have implemented robust programs and initiatives and adopted reporting frameworks and principles that may require considerable investments. For instance, AI's energy and water demands have made efforts to reduce our emissions more complex and challenging across every level. We cannot guarantee that our initiatives will be fully realized on the timelines we expect or at all, and projects that are completed as planned may not achieve the results we anticipate.",
+          "cosine": 0.7298
+        },
+        {
+          "id": "S42",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 19,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "every level. We cannot guarantee that our initiatives will be fully realized on the timelines we expect or at all, and projects that are completed as planned may not achieve the results we anticipate. We are and may continue to be subject to claims, lawsuits, regulatory and government inquiries and investigations, enforcement actions, consent orders, and other forms of regulatory scrutiny and legal liability, including competition matters, that could harm our business, reputation, financial condition, and operating results. We are subject to claims, lawsuits, regulatory and government inquiries and investigations, other proceedings, and orders involving competition, intellectual property, data privacy and security, tax and related compliance, labor and employment, commercial disputes, content generated by our users, goods and services offered by advertisers or publishers using our platforms, design of our products and services, personal injury and other tort and nuisance theories, consumer protection claims, including how we moderate content on our platforms, AI, and other matters.",
+          "cosine": 0.7045
+        },
+        {
+          "id": "S43",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 21,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "Table of Contents Alphabet Inc. of data protection laws, imposing specific obligations with respect to the processing of personal data, including required notices, consents, and opt-outs. Further, the increased risk of inadvertent disclosure of confidential information or personal data in connection with the utilization of AI technologies may result in stronger regulatory scrutiny, leading to legal and regulatory investigations and enforcement actions that could harm our business, even if unfounded. Adverse legal rulings, legislation, or regulation have resulted in, and may continue to result in, fines and orders requiring that we change our practices, which have had and could continue to have an adverse effect on how we provide services, harming our business, reputation, financial condition, and operating results. These laws and regulations are evolving and subject to interpretation, and compliance obligations could cause us to incur substantial costs or harm the quality and operations of our products and services in ways that harm our business.",
+          "cosine": 0.7229
+        },
+        {
+          "id": "S44",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 78,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "importation could have an adverse effect on us, including preventing us from importing many important products into the US or necessitating workarounds that may limit certain features of our products. Further, our customers and partners may discontinue the use of our products, services, and technologies, as a result of injunctions or otherwise, which could result in loss of revenues and adversely affect our business. Other We are subject to claims, lawsuits, regulatory and government inquiries and investigations, other proceedings, and consent orders involving competition, intellectual property, data privacy and security, tax and related compliance, labor and employment, commercial disputes, content generated by our users, goods and services offered by advertisers or publishers using our platforms, design of our products and services, personal injury and other tort and nuisance theories, consumer protection, including how we moderate content on our platforms, AI, and other matters. 77.",
+          "cosine": 0.7051
+        },
+        {
+          "id": "S45",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 16,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "our systems could result in the improper disclosure and use of user data and interference with our users' and customers' ability to use our products and services, harming our business and reputation. Concerns about, including the adequacy of, our practices with regard to the collection, use, governance, disclosure, or security of personal data or other data-privacy-related matters, even if unfounded, could harm our business, reputation, financial condition, and operating results. Our policies and practices may change over time as expectations and regulations regarding privacy and data change. Our products and services involve the storage, handling, and transmission of proprietary and other sensitive information. Malicious software such as viruses, software bugs, theft, misuse, defects, vulnerabilities in our products and services, as well as cyber attacks, phishing schemes, and other types of security attacks, which increasingly use AI, expose us to a risk of loss or improper use and disclosure of such information, which could result in litigation and other potential liabilities, including regulatory fines and penalties, as well as reputational harm. Additionally, our products incorporate highly technical and complex technologies, and thus our technologies and software have contained, and are likely in the future to contain, undetected errors, bugs, or vulnerabilities.",
+          "cosine": 0.7275
+        },
+        {
+          "id": "S46",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 25,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "nts. For more information on our cybersecurity related risks, see Item 1A Risk Factors of this Annual Report on Form 10-K. ITEM 2. PROPERTIES Our headquarters are located in Mountain View, California. We own and lease office facilities and data centers around the world, primarily in Asia, Europe, and North America. We believe our existing facilities are in good condition and suitable for the conduct of our business. ITEM 3. LEGAL PROCEEDINGS For a description of our material pending legal proceedings, see Legal Matters in Note 10 of the Notes to Consolidated Financial Statements included in Part II, Item 8 of this Annual Report on Form 10-K, which is incorporated herein by reference. ITEM 4. MINE SAFETY DISCLOSURES Not applicable. 24.",
+          "cosine": 0.692
+        },
+        {
+          "id": "S47",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 16,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "ucts incorporate highly technical and complex technologies, and thus our technologies and software have contained, and are likely in the future to contain, undetected errors, bugs, or vulnerabilities. We continue to add new features involving AI to our offerings and internal systems, and features that rely on AI may be susceptible to unanticipated security threats as our and the market's understanding of AI-centric security risks and protection methods continue to develop. We have in the past discovered, and may in the future discover, some errors in our software code only after we have released the code. Systems and control failures, security breaches, failure to comply with our privacy policies, and inadvertent disclosure of user data could result in regulatory and legal exposure, seriously harm our reputation, brand, and business, and impair our ability to attract and retain users or customers. Such incidents have occurred in the past and may continue to occur due to the scale and nature of our products and services. While there is no guarantee that such incidents will not cause significant damage, we expect to continue to expend significant resources to maintain security protections that limit the effect of bugs, theft, misuse, and security vulnerabilities or breaches.",
+          "cosine": 0.7132
+        },
+        {
+          "id": "S48",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 15,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "ications of existing data protection, privacy, intellectual property, and other laws, and brand or reputational harm. Some uses of AI will present ethical issues and may have broad effects on society. In order to implement AI responsibly and minimize unintended harmful effects, we have already devoted and will continue to invest significant resources to develop, test, and maintain our products and services, but we may not be able to identify or resolve all AI-related issues, deficiencies, and failures before they arise. Unintended consequences, uses, or customization of our AI tools and systems may negatively affect human rights, privacy, employment, or other social concerns, which may result in claims, lawsuits, brand or reputational harm, and increased regulatory scrutiny, any of which could harm our business, financial condition, and operating results. People access our products and services through a variety of platforms and devices that continue to evolve with the advancement of technology and user preferences. If manufacturers and users do not widely adopt versions of our products and services developed for these interfaces, our business could be harmed.",
+          "cosine": 0.6957
+        },
+        {
+          "id": "S49",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 8,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "governments with respect to our compliance with laws and regulations. Many of these laws and regulations are evolving and their applicability and scope, as interpreted by the courts, remain uncertain. Particularly with regard to AI; competition; consumer protection; content moderation, including access restrictions for minors; data privacy and security; intellectual property; news publications; and sustainability and other social matters, we have seen an increase in new and evolving laws and regulations, as well as related enforcement actions and investigations, being proposed and implemented in recent years by legislative and regulatory bodies around the world. As we have seen in recent years, different laws and regulations on the same topic may not always have the same requirements (and sometimes may seem to have conflicting requirements), and even when requirements overlap, the rules are not always consistently implemented, interpreted, and enforced from jurisdiction to jurisdiction.",
+          "cosine": 0.6826
+        },
+        {
+          "id": "S50",
+          "kind": "document",
+          "title": "Alphabet Inc. 10-K FY2025",
+          "page": 15,
+          "url": null,
+          "path": "data/SEC/Alphabet/8873e505-7403-4c46-b377-81d814482cbb.pdf",
+          "source": "SEC 10-K filing",
+          "text": "and requires management judgment and estimation. Gains and losses on non-marketable equity securities are recognized in other income (expense), net (OI&E), which increases the volatility of our OI&E. The unrealized gains and losses or impairments we record from fair value remeasurements in any particular period may differ significantly from the gains and losses we ultimately realize on such investments. Changes in fair value on SBC awards are recognized primarily through operating expenses. Risks Related to our Industry Issues in the development and use of AI may result in reputational harm and increased liability exposure. Our evolving AI-enabled products and services may give rise to risks related to harmful content, inaccuracies, discrimination, intellectual property infringement or misappropriation, violation of rights of publicity, defamation, data privacy, cybersecurity, minor protection, and other issues. As a result of these and other challenges associated with innovative technologies, our implementation of AI systems could subject us to competitive harm, regulatory action, legal liability (including under new and proposed legislation and regulations), new applications of existing data protection, privacy, intellectual property, and other laws, and brand or reputational harm. Some uses of AI will present ethical issues and may have broad effects on society.",
+          "cosine": 0.6698
+        }
+      ],
+      "tool_calls": [
+        {
+          "tool": "search_knowledge",
+          "args": {
+            "company": "Alphabet",
+            "year": "FY2024",
+            "query": "key financial competitive operational risks risk factors Alphabet 10-K FY2024",
+            "k": 10
+          }
+        },
+        {
+          "tool": "search_knowledge",
+          "args": {
+            "company": "Alphabet",
+            "year": "FY2025",
+            "query": "key financial competitive operational risks risk factors Alphabet 10-K FY2025",
+            "k": 10
+          }
+        },
+        {
+          "tool": "search_knowledge",
+          "args": {
+            "company": "Alphabet",
+            "year": "FY2024",
+            "query": "Alphabet FY2024 10-K advertising revenues more than 70% competition AI search cloud risk factors",
+            "k": 10
+          }
+        },
+        {
+          "tool": "search_knowledge",
+          "args": {
+            "company": "Alphabet",
+            "year": "FY2025",
+            "query": "Alphabet FY2025 10-K competition advertising cloud AI operating margin revenue growth TAC risk factors",
+            "k": 10
+          }
+        },
+        {
+          "tool": "search_knowledge",
+          "args": {
+            "company": "Alphabet",
+            "year": "FY2025",
+            "query": "Alphabet FY2025 10-K risk factors intellectual property privacy security data centers supply chain operations regulatory legal AI",
+            "k": 10
+          }
+        }
+      ],
+      "grounding": {
+        "findings": 8,
+        "confirmed": 8,
+        "hypotheses": 0,
+        "citation_coverage": 1.0,
+        "invalid_citations": [],
+        "top3_retrieval_cosine": 0.733,
+        "grounding_score": 1.0,
+        "sources_retrieved": 50
+      },
+      "seconds": 31.3
+    }
+  },
+  "synthesis": null,
+  "seconds": 33.0
+}

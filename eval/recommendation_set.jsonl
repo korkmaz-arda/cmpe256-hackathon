@@ -1,0 +1,12 @@
+{"catalog": "cisco", "requirements": "Virtual routing for a multicloud deployment in AWS and Azure", "constraints": {"deployment": "cloud"}, "relevant_ids": ["catalyst-8000v"]}
+{"catalog": "cisco", "requirements": "Software router in Google Cloud with NAT64 and MPLS VPN", "constraints": {"deployment": "cloud"}, "relevant_ids": ["catalyst-8000v"]}
+{"catalog": "cisco", "requirements": "Data center aggregation router with redundant power supplies", "constraints": {"deployment": "data center", "needs_redundancy": true}, "relevant_ids": ["asr-1000", "asr1001-x", "asr1002-x", "asr1001-hx", "asr1002-hx", "asr1004", "asr1006", "asr1006-x", "asr1009-x", "asr1013"]}
+{"catalog": "cisco", "requirements": "Service provider POP and large office WAN edge aggregation", "constraints": {"deployment": "aggregation", "needs_redundancy": true}, "relevant_ids": ["asr-1000", "asr1001-x", "asr1002-x", "asr1001-hx", "asr1002-hx", "asr1004", "asr1006", "asr1006-x", "asr1009-x", "asr1013"]}
+{"catalog": "cisco", "requirements": "Small branch office SD-WAN router with a low budget", "constraints": {"deployment": "branch", "budget": "low"}, "relevant_ids": ["catalyst-8200", "c8200-1n-4t", "c8200l-1n-4t", "isr4321", "isr4221", "isr4221x"]}
+{"catalog": "cisco", "requirements": "Medium and large enterprise branch router with redundant power and LTE 5G", "constraints": {"deployment": "branch", "needs_redundancy": true}, "relevant_ids": ["catalyst-8300", "c8300-2n2s-4t2x", "c8300-1n1s-4t2x", "c8300-2n2s-6t", "c8300-1n1s-6t"]}
+{"catalog": "agilent", "requirements": "Measure mitochondrial respiration in patient PBMCs for diabetes research", "constraints": null, "relevant_ids": ["seahorse-xf"]}
+{"catalog": "agilent", "requirements": "Label-free glycolysis and ATP production in 3D cell models", "constraints": null, "relevant_ids": ["seahorse-xf"]}
+{"catalog": "agilent", "requirements": "Whole-slide imaging for primary diagnostic pathology", "constraints": {"regulatory": "IVD"}, "relevant_ids": ["nanozoomer-ivd"]}
+{"catalog": "agilent", "requirements": "Scan glass histopathology tissue slides at 20x and 40x", "constraints": {"regulatory": "IVD"}, "relevant_ids": ["nanozoomer-ivd"]}
+{"catalog": "agilent", "requirements": "Automate special histochemical staining and deparaffinization", "constraints": null, "relevant_ids": ["artisan-link-pro"]}
+{"catalog": "agilent", "requirements": "Special stains with ready-to-use kits and editable protocols", "constraints": null, "relevant_ids": ["artisan-link-pro"]}

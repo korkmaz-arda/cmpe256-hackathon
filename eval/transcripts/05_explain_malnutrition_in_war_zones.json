@@ -1,0 +1,400 @@
+{
+  "query": "Explain malnutrition in war zones",
+  "route": {
+    "routes": [
+      "csr"
+    ],
+    "cross_domain": false,
+    "sub_questions": [
+      {
+        "route": "csr",
+        "question": "Explain malnutrition in war zones using the UN FAO SOFI 2023 and 2024 reports: what are the main drivers, how conflict affects food security and nutrition, and what evidence is available on affected populations and trends?"
+      }
+    ],
+    "reason": "The question is about malnutrition in war zones, which falls squarely within the UN FAO SOFI food security and nutrition evidence base handled by the CSR specialist.",
+    "confidence": 0.97,
+    "model": "gpt-5.4-mini",
+    "seconds": 1.1
+  },
+  "agents": {
+    "csr": {
+      "domain": "csr",
+      "agent": "Corporate Responsibility Agent",
+      "question": "Explain malnutrition in war zones using the UN FAO SOFI 2023 and 2024 reports: what are the main drivers, how conflict affects food security and nutrition, and what evidence is available on affected populations and trends?",
+      "answer": {
+        "summary": "SOFI 2023 and 2024 identify conflict as one of the major drivers of hunger, food insecurity and malnutrition, often interacting with climate extremes, economic downturns, food-price inflation, unaffordable healthy diets and inequality. In war zones, conflict affects nutrition through disrupted livelihoods and markets, higher food/input/energy prices, displacement and reduced access to health, water, sanitation and humanitarian support. The available SOFI evidence is strongest at country and regional levels: hunger remains above pre-pandemic levels, acute food insecurity and chronic undernourishment moved upward in comparable crisis countries from 2021 to 2022, and countries with limited financing access face higher undernourishment and stunting burdens.",
+        "findings": [
+          {
+            "claim": "Conflict is a core driver of food insecurity and malnutrition in SOFI 2023 and SOFI 2024, alongside climate extremes/variability, economic slowdowns and downturns, and inequality; these drivers often occur in combination and push countries off track for SDG 2.",
+            "status": "confirmed",
+            "sources": [
+              "S2",
+              "S3",
+              "S4",
+              "S9",
+              "S10"
+            ]
+          },
+          {
+            "claim": "SOFI defines conflict broadly as struggles between interdependent groups with incompatible needs, values, goals, resources or intentions; this includes, but is broader than, armed conflict between state or non-state actors.",
+            "status": "confirmed",
+            "sources": [
+              "S6"
+            ]
+          },
+          {
+            "claim": "War affects food security not only locally but through global market channels: SOFI 2023 notes the war in Ukraine, together with soaring food, agricultural input and energy prices, contributed to hunger remaining far above pre-pandemic levels globally and in all regions.",
+            "status": "confirmed",
+            "sources": [
+              "S1",
+              "S4"
+            ]
+          },
+          {
+            "claim": "In 2022, about 55 percent of the world’s undernourished people lived in Asia, about 38 percent—282 million people—lived in Africa, and about 6 percent—43 million people—lived in Latin America and the Caribbean, showing major regional differences in the burden of hunger.",
+            "status": "confirmed",
+            "sources": [
+              "S7"
+            ]
+          },
+          {
+            "claim": "Evidence from SOFI 2023 comparing the same 48 countries covered by the Global Report on Food Crises shows both acute and chronic food insecurity worsened from 2021 to 2022: IPC Phase 3 or above acute food insecurity rose from 21.8 percent to 22.5 percent, while prevalence of undernourishment rose from 20.8 percent to 21.3 percent.",
+            "status": "confirmed",
+            "sources": [
+              "S8"
+            ]
+          },
+          {
+            "claim": "SOFI 2024 shows conflict is especially concentrated among countries with limited ability to access financing: 48 percent of countries with limited access to financing are affected by conflict, compared with smaller shares in countries with moderate or high access; conflict affects more limited-access countries than countries with better financing options.",
+            "status": "confirmed",
+            "sources": [
+              "S14"
+            ]
+          },
+          {
+            "claim": "SOFI 2024 reports that low- and middle-income countries with limited financing access have worse food security and nutrition averages: 23.1 percent prevalence of undernourishment in 2023, 23.9 percent child stunting in 2022 and 4.9 percent child overweight in 2022; countries with high financing access had 6.9 percent PoU, 13.3 percent stunting and 7.7 percent child overweight.",
+            "status": "confirmed",
+            "sources": [
+              "S15"
+            ]
+          },
+          {
+            "claim": "SOFI 2024 finds around 63 percent of countries with high and/or increasing hunger, food insecurity and malnutrition struggle to access financing, and most of these countries—82 percent—are affected by one or more major drivers; this suggests war-affected and fragile contexts face a double burden of high need and limited financing access.",
+            "status": "confirmed",
+            "sources": [
+              "S16"
+            ]
+          }
+        ],
+        "recommendations": [
+          {
+            "action": "For companies or donors operating near war-affected markets, prioritize programmes that stabilize food access: cash/voucher assistance, local procurement where feasible, and support to last-mile food distribution.",
+            "priority": "high",
+            "why": "This addresses conflict-related market disruption and price/access shocks; impact should be tracked through food insecurity measures such as IPC Phase 3+ where available, FIES moderate/severe food insecurity, and household dietary diversity.",
+            "sources": [
+              "S8",
+              "S9",
+              "S10"
+            ]
+          },
+          {
+            "action": "Invest in nutrition-specific support for children and pregnant/lactating women, including screening and treatment referral for wasting, micronutrient support and protection of infant and young child feeding.",
+            "priority": "high",
+            "why": "Conflict-affected countries with limited financing access show high undernourishment and stunting burdens; child nutrition indicators are key SOFI outcome measures.",
+            "sources": [
+              "S15",
+              "S16"
+            ]
+          },
+          {
+            "action": "Use a humanitarian–development–peace nexus approach: combine short-term food/nutrition assistance with longer-term livelihood, agriculture and resilience investments.",
+            "priority": "high",
+            "why": "SOFI 2024 explicitly calls for strengthening this nexus where conflict is relevant, especially in countries with limited access to financing.",
+            "sources": [
+              "S11",
+              "S14"
+            ]
+          },
+          {
+            "action": "Design programmes for compound risks, not conflict alone: integrate climate resilience, price-shock response and livelihood recovery into food-security interventions.",
+            "priority": "medium",
+            "why": "SOFI repeatedly emphasizes that conflict, climate extremes and economic shocks often interact, so single-driver interventions may miss the real causes of malnutrition.",
+            "sources": [
+              "S2",
+              "S3",
+              "S9",
+              "S13"
+            ]
+          },
+          {
+            "action": "Target financing to fragile countries and communities with the highest hunger and malnutrition burdens, using concessional, blended or grant finance where commercial capital is unsuitable.",
+            "priority": "medium",
+            "why": "SOFI 2024 finds that countries with the greatest food security and nutrition needs often have limited or moderate financing access.",
+            "sources": [
+              "S12",
+              "S16"
+            ]
+          }
+        ],
+        "next_steps": [
+          "Map the company’s operating countries or supply-chain geographies against conflict exposure, PoU, FIES/IPC data, child stunting and wasting data.",
+          "Identify whether affected populations are displaced, host communities, smallholder suppliers, urban poor, or children under five, because delivery models differ.",
+          "Partner with credible humanitarian and nutrition actors to avoid duplication and ensure conflict-sensitive targeting.",
+          "Set a baseline before intervention using available SOFI-aligned indicators: IPC/FIES, PoU proxies, diet affordability, stunting, wasting and dietary diversity.",
+          "Separate emergency response budgets from resilience and livelihood-recovery budgets, but manage them under one food security and nutrition strategy.",
+          "Establish safeguards for neutrality, access, anti-diversion, gender inclusion and protection risks."
+        ],
+        "kpis": [
+          {
+            "metric": "Moderate or severe food insecurity prevalence",
+            "how_to_measure": "Use FIES-based household surveys or comparable partner data in target areas before and after intervention."
+          },
+          {
+            "metric": "Acute food insecurity severity",
+            "how_to_measure": "Track share of target population in IPC Phase 3 or above where IPC analysis is available."
+          },
+          {
+            "metric": "Child wasting and stunting",
+            "how_to_measure": "Use MUAC/weight-for-height screening for wasting and periodic anthropometric surveys for stunting among children under five."
+          },
+          {
+            "metric": "Diet quality and affordability",
+            "how_to_measure": "Track household dietary diversity and the local cost/affordability of a healthy diet where data are available."
+          },
+          {
+            "metric": "Reach of nutrition-sensitive assistance",
+            "how_to_measure": "Number and share of conflict-affected households, children under five and pregnant/lactating women receiving food, cash or nutrition support."
+          }
+        ],
+        "missing_information": [
+          "Which countries or war zones the client is focused on.",
+          "Whether the question is for corporate ESG strategy, humanitarian giving, supply-chain risk or policy analysis.",
+          "Target population: employees, suppliers, smallholders, refugees/IDPs, host communities or children.",
+          "Available budget, time horizon and risk tolerance.",
+          "Existing partners and whether operations can access conflict-affected areas safely.",
+          "Which indicators the client can realistically collect or fund."
+        ],
+        "risks_assumptions": [
+          "SOFI evidence is generally reported at global, regional and country levels; local war-zone conditions can differ sharply within a country.",
+          "Conflict effects on malnutrition are often indirect and compounded by climate, economic shocks, health-system collapse and inequality.",
+          "Humanitarian access, security, sanctions and diversion risks can constrain programme delivery.",
+          "The link from corporate investment to national SOFI indicators may be hard to attribute unless programmes are large or evaluated rigorously.",
+          "Recommendations are hypotheses based on SOFI drivers and should be tailored with local needs assessments."
+        ],
+        "confidence": {
+          "level": "high",
+          "reason": "The core claims about drivers, affected populations and trends are directly supported by SOFI 2023 and 2024 passages; programme recommendations are grounded in those drivers but require local context to confirm design choices."
+        }
+      },
+      "sources": [
+        {
+          "id": "S1",
+          "kind": "document",
+          "title": "FAO SOFI 2023: The State of Food Security and Nutrition in the World",
+          "page": 45,
+          "url": null,
+          "path": "data/FoodSecurity/SOFI-2023.pdf",
+          "source": "UN FAO report",
+          "text": "THE STATE OF FOOD SECURITY AND NUTRITION IN THE WORLD 2023 repercussions of the war in Ukraine and the price inflation for food, agricultural inputs and energy, together with other drivers of food insecurity such as conflicts and weather-related events. As a result, hunger remains far above pre-pandemic levels globally and in all regions. At the regional level, this dynamic of income and price effect is visible in multiple subregions, with varying results. In Southern Africa , for instance, the uptick of hunger in 2022 stemmed from increasing inflation, following the upsurge in international commodity prices, as well as domestic challenges such as persistently high levels of unemployment and vulnerability to shocks. 11 Although there was sustained GDP growth in 2022, this often did not translate into improved socioeconomic conditions for the poor. Agricultural production, at the same time, suffered from severe droughts and floods, and the surge in international fertilizer prices. In Middle Africa, the increase in hunger has mainly resulted from food inflation and increasing food import bills, as well as extreme climate events, which have counteracted the positive effects of economic growth, driven by buoyant oil export revenues in some countries.",
+          "cosine": 0.6802
+        },
+        {
+          "id": "S2",
+          "kind": "document",
+          "title": "FAO SOFI 2023: The State of Food Security and Nutrition in the World",
+          "page": 31,
+          "url": null,
+          "path": "data/FoodSecurity/SOFI-2023.pdf",
+          "source": "UN FAO report",
+          "text": "ps were not buoyed up by the economic recovery or were bearing the brunt of higher prices of food, inputs and energy – or both. For these reasons, we are still far off track to meet the SDG 2 targets. Beyond the global assessment of food security and nutrition in 2022, this report provides in-depth analysis of the major drivers behind these trends which are challenging our efforts to achieve the SDGs in the context of the 2030 Agenda. Past editions have repeatedly highlighted the intensification of the major drivers of food insecurity and malnutrition – conflict, climate extremes, economic slowdowns and downturns, and growing inequality – often occurring in combination, which have pushed us off track to meet the SDG 2 targets. There is no question these threats will continue, requiring that we remain steadfast in taking bold actions to build resilience against them. However, there are still important megatrends that must be factored into the analysis to fully understand the challenges to and opportunities for meeting the SDG 2 targets. | 1 |",
+          "cosine": 0.6515
+        },
+        {
+          "id": "S3",
+          "kind": "document",
+          "title": "FAO SOFI 2023: The State of Food Security and Nutrition in the World",
+          "page": 173,
+          "url": null,
+          "path": "data/FoodSecurity/SOFI-2023.pdf",
+          "source": "UN FAO report",
+          "text": "rition. While these goals may seem out of reach, the lack of an increase in hunger may signal the beginning of a turnaround, and any improvement in the nutrition of children bodes well for the future. Achieving food security and nutrition goals is not only good for those suffering from food insecurity and malnutrition, it is good for everyone. A healthier, more just and equal world is better for all. Since its 2017 edition, this report has offered an in-depth thematic analysis of the underlying causes and drivers of observed food insecurity and malnutrition trends and how food security and nutrition SDG 2 targets are related to other SDG targets. The report has repeatedly highlighted that the intensification and interaction of conflict, climate extremes and economic slowdowns and downturns, combined with highly unaffordable nutritious foods and growing inequality, are pushing us off track to meet the SDG 2 targets. While policy recommendations have been offered to build resilience against these adversities, this year the report underscores the importance of also considering other important megatrends. Urbanization has featured as the theme of this year’s report.",
+          "cosine": 0.6494
+        },
+        {
+          "id": "S4",
+          "kind": "document",
+          "title": "FAO SOFI 2023: The State of Food Security and Nutrition in the World",
+          "page": 20,
+          "url": null,
+          "path": "data/FoodSecurity/SOFI-2023.pdf",
+          "source": "UN FAO report",
+          "text": "EXECUTIVE SUMMARY This year, the update to the global assessment of food security and nutrition reflects a particular moment in history. While the pandemic, the ensuing economic rebound, the war in Ukraine, and soaring prices of food, agricultural inputs and energy have all played out differently across regions with differing impacts, new estimates indicate hunger is no longer on the rise at the global level but is still far above pre-COVID-19-pandemic levels and far off track to achieve Sustainable Development Goal (SDG) 2. As past editions of this report have highlighted, the intensification of the major drivers of food insecurity and malnutrition – conflict, climate extremes, economic slowdowns and downturns, and growing inequality – often occurring in combination, is challenging our efforts to achieve the SDGs. There is no question these threats will continue, requiring that we remain steadfast to build resilience against them. However, there are still important megatrends that must be fully understood when devising policies to meet the SDG 2 targets. One such megatrend, and the focus of this year’s report, is urbanization. As urbanization increases, rural and urban areas are becoming more intertwined, and the spatial distinction between them is becoming more fluid.",
+          "cosine": 0.6492
+        },
+        {
+          "id": "S5",
+          "kind": "document",
+          "title": "FAO SOFI 2023: The State of Food Security and Nutrition in the World",
+          "page": 9,
+          "url": null,
+          "path": "data/FoodSecurity/SOFI-2023.pdf",
+          "source": "UN FAO report",
+          "text": "ds may be a considerable disappointment for us, but for the children and people affected, they constitute an underlying fact of their lives, and this fuels our determination to keep finding solutions. Since 2017 , when signs of increasing hunger first began to appear, our organizations, through this report, have provided in-depth analysis of the major drivers behind these concerning trends and evidence-based policy recommendations to address them. | vii |",
+          "cosine": 0.6677
+        },
+        {
+          "id": "S6",
+          "kind": "document",
+          "title": "FAO SOFI 2023: The State of Food Security and Nutrition in the World",
+          "page": 275,
+          "url": null,
+          "path": "data/FoodSecurity/SOFI-2023.pdf",
+          "source": "UN FAO report",
+          "text": "THE STATE OF FOOD SECURITY AND NUTRITION IN THE WORLD 2023 | 245 | Conflict Conflict as used in this report is defined as struggles between interdependent groups that have either actual or perceived incompatibilities with respect to needs, values, goals, resources or intentions. This definition includes (but is broader than) armed conflict – that is, organized collective violent confrontations between at least two groups, either state or non-state actors. Diet quality Comprised of four key aspects: variety and/or diversity (within and across food groups), adequacy (sufficiency of nutrients or food groups compared to requirements), moderation (foods and nutrients that should be consumed with restraint) and overall balance (composition of macronutrient intake). Exposure to food safety hazards is another important quality aspect. Dietary energy requirements The amount of dietary energy, measured in kilojoules or kilocalories (often referred to as calories), required by an individual to maintain body functions, health and normal activity. Dietary energy requirements are dependent upon age, sex, body size and level of physical activity. Additional energy is required to support optimal growth and development in children and in women during pregnancy, and for milk production during lactation, consistent with the good health of mother and child.",
+          "cosine": 0.6851
+        },
+        {
+          "id": "S7",
+          "kind": "document",
+          "title": "FAO SOFI 2023: The State of Food Security and Nutrition in the World",
+          "page": 41,
+          "url": null,
+          "path": "data/FoodSecurity/SOFI-2023.pdf",
+          "source": "UN FAO report",
+          "text": "THE STATE OF FOOD SECURITY AND NUTRITION IN THE WORLD 2023 55 percent of the total number of undernourished people in 2022. About 38 percent (282 million) of undernourished people live in Africa and about 6 percent (43 million) in Latin America and the Caribbean. Economic recovery hampered by new challenges to food security At the end of 2021, global food security was on high alert due to lingering effects of the COVID-19 pandemic as well as new and ongoing conflicts and weather-related shocks. A combination of an unequal economic recovery after a dramatic decrease in economic activity observed in 2020, and rising food, fuel and transportation prices produced by the recovery itself, thwarted progress in food security. Just as global economic conditions appeared to be more favourable for 2022 and the prospects of a reduction in hunger and food insecurity towards pre-pandemic levels seemed possible, the outbreak of the war in Ukraine sent another shock through the global economy.",
+          "cosine": 0.6713
+        },
+        {
+          "id": "S8",
+          "kind": "document",
+          "title": "FAO SOFI 2023: The State of Food Security and Nutrition in the World",
+          "page": 45,
+          "url": null,
+          "path": "data/FoodSecurity/SOFI-2023.pdf",
+          "source": "UN FAO report",
+          "text": "ses. 2023. Global Report on Food Crises (GRFC) 2023 . Rome. www.fsinplatform.org/global-report-food-crises-2023 ; FAO. 2023. FAOSTAT: Suite of Food Security Indicators. In: FAO . [Cited 12 July 2023]. www.fao.org/faostat/en/#data/FS FIGURE A ESTIMATES OF ACUTE FOOD INSECURITY FROM THE GRFC AND OF CHRONIC UNDERNOURISHMENT BASED ON THE PoU IN THE SAME 48 COUNTRIES SHOW SIMILAR TRENDS FROM 2021 TO 2022 0 5 25 20 15 10 PERCENTAGE 2021 21.8 2022 22.5 2021 20.8 2022 21.3 PREVALENCE OF IPC PHASE 3 OR ABOVE ACUTE FOOD INSECURITY (GLOBAL REPORT ON FOOD CRISES ) PREVALENCE OF UNDERNOURISHMENT (THE STATE OF FOOD SECURITY AND NUTRITION IN THE WORLD ) | 15 |",
+          "cosine": 0.6513
+        },
+        {
+          "id": "S9",
+          "kind": "document",
+          "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
+          "page": 24,
+          "url": null,
+          "path": "data/FoodSecurity/SOFI-2024.pdf",
+          "source": "UN FAO report",
+          "text": "to ensure that all individuals are protected against short-term or long-term instability in food security and nutrition, caused by various climatic, economic, social, commercial and political factors. Financing therefore encompasses all the interventions aligned with the six transformative policy pathways designed to strengthen the resilience of agrifood systems to the major drivers behind hunger, food insecurity and malnutrition – namely conflict, climate variability and extremes, and economic slowdowns and downturns – and address the underlying structural factors: lack of access to and unaffordability of nutritious foods, unhealthy food environments, and high and persistent inequality. To generate a framework for increased financing and improved finance targeting, it is imperative to gain an understanding of the major drivers of food insecurity and malnutrition, and of the countries affected by these major drivers. In the last ten years, the frequency and intensity of conflict, climate extremes and economic downturns have increased, undermining food security and nutrition around the world. Furthermore, high levels of income inequality exacerbate the effects of these drivers. While each of these major drivers is unique, they often interact to create multiple compounding impacts transmitted through agrifood systems to the detriment of food security and nutrition.",
+          "cosine": 0.7042
+        },
+        {
+          "id": "S10",
+          "kind": "document",
+          "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
+          "page": 23,
+          "url": null,
+          "path": "data/FoodSecurity/SOFI-2024.pdf",
+          "source": "UN FAO report",
+          "text": "hieve healthy diets and adequate health. However, to date there have been limited efforts to include this range of interventions in comprehensive measures of financing for food security and nutrition. Importantly, the current definitions do not include the financing of interventions more specifically designed to address the major drivers behind the trends in hunger, food insecurity and malnutrition that have been identified in past editions of this report – conflict, climate variability and extremes, and economic slowdowns and downturns, combined with structural underlying factors: lack of access to and unaffordability of nutritious foods, unhealthy food environments, and high and persistent inequality. | xxi |",
+          "cosine": 0.706
+        },
+        {
+          "id": "S11",
+          "kind": "document",
+          "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
+          "page": 141,
+          "url": null,
+          "path": "data/FoodSecurity/SOFI-2024.pdf",
+          "source": "UN FAO report",
+          "text": "THE STATE OF FOOD SECURITY AND NUTRITION IN THE WORLD 2024 The high proportion of countries affected by at least one major driver builds the case for mainstreaming food security and nutrition objectives across other sector financing where the priorities do not always include meeting SDG Targets 2.1 and 2.2. Considering that climate extremes are the most prevalent driver in all country groups, the opportunity of creating synergies between food security and nutrition and climate objectives will be essential for scaling up enough resources to fill the funding gap. On the other hand, the relevance of conflict as a driver in countries with limited access to financing calls for strengthening the humanitarian–development–peace nexus, as well as for bridging the short ‑term horizon of humanitarian operations with the needed long‑term perspective of investments oriented to eradicating hunger, food insecurity and malnutrition. In addition, the higher PoU and stunting levels found in countries with limited or moderate access to financing emphasize the urgency of scaling up financing flows for ending hunger, food insecurity and malnutrition.",
+          "cosine": 0.71
+        },
+        {
+          "id": "S12",
+          "kind": "document",
+          "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
+          "page": 141,
+          "url": null,
+          "path": "data/FoodSecurity/SOFI-2024.pdf",
+          "source": "UN FAO report",
+          "text": "higher PoU and stunting levels found in countries with limited or moderate access to financing emphasize the urgency of scaling up financing flows for ending hunger, food insecurity and malnutrition. This, together with the higher prevalence of children’s overweight in countries with high ability to access financing, opens the window for innovative financing instruments that may consider objectives related to SDG Targets 2.1 and 2.2 in their design and implementation. Nevertheless, the opportunity to create such synergies and seize those opportunities is challenged by the conditions limiting the access to financing in most of these countries. As mentioned above, most of the countries analysed are facing the double challenge of eradicating hunger, food insecurity and malnutrition, as well as building resilience to the three major drivers, in adverse financial TABLE 18 LOW- AND MIDDLE-INCOME COUNTRIES’ DEGREE OF ABILITY TO ACCESS FINANCING, CONSIDERING FOOD SECURITY AND NUTRITION INDICATORS AND THE MAJOR DRIVERS Countries’ ability to access financing Number of countries affected by food insecurity and malnutrition major drivers Food security and nutrition indicators Total Climate extremes Economic downturns Conflict Climate extremes – economic downturns Conflict – economic downturns Conflict – climate extremes Climate extremes – economic downturns – conflict Not affected by majo",
+          "cosine": 0.6833
+        },
+        {
+          "id": "S13",
+          "kind": "document",
+          "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
+          "page": 97,
+          "url": null,
+          "path": "data/FoodSecurity/SOFI-2024.pdf",
+          "source": "UN FAO report",
+          "text": "THE STATE OF FOOD SECURITY AND NUTRITION IN THE WORLD 2024 BOX 8 (Continued) NOTES: Figure A1 shows the prevalence of undernourishment (PoU) in 2023 for the 119 low- and middle-income countries with countries classified as facing a protracted major food crisis (red/orange/yellow bars) affected by a single driver, multiple drivers or no driver of chronic food insecurity (conflict, climate extremes or economic downturns). Figure A2 shows trends in the PoU for the 18 countries classified as facing a protracted major food crisis in 2023 and affected by the major drivers (conflict, climate extremes and economic downturns), and countries facing high income inequality. Categories are not mutually exclusive, as a country can be affected by more than one driver and/or face high income inequality. PoU estimates are unweighted. Countries not affected by drivers are those not affected by conflict, climate extremes or economic downturns. See Table S3.5 in the Supplementary material to Chapter 3 for methodology. SOURCES: Authors’ (FAO) own elaboration. PoU based on FAO. For list of countries in major food crisis: FSIN (Food Security Information Network) & GNAFC (Global Network Against Food Crises) 2024. Global Report on Food Crises 2024 . Rome.",
+          "cosine": 0.677
+        },
+        {
+          "id": "S14",
+          "kind": "document",
+          "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
+          "page": 140,
+          "url": null,
+          "path": "data/FoodSecurity/SOFI-2024.pdf",
+          "source": "UN FAO report",
+          "text": "ries with moderate ability to access financing are affected by conflict or by economic downturns, alone or in combination, and for countries with high ability, this proportion increases to 36 percent. However, for countries with limited ability to access financing, more are affected by conflict (48 percent) than by economic slowdowns (35 percent). In fact, as observed in Table 18, across all categories of financial access, and for all combinations of drivers, conflict affects more countries with limited access to financing than countries with moderate or high financing options. | 108 |",
+          "cosine": 0.7485
+        },
+        {
+          "id": "S15",
+          "kind": "document",
+          "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
+          "page": 141,
+          "url": null,
+          "path": "data/FoodSecurity/SOFI-2024.pdf",
+          "source": "UN FAO report",
+          "text": "tremes Economic downturns Conflict Climate extremes – economic downturns Conflict – economic downturns Conflict – climate extremes Climate extremes – economic downturns – conflict Not affected by major drivers Prevalence of undernourishment in total population Prevalence of stunting in children (<5 years) Prevalence of overweight in children (<5 years) 2013–2022 2023 2022 2022 (number of countries) (% average) Limited ability: High financial risk 44 12 4 3 3 2 9 4 7 23.1 23.9 4.9 Moderate ability: Medium financial risk 31 9 3 2 3 0 4 0 10 10.4 20.9 6.4 High ability: Low financial risk 44 11 3 2 5 1 6 2 14 6.9 13.3 7.7 Total 119 32 10 7 11 3 19 6 31 – – – NOTES: Prevalence of undernourishment, childhood stunting and childhood overweight averages are unweighted. See Supplementary material to Chapter 3 for the list of countries analysed and the methodology on defining countries affected by major drivers of food insecurity and malnutrition. See Supplementary material to Chapter 5 for the details about the criteria for assessing countries’ ability to access financing. SOURCE: Authors' (FAO) own elaboration. https://doi.org/10.4060/cd1211en-tab01 | 109 |",
+          "cosine": 0.6836
+        },
+        {
+          "id": "S16",
+          "kind": "document",
+          "title": "FAO SOFI 2024: The State of Food Security and Nutrition in the World",
+          "page": 179,
+          "url": null,
+          "path": "data/FoodSecurity/SOFI-2024.pdf",
+          "source": "UN FAO report",
+          "text": "r exacerbated within countries by a lack of inclusive and gender-sensitive financing. Countries that have the greatest need for financing are those that struggle the most to actually access financing. Around 63 percent of the countries with high and/or increasing hunger, food insecurity and malnutrition struggle to access financing for food security and nutrition and have limited or moderate ability to access financing. Most of these countries (82 percent) are affected by one or more of the major drivers of food insecurity and malnutrition. This is quite at odds with the fact that very few of the international official development flows going to these countries are directed towards addressing these drivers. Scaling up financing towards countries with the highest levels of hunger, food insecurity and malnutrition and those most affected by the major drivers is essential. Countries facing limited ability to access financing also have high levels of sovereign debt and must spend important amounts of public revenues on servicing debt. Multilateral | 147 |",
+          "cosine": 0.6773
+        }
+      ],
+      "tool_calls": [
+        {
+          "tool": "search_knowledge",
+          "args": {
+            "query": "SOFI 2023 conflict war zones malnutrition food security nutrition drivers affected populations trends",
+            "year": "2023",
+            "k": 8
+          }
+        },
+        {
+          "tool": "search_knowledge",
+          "args": {
+            "query": "SOFI 2024 conflict war zones malnutrition food insecurity nutrition drivers affected populations trends financing",
+            "year": "2024",
+            "k": 8
+          }
+        }
+      ],
+      "grounding": {
+        "findings": 8,
+        "confirmed": 8,
+        "hypotheses": 0,
+        "citation_coverage": 1.0,
+        "invalid_citations": [],
+        "top3_retrieval_cosine": 0.721,
+        "grounding_score": 1.0,
+        "sources_retrieved": 16
+      },
+      "seconds": 25.9
+    }
+  },
+  "synthesis": null,
+  "seconds": 27.0
+}

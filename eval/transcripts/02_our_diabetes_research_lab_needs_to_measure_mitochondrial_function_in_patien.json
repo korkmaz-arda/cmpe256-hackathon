@@ -1,0 +1,657 @@
+{
+  "query": "Our diabetes research lab needs to measure mitochondrial function in patient PBMCs. Which Agilent instrument fits and which trials have used it?",
+  "route": {
+    "routes": [
+      "clinical"
+    ],
+    "cross_domain": false,
+    "sub_questions": [
+      {
+        "route": "clinical",
+        "question": "For a diabetes research lab measuring mitochondrial function in patient PBMCs, which Agilent instrument is the best fit (e.g., Seahorse XF platform), and which clinical trials or diabetes-related studies have used that instrument on PBMCs? Please include model-specific fit and any relevant caveats about sample type, assay constraints, and trial/study examples."
+      }
+    ],
+    "reason": "The request is entirely about Agilent clinical/research instruments and diabetes-related studies using them, so it only needs the Clinical Agent.",
+    "confidence": 0.98,
+    "model": "gpt-5.4-mini",
+    "seconds": 1.5
+  },
+  "agents": {
+    "clinical": {
+      "domain": "clinical",
+      "agent": "Clinical Agent",
+      "question": "For a diabetes research lab measuring mitochondrial function in patient PBMCs, which Agilent instrument is the best fit (e.g., Seahorse XF platform), and which clinical trials or diabetes-related studies have used that instrument on PBMCs? Please include model-specific fit and any relevant caveats about sample type, assay constraints, and trial/study examples.",
+      "answer": {
+        "summary": "Best fit: an Agilent Seahorse XF platform—preferably a 96-well Seahorse XFe/XF Pro configuration if the lab expects repeated patient-PBMC cohorts and needs OCR/ECAR, mitochondrial stress, substrate oxidation, glycolysis, and ATP-production readouts. This is a research-use metabolic phenotyping fit, not a diagnostic diabetes test; PBMC viability, cell number, adherence/immobilization, isolation timing, and cryopreservation effects are critical caveats. ClinicalTrials.gov records show multiple diabetes/metabolic studies using Seahorse on PBMCs or monocytes, including NCT03854656, NCT04293224, NCT03078101, NCT05970601, NCT03441919, and NCT04193566.",
+        "findings": [
+          {
+            "claim": "Agilent Seahorse XF analyzers are intended for real-time, label-free measurement of cellular respiration, glycolysis, and ATP production in live cell models, matching a diabetes PBMC mitochondrial-function workflow focused on OCR/ECAR and metabolic phenotyping.",
+            "status": "confirmed",
+            "sources": [
+              "S9",
+              "S36"
+            ]
+          },
+          {
+            "claim": "For model-specific fit, the trial evidence most directly supports a 96-well Seahorse configuration for PBMC/monocyte metabolic assays: NCT05673837 specifies Seahorse XFe96 Analyzer for OCR and lactate production in diabetes-related bone cells, and NCT04193566 specifies Seahorse X96 analyzer for peripheral blood monocyte mitochondrial function.",
+            "status": "confirmed",
+            "sources": [
+              "S19",
+              "S25"
+            ]
+          },
+          {
+            "claim": "PBMC-specific diabetes/metabolic trials used Seahorse to measure mitochondrial respiration or OCR/ECAR: NCT03854656 measured respiratory and glycolytic capacities of isolated PBMCs using the Seahorse method in overweight individuals at high risk of type 2 diabetes; NCT04293224 measured PBMC OCR and ECAR using a Seahorse XF Analyzer; NCT03078101 measured OCR and ECAR in PBMCs by Seahorse Flux Analyzer.",
+            "status": "confirmed",
+            "sources": [
+              "S22",
+              "S23",
+              "S24"
+            ]
+          },
+          {
+            "claim": "Additional diabetes-dataset trial examples include NCT05970601, which analyzes mitochondrial respiration capacity via Seahorse technology in isolated PBMCs after sodium/potassium salt intake, and NCT03441919, which measures intracellular metabolism/mitochondrial stress test OCR by Seahorse respirometer in type 1 diabetes innate immune activation.",
+            "status": "confirmed",
+            "sources": [
+              "S20",
+              "S21"
+            ]
+          },
+          {
+            "claim": "Seahorse use is common enough in the diabetes ClinicalTrials.gov export to support it as a field-accepted research method: the instrument-usage search found 11 Seahorse-mentioning trials overall, 9 in the diabetes dataset, with 7 completed and others recruiting/not-yet-recruiting/unknown/withdrawn.",
+            "status": "confirmed",
+            "sources": [
+              "S17",
+              "S18",
+              "S19",
+              "S20",
+              "S21",
+              "S22",
+              "S23",
+              "S24",
+              "S25",
+              "S26",
+              "S27"
+            ]
+          },
+          {
+            "claim": "PBMC sample constraints are material: one trial explicitly cryopreserves PBMCs before Seahorse XF substrate oxidation stress testing, while several diabetes trials specify isolated PBMCs and timing from baseline to follow-up or acute time points, implying the lab must control isolation, storage, and timing variables.",
+            "status": "confirmed",
+            "sources": [
+              "S17",
+              "S21",
+              "S22",
+              "S23",
+              "S24"
+            ]
+          },
+          {
+            "claim": "The Agilent product source does not state IVD clearance for Seahorse XF analyzers, while Agilent’s NanoZoomer page explicitly states IVD for digital pathology; therefore Seahorse XF should be treated as a research-use metabolic analyzer and not used to diagnose diabetes in individual patients unless local regulatory claims are independently verified.",
+            "status": "confirmed",
+            "sources": [
+              "S9",
+              "S11",
+              "S36",
+              "S38"
+            ]
+          },
+          {
+            "claim": "Diabetes literature in the provided knowledge base emphasizes glucose/HbA1c and related clinical biomarkers for diagnosis/management rather than Seahorse PBMC assays; PBMC Seahorse is therefore best framed as mechanistic or translational biomarker research, not routine clinical diabetes testing.",
+            "status": "confirmed",
+            "sources": [
+              "S1",
+              "S2",
+              "S14",
+              "S16"
+            ]
+          }
+        ],
+        "recommendations": [
+          {
+            "action": "Select an Agilent Seahorse XF 96-well platform—XFe96/XF Pro class—for patient PBMC mitochondrial-function studies, unless your cohort volume is very small and lower-throughput formats are already validated in your lab.",
+            "priority": "high",
+            "why": "The measurement need is live-cell OCR/ECAR, glycolysis/oxidative phosphorylation, ATP production, and mitochondrial stress/substrate-oxidation profiling; diabetes/metabolic trial records show PBMC or monocyte Seahorse use, and two records specify 96-well Seahorse models.",
+            "sources": [
+              "S9",
+              "S19",
+              "S21",
+              "S22",
+              "S23",
+              "S24",
+              "S25",
+              "S36"
+            ]
+          },
+          {
+            "action": "Design the PBMC workflow around fresh-vs-cryopreserved comparability, viable cell recovery, standardized isolation, and consistent time from draw to assay.",
+            "priority": "high",
+            "why": "Clinical trial examples use isolated PBMCs, acute timepoints, longitudinal visits, and in one case cryopreserved PBMCs, all of which can alter respiration and should be controlled or validated.",
+            "sources": [
+              "S17",
+              "S21",
+              "S22",
+              "S23"
+            ]
+          },
+          {
+            "action": "Use OCR, ECAR, basal respiration, mitochondrial stress-test parameters, and/or substrate oxidation endpoints as research biomarkers rather than diagnostic endpoints.",
+            "priority": "high",
+            "why": "Seahorse XF measures respiration/glycolysis/ATP production, but the product source does not state an IVD diagnostic claim; diabetes diagnosis/management in the supplied literature centers on glucose and HbA1c-related biomarkers.",
+            "sources": [
+              "S1",
+              "S2",
+              "S9",
+              "S14",
+              "S16",
+              "S36"
+            ]
+          },
+          {
+            "action": "Benchmark your protocol against diabetes/metabolic trial examples: NCT03854656, NCT04293224, NCT03078101, NCT05970601, NCT03441919, and NCT04193566.",
+            "priority": "medium",
+            "why": "These records provide concrete precedent for Seahorse-based PBMC or peripheral monocyte mitochondrial/metabolic measurements in diabetes or diabetes-adjacent metabolic studies.",
+            "sources": [
+              "S20",
+              "S21",
+              "S22",
+              "S23",
+              "S24",
+              "S25"
+            ]
+          },
+          {
+            "action": "If you also need tissue pathology, keep that workflow separate: NanoZoomer IVD is appropriate for histopathology slide imaging, but it does not answer PBMC mitochondrial function questions.",
+            "priority": "low",
+            "why": "NanoZoomer is an IVD whole-slide scanner for glass/anatomical tissue slides, whereas Seahorse XF is the metabolic analyzer matching PBMC respiration/glycolysis measurements.",
+            "sources": [
+              "S9",
+              "S11",
+              "S36",
+              "S38"
+            ]
+          }
+        ],
+        "next_steps": [
+          "Confirm expected PBMC samples per week, replicate strategy, and whether assays will be run fresh, cryopreserved, or both.",
+          "Choose the assay panel: mitochondrial stress test, glycolytic rate/stress test, ATP rate assay, and/or substrate oxidation stress test.",
+          "Run a PBMC feasibility study to define minimum cell number per well, acceptable viability, coefficient of variation, and post-thaw performance.",
+          "Map clinical metadata to assay timing: fasting state, medication class such as SGLT2 inhibitors, insulin use, BMI, infection/inflammation status, and time of blood draw.",
+          "Use trial records NCT03854656, NCT04293224, NCT03078101, NCT05970601, NCT03441919, and NCT04193566 as protocol precedents, but do not assume trial results unless the records report them.",
+          "Verify current Agilent model availability, service coverage, software, consumable supply, and any local regulatory labeling directly with Agilent before purchase."
+        ],
+        "kpis": [
+          {
+            "metric": "Assay precision",
+            "how_to_measure": "Track intra-plate and inter-day CVs for PBMC basal OCR, maximal respiration, spare respiratory capacity, and ECAR across healthy donor controls."
+          },
+          {
+            "metric": "Sample success rate",
+            "how_to_measure": "Percentage of patient PBMC samples meeting predefined viability, cell recovery, and respiration quality-control thresholds."
+          },
+          {
+            "metric": "Throughput",
+            "how_to_measure": "Number of patient samples completed per Seahorse run and per week, including controls and technical replicates."
+          },
+          {
+            "metric": "Protocol robustness",
+            "how_to_measure": "Compare fresh versus cryopreserved PBMC OCR/ECAR profiles and quantify bias, variance, and failed wells."
+          },
+          {
+            "metric": "Translational signal detection",
+            "how_to_measure": "Predefine diabetes cohort contrasts or intervention-related changes and estimate effect sizes for OCR/ECAR endpoints."
+          }
+        ],
+        "missing_information": [
+          "PBMC sample volume available per patient and expected viable cell yield.",
+          "Fresh versus cryopreserved workflow preference and maximum time from venipuncture to assay.",
+          "Number of patient cohorts, samples per week, and desired technical/biological replicates.",
+          "Specific endpoints needed: OCR only, OCR/ECAR, ATP rate, substrate oxidation, ROS/membrane potential add-ons, or cytokine integration.",
+          "Regulatory intent: research publication, exploratory clinical trial biomarker, CLIA/LDT development, or diagnostic use.",
+          "Budget, service-contract expectations, available operators, and existing cell-culture/instrument infrastructure."
+        ],
+        "risks_assumptions": [
+          "Assumption: the lab’s goal is mechanistic diabetes research or exploratory biomarker work, not clinical diagnosis.",
+          "Risk: PBMC heterogeneity, activation during isolation, and disease/medication effects can confound mitochondrial readouts.",
+          "Risk: cryopreservation may alter Seahorse readouts; if used, it needs validation against fresh PBMCs.",
+          "Risk: Seahorse XF product source does not state IVD clearance, so diagnostic claims should not be made from PBMC Seahorse data alone.",
+          "Risk: ClinicalTrials.gov records show intended measurements and outcomes, not necessarily validated performance or published results."
+        ],
+        "confidence": {
+          "level": "high",
+          "reason": "The core recommendation is directly supported by Agilent Seahorse product information and multiple ClinicalTrials.gov records documenting Seahorse use for PBMC/monocyte OCR, ECAR, and mitochondrial respiration in diabetes or metabolic studies. Model selection is medium-to-high because sources explicitly mention XFe96/X96 in related diabetes records, but final configuration depends on the lab’s throughput and assay format."
+        }
+      },
+      "sources": [
+        {
+          "id": "S1",
+          "kind": "document",
+          "title": "Exploring Biomarker Relationships in Both Type 1 and Type 2 Diabetes Mellitus Through a Bayesian Network Analysis Approach",
+          "page": 2,
+          "url": null,
+          "path": "data/Clinical/Diabetes/Exploring_Biomarker_Relationships_in_Both_Type_1_and_Type_2_Diabetes_Mellitus_Through_a_Bayesian_Network_Analysis_Approach.pdf",
+          "source": "IEEE research paper",
+          "text": "CR, eGFR, uric acid (UA), and blood urea nitrogen (BUN). Additionally, glucose measurements, such as Fasting Plasma Glucose (FPG) and 2-Hour Postprandial Glucose (2HPP), are incorporated. These characteristics are categorized into five classes, as shown in Table I. TABLE I CATEGORIZATION OF DIABETES -RELATED CHARACTERISTICS IN THE SHANGHAI DM D ATASETS Categories Characteristics Glycemic biomarkers HbA1c, GA Anthropometric biomarkers Age, Weight, Height, BMI, Gender Lipid biomarkers TC, TG, HDL, LDL Kidney biomarkers CR, eGFR, UA, BUN Glucose measurements FPG, 2HPP Detailed data specifications and additional features, in- cluding medical histories and complications, are available in the original dataset documentation [11]. In our analysis, we focus on characteristics that directly influence blood glucose fluctuations, such as factors related to glucose metabolism, lipid profiling, and kidney function. For data preprocessing, missing values were added using averages from other individ- ual data when less than 20% of data was missing for a given characteristic. Features with more than 20% missing data, such as UA and BUN, were excluded from the Bayesian network structure learning process to maintain data integrity. B. Bayesian Network Structure Learning Our analysis utilizes BNs, probabilistic graphical models denoted as B and defined by a tuple (G, Θ).",
+          "cosine": 0.4391
+        },
+        {
+          "id": "S2",
+          "kind": "document",
+          "title": "Deep Learning-Based Genetic Detection and Pathogenesis of Diabetes",
+          "page": 1,
+          "url": null,
+          "path": "data/Clinical/Diabetes/Deep_Learning-Based_Genetic_Detection_and_Pathogenesis_of_Diabetes.pdf",
+          "source": "IEEE research paper",
+          "text": "fter pancreas resection, insulin secretion will gradually decline, which will lead to diabetes. After a clear diagnosis, medical staff will use general treatment, medication, and other relief methods. Nowadays, the diagnosis of diabetes in China mainly relies on the detection of blood sugar content and glycosylated hemoglobin content in the human body to determine whether the two meet the human standard. According to the World Health Organization's diagnostic criteria for type 2 diabetes, blood glucose should be greater than 7.0mmol/L on fasting, ≥11.1mmol/L two hours after a meal, and ≥11.1mmol/L in random detection. At present, whether to diagnose diabetes only based on blood glucose value is still controversial. The real danger of type 2 diabetes, for example, is its complications, which vary from stage to stage, making it impossible to apply a single diagnostic criterion. B. Research and Development of Diabetes Gene Detection and Pathogenesis 1 2024 Fourth International Conference on Digital Data Processing (DDP) 979-8-3315-1570-6/24/$31.00 ©2024 IEEE DOI 10.1109/DDP64453.2024.00011 2024 Fourth International Conference on Digital Data Processing (DDP) | 979-8-3315-1570-6/24/$31.00 ©2024 IEEE | DOI: 10.1109/DDP64453.2024.00011 Authorized licensed use limited to: San Jose State University. Downloaded on November 01,2025 at 21:51:36 UTC from IEEE Xplore. Restrictions apply.",
+          "cosine": 0.4194
+        },
+        {
+          "id": "S3",
+          "kind": "document",
+          "title": "Artificial Intelligence and Machine Learning for Improving Glycemic Control in Diabetes Best Practices Pitfalls and Opportunities",
+          "page": 20,
+          "url": null,
+          "path": "data/Clinical/Diabetes/Artificial_Intelligence_and_Machine_Learning_for_Improving_Glycemic_Control_in_Diabetes_Best_Practices_Pitfalls_and_Opportunities.pdf",
+          "source": "IEEE research paper",
+          "text": "et al., “Data-driven modeling and prediction of blood glucose dynamics: Machine learning applications in type 1 diabetes,” Artif. Intell. Med., vol. 98, pp. 109–134, Jul. 2019. [53] C. Marling and R. Bunescu, “The OhioT1DM dataset for blood glu- cose level prediction: Update 2020,” CEUR Workshop Proc., vol. 2675, pp. 71–74, Sep. 2020. [54] Tidepool, “Tidepool big data donation data set,” Accessed: Jan. 13, 2022. [Online]. Available: https://www.tidepool.org/bigdata [55] C. Mosquera-Lopez et al., “Predicting and preventing nocturnal hypo- glycemia in type 1 diabetes using big data analytics and decision theoretic analysis,” Diabetes Technol. Therapeutics, vol. 22, no. 11, pp. 801–811, May 2020. [56] M. R. Askari et al., “Meal and physical activity detection from free-living data for discovering disturbance patterns of glucose levels in people with diabetes,” BioMedInformatics, vol. 2, pp. 297–317, 2022. [57] M. Riddell et al., “The type 1 diabetes EXercise initiative (T1DEXI): Examining the acute glycemic effects of different types of structured exercise sessions in type 1 diabetes in a real-world settting,” Diabetes Care, vol. 46, no. 4, pp. 704–713, 2023. [58] M. Gillingham et al., “Assessing mealtime macronutrient content: Patient perceptions versus expert analyses via a novel phone app,” Diabetes Technol. Therapeutics, vol. 23, no. 2, pp. 85–94, 2021.",
+          "cosine": 0.4027
+        },
+        {
+          "id": "S4",
+          "kind": "document",
+          "title": "Artificial Intelligence and Machine Learning for Improving Glycemic Control in Diabetes Best Practices Pitfalls and Opportunities",
+          "page": 11,
+          "url": null,
+          "path": "data/Clinical/Diabetes/Artificial_Intelligence_and_Machine_Learning_for_Improving_Glycemic_Control_in_Diabetes_Best_Practices_Pitfalls_and_Opportunities.pdf",
+          "source": "IEEE research paper",
+          "text": "JACOBS et al.: ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING FOR IMPROVING GL YCEMIC CONTROL IN DIABETES 29 Best practice 10: Heart rate and accelerometry offer a reliable set of physiological measurements based on wearable devices to quantify exercise and impacts on glucose changes. Selection of time windows for averaging these signals and generating features should be speciﬁc to the forecasting task. Heart rate and accelerometry offer their own advantages and disadvantages for quantifying energy expenditure during exer- cise. If heart rate is estimated from blood volume pulse signals from a wristband, the arm movement causes large artifacts on blood volume pulse. In this case artifacts must be eliminated before computing heart rate as described [98], [100], [129]. Accelerometry has the advantage of capturing the more rapid onset and offset of exercise, since it takes time for the heart rate signal to increase or decrease during transitions from rest to exercise and vice versa. However, heart rate may increase as a result of stress [130] instead of physical activity. In this way, a combination of heart rate and accelerometry may jointly provide a complete set of features for predicting the impact of exercise on changing glucose levels.",
+          "cosine": 0.4063
+        },
+        {
+          "id": "S5",
+          "kind": "document",
+          "title": "Artificial Intelligence and Machine Learning for Improving Glycemic Control in Diabetes Best Practices Pitfalls and Opportunities",
+          "page": 11,
+          "url": null,
+          "path": "data/Clinical/Diabetes/Artificial_Intelligence_and_Machine_Learning_for_Improving_Glycemic_Control_in_Diabetes_Best_Practices_Pitfalls_and_Opportunities.pdf",
+          "source": "IEEE research paper",
+          "text": "re as a function of active muscle mass and metabolic equivalent of task (METs) to impact glucose disposal. As METs increases, insulin sensitivity also in- creases and thereby more glucose is disposed. Hobbs et al.[125] proposed a more comprehensive model of the effects of physical activities on glucose concentration that was instrumental in the multivariable glucose-insulin-physiological variables simulator that provides estimates of various physiological variables as out- puts. Dalla Man and colleagues have also incorporated exercise into a metabolic compartment model[126] following on work by Breton [127]. Ozaslan et al. [128] introduce the idea of physical activity on board (similar to insulin and carbohydrates on board), which presumes that past exercise has an additive effect on future changes in glucose. Best practice 11: Compartment models offer physically in- terpretable models of metabolism and can be used to generate features for ML algorithms for representing exercise by heart rate and accelerometry. IV . ML M ETHODS APPLIED TO MODELING IN DIABETES While much of ML research has been based on algo- rithms trained on very large data sets oftentimes involving 2-dimensional data (e.g., images), ML efforts in the application area of forecasting and modeling in diabetes typically involve much smaller data sets primarily using multivariable time-series Fig. 6.",
+          "cosine": 0.4034
+        },
+        {
+          "id": "S6",
+          "kind": "document",
+          "title": "Exploring Biomarker Relationships in Both Type 1 and Type 2 Diabetes Mellitus Through a Bayesian Network Analysis Approach",
+          "page": 4,
+          "url": null,
+          "path": "data/Clinical/Diabetes/Exploring_Biomarker_Relationships_in_Both_Type_1_and_Type_2_Diabetes_Mellitus_Through_a_Bayesian_Network_Analysis_Approach.pdf",
+          "source": "IEEE research paper",
+          "text": "for 2045. Diabetes Research And Clinical Practice . 138 pp. 271-281 (2018) [2] Li, K., Liu, C., Zhu, T., Herrero, P. & Georgiou, P. GluNet: A deep learning framework for accurate glucose forecasting. IEEE Journal Of Biomedical And Health Informatics . 24, 414-423 (2019) [3] Mirshekarian, S., Bunescu, R., Marling, C. & Schwartz, F. Using LSTMs to learn physiological models of blood glucose behavior. 2017 39th Annual International Conference Of The IEEE Engineering In Medicine And Biology Society (EMBC) . pp. 2887-2891 (2017) [4] Xie, J. & Wang, Q. Benchmarking machine learning algorithms on blood glucose prediction for type I diabetes in comparison with classical time- series models. IEEE Transactions On Biomedical Engineering. 67, 3101- 3124 (2020) [5] Turksoy, K., Samadi, S., Feng, J., Littlejohn, E., Quinn, L. & Cinar, A. Meal detection in patients with type 1 diabetes: a new module for the multivariable adaptive artificial pancreas control system. IEEE Journal Of Biomedical And Health Informatics . 20, 47-54 (2015) [6] Georga, E., Protopappas, V ., Ardigo, D., Marina, M., Zavaroni, I., Polyzos, D. & Fotiadis, D. Multivariate prediction of subcutaneous glucose concentration in type 1 diabetes patients based on support vector regression. IEEE Journal Of Biomedical And Health Informatics. 17, 71- 81 (2012) [7] Katsarou, D., Georga, E., Christou, M., Tigas, S., Papaloukas, C.",
+          "cosine": 0.3906
+        },
+        {
+          "id": "S7",
+          "kind": "document",
+          "title": "Improving Self-Management of Type 2 Diabetes Evaluating the Effectiveness of a Mobile App-Based Patient Education Approach",
+          "page": 1,
+          "url": null,
+          "path": "data/Clinical/Diabetes/Improving_Self-Management_of_Type_2_Diabetes_Evaluating_the_Effectiveness_of_a_Mobile_App-Based_Patient_Education_Approach.pdf",
+          "source": "IEEE research paper",
+          "text": "pes of diabetes or severe diabetic complications were excluded. The research methodology involved evaluating the variation in self-management skills of the participants before and after using the app. Data analysis, conducted via a paired sample t-test, revealed a notable enhancement in self-management capabilities post-intervention (t-value of -2.157, significance value of 0.036). This result supports the hypothesis that an educational program delivered through a mobile application significantly improves diabetes management. The study’s findings are consistent with existing literature, which underscores the effectiveness of the diverse educational tools in enhancing patient knowledge and self-care practices. This research contributes essential insights into the utility of mHealth tools in managing diabetes, particularly in rural settings with limited resources. Keywords— diabetes, health literacy, mobile app, patient education, self-efficacy, type 2 diabetes mellitus I. INTRODUCTION Type 2 Diabetes Mellitus, or T2DM for short, represents a significant global health challenge characterized by persistently high blood sugar levels [1] and a substantial impact on both individual health and healthcare systems [2].",
+          "cosine": 0.391
+        },
+        {
+          "id": "S8",
+          "kind": "document",
+          "title": "Exploring Biomarker Relationships in Both Type 1 and Type 2 Diabetes Mellitus Through a Bayesian Network Analysis Approach",
+          "page": 3,
+          "url": null,
+          "path": "data/Clinical/Diabetes/Exploring_Biomarker_Relationships_in_Both_Type_1_and_Type_2_Diabetes_Mellitus_Through_a_Bayesian_Network_Analysis_Approach.pdf",
+          "source": "IEEE research paper",
+          "text": "where T2DM showed lower MAE and RMSE values compared to T1DM, and underscores the model’s clinical viability for diabetes management. Fig. 2. Clarke Error Grid Analysis for T1DM and T2DM Predictions. FPG and 2HPP predictions for T1DM (red and brown) and T2DM (blue and cyan) are displayed across the grid. C. Analysis of Relationships in the Bayesian Network The structure of the Bayesian network, derived through a data-driven approach, reveals intricate relationships among diabetes-related biomarkers. This subsection offers a knowledge-driven approach, utilizing expert knowledge to interpret and validate these relationships. 1) Glucose Measurement and Glycated Metrics Relation- ships: • ’FPG’ to ’HbA1c’ Arc: The strong arc strength (1.0) observed between FPG and HbA1c in our network aligns with established medical knowledge. FPG is a direct measure of blood glucose after fasting, while HbA1c offers a long-term glycemic index. While high FPG levels over time contribute to increased HbA1c, the relationship isn’t strictly causal, considering HbA1c’s sensitivity to various other factors beyond fasting glucose levels. This correlation is well-supported by several studies [19], [20], highlighting the interdependence of these metrics in diabetes management. This arc in our network reflects this well-established interdependence, crucial for diabetes diagnosis and management.",
+          "cosine": 0.4006
+        },
+        {
+          "id": "S9",
+          "kind": "document",
+          "title": "Agilent product page: Seahorse XF analyzers (XF Pro)",
+          "page": null,
+          "url": "https://www.agilent.com/about/newsroom/presrel/2023/07mar-ca23010.html",
+          "path": "app/catalog/agilent_products.json",
+          "source": "Agilent product page (transcribed)",
+          "text": "Seahorse XF analyzers (XF Pro) (Real-time cell metabolic analysis). What it does: Label-free measurement of cellular respiration, glycolysis and ATP production. Sample types: 2D cell models, 3D cell models. Regulatory status: not stated on the page. Typical use cases: Cellular bioenergetics, Therapeutic development, Drug toxicity programs.",
+          "cosine": 0.7289
+        },
+        {
+          "id": "S10",
+          "kind": "document",
+          "title": "IOT Based Heart Rate Monitoring System Design for Heart Attack Detection",
+          "page": 2,
+          "url": null,
+          "path": "data/Clinical/Heart_attack/IOT_Based_Heart_Rate_Monitoring_System_Design_for_Heart_Attack_Detection.pdf",
+          "source": "IEEE research paper",
+          "text": "sing Smartphone. The live data can be monitored by the thingspeak server. Fig. 2. Experimental Setup Rectifier. The voltage Regulator LM7812 & LM7805 used to regulate voltage at 12V & 5V respectively. The upper limit and lower limit can be sent through a smartphone Bluetooth android app .The corresponding limit will be displayed in the microcontroller display. The heart rate normal and abnormal conditions are read from the sensor and corresponding values are updated to the thingspeak server using built in wifi and internet modem. If the heart rate exceeds the range, the buzzers start to give an alarm signal. This helps the health care monitor to assess the patient before it gets worse. III. R ESULTS AND DISCUSSION Step 1 When turning on the system by connecting to the power supply, the system is turned on and the corresponding LCD display is shown in the fig 3. Fig. 3. LCD display Step 2 After turning on the system, smartphone hotspot and Bluetooth are connected with the system to control the operation of the system. In the smartphone “Serial Bluetooth terminal” app is installed to config the upper and lower limits of heart rate. Fig 4 shows the LCD display after switching on the wifi in the smartphone A.",
+          "cosine": 0.2998
+        },
+        {
+          "id": "S11",
+          "kind": "document",
+          "title": "Agilent product page: NanoZoomer Slide Scanner System IVD",
+          "page": null,
+          "url": "https://www.agilent.com/en/product/digital-pathology/digital-pathology-scanners/nanozoomer-slide-scanner-system-4370282",
+          "path": "app/catalog/agilent_products.json",
+          "source": "Agilent product page (transcribed)",
+          "text": "NanoZoomer Slide Scanner System IVD (Digital pathology). What it does: Automated high-resolution whole-slide imaging for primary diagnosis, with 20x and 40x scanning. Sample types: Glass histopathology slides, Anatomical tissue slides. Regulatory status: IVD. Typical use cases: Primary diagnostic pathology, Digital slide viewing and management.",
+          "cosine": 0.3886
+        },
+        {
+          "id": "S12",
+          "kind": "document",
+          "title": "COVID Detection using Deep Learning",
+          "page": 1,
+          "url": null,
+          "path": "data/Clinical/Covid/COVID_Detection_using_Deep_Learning.pdf",
+          "source": "IEEE research paper",
+          "text": "iate vicinity, and hospital recommendations will be sent as an sms to the user. Keywords— COVID-19, pneumonia, Alexnet, Resnet , Xception I. INTRODUCTION Coronavirus disease is a communicable disease. The severity of the disease can vary from a normal cold like sickness to the possibility of death. Signs of the respiration system being infected due to coronavirus may additionally have minor, self-proscribing ailments with unfavourable outcomes like influenza on uncommon activities. Fever, coughing, anosmia, ageusia, headaches, diarrhea, issues with respiration, weariness, and sore throat are other common symptoms. Some of the methods used for determining covid includes X- ray & CT scan images. The emergence of COVID in December 2019 has brought on big harm to physical and social well- being of people all over the world and it was declared as pandemic by the WHO. Presently, there are approximately six million proven cases death due to Covid- 19. The virus is still spreading everywhere as a different variant. Major hospitals across the world are not equipped with the right quantity and quality of kits which is used for testing especially the manual RT-PCR test. Additionally, RT-PCR test consumes a lot of time, and it is costly.",
+          "cosine": 0.2154
+        },
+        {
+          "id": "S13",
+          "kind": "document",
+          "title": "Agilent product page: Artisan Link Pro",
+          "page": null,
+          "url": "https://www.agilent.com/en/product/special-stains",
+          "path": "app/catalog/agilent_products.json",
+          "source": "Agilent product page (transcribed)",
+          "text": "Artisan Link Pro (Special histochemical staining). What it does: Automates special staining from drying and deparaffinization through finished slides. Sample types: Histochemical staining slides. Regulatory status: not stated on the page. Typical use cases: Automated special stains in pathology laboratories, Consistent staining using ready-to-use kits and editable protocols.",
+          "cosine": 0.3525
+        },
+        {
+          "id": "S14",
+          "kind": "document",
+          "title": "Artificial Intelligence and Machine Learning for Improving Glycemic Control in Diabetes Best Practices Pitfalls and Opportunities",
+          "page": 1,
+          "url": null,
+          "path": "data/Clinical/Diabetes/Artificial_Intelligence_and_Machine_Learning_for_Improving_Glycemic_Control_in_Diabetes_Best_Practices_Pitfalls_and_Opportunities.pdf",
+          "source": "IEEE research paper",
+          "text": "vascular disease, and limb loss [3]. Exogenous insulin delivery poses risk as well because too much insulin delivery can lead to dangerous hypoglycemia which can be fatal if extreme and untreated [4]. Type 2 diabetes (T2D) is different from T1D in that the beta cells in the pancreas can initially still produce insulin; however, © 2023 The Authors. This work is licensed under a Creative Commons Attribution 4.0 License. For more information, see http://creativecommons.org/licenses/by/4.0/",
+          "cosine": 0.1686
+        },
+        {
+          "id": "S15",
+          "kind": "document",
+          "title": "Artificial Intelligence and Machine Learning for Improving Glycemic Control in Diabetes Best Practices Pitfalls and Opportunities",
+          "page": 11,
+          "url": null,
+          "path": "data/Clinical/Diabetes/Artificial_Intelligence_and_Machine_Learning_for_Improving_Glycemic_Control_in_Diabetes_Best_Practices_Pitfalls_and_Opportunities.pdf",
+          "source": "IEEE research paper",
+          "text": "JACOBS et al.: ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING FOR IMPROVING GL YCEMIC CONTROL IN DIABETES 29 Best practice 10: Heart rate and accelerometry offer a reliable set of physiological measurements based on wearable devices to quantify exercise and impacts on glucose changes. Selection of time windows for averaging these signals and generating features should be speciﬁc to the forecasting task. Heart rate and accelerometry offer their own advantages and disadvantages for quantifying energy expenditure during exer- cise. If heart rate is estimated from blood volume pulse signals from a wristband, the arm movement causes large artifacts on blood volume pulse. In this case artifacts must be eliminated before computing heart rate as described [98], [100], [129]. Accelerometry has the advantage of capturing the more rapid onset and offset of exercise, since it takes time for the heart rate signal to increase or decrease during transitions from rest to exercise and vice versa. However, heart rate may increase as a result of stress [130] instead of physical activity. In this way, a combination of heart rate and accelerometry may jointly provide a complete set of features for predicting the impact of exercise on changing glucose levels.",
+          "cosine": 0.3455
+        },
+        {
+          "id": "S16",
+          "kind": "document",
+          "title": "Artificial Intelligence and Machine Learning for Improving Glycemic Control in Diabetes Best Practices Pitfalls and Opportunities",
+          "page": 2,
+          "url": null,
+          "path": "data/Clinical/Diabetes/Artificial_Intelligence_and_Machine_Learning_for_Improving_Glycemic_Control_in_Diabetes_Best_Practices_Pitfalls_and_Opportunities.pdf",
+          "source": "IEEE research paper",
+          "text": "20 IEEE REVIEWS IN BIOMEDICAL ENGINEERING, VOL. 17, 2024 the cells in the person’s body have become resistant to insulin and so glucose levels can become dangerously elevated and toxic to the person when insulin secretion becomes inadequate relative to insulin resistance. In addition to T1D and T2D there is gestational diabetes, which is a condition that can happen during pregnancy whereby a woman becomes increasingly resistant to insulin and may require exogenous insulin delivery or other medications to manage their glucose [5]. New treatments in the area of diabetes care are now becoming possible because of advances in sensor technology, mobile computing, new control algorithms, data mining and also in artiﬁcial intelligence (AI) and machine learning (ML). B. Current T reatment Approaches in Diabetes In T1D, the state-of-the-art therapy for managing glucose is automated insulin delivery (AID).",
+          "cosine": 0.1862
+        },
+        {
+          "id": "S17",
+          "kind": "trial",
+          "title": "NCT07134673: Mitochondrial Function in Peripheral Blood Mononuclear Cells, Muscle, and Skin of Long COVID Patients",
+          "url": "https://clinicaltrials.gov/study/NCT07134673",
+          "page": null,
+          "source": "ClinicalTrials.gov record",
+          "text": "{\"nct_id\": \"NCT07134673\", \"title\": \"Mitochondrial Function in Peripheral Blood Mononuclear Cells, Muscle, and Skin of Long COVID Patients\", \"url\": \"https://clinicaltrials.gov/study/NCT07134673\", \"dataset\": \"covid\", \"measurement_sentence\": \"Basal Oxygen Consumption rate (pmol O2/min), Seahorse XF Substrate Oxidation Stress test analysis of the peripheral blood mononuclear cells (PBMCs), Blood sample is taken during the second study visit (approximately 7 days after the first study visit) and the PBMCs are cryopreserved until analysis (after all participants have been recruited, estimated to be within 1 year of the start of the study)|Tissue Saturation Index (TSI), Near-infrared spectroscopy, Second study visit (approximately 7 days after the first study visit)|Mitochondrial oxygen tension (mitoPO2) (mmHg/s), Cellular Oxygen Metabolism monitoring, Second study visit (approximately 7 days after the first study visit)|Mitochondrial oxygen consumption (mitoVO2), Cellular Oxygen Metabolism monitoring, Second study visit (minimally 7 days after the first study visit)\"}"
+        },
+        {
+          "id": "S18",
+          "kind": "trial",
+          "title": "NCT06680635: Effect of Citrus Flavonoids on Obesity.",
+          "url": "https://clinicaltrials.gov/study/NCT06680635",
+          "page": null,
+          "source": "ClinicalTrials.gov record",
+          "text": "{\"nct_id\": \"NCT06680635\", \"title\": \"Effect of Citrus Flavonoids on Obesity.\", \"url\": \"https://clinicaltrials.gov/study/NCT06680635\", \"dataset\": \"diabetes\", \"measurement_sentence\": \"Anthropometric parameters, body composition and nutritional status will be assessed, cardiovascular risk factors and comorbidities will be studied (HT, SAHS, dyslipidaemia, insulin resistance), oxidative stress parameters will be compared (total and mitochondrial ROS production, mitochondrial membrane potential, glutathione levels by static cytometry and mitochondrial respiration rate by Seahorse flow analyser), antioxidant enzymes (SOD, GPx) and molecular oxidation products (Carbonyl proteins and 8-oxo-dG, LDLox) and LPS by ELISA techniques, inflammatory parameters (IL6, TNFa, IL1b, adiponectin, PAI-1, IL10) by Luminex XMAP technology in serum.\"}"
+        },
+        {
+          "id": "S19",
+          "kind": "trial",
+          "title": "NCT05673837: the Type ONe dIabetic Bone Collaboration Study",
+          "url": "https://clinicaltrials.gov/study/NCT05673837",
+          "page": null,
+          "source": "ClinicalTrials.gov record",
+          "text": "{\"nct_id\": \"NCT05673837\", \"title\": \"the Type ONe dIabetic Bone Collaboration Study\", \"url\": \"https://clinicaltrials.gov/study/NCT05673837\", \"dataset\": \"diabetes\", \"measurement_sentence\": \"Mitochondrial function: oxygen consumption rate (OCR), using the Seahorse Xfe96 Analyzer and measurement of glucose uptake of MSCs, OBs and OCs, baseline|measurement of glucose uptake of MSCs, OBs and OCs, using a bioluminescent assay (Glucose-Uptake Glo, Promega), baseline|cell lactate production, using the Seahorse Xfe96 Analyzer and measurement of glucose uptake of MSCs, OBs and OCs, baseline|Bone Material Strength index (BMSi), measure of microindentation on tibia by OsteoProbe(TM),.\"}"
+        },
+        {
+          "id": "S20",
+          "kind": "trial",
+          "title": "NCT03441919: Activation Innate Immune System in Type 1 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT03441919",
+          "page": null,
+          "source": "ClinicalTrials.gov record",
+          "text": "{\"nct_id\": \"NCT03441919\", \"title\": \"Activation Innate Immune System in Type 1 Diabetes\", \"url\": \"https://clinicaltrials.gov/study/NCT03441919\", \"dataset\": \"diabetes\", \"measurement_sentence\": \"Cytokine measurements after completion of the inclusion of all patients.|Intracellular metabolism, measured by Seahorse respirometer, Measurement of mitochondrial stress test = oxygen consumption rate (OCR), within 1 day after inclusion|Epigenetic changes, Measurement of epigenetic changes by ChIP-seq (chromatin immunoprecipitation), Within 2 months after inclusion|Arterial wall inflammation, measured by 18F-FDG-PET/CT, Compare arterial wall inflammation between diabetes patients and healthy subjects.\"}"
+        },
+        {
+          "id": "S21",
+          "kind": "trial",
+          "title": "NCT05970601: Effects of Sodium Chloride or Its Substitute Salt Potassium Chloride on Vascular Function",
+          "url": "https://clinicaltrials.gov/study/NCT05970601",
+          "page": null,
+          "source": "ClinicalTrials.gov record",
+          "text": "{\"nct_id\": \"NCT05970601\", \"title\": \"Effects of Sodium Chloride or Its Substitute Salt Potassium Chloride on Vascular Function\", \"url\": \"https://clinicaltrials.gov/study/NCT05970601\", \"dataset\": \"diabetes\", \"measurement_sentence\": \"Effect of a single oral high-sodium chloride load or a partial substitution by potassium chloride on mitochondrial respiration capacity in PBMC., Analysis of mitochondrial respiration capacity via seahorse technology in isolated PBMC from baseline, 4 and 24 hours after salt intake.\"}"
+        },
+        {
+          "id": "S22",
+          "kind": "trial",
+          "title": "NCT03854656: Effect of Time-restricted Eating on Behaviour and Metabolism in Overweight Individuals at High Risk of Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT03854656",
+          "page": null,
+          "source": "ClinicalTrials.gov record",
+          "text": "{\"nct_id\": \"NCT03854656\", \"title\": \"Effect of Time-restricted Eating on Behaviour and Metabolism in Overweight Individuals at High Risk of Type 2 Diabetes\", \"url\": \"https://clinicaltrials.gov/study/NCT03854656\", \"dataset\": \"diabetes\", \"measurement_sentence\": \"Fasted state at all four visits (Baseline and after 6, 12, and 26 weeks)|Respiratory and glycolytic capacities of isolated peripheral blood mononuclear cells (PBMCs), Measured using the Seahorse method, which measures mitochondrial respiration, Changes from baseline.\"}"
+        },
+        {
+          "id": "S23",
+          "kind": "trial",
+          "title": "NCT04293224: Metabolic and Bio-behavioral Effects of Following Recommendations in the Dietary Guidelines for Americans",
+          "url": "https://clinicaltrials.gov/study/NCT04293224",
+          "page": null,
+          "source": "ClinicalTrials.gov record",
+          "text": "{\"nct_id\": \"NCT04293224\", \"title\": \"Metabolic and Bio-behavioral Effects of Following Recommendations in the Dietary Guidelines for Americans\", \"url\": \"https://clinicaltrials.gov/study/NCT04293224\", \"dataset\": \"diabetes\", \"measurement_sentence\": \"Emotional arousal via skin conductance, a form of electrodermal activity (EDA) is also measured., Week 1 and 10|Change in Food Choice, Food choice computer-based tests from Leeds, United Kingdom, will be used to estimate explicit liking and implicit wanting for several different categories of foods., Week 1 and 10|Change in oxygen consumption rate (OCR), Measured in peripheral blood mononuclear cells by use of Seahorse XF Analyzer, a tool for measuring glycolysis and oxidative phosphorylation (through oxygen consumption) simultaneously in the same cells., Week 1 and 10|Change in extracellular acidification rate (ECAR), Measured in peripheral blood mononuclear cells by use of Seahorse XF Analyzer, a tool for measuring glycolysis and oxidative phosphorylation (through oxygen consumption) simultaneously in the same cells., Week 1 and 10|Change in fecal microbiome, Assays will be performed on fecal samples to determine DNA representing the colonic microbiota., Week 1, 10 an 28\"}"
+        },
+        {
+          "id": "S24",
+          "kind": "trial",
+          "title": "NCT03078101: EMPRA (EMPagliflozin and RAs in Kidney Disease)",
+          "url": "https://clinicaltrials.gov/study/NCT03078101",
+          "page": null,
+          "source": "ClinicalTrials.gov record",
+          "text": "{\"nct_id\": \"NCT03078101\", \"title\": \"EMPRA (EMPagliflozin and RAs in Kidney Disease)\", \"url\": \"https://clinicaltrials.gov/study/NCT03078101\", \"dataset\": \"diabetes\", \"measurement_sentence\": \"OCR and ECAR in PBMCs determined by Seahorse Flux Analyzer\"}"
+        },
+        {
+          "id": "S25",
+          "kind": "trial",
+          "title": "NCT04193566: Acute Effects of SGLT2 Inhibition on Renal Oxygenation and Autonomic Function in Type 1 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT04193566",
+          "page": null,
+          "source": "ClinicalTrials.gov record",
+          "text": "{\"nct_id\": \"NCT04193566\", \"title\": \"Acute Effects of SGLT2 Inhibition on Renal Oxygenation and Autonomic Function in Type 1 Diabetes\", \"url\": \"https://clinicaltrials.gov/study/NCT04193566\", \"dataset\": \"diabetes\", \"measurement_sentence\": \"Measured in %., From baseline to +6 hours from intervention|Change in Peripheral Blood Monocyte mitochondrial function, Seahorse X96 analyzer.\"}"
+        },
+        {
+          "id": "S26",
+          "kind": "trial",
+          "title": "NCT02926079: Investigation of Mechanisms for Transmission of Impaired Glucose Metabolism in Infants Exposed to Diabetes in Utero",
+          "url": "https://clinicaltrials.gov/study/NCT02926079",
+          "page": null,
+          "source": "ClinicalTrials.gov record",
+          "text": "{\"nct_id\": \"NCT02926079\", \"title\": \"Investigation of Mechanisms for Transmission of Impaired Glucose Metabolism in Infants Exposed to Diabetes in Utero\", \"url\": \"https://clinicaltrials.gov/study/NCT02926079\", \"dataset\": \"diabetes\", \"measurement_sentence\": \"Metabolic Flexibility - Infant, Assessed during a standard infant formula test as the difference in RQ between the postprandial and the fasting period via indirect calorimetry., One day|Lipid content in placenta samples, Lipid content will be measured in placenta samples via immunohistochemistry antibody staining for lipid droplet proteins and by Oil Red O staining., One day (delivery)|Mitochondrial oxygen consumption rates in placenta samples, Oxygen consumption rates of isolated mitochondria from placenta will be measured by the SeaHorse device., One day (delivery)|Fat content in umbilical cord mesenchymal stem cells, Mesenchymal stem cells will be differentiated to a myogenic state and assessed for lipid content via Oil Red O staining, One day (delivery)|Oxygen consumption rates in umbilical cord mesenchymal stem cells, Mesenchymal stem cells will be differentiated to a myogenic state and assessed for oxygen consumption rates using the Oroboros device., One day (delivery)\"}"
+        },
+        {
+          "id": "S27",
+          "kind": "trial",
+          "title": "NCT02995512: Mechanistic Effects of Colchicine in Patients With Myocardial Infarction",
+          "url": "https://clinicaltrials.gov/study/NCT02995512",
+          "page": null,
+          "source": "ClinicalTrials.gov record",
+          "text": "{\"nct_id\": \"NCT02995512\", \"title\": \"Mechanistic Effects of Colchicine in Patients With Myocardial Infarction\", \"url\": \"https://clinicaltrials.gov/study/NCT02995512\", \"dataset\": \"heart_attack\", \"measurement_sentence\": \"Number of neutrophils adherent to TNF\\u03b1-stimulated endothelial cells, Metabolism of neutrophils will be measured using the Seahorse assay., 1 Day\"}"
+        },
+        {
+          "id": "S28",
+          "kind": "trial",
+          "title": "NCT00977262: Postprandial Inflammation and Fatty Acids",
+          "url": "https://clinicaltrials.gov/study/NCT00977262",
+          "page": null,
+          "source": "ClinicalTrials.gov record",
+          "text": "{\"nct_id\": \"NCT00977262\", \"title\": \"Postprandial Inflammation and Fatty Acids\", \"url\": \"https://clinicaltrials.gov/study/NCT00977262\", \"status\": \"COMPLETED\", \"phases\": \"NA\", \"enrollment\": \"42\", \"sponsor\": \"Wageningen University\", \"conditions\": \"Cardiovascular Disease|Diabetes Type 2|Obesity\", \"snippet\": \"f either saturated, monounsaturated or polyunsaturated fatty acids on peripheral blood mononuclear cells (PBMC) whole genome expression of obese and type 2 diabetic obese subjects. PBMC gene expression profiles, 0, 2, 4 hrs PBMC inflammatory response capacity, 0, 2, 4 hrs|Endothelial function, 0, 2,\", \"score\": 35.86669307177475}"
+        },
+        {
+          "id": "S29",
+          "kind": "trial",
+          "title": "NCT02191644: Dietary Intervention Replacing Carbohydrate With Protein and Fat Has Greater Effect on Peripheral Blood Mononuclear Cell Metabolites Than on Plasma Metabolites in Patients With Prediabetes or Type-2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT02191644",
+          "page": null,
+          "source": "ClinicalTrials.gov record",
+          "text": "{\"nct_id\": \"NCT02191644\", \"title\": \"Dietary Intervention Replacing Carbohydrate With Protein and Fat Has Greater Effect on Peripheral Blood Mononuclear Cell Metabolites Than on Plasma Metabolites in Patients With Prediabetes or Type-2 Diabetes\", \"url\": \"https://clinicaltrials.gov/study/NCT02191644\", \"status\": \"COMPLETED\", \"phases\": \"PHASE2\", \"enrollment\": \"82\", \"sponsor\": \"Yonsei University\", \"conditions\": \"Prediabetes|Type-2 Diabetes\", \"snippet\": \"in-associated phospholipase A2 (Lp-PLA2) activity in peripheral blood mononuclear cells (PBMC) and plasma affected metabolic profiles in PBMCs and plasma. Lp-PLA2 Activity in Plasma, Change from baseline in Lp-PLA2 at 12 weeks|Lp-PLA2 Activity in PBMC, Change from baseline in Lp-PLA2 at 12 weeks PBM\", \"score\": 35.362219054605724}"
+        },
+        {
+          "id": "S30",
+          "kind": "trial",
+          "title": "NCT01895387: Dietary Effects on Circulating Lipoprotein-associated Phospholipase A2 (Lp-PLA2) Activity and Enzyme Activity in Peripheral Blood Mononuclear Cells (PBMCs) in Patients With Prediabetes or Newly Diagnosed Type 2 Diabetes",
+          "url": "https://clinicaltrials.gov/study/NCT01895387",
+          "page": null,
+          "source": "ClinicalTrials.gov record",
+          "text": "{\"nct_id\": \"NCT01895387\", \"title\": \"Dietary Effects on Circulating Lipoprotein-associated Phospholipase A2 (Lp-PLA2) Activity and Enzyme Activity in Peripheral Blood Mononuclear Cells (PBMCs) in Patients With Prediabetes or Newly Diagnosed Type 2 Diabetes\", \"url\": \"https://clinicaltrials.gov/study/NCT01895387\", \"status\": \"COMPLETED\", \"phases\": \"NA\", \"enrollment\": \"100\", \"sponsor\": \"Yonsei University\", \"conditions\": \"Impaired Fasting Glucose|Newly Diagnosed Type 2 Diabetes\", \"snippet\": \"associated Phospholipase A2 (Lp-PLA2) Activity and Enzyme Activity in Peripheral Blood Mononuclear Cells (PBMCs) in Patients With Prediabetes or Newly Diagnosed Type 2 Diabetes Impaired Fasting Glucose|Newly Diagnosed Type 2 Diabetes DIETARY_SUPPLEMENT: Dietary intervention-whole grains and legumes|\", \"score\": 35.26371911231977}"
+        },
+        {
+          "id": "S31",
+          "kind": "trial",
+          "title": "NCT01899872: Effect of Acute Exercise on Endothelial Function in Patients With Type 1 Diabetes.",
+          "url": "https://clinicaltrials.gov/study/NCT01899872",
+          "page": null,
+          "source": "ClinicalTrials.gov record",
+          "text": "{\"nct_id\": \"NCT01899872\", \"title\": \"Effect of Acute Exercise on Endothelial Function in Patients With Type 1 Diabetes.\", \"url\": \"https://clinicaltrials.gov/study/NCT01899872\", \"status\": \"UNKNOWN\", \"phases\": \"NA\", \"enrollment\": \"15\", \"sponsor\": \"Hospital de Clinicas de Porto Alegre\", \"conditions\": \"Type 1 Diabetes Mellitus\", \"snippet\": \"promote greater benefit in vascular function of patients with type 1 diabetes, as compared with the resistive exercise session. Circulating endothelial progenitor cells, A 20-ml sodium heparin tube will be used and peripheral blood mononuclear cells (PBMC) will be isolated by Ficoll-Hypaque. Blood\", \"score\": 32.24846710074864}"
+        },
+        {
+          "id": "S32",
+          "kind": "trial",
+          "title": "NCT03136939: Study of IGRP-specific T Cell in Peripheral Blood of Type 1 Diabetes Mellitus",
+          "url": "https://clinicaltrials.gov/study/NCT03136939",
+          "page": null,
+          "source": "ClinicalTrials.gov record",
+          "text": "{\"nct_id\": \"NCT03136939\", \"title\": \"Study of IGRP-specific T Cell in Peripheral Blood of Type 1 Diabetes Mellitus\", \"url\": \"https://clinicaltrials.gov/study/NCT03136939\", \"status\": \"COMPLETED\", \"phases\": \"\", \"enrollment\": \"30\", \"sponsor\": \"First Affiliated Hospital of Zhejiang University\", \"conditions\": \"Diabetes Mellitus\", \"snippet\": \"Study of IGRP-specific T Cell in Peripheral Blood of Type 1 Diabetes Mellitus Diabetes Mellitus OTHER: No intervention 10 type 1 diabetes, 10 type 2 diabetes and 10 healthy controls matched with age and sex were enrolled in our study and their periphera blood mononuclear cells (PBMC) were isolated.\", \"score\": 31.383348905027574}"
+        },
+        {
+          "id": "S33",
+          "kind": "trial",
+          "title": "NCT05593549: Role of Autophagy in Type 2 Diabetes Microvascular Dysfunction",
+          "url": "https://clinicaltrials.gov/study/NCT05593549",
+          "page": null,
+          "source": "ClinicalTrials.gov record",
+          "text": "{\"nct_id\": \"NCT05593549\", \"title\": \"Role of Autophagy in Type 2 Diabetes Microvascular Dysfunction\", \"url\": \"https://clinicaltrials.gov/study/NCT05593549\", \"status\": \"RECRUITING\", \"phases\": \"EARLY_PHASE1\", \"enrollment\": \"60\", \"sponsor\": \"Medical College of Wisconsin\", \"conditions\": \"Type 2 Diabetes|Healthy Aging\", \"snippet\": \"Protein Expression, Autophagic Flux protein expression in Peripheral Blood Mononuclear Cells (PBMC) will be measured via exogenous treatment of PBMCs with a lysosomal inhibitor and then expression of autophagic markers will be assessed via Western Blot., 2 weeks Blood Pressure, Brachial Blood Press\", \"score\": 30.139869420257533}"
+        },
+        {
+          "id": "S34",
+          "kind": "trial",
+          "title": "NCT01881347: Effects of Resveratrol on Endothelial Function in Type 2 Diabetes Mellitus",
+          "url": "https://clinicaltrials.gov/study/NCT01881347",
+          "page": null,
+          "source": "ClinicalTrials.gov record",
+          "text": "{\"nct_id\": \"NCT01881347\", \"title\": \"Effects of Resveratrol on Endothelial Function in Type 2 Diabetes Mellitus\", \"url\": \"https://clinicaltrials.gov/study/NCT01881347\", \"status\": \"COMPLETED\", \"phases\": \"NA\", \"enrollment\": \"54\", \"sponsor\": \"Boston University\", \"conditions\": \"Diabetes Mellitus\", \"snippet\": \"from Baseline in Serum insulin, 2 and 4 weeks|Change from Baseline in Mononuclear cell mitochondrial DNA damage, 4 weejs|Change from Baseline in Mononuclear cell mitochondrial mass, 4 weeks|Change from Baseline in Mononuclear cell mitochondrial production of reactive oxygen species, 4 weeks|Change f\", \"score\": 29.236556717628435}"
+        },
+        {
+          "id": "S35",
+          "kind": "trial",
+          "title": "NCT05651919: PBMC as Biomarkers of Diabetic Cardiomyopathy",
+          "url": "https://clinicaltrials.gov/study/NCT05651919",
+          "page": null,
+          "source": "ClinicalTrials.gov record",
+          "text": "{\"nct_id\": \"NCT05651919\", \"title\": \"PBMC as Biomarkers of Diabetic Cardiomyopathy\", \"url\": \"https://clinicaltrials.gov/study/NCT05651919\", \"status\": \"RECRUITING\", \"phases\": \"\", \"enrollment\": \"100\", \"sponsor\": \"Hospices Civils de Lyon\", \"conditions\": \"Type 2 Diabetes|Metabolic Syndrome|Heart Failure With Preserved Ejection Fraction|Heart Failure With Mildly Reduced Ejection Fraction\", \"snippet\": \"HFmrEF in T2D patients; Furthermore, specific biomarkers are needed. Peripheral blood mononuclear cells (PBMC) obtained from a peripheral blood sample can provide insights from calcic and inflammatory pathways, and may identify more specific molecular signatures shared between T2D+MS and HFpEF. Com\", \"score\": 28.495340020209174}"
+        },
+        {
+          "id": "S36",
+          "kind": "product",
+          "title": "Catalog: Seahorse XF analyzers (XF Pro)",
+          "url": "https://www.agilent.com/about/newsroom/presrel/2023/07mar-ca23010.html",
+          "page": null,
+          "text": "{\"id\": \"seahorse-xf\", \"name\": \"Seahorse XF analyzers (XF Pro)\", \"model\": null, \"similarity\": 0.6553711518937343, \"context_adjustment\": -0.15, \"final_score\": 0.5053711518937343, \"matched_terms\": [\"cell\", \"analysis\", \"glycolysis\", \"seahorse\", \"xf\", \"metabolic\"], \"why\": \"Matches cell, analysis, glycolysis, seahorse, xf, metabolic; -0.15 regulatory mismatch or unknown.\", \"source_url\": \"https://www.agilent.com/about/newsroom/presrel/2023/07mar-ca23010.html\", \"regulatory\": null, \"measures_or_does\": \"Label-free measurement of cellular respiration, glycolysis and ATP production\"}",
+          "source": "Product catalog (from datasheets)"
+        },
+        {
+          "id": "S37",
+          "kind": "product",
+          "title": "Catalog: Artisan Link Pro",
+          "url": "https://www.agilent.com/en/product/special-stains",
+          "page": null,
+          "text": "{\"id\": \"artisan-link-pro\", \"name\": \"Artisan Link Pro\", \"model\": null, \"similarity\": 0.0, \"context_adjustment\": -0.15, \"final_score\": -0.15, \"matched_terms\": [], \"why\": \"No overlapping catalog terms; -0.15 regulatory mismatch or unknown.\", \"source_url\": \"https://www.agilent.com/en/product/special-stains\", \"regulatory\": null, \"measures_or_does\": \"Automates special staining from drying and deparaffinization through finished slides\"}",
+          "source": "Product catalog (from datasheets)"
+        },
+        {
+          "id": "S38",
+          "kind": "product",
+          "title": "Catalog: NanoZoomer Slide Scanner System IVD",
+          "url": "https://www.agilent.com/en/product/digital-pathology/digital-pathology-scanners/nanozoomer-slide-scanner-system-4370282",
+          "page": null,
+          "text": "{\"id\": \"nanozoomer-ivd\", \"name\": \"NanoZoomer Slide Scanner System IVD\", \"model\": null, \"similarity\": 0.0, \"context_adjustment\": -0.35, \"final_score\": -0.35, \"matched_terms\": [], \"why\": \"No overlapping catalog terms; -0.35 regulatory mismatch or unknown.\", \"source_url\": \"https://www.agilent.com/en/product/digital-pathology/digital-pathology-scanners/nanozoomer-slide-scanner-system-4370282\", \"regulatory\": \"IVD\", \"measures_or_does\": \"Automated high-resolution whole-slide imaging for primary diagnosis, with 20x and 40x scanning\"}",
+          "source": "Product catalog (from datasheets)"
+        }
+      ],
+      "tool_calls": [
+        {
+          "tool": "search_knowledge",
+          "args": {
+            "query": "Agilent Seahorse XF mitochondrial function PBMC peripheral blood mononuclear cells diabetes",
+            "k": 8,
+            "topic": "Diabetes"
+          }
+        },
+        {
+          "tool": "search_knowledge",
+          "args": {
+            "query": "Agilent Seahorse XF Analyzer mitochondrial respiration live cells PBMC assay constraints",
+            "k": 8
+          }
+        },
+        {
+          "tool": "instrument_usage",
+          "args": {
+            "instrument": "Seahorse"
+          }
+        },
+        {
+          "tool": "search_trials",
+          "args": {
+            "query": "diabetes PBMC Seahorse mitochondrial function peripheral blood mononuclear cells",
+            "dataset": "diabetes",
+            "k": 8
+          }
+        },
+        {
+          "tool": "recommend_products",
+          "args": {
+            "catalog": "agilent",
+            "requirements": "diabetes research lab measuring mitochondrial function oxygen consumption glycolysis in patient PBMCs Seahorse XF platform live-cell metabolic analysis",
+            "constraints": {
+              "regulatory": "research use only"
+            },
+            "k": 5
+          }
+        }
+      ],
+      "grounding": {
+        "findings": 8,
+        "confirmed": 8,
+        "hypotheses": 0,
+        "citation_coverage": 1.0,
+        "invalid_citations": [],
+        "top3_retrieval_cosine": 0.529,
+        "grounding_score": 0.79,
+        "sources_retrieved": 38
+      },
+      "seconds": 34.7
+    }
+  },
+  "synthesis": null,
+  "seconds": 36.2
+}

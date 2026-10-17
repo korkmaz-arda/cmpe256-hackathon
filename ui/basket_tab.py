@@ -96,7 +96,7 @@ def render() -> None:
 
         col_add, col_d1, col_d2 = st.columns([1.3, 1, 1])
         with col_add:
-            if st.button("➕ Add Item", key="add_sku_button", use_container_width=True):
+            if st.button("➕ Add Item", key="add_sku_button", width="stretch"):
                 if selected_sku not in st.session_state.basket_cart:
                     st.session_state.basket_cart.append(selected_sku)
                     st.rerun()
@@ -104,12 +104,12 @@ def render() -> None:
                     st.warning(f"Item '{selected_sku}' is already in your cart.")
 
         with col_d1:
-            if st.button("🎬 Demo 1", key="btn_demo_step1", use_container_width=True, help="Load 'Bosch D7050 Detector'"):
+            if st.button("🎬 Demo 1", key="btn_demo_step1", width="stretch", help="Load 'Bosch D7050 Detector'"):
                 st.session_state.basket_cart = ["Bosch D7050 Detector (SKU: D7050)"]
                 st.rerun()
 
         with col_d2:
-            if st.button("🎬 Demo 2", key="btn_demo_step2", use_container_width=True, help="Add 'DSC PG9914' to break pattern"):
+            if st.button("🎬 Demo 2", key="btn_demo_step2", width="stretch", help="Add 'DSC PG9914' to break pattern"):
                 st.session_state.basket_cart = [
                     "Bosch D7050 Detector (SKU: D7050)",
                     "DSC PG9914 Motion Detector (SKU: PG9914)",
@@ -164,7 +164,7 @@ def render() -> None:
             )
 
         df = pd.DataFrame(table_rows)
-        st.dataframe(df, use_container_width=True, hide_index=True)
+        st.dataframe(df, width="stretch", hide_index=True)
         st.caption("ℹ️ *Sorted by confidence desc, lift desc, support count desc. Antecedent is strictly the full cart.*")
     else:
         st.warning(f"**{explanation['reason']}**")

@@ -99,7 +99,9 @@ class ManagerAgent:
             briefs.append(f"### {res['agent']} (source ids prefixed {p}-)\nSub-question: {res['question']}\n"
                           f"{json.dumps(ans, indent=1)}")
         messages = [
-            {"role": "system", "content": self.prompt + "\n\nWrite the consolidated consulting recommendation."},
+            {"role": "system", "content": self.prompt + "\n\nWrite the consolidated consulting recommendation. Be concise: an executive summary of at most "
+                                       "5 sentences, at most 5 integrated recommendations, 4 cross-domain links, 6 next steps "
+                                       "and 5 KPIs."},
             {"role": "user", "content": f"Client request: {query}\n\nSpecialist reports:\n\n" + "\n\n".join(briefs)},
         ]
         return llm.chat_json(messages, config.AGENT_MODEL, SYNTH_SCHEMA, "consulting_recommendation", config.AGENT_EFFORT)

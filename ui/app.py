@@ -57,7 +57,7 @@ EXAMPLES = {
     ],
 }
 
-AGENT_ICONS = {"technology": "🖧", "clinical": "🧪", "sec": "📈", "csr": "🌾"}
+AGENT_ICONS = {"technology": "💻", "clinical": "🧪", "sec": "📈", "csr": "🌾"}
 
 
 @st.cache_resource(show_spinner="Loading agents and knowledge bases ...")
@@ -217,7 +217,7 @@ def agents_tab() -> None:
             stats = get_store(name).stats()
             st.markdown(f"**Knowledge base:** {stats['chunks']:,} chunks")
             st.dataframe(pd.DataFrame([{"document": k, "chunks": v} for k, v in stats["documents"].items()]),
-                         hide_index=True, use_container_width=True)
+                         hide_index=True, width="stretch")
         if name == "clinical":
             st.markdown("**Structured data:** 32,611 ClinicalTrials.gov studies (COVID-19, diabetes, heart attack, "
                         "knee injuries) searchable with BM25 through `search_trials` and `instrument_usage`.")
