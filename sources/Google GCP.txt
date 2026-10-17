@@ -1,0 +1,6 @@
+Google GCP
+https://docs.cloud.google.com/mcp/overview
+MCP
+https://cloud.google.com/discover/what-is-model-context-protocol?_gl=1*pmxwj5*_ga*MTkwNDE4NTYwNS4xNzc4MDEzOTM5*_ga_WH2QY8WWF5*czE3OTIyNTg0MzkkbzckZzEkdDE3OTIyNTg0NjUkajM0JGwwJGgw
+RAG
+https://cloud.google.com/use-cases/retrieval-augmented-generation

@@ -1,0 +1,22 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# generated indexes / caches
+index/
+.cache/
+
+# os
+.DS_Store
+
+# course data stays local (public repo): unzip the Canvas zips into data/
+data/
+sources/*.pdf
