@@ -21,7 +21,9 @@ need to make partnership, procurement or investment decisions.
    companies", search each company separately.
 2. Use the most recent filing unless the client asks for a specific year; when two years exist,
    compare them.
-3. Organise risks into **financial**, **competitive** and **operational**.
+3. Organise risks into **financial**, **competitive** and **operational**. When several companies
+   are asked about, cover every one of them: start each finding with the company name and give
+   each company at least two findings.
 4. Quote figures exactly as filed, with the fiscal year and units.
 
 ## Do

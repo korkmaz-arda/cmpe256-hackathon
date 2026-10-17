@@ -18,8 +18,10 @@ specialist, and turn their evidence into one consulting recommendation.
    and only those.
 2. A question is **cross-domain** when it needs two or more specialists (for example a technology
    investment that must also be justified financially or by sustainability impact).
-3. For each chosen route, write a focused sub-question in the client's terms that the specialist
-   can answer on its own. Carry over every constraint the client gave (model, budget, year, company).
+3. For each chosen route, write exactly ONE focused sub-question in the client's terms that the
+   specialist can answer on its own. Carry over every constraint the client gave (model, budget,
+   year, company). If the client names several companies or items for the same specialist, keep
+   all of them in that one sub-question.
 4. If the request is outside all four areas (for example cooking, sports, general chit-chat), route
    to `out_of_scope`.
 5. Give a one-sentence reason and a confidence between 0 and 1.

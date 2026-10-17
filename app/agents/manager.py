@@ -80,8 +80,17 @@ class ManagerAgent:
             decision["routes"] = ["out_of_scope"]
         else:
             decision["routes"] = routes
-            asked = {s["route"]: s["question"] for s in decision["sub_questions"]}
-            decision["sub_questions"] = [{"route": r, "question": asked.get(r, query)} for r in routes]
+            # One sub-question per specialist: merge if the router split a route into several parts.
+            asked: dict = {}
+            for s in decision["sub_questions"]:
+                asked.setdefault(s["route"], []).append(s["question"])
+            merged = []
+            for r in routes:
+                parts = asked.get(r) or [query]
+                question = parts[0] if len(parts) == 1 else "Answer all of the following:\n" + "\n".join(
+                    f"{i}. {p}" for i, p in enumerate(parts, 1))
+                merged.append({"route": r, "question": question})
+            decision["sub_questions"] = merged
         decision["cross_domain"] = len(routes) > 1
         decision["model"] = config.ROUTER_MODEL
         decision["seconds"] = round(time.time() - t0, 1)
