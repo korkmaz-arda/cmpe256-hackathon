@@ -10,4 +10,6 @@ pymupdf>=1.24
 beautifulsoup4>=4.12
 streamlit>=1.40
 pandas>=2.0                 # Streamlit tables
+fastapi>=0.110              # market-basket microservice (app/basket_api.py)
+uvicorn>=0.30
 pytest>=8

@@ -47,6 +47,11 @@ def render() -> None:
             st.dataframe(pd.DataFrame([{"recommended item": r.item, "confidence": r.confidence, "lift": r.lift,
                                         "support": r.support, "baskets with cart + item": r.count}
                                        for r in out.recommendations]), hide_index=True, width="stretch")
+            cols = st.columns(len(out.recommendations))
+            for col, r in zip(cols, out.recommendations):
+                if col.button(f"＋ {r.item.split(' (SKU')[0]}", key=f"add_rec_{r.item}", help=f"Add {r.item} to the cart"):
+                    cart.append(r.item)
+                    st.rerun()
         st.caption(out.reason)
     else:
         st.caption("Add an item to see what is usually bought with it.")

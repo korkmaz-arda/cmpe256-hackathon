@@ -41,3 +41,16 @@ def test_unseen_combination_returns_nothing_without_subset_fallback():
     out = rec.recommend(["a", "c", "d"])                   # never bought together twice
     assert out.recommendations == [] and "no recommendation" in out.reason
     assert rec.recommend([]).recommendations == []
+
+
+def test_basket_api_endpoints():
+    from fastapi.testclient import TestClient
+
+    from app.basket_api import app
+
+    client = TestClient(app)
+    assert client.get("/health").json()["status"] == "ok"
+    item = client.get("/items").json()[0]
+    body = client.post("/recommend", json={"cart": [item], "k": 3}).json()
+    assert body["cart"] == [item] and len(body["recommendations"]) <= 3
+    assert client.get("/metrics").json()["requests"] == 1
