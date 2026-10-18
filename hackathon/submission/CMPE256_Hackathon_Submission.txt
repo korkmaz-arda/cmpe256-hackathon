@@ -1,0 +1,63 @@
+Agentic AI Management Consulting Platform
+
+CMPE 256 Hackathon, SJSU — October 2026
+
+Pranith Varma Pakalapati
+
+Concept
+
+An AI consulting company that behaves like a real firm: one Manager Agent takes the customer's question, routes it to specialist domain agents, and consolidates their evidence-grounded findings into business recommendations with next actions and measurable impact. It answers from authoritative documents, not from the model's memory.
+
+Architecture
+
+A single Management Consulting Manager Agent sits on top of four domain agents: Technology (Cisco and Google Cloud documentation), Clinical (Agilent diagnostic equipment documentation), SEC (Cisco, Alphabet, and Agilent SEC filings), and Corporate Responsibility (FAO food-security reports). The manager detects intent, routes to one or more agents, and merges their reports into a single recommendation.
+
+- Intent detection and routing: per-domain TF-IDF centroids plus keyword signals; multi-label routing for questions that span domains.
+
+- Clarification on ambiguity: when no domain scores confidently, the manager asks which domain the question concerns instead of guessing.
+
+- Knowledge base: roughly 9,300 chunks built from SEC 10-K filings, FAO SOFI 2023 and 2024 reports, fetched Cisco, Agilent, and Google Cloud vendor pages, the supplied source files, 20 IEEE clinical papers, ClinicalTrials.gov registry summaries (32,611 studies), and a procurement catalog of 1,000 transactions.
+
+- RAG with citations: per-domain TF-IDF retrieval; every finding carries a citation in the form [source #chunk-id].
+
+- Recommendation engine: association-rule mining over the 1,000 procurement transactions (296 rules) suggests co-procured compatible components, reported with support, confidence, and lift.
+
+- Explainability: each report separates confirmed findings from hypotheses, raises uncertainty flags, and reports agent confidence.
+
+- Agent prompts: every agent (manager + four specialists) ships with a written instruction set — persona, do / do-not instructions, domain expertise, and grounding sources — printed at the top of results/demo_output.txt.
+
+Measured results
+
+Evaluation ran on labeled test sets; outputs are in results/eval_metrics.json.
+
+- Routing: 24/24 correct on single- and cross-domain queries, mean F1 1.0.
+
+- Retrieval: mean precision at 5 of 1.0; cross-domain precision at 5 of 0.825, meaning the right domain's evidence is found even when all four corpora compete.
+
+- Recommendation: hit-rate at 5 of 0.27, MRR at 5 of 0.128 on 200 hold-one-out transaction tests, from 296 mined rules.
+
+- Response quality: 29 reports generated, averaging 5.8 cited evidence passages each, 136 findings with citations, 11 uncertainty flags raised.
+
+The recommendation scores are modest, which is reported honestly: sparse co-purchase data limits rule coverage, and the evaluation measures this rather than hiding it.
+
+Demo walkthrough
+
+Eleven scripted cases in results/demo_output.txt cover the professor's prompt list: four food-security prompts from the SOFI reports, one prompt per specialist agent, a cross-domain query, a trial-grounded clinical case, and an ambiguity case. The file opens with every agent's written prompt and instruction set.
+
+Case 1, the brief's example: a Cisco router with intermittent failures. The Technology Agent retrieves Cisco troubleshooting documentation, distinguishes confirmed faults from hypotheses, asks for missing diagnostics before parts are ordered, and the manager consolidates the result into technical remediation, procurement priority, and preventive maintenance.
+
+Case 5, cross-domain: a customer evaluates Cisco as a strategic vendor across products, financial risk, and sustainability. The manager routes to three agents at once — SEC cites disclosed risk factors from the filing, Technology cites product documentation, and Corporate Responsibility anchors the sustainability case to the FAO SOFI reports — then merges all three into one recommendation.
+
+Case 6, ambiguity: the request 'Our system is down, what should we do?' scores too low for any domain, so the manager asks which domain the question concerns instead of guessing.
+
+Business value
+
+Every recommendation states the action, why it is appropriate, the expected impact, and how to measure it. Uncertainty is flagged where evidence is thin, so a customer can see what is verified and what still needs checking.
+
+Part B: market basket
+
+A single-page UI (partb/market_basket.html, no server needed) implements the optional market-basket recommender: the full 40-product list stays visible, items go into a cart, and recommendations appear below it. Apriori rules (min support 2 baskets, min confidence 0.10, lift above 1) fire on the whole cart only — no partial-basket fallback. When no rule covers the exact combination, the panel blanks out, even if a smaller cart had recommendations.
+
+How to run
+
+Everything runs locally on CPU with no API keys, so it works on any machine including a grader's. Build the knowledge base with src/kb_build.py, run the demo with src/demo.py (writes results/demo_output.txt), and run the evaluation with src/evaluate.py (writes results/eval_metrics.json).

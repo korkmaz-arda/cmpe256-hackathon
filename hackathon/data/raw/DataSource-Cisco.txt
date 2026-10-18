@@ -1,0 +1,49 @@
+1. Cisco Catalyst 8300 Series Edge Platforms
+https://www.cisco.com/c/en/us/products/routers/catalyst-8300-series-edge-platforms/index.html
+2. Cisco Catalyst 8200 Series Edge Platforms
+https://www.cisco.com/c/en/us/products/routers/catalyst-8200-series-edge-platforms/index.html
+3. Cisco Catalyst 8000V Edge Software
+https://www.cisco.com/c/en/us/products/routers/catalyst-8000v-edge-software/index.html
+4. Cisco 4000 Series Integrated Services Routers (ISR)
+https://www.cisco.com/c/en/us/products/routers/4000-series-integrated-services-routers-isr/index.html
+5. Cisco ASR 1000 Series Aggregation Services Routers
+https://www.cisco.com/c/en/us/products/routers/asr-1000-series-aggregation-services-routers/index.html
+
+
+1. Cisco Catalyst 8300 Series Edge Platforms
+https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8300-series-edge-platforms/datasheet-c78-744088.pdf
+Covers processor, memory, interfaces, IPsec throughput, SD-WAN, and hardware specifications. 
+
+Cisco
+
+
+
+2. Cisco Catalyst 8200 Series Edge Platforms
+https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8200-series-edge-platforms/nb-06-cat8200-series-edge-plat-ds-cte-en.pdf
+20-page datasheet covering CPU, RAM, storage, network interfaces, VPN performance, security, and licensing. 
+
+Cisco
+
+
+
+3. Cisco Catalyst 8000V Edge Software
+https://www.cisco.com/c/en/us/products/collateral/routers/catalyst-8000v-edge-software/catalyst-8000v-edge-software-ds.pdf
+19-page datasheet covering virtual router architecture, cloud deployment, networking, and SD-WAN capabilities. 
+
+Cisco
+
+
+
+4. Cisco 4000 Series Integrated Services Routers (ISR)
+https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/data_sheet-c78-732542.pdf
+Covers ISR hardware models, WAN interfaces, memory, throughput, modular expansion, and security. 
+
+Cisco
+
+
+
+5. Cisco ASR 1000 Series Aggregation Services Routers
+https://www.cisco.com/c/en/us/products/collateral/routers/asr-1000-series-aggregation-services-routers/datasheet-c78-731632.pdf
+Covers aggregation performance, route processors, Ethernet interfaces, redundancy, and WAN services. 
+
+Cisco

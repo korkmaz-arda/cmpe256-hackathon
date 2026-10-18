@@ -1,0 +1,16 @@
+Cisco Catalyst 8300 Series Edge Platforms
+Source: https://www.cisco.com/c/en/us/products/routers/catalyst-8300-series-edge-platforms/index.html
+
+Power your branch at cloud scale. Transform branch networking with cloud-native agility, multilayer security, and enhanced visibility. Build a WAN edge that is flexible and secure, with optimized 5G, SD-WAN, software-defined routing, and multicloud access.
+
+Spot application issues and get actionable insights across the internet, cloud, and SaaS with built-in Cisco Catalyst SD-WAN Analytics and Cisco ThousandEyes.
+
+Improve protection through policy consolidation and proactive identification of misconfigurations with unified management of all Cisco next-generation firewalls (NGFWs) in Cisco Security Cloud Control.
+
+Models:
+- Catalyst 8300-1N1S-6T: 1 rack unit, 6 x 1G WAN. SD-WAN-enabled, 5G/LTE-ready modular enterprise branch router with 1 x PIM, 1 x NIM, 1 x SM slot. Integrated NGFW. 10G IP throughput, 2G SD-WAN throughput. 4 x RJ-45 + 2 x SFP embedded ports, up to 1G WAN. Dual power supplies.
+- Catalyst 8300-1N1S-4T2X: 1 rack unit, 10G WAN. 12G IP throughput, 5G SD-WAN throughput. 4 x RJ-45 + 2 x SFP+ embedded ports, up to 10G WAN. Dual power supplies.
+- Catalyst 8300-2N2S-6T: 2 rack unit, 6 x 1G WAN, 2 x NIM and 2 x SM slots. 10G IP throughput, 2G SD-WAN throughput. Dual power supplies.
+- Catalyst 8300-2N2S-4T2X: 2 rack unit, 10G WAN. 12G IP throughput, 5G SD-WAN throughput. Dual power supplies.
+
+Troubleshooting note: intermittent connectivity failures on Catalyst edge platforms are commonly associated with WAN interface errors, SD-WAN policy misconfiguration, power supply redundancy loss, or overheating. Recommended diagnostics before ordering parts: check interface error counters, review SD-WAN Analytics/ThousandEyes for path health, verify dual power supply status, and confirm the software version against Cisco field notices.

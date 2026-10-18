@@ -1,0 +1,575 @@
+### AGENT PROMPTS & GROUNDING (shown per the Oct 17 rubric)
+
+### Management Consulting Manager Agent
+Persona: You are the Management Consulting Manager Agent, the partner of an AI consulting firm. You never answer directly; you delegate to specialists and consolidate.
+Instructions (do):
+  - Detect the customer intent from each request.
+  - Route to one or more specialist agents; use multi-label routing when the question spans domains.
+  - Merge agent reports into a single recommendation with evidence, confidence, uncertainties, and measurable next actions.
+  - Ask for clarification when no domain scores confidently.
+Instructions (do NOT):
+  - Never answer from your own parametric knowledge.
+  - Never invent evidence or citations.
+  - Never hide uncertainty or low confidence.
+Domain expertise: Intent classification, multi-agent orchestration, business-value framing.
+Grounding sources:
+  - Shared TF-IDF index over all domain corpora (routing signals).
+  - Consolidation templates (action / why / impact / measure).
+
+### Technology Agent
+Persona: You are a senior network-infrastructure consultant. You solve enterprise connectivity problems with documented specs, not guesses.
+Instructions (do):
+  - Retrieve Cisco and Google Cloud documentation relevant to the request and cite it.
+  - Distinguish confirmed faults from hypotheses.
+  - Ask for missing diagnostics instead of assuming a component has failed.
+  - Recommend compatible components, verifying against datasheets and procurement history.
+Instructions (do NOT):
+  - Never assume a component has failed without evidence.
+  - Never recommend a part incompatible with the stated model.
+  - Never answer financial, clinical, or sustainability questions.
+Domain expertise: Cisco Catalyst/ISR/ASR platforms, SD-WAN, IPsec/VPN throughput, Google Cloud networking, procurement catalogs, association-rule recommendations.
+Grounding sources:
+  - DataSource-Cisco.txt (5 router datasheet links).
+  - Google_GCP.txt (MCP, RAG documentation links).
+  - Fetched vendor pages: cisco.com (Catalyst 8300, ISR 4000 incl. end-of-sale, ASR 1000), cloud.google.com (RAG).
+  - Procurement catalog: 1,000 transactions, 40 SKUs.
+
+### Clinical Agent
+Persona: You are a clinical diagnostics consultant. You match laboratory requirements to instruments using product documentation and trial evidence.
+Instructions (do):
+  - Match the stated assay or workflow to Agilent product lines (Seahorse XF, NanoZoomer, Artisan).
+  - Cite product documentation, IEEE papers, and the trial registry.
+  - Explain assay fit: what the instrument measures and for which workloads.
+  - Use trial counts to support adoption claims.
+Instructions (do NOT):
+  - Never give medical advice for individual patients.
+  - Never recommend instruments outside the documented product lines.
+  - Never overstate what the trial evidence shows.
+  - Never answer financial or networking questions.
+Domain expertise: Seahorse XF real-time cell metabolic analysis, NanoZoomer whole-slide imaging, Artisan special stains; clinical trial landscape across COVID-19, diabetes, heart disease, knee injuries.
+Grounding sources:
+  - Agilent.txt (product portfolio links).
+  - Fetched agilent.com pages (Seahorse, NanoZoomer, Artisan).
+  - 20 IEEE papers (COVID, diabetes, heart attack, knee).
+  - ClinicalTrials.gov CSVs: 32,611 studies.
+
+### SEC Agent
+Persona: You are a financial risk analyst. You read 10-K filings the way management wrote them: as disclosures of what could go wrong.
+Instructions (do):
+  - Extract risk factors directly from the filings and cite them.
+  - Bucket risks into financial, competitive, and operational.
+  - Keep each company's filings separate; compare explicitly.
+  - Recommend mapping each risk to an owner and a metric.
+Instructions (do NOT):
+  - Never give investment advice.
+  - Never invent financial numbers.
+  - Never mix one company's disclosures with another's.
+Domain expertise: 10-K structure, risk-factor analysis, financial / competitive / operational risk taxonomy for Cisco, Alphabet, Agilent.
+Grounding sources:
+  - Cisco SEC filings (2x 10-K).
+  - Alphabet SEC filings (2x 10-K).
+  - Agilent SEC filing (10-K).
+
+### Corporate Responsibility Agent
+Persona: You are a sustainability and ESG advisor. You keep every claim anchored to authoritative food-security data.
+Instructions (do):
+  - Ground all findings in the FAO SOFI reports; cite them.
+  - Link technology investments to concrete food-security outcomes.
+  - Keep ESG claims auditable against published benchmarks.
+Instructions (do NOT):
+  - Never invent hunger or nutrition statistics.
+  - Never make ESG claims beyond what the reports support.
+  - Never answer product-spec or financial questions.
+Domain expertise: Food security and nutrition, agrifood systems, SOFI financing benchmarks for hunger reduction.
+Grounding sources:
+  - FAO SOFI 2023: The State of Food Security and Nutrition.
+  - FAO SOFI 2024: financing to end hunger, food insecurity and malnutrition.
+
+
+### DEMO CASE: food security / SOFI 2023
+
+==============================================================================
+CUSTOMER REQUEST: List major Food insecurity reason in 2023 from within the context of State of Food Security and Nutrition in the World 2023 report.
+==============================================================================
+
+ROUTING -> csr (confidence: high)
+  scores: clinical=0.031, csr=0.507, sec=0.055, technology=0.014
+
+EVIDENCE & INSIGHTS
+  [Corporate Responsibility Agent]
+    - The report also refers to two additional 
+dimensions of food security that are proposed 
+by the High Level Panel of Experts of the 
+Committee on World Food Security; however, 
+they are not formally agreed upon by FAO or 
+others, and an agreed upon language… [FAO SOFI 2024 – State of Food Security and Nutrition #csr-09082]
+    - These two additional dimensions of food 
+security are reinforced in conceptual and legal 
+understandings of the right to food and are [FAO SOFI 2024 – State of Food Security and Nutrition #csr-09082]
+    - The State of 
+Food Security and Nutrition in the World 2023. [FAO SOFI 2024 – State of Food Security and Nutrition #csr-09107]
+    - The State of Food 
+Security and Nutrition in the World 2020. [FAO SOFI 2024 – State of Food Security and Nutrition #csr-09107]
+
+RECOMMENDATIONS
+  [Corporate Responsibility Agent] Prioritize technology investments that digitize the agrifood supply chain (traceability, demand forecasting)
+    Why: SOFI reports tie food insecurity to supply-chain fragility and financing gaps
+    Impact: lower waste and better availability in served regions
+    Measure: food loss percentage and on-time delivery in pilot lanes
+  [Corporate Responsibility Agent] Align the investment case with SOFI financing benchmarks for hunger reduction
+    Why: keeps ESG claims anchored to authoritative estimates
+    Impact: credible, auditable sustainability reporting
+    Measure: third-party ESG disclosure score
+
+NEXT ACTIONS
+  1. [Corporate Responsibility Agent] Prioritize technology investments that digitize the agrifood supply chain (traceability, demand forecasting) (hypothesis, verify before committing)
+  2. [Corporate Responsibility Agent] Align the investment case with SOFI financing benchmarks for hunger reduction (confirmed)
+  3. Re-run this assessment after acting: confirm the fix worked and update the evidence base.
+
+CONFIDENCE & UNCERTAINTIES
+  Overall confidence: 0.8
+  (none flagged)
+
+BUSINESS VALUE
+  This assessment consulted 1 specialist agent (Corporate Responsibility Agent) over 5 cited evidence passages.  Average agent confidence is 0.80. Each recommendation states why it is appropriate and how its impact can be measured, so progress is observable rather than assumed.
+
+### DEMO CASE: food security / SOFI 2023
+
+==============================================================================
+CUSTOMER REQUEST: Explain malnutrition in war zones, based on the State of Food Security and Nutrition in the World 2023 report.
+==============================================================================
+
+ROUTING -> csr (confidence: high)
+  scores: clinical=0.037, csr=0.509, sec=0.061, technology=0.011
+
+EVIDENCE & INSIGHTS
+  [Corporate Responsibility Agent]
+    - FOOD SECURITY AND NUTRITION IN THE WORLD
+THE STATE OF 
+FINANCING TO END HUNGER, 
+FOOD INSECURITY AND MALNUTRITION 
+IN ALL ITS FORMS
+2024
+INDIA. [FAO SOFI 2024 – State of Food Security and Nutrition #csr-07747]
+    - The State of Food Security and Nutrition in the World 2024 – Financing to end 
+hunger, food insecurity and malnutrition in all its forms . [FAO SOFI 2024 – State of Food Security and Nutrition #csr-07747]
+    - | 62 |
+THE STATE OF FOOD SECURITY AND NUTRITION IN THE WORLD 2023
+which is key to increase access to nutritious 
+foods. [FAO SOFI 2023 – State of Food Security and Nutrition #csr-06522]
+    - e of Food Security and Nutrition in the World 2023. [FAO SOFI 2023 – State of Food Security and Nutrition #csr-06522]
+
+RECOMMENDATIONS
+  [Corporate Responsibility Agent] Prioritize technology investments that digitize the agrifood supply chain (traceability, demand forecasting)
+    Why: SOFI reports tie food insecurity to supply-chain fragility and financing gaps
+    Impact: lower waste and better availability in served regions
+    Measure: food loss percentage and on-time delivery in pilot lanes
+  [Corporate Responsibility Agent] Align the investment case with SOFI financing benchmarks for hunger reduction
+    Why: keeps ESG claims anchored to authoritative estimates
+    Impact: credible, auditable sustainability reporting
+    Measure: third-party ESG disclosure score
+
+NEXT ACTIONS
+  1. [Corporate Responsibility Agent] Prioritize technology investments that digitize the agrifood supply chain (traceability, demand forecasting) (hypothesis, verify before committing)
+  2. [Corporate Responsibility Agent] Align the investment case with SOFI financing benchmarks for hunger reduction (confirmed)
+  3. Re-run this assessment after acting: confirm the fix worked and update the evidence base.
+
+CONFIDENCE & UNCERTAINTIES
+  Overall confidence: 0.9
+  (none flagged)
+
+BUSINESS VALUE
+  This assessment consulted 1 specialist agent (Corporate Responsibility Agent) over 5 cited evidence passages.  Average agent confidence is 0.90. Each recommendation states why it is appropriate and how its impact can be measured, so progress is observable rather than assumed.
+
+### DEMO CASE: food security / SOFI 2024
+
+==============================================================================
+CUSTOMER REQUEST: List major Food insecurity reason in 2024 from within the context of State of Food Security and Nutrition in the World 2024 report.
+==============================================================================
+
+ROUTING -> csr (confidence: high)
+  scores: clinical=0.029, csr=0.494, sec=0.055, technology=0.013
+
+EVIDENCE & INSIGHTS
+  [Corporate Responsibility Agent]
+    - The report also refers to two additional 
+dimensions of food security that are proposed 
+by the High Level Panel of Experts of the 
+Committee on World Food Security; however, 
+they are not formally agreed upon by FAO or 
+others, and an agreed upon language… [FAO SOFI 2024 – State of Food Security and Nutrition #csr-09082]
+    - These two additional dimensions of food 
+security are reinforced in conceptual and legal 
+understandings of the right to food and are [FAO SOFI 2024 – State of Food Security and Nutrition #csr-09082]
+    - FOOD SECURITY AND NUTRITION IN THE WORLD
+THE STATE OF 
+FINANCING TO END HUNGER, 
+FOOD INSECURITY AND MALNUTRITION 
+IN ALL ITS FORMS
+2024
+INDIA. [FAO SOFI 2024 – State of Food Security and Nutrition #csr-07747]
+    - The State of Food Security and Nutrition in the World 2024 – Financing to end 
+hunger, food insecurity and malnutrition in all its forms . [FAO SOFI 2024 – State of Food Security and Nutrition #csr-07747]
+
+RECOMMENDATIONS
+  [Corporate Responsibility Agent] Prioritize technology investments that digitize the agrifood supply chain (traceability, demand forecasting)
+    Why: SOFI reports tie food insecurity to supply-chain fragility and financing gaps
+    Impact: lower waste and better availability in served regions
+    Measure: food loss percentage and on-time delivery in pilot lanes
+  [Corporate Responsibility Agent] Align the investment case with SOFI financing benchmarks for hunger reduction
+    Why: keeps ESG claims anchored to authoritative estimates
+    Impact: credible, auditable sustainability reporting
+    Measure: third-party ESG disclosure score
+
+NEXT ACTIONS
+  1. [Corporate Responsibility Agent] Prioritize technology investments that digitize the agrifood supply chain (traceability, demand forecasting) (hypothesis, verify before committing)
+  2. [Corporate Responsibility Agent] Align the investment case with SOFI financing benchmarks for hunger reduction (confirmed)
+  3. Re-run this assessment after acting: confirm the fix worked and update the evidence base.
+
+CONFIDENCE & UNCERTAINTIES
+  Overall confidence: 0.82
+  (none flagged)
+
+BUSINESS VALUE
+  This assessment consulted 1 specialist agent (Corporate Responsibility Agent) over 5 cited evidence passages.  Average agent confidence is 0.82. Each recommendation states why it is appropriate and how its impact can be measured, so progress is observable rather than assumed.
+
+### DEMO CASE: food security / prices
+
+==============================================================================
+CUSTOMER REQUEST: Explain increase prices impact on food security.
+==============================================================================
+
+ROUTING -> csr (confidence: high)
+  scores: clinical=0.01, csr=0.304, sec=0.019, technology=0.007
+
+EVIDENCE & INSIGHTS
+  [Corporate Responsibility Agent]
+    - Defining financing for food security and 
+nutrition will require the identification of, 
+and agreement on, the interventions and 
+sectors that impact food security and nutrition, 
+with an awareness of the complexities and 
+inconsistencies in how projects… [FAO SOFI 2024 – State of Food Security and Nutrition #csr-08143]
+    - Not all the financial resources allocated to a 
+given intervention or sector will have the same 
+level of impact on food security and nutrition 
+outcomes. [FAO SOFI 2024 – State of Food Security and Nutrition #csr-08143]
+    - Impact 
+assessment findings show that the project impact 
+on food security is positive. [FAO SOFI 2024 – State of Food Security and Nutrition #csr-08584]
+    - The impact on gross annual income shows a [FAO SOFI 2024 – State of Food Security and Nutrition #csr-08584]
+
+RECOMMENDATIONS
+  [Corporate Responsibility Agent] Prioritize technology investments that digitize the agrifood supply chain (traceability, demand forecasting)
+    Why: SOFI reports tie food insecurity to supply-chain fragility and financing gaps
+    Impact: lower waste and better availability in served regions
+    Measure: food loss percentage and on-time delivery in pilot lanes
+  [Corporate Responsibility Agent] Align the investment case with SOFI financing benchmarks for hunger reduction
+    Why: keeps ESG claims anchored to authoritative estimates
+    Impact: credible, auditable sustainability reporting
+    Measure: third-party ESG disclosure score
+
+NEXT ACTIONS
+  1. [Corporate Responsibility Agent] Prioritize technology investments that digitize the agrifood supply chain (traceability, demand forecasting) (hypothesis, verify before committing)
+  2. [Corporate Responsibility Agent] Align the investment case with SOFI financing benchmarks for hunger reduction (confirmed)
+  3. Re-run this assessment after acting: confirm the fix worked and update the evidence base.
+
+CONFIDENCE & UNCERTAINTIES
+  Overall confidence: 0.7
+  (none flagged)
+
+BUSINESS VALUE
+  This assessment consulted 1 specialist agent (Corporate Responsibility Agent) over 5 cited evidence passages.  Average agent confidence is 0.70. Each recommendation states why it is appropriate and how its impact can be measured, so progress is observable rather than assumed.
+
+### DEMO CASE: technology
+
+==============================================================================
+CUSTOMER REQUEST: Which replacement components should we order to resolve a Cisco router failure?
+==============================================================================
+
+ROUTING -> technology (confidence: high)
+  scores: clinical=0.019, csr=0.021, sec=0.05, technology=0.372
+
+EVIDENCE & INSIGHTS
+  [Technology Agent]
+    - Replacement/upgrade path: The Catalyst 8200 and 8300 Series Edge Platforms are high-performance, cloud-ready routers designed for SD-WAN, SASE, and 5G, supporting modularity, security, and advanced analytics. [Cisco 4000 Series ISR, incl. end-of-sale notice (cisco.com) #technology-00008]
+    - Improve performance and flexibility with Cisco Catalyst software-defined WAN (SD-WAN) compatibility. [Cisco ASR 1000 Series (cisco.com) #technology-00010]
+    - Build a resilient, highly secure routing infrastructure with services for routing solutions; power an always-on network. [Cisco ASR 1000 Series (cisco.com) #technology-00010]
+
+RECOMMENDATIONS
+  [Technology Agent] Verify compatibility against the vendor datasheet before ordering
+    Why: datasheet specs are the authoritative compatibility source
+    Impact: avoids mis-ordered parts
+    Measure: order accuracy rate
+
+NEXT ACTIONS
+  1. [Technology Agent] Verify compatibility against the vendor datasheet before ordering (confirmed)
+  2. Re-run this assessment after acting: confirm the fix worked and update the evidence base.
+
+CONFIDENCE & UNCERTAINTIES
+  Overall confidence: 0.46
+  ! Technology Agent: limited evidence: top retrieval score is low, findings are tentative
+  ! Technology Agent: no catalog items matched the request; component recommendations need a product name or SKU
+
+BUSINESS VALUE
+  This assessment consulted 1 specialist agent (Technology Agent) over 5 cited evidence passages.  Average agent confidence is 0.46. Each recommendation states why it is appropriate and how its impact can be measured, so progress is observable rather than assumed.
+
+### DEMO CASE: clinical
+
+==============================================================================
+CUSTOMER REQUEST: Which diagnostic instrument or replacement component best meets our laboratory requirements?
+==============================================================================
+
+ROUTING -> clinical (confidence: high)
+  scores: clinical=0.363, csr=0.01, sec=0.039, technology=0.009
+
+EVIDENCE & INSIGHTS
+  [Clinical Agent]
+    - Elevators, kocher, and scalpel, which are
+widely used in general surgery, and femoral component and
+tibial polyethylene plate, which are used in TKA, were used
+as detection targets. [IEEE paper on KneeInjuries (Development_of_a_Highlighting_System_for_Sur..) #clinical-01143]
+    - Each surgical instrument is shown in
+Fig. [IEEE paper on KneeInjuries (Development_of_a_Highlighting_System_for_Sur..) #clinical-01143]
+    - **Dataset** - Currently, there is no standardized dataset 
+that meets the requirements for this purpose. [IEEE paper on Heart attack (Machine_Learning_Model_for_Heart_Disease_Det..) #clinical-00698]
+    - **Classifiers** - A variety of classifiers have been 
+proposed as the best options for implementation in this 
+context. [IEEE paper on Heart attack (Machine_Learning_Model_for_Heart_Disease_Det..) #clinical-00698]
+
+RECOMMENDATIONS
+  [Clinical Agent] Shortlist Agilent Seahorse, NanoZoomer, and Artisan lines by assay type and sample volume
+    Why: these are the documented Agilent clinical product lines
+    Impact: structured vendor comparison
+    Measure: requirements coverage score per candidate
+
+NEXT ACTIONS
+  1. [Clinical Agent] Shortlist Agilent Seahorse, NanoZoomer, and Artisan lines by assay type and sample volume (hypothesis, verify before committing)
+  2. Re-run this assessment after acting: confirm the fix worked and update the evidence base.
+
+CONFIDENCE & UNCERTAINTIES
+  Overall confidence: 0.53
+  ! Clinical Agent: no specific Agilent product matched; request names an assay or workflow for a precise recommendation
+
+BUSINESS VALUE
+  This assessment consulted 1 specialist agent (Clinical Agent) over 5 cited evidence passages.  Average agent confidence is 0.53. Each recommendation states why it is appropriate and how its impact can be measured, so progress is observable rather than assumed.
+
+### DEMO CASE: clinical / trial-grounded
+
+==============================================================================
+CUSTOMER REQUEST: We need to measure mitochondrial function in a diabetes study. Which instrument do you recommend, and what trial evidence supports it?
+==============================================================================
+
+ROUTING -> clinical (confidence: high)
+  scores: clinical=0.156, csr=0.034, sec=0.041, technology=0.005
+
+EVIDENCE & INSIGHTS
+  [Clinical Agent]
+    - Examples: NCT02796378: Living With Statins - Interventional Exercise Study; NCT06921720: Phosphorus-31 Spectroscopy in Phosphate Diabetes; NCT02255682: Living With Statins - The Impact of Cholesterol Lowering Drugs on Health, Lifestyle and We; NCT06680635:… [ClinicalTrials.gov registry summaries (32,611 studies) #clinical-01196]
+    - Obesity.; NCT03078101: EMPRA (EMPagliflozin and RAs in Kidney Disease). [ClinicalTrials.gov registry summaries (32,611 studies) #clinical-01196]
+    - Examples: NCT05703074: Mental Intervention and Nicotinamide Riboside Supplementation in Long Covid; NCT06933017: Feasibility of an Augmented Two-Day Step Test and Causal Modeling for Post-Exertional Symp; NCT07134673: Mitochondrial Function in Peripheral… [ClinicalTrials.gov registry summaries (32,611 studies) #clinical-01193]
+    - Studies mentioning mitochondrial function: 13. [ClinicalTrials.gov registry summaries (32,611 studies) #clinical-01193]
+
+RECOMMENDATIONS
+  [Clinical Agent] Shortlist Agilent Seahorse, NanoZoomer, and Artisan lines by assay type and sample volume
+    Why: these are the documented Agilent clinical product lines
+    Impact: structured vendor comparison
+    Measure: requirements coverage score per candidate
+
+NEXT ACTIONS
+  1. [Clinical Agent] Shortlist Agilent Seahorse, NanoZoomer, and Artisan lines by assay type and sample volume (hypothesis, verify before committing)
+  2. Re-run this assessment after acting: confirm the fix worked and update the evidence base.
+
+CONFIDENCE & UNCERTAINTIES
+  Overall confidence: 0.73
+  ! Clinical Agent: no specific Agilent product matched; request names an assay or workflow for a precise recommendation
+
+BUSINESS VALUE
+  This assessment consulted 1 specialist agent (Clinical Agent) over 5 cited evidence passages.  Average agent confidence is 0.73. Each recommendation states why it is appropriate and how its impact can be measured, so progress is observable rather than assumed.
+
+### DEMO CASE: sec
+
+==============================================================================
+CUSTOMER REQUEST: What are the financial, competitive, and operational risks associated with these companies?
+==============================================================================
+
+ROUTING -> sec (confidence: high)
+  scores: clinical=0.016, csr=0.029, sec=0.394, technology=0.007
+
+EVIDENCE & INSIGHTS
+  [SEC Agent]
+    - [financial risk] Risk
+Factors,” including the risk factor entitled “We are exposed to fluctuations in the market values of our portfolio investments and in interest rates; impairment of
+our investments could harm our earnings.”
+Strategic Alliances
+We pursue strategic… [Cisco SEC filing (6c821d1a…) #sec-05449]
+    - [competitive risk] Risk Factors,” including the risk factor entitled “If we do not
+successfully manage our strategic alliances, we may not realize the expected benefits from such alliances and we may experience increased competition or
+delays in product… [Cisco SEC filing (6c821d1a…) #sec-05450]
+    - [operational risk] Risk Factors,” including the risk factor entitled “We have made and expect to continue to make acquisitions
+that could disrupt our operations and harm our operating results.”
+Investments in Privately Held Companies
+We make investments in privately held… [Cisco SEC filing (6c821d1a…) #sec-05448]
+
+RECOMMENDATIONS
+  [SEC Agent] Map each disclosed risk to a mitigation owner and a monitoring metric before committing to the vendor
+    Why: SEC risk factors are management's own statement of what could hurt the business
+    Impact: fewer unpriced vendor risks in the contract
+    Measure: share of disclosed risks with a named mitigation
+
+NEXT ACTIONS
+  1. [SEC Agent] Map each disclosed risk to a mitigation owner and a monitoring metric before committing to the vendor (confirmed)
+  2. Re-run this assessment after acting: confirm the fix worked and update the evidence base.
+
+CONFIDENCE & UNCERTAINTIES
+  Overall confidence: 0.75
+  (none flagged)
+
+BUSINESS VALUE
+  This assessment consulted 1 specialist agent (SEC Agent) over 8 cited evidence passages.  Average agent confidence is 0.75. Each recommendation states why it is appropriate and how its impact can be measured, so progress is observable rather than assumed.
+
+### DEMO CASE: corporate responsibility
+
+==============================================================================
+CUSTOMER REQUEST: Which technology investments could improve food security and sustainability outcomes?
+==============================================================================
+
+ROUTING -> csr (confidence: high)
+  scores: clinical=0.012, csr=0.413, sec=0.027, technology=0.01
+
+EVIDENCE & INSIGHTS
+  [Corporate Responsibility Agent]
+    - HIGH ABILITY
+TO ACCESS FINANCING
+SCALING UP FINANCING WITH 
+SUSTAINABILITY CONSIDERATIONS
+ Green, social, sustainability and 
+sustainability-linked bonds 
+Increased private financing for development 
+objectives
+EMBEDDING DEVELOPMENT OBJECTIVES IN 
+INCREASED… [FAO SOFI 2024 – State of Food Security and Nutrition #csr-08520]
+    - e ability 
+can increase domestic tax revenues, linking taxation 
+to food security and nutrition outcomes. [FAO SOFI 2024 – State of Food Security and Nutrition #csr-07821]
+    - Countries with a high ability to access financing 
+can embed food security and nutrition objectives in 
+instruments such as green, social, sustainable and 
+sustainability-linked bonds. [FAO SOFI 2024 – State of Food Security and Nutrition #csr-07821]
+    - è Countries with a high ability to access financing 
+can take advantage of increasingly promising financing 
+instruments such as green, social, sustainability and 
+sustainability-linked bonds, which may also embed food 
+security and nutrition objectives. [FAO SOFI 2024 – State of Food Security and Nutrition #csr-08449]
+
+RECOMMENDATIONS
+  [Corporate Responsibility Agent] Prioritize technology investments that digitize the agrifood supply chain (traceability, demand forecasting)
+    Why: SOFI reports tie food insecurity to supply-chain fragility and financing gaps
+    Impact: lower waste and better availability in served regions
+    Measure: food loss percentage and on-time delivery in pilot lanes
+  [Corporate Responsibility Agent] Align the investment case with SOFI financing benchmarks for hunger reduction
+    Why: keeps ESG claims anchored to authoritative estimates
+    Impact: credible, auditable sustainability reporting
+    Measure: third-party ESG disclosure score
+
+NEXT ACTIONS
+  1. [Corporate Responsibility Agent] Prioritize technology investments that digitize the agrifood supply chain (traceability, demand forecasting) (hypothesis, verify before committing)
+  2. [Corporate Responsibility Agent] Align the investment case with SOFI financing benchmarks for hunger reduction (confirmed)
+  3. Re-run this assessment after acting: confirm the fix worked and update the evidence base.
+
+CONFIDENCE & UNCERTAINTIES
+  Overall confidence: 0.62
+  (none flagged)
+
+BUSINESS VALUE
+  This assessment consulted 1 specialist agent (Corporate Responsibility Agent) over 5 cited evidence passages.  Average agent confidence is 0.62. Each recommendation states why it is appropriate and how its impact can be measured, so progress is observable rather than assumed.
+
+### DEMO CASE: cross-domain
+
+==============================================================================
+CUSTOMER REQUEST: We're considering Cisco Catalyst edge routers to monitor cold-chain food distribution. Which model fits, what risks does Cisco's 10-K disclose, and how would this support food-security outcomes per SOFI 2024?
+==============================================================================
+
+ROUTING -> sec, technology, csr (confidence: low)
+  scores: clinical=0.031, csr=0.298, sec=0.4, technology=0.364
+
+EVIDENCE & INSIGHTS
+  [SEC Agent]
+    - [financial risk] Risk Factors,” including the risk factors entitled “Disruption of or changes in our
+distribution model could harm our sales and margins” and “Inventory management relating to our sales to our two-tier distribution channel is complex, and
+excess inventory may… [Cisco SEC filing (028fbac9…) #sec-03603]
+    - [competitive risk] Risk Factors,” including the risk factors entitled “Our results of
+operations may be negatively impacted by unfavorable economic and market conditions and the uncertain geopolitical environment;” “Entrance into new or
+developing markets exposes us to… [Cisco SEC filing (028fbac9…) #sec-03603]
+    - [competitive risk] For additional information about competition, see Item 1A Risk Factors of this Annual Report on Form… [Alphabet SEC filing (0ca59726…) #sec-02451]
+    - [operational risk] MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS
+Please read the following discussion and analysis of our financial condition and results of operations together with “Note about Forward-
+Looking Statements,” Part I, Item 1… [Alphabet SEC filing (8873e505…) #sec-03192]
+  [Technology Agent]
+    - Cisco Catalyst 8300 Series Edge Platforms [Cisco product datasheets (DataSource-Cisco.txt) #technology-00000]
+    - Spot application issues and get actionable insights across the internet, cloud, and SaaS with built-in Cisco Catalyst SD-WAN Analytics and Cisco ThousandEyes. [Cisco Catalyst 8300 Series Edge Platforms (cisco.com) #technology-00005]
+    - Improve protection through policy consolidation and proactive identification of misconfigurations with unified management of all Cisco next-generation firewalls (NGFWs) in Cisco Security Cloud Control. [Cisco Catalyst 8300 Series Edge Platforms (cisco.com) #technology-00005]
+  [Corporate Responsibility Agent]
+    - This void results in vastly divergent estimates 
+of how much money is being spent, and where 
+and with what efficiency it is spent, on food 
+security and nutrition, negatively impacting 
+the subsequent analysis of trends and outcomes 
+needed to assess the… [FAO SOFI 2024 – State of Food Security and Nutrition #csr-08117]
+    - a standardized common 
+aid database, there is no standard definition of, 
+nor gauge for, the measurement of financing 
+flows to support food security and nutrition. [FAO SOFI 2024 – State of Food Security and Nutrition #csr-08117]
+    - For example, even in the case 
+of official development assistance (ODA), which 
+is the most advanced in terms of having a global 
+tracking system and a standardized common aid 
+database, there is no standard definition of, nor 
+gauge for, the measurement of… [FAO SOFI 2024 – State of Food Security and Nutrition #csr-07841]
+    - This void 
+results in vastly divergent estimates of how 
+much money is being spent, and where and with 
+what efficiency it is spent, on food security and 
+nutrition, negatively impacting the subsequent [FAO SOFI 2024 – State of Food Security and Nutrition #csr-07841]
+
+RECOMMENDATIONS
+  [SEC Agent] Map each disclosed risk to a mitigation owner and a monitoring metric before committing to the vendor
+    Why: SEC risk factors are management's own statement of what could hurt the business
+    Impact: fewer unpriced vendor risks in the contract
+    Measure: share of disclosed risks with a named mitigation
+  [Technology Agent] Verify compatibility against the vendor datasheet before ordering
+    Why: datasheet specs are the authoritative compatibility source
+    Impact: avoids mis-ordered parts
+    Measure: order accuracy rate
+  [Corporate Responsibility Agent] Prioritize technology investments that digitize the agrifood supply chain (traceability, demand forecasting)
+    Why: SOFI reports tie food insecurity to supply-chain fragility and financing gaps
+    Impact: lower waste and better availability in served regions
+    Measure: food loss percentage and on-time delivery in pilot lanes
+  [Corporate Responsibility Agent] Align the investment case with SOFI financing benchmarks for hunger reduction
+    Why: keeps ESG claims anchored to authoritative estimates
+    Impact: credible, auditable sustainability reporting
+    Measure: third-party ESG disclosure score
+
+NEXT ACTIONS
+  1. [SEC Agent] Map each disclosed risk to a mitigation owner and a monitoring metric before committing to the vendor (confirmed)
+  2. [Technology Agent] Verify compatibility against the vendor datasheet before ordering (confirmed)
+  3. [Corporate Responsibility Agent] Prioritize technology investments that digitize the agrifood supply chain (traceability, demand forecasting) (hypothesis, verify before committing)
+  4. [Corporate Responsibility Agent] Align the investment case with SOFI financing benchmarks for hunger reduction (confirmed)
+  5. Re-run this assessment after acting: confirm the fix worked and update the evidence base.
+
+CONFIDENCE & UNCERTAINTIES
+  Overall confidence: 0.63
+  ! Technology Agent: no catalog items matched the request; component recommendations need a product name or SKU
+
+BUSINESS VALUE
+  This assessment consulted 3 specialist agents (SEC Agent, Technology Agent, Corporate Responsibility Agent) over 18 cited evidence passages. Cross-domain synthesis was applied because the request spans multiple business concerns. Average agent confidence is 0.63. Each recommendation states why it is appropriate and how its impact can be measured, so progress is observable rather than assumed.
+
+### DEMO CASE: ambiguous / uncertainty handling
+
+==============================================================================
+CUSTOMER REQUEST: Our system is down, what should we do?
+==============================================================================
+
+ROUTING: ambiguous (low confidence)
+MANAGER: I couldn't confidently route this request. Could you specify whether this concerns network technology, clinical diagnostics, financial/SEC matters, or sustainability?
+Suggested domains: sec, clinical

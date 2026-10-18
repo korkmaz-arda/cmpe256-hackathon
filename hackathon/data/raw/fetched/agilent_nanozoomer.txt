@@ -1,0 +1,10 @@
+Agilent NanoZoomer Slide Scanner System (Digital Pathology)
+Source: https://www.agilent.com/en/product/digital-pathology/digital-pathology-scanners/nanozoomer-slide-scanner-system-4370282
+
+NanoZoomer 360MD Slide Scanner System is a whole slide scanner that converts glass slides into high-resolution digital data by high-speed scanning for primary diagnostic use (IVD). Pathologists are aided in viewing and diagnosis of anatomical histopathology slides by its high-throughput automated digital slide creation, viewing, and management system.
+
+The scanner has automated tissue detection and automated scanning for routine applications. Scanning can be done at 40x or 20x with standard glass slides (27mm/76mm), allowing file-size management. Image resolution of 0.23 micrometer/pixel at 40x and 0.46 micrometer/pixel at 20x. Z-stacking capabilities on all scanners allow focusing at different sample depths.
+
+Features: engineered for digitizing routine clinical pathology slides; open, fully automated system with flexible scanning for clear images even in complex tissues; flexible scanning management allowing prioritization of urgent requests; 20x objective with precision optical coupler for 20x/40x scanning.
+
+Agilent digital pathology ecosystem spans staining to AI decision support.

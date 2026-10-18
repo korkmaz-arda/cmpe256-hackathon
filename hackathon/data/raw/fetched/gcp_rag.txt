@@ -1,0 +1,14 @@
+What is Retrieval-Augmented Generation (RAG)? - Google Cloud
+Source: https://cloud.google.com/use-cases/retrieval-augmented-generation
+
+RAG (Retrieval-Augmented Generation) is an AI framework combining traditional information retrieval (search, databases) with large language model capabilities. By combining your data and world knowledge with LLM language skills, grounded generation is more accurate, up-to-date, and relevant.
+
+How RAG works:
+- Retrieval and pre-processing: powerful search algorithms query external data (web pages, knowledge bases, databases); retrieved information is pre-processed (tokenization, stemming, stop-word removal).
+- Grounded generation: retrieved information is incorporated into the LLM's context, enabling more precise, informative responses.
+
+Why use RAG: access to fresh information beyond LLM training data; factual grounding that mitigates hallucinations by providing facts as input; vector databases store documents as embeddings for fast semantic-similarity retrieval; hybrid search combines semantic and keyword search with a re-ranker.
+
+Evaluation: score generated text and retrieved chunks on coherence, fluency, groundedness, safety, instruction following, and question-answering quality to hill-climb RAG quality via a metrics-driven (RAGOps) approach.
+
+RAG and grounding integrate into any LLM application or agent needing fresh, private, or specialized data.

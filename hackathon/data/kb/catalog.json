@@ -1,0 +1,242 @@
+[
+ {
+  "name": "Dahua 8-Channel NVR (SKU: NVR4208-8P-4KS2)",
+  "sku": "NVR4208-8P-4KS2",
+  "category": "Network video recorder",
+  "purchase_frequency": 105
+ },
+ {
+  "name": "DSC PowerSeries Neo Alarm Kit (SKU: HS2016NK)",
+  "sku": "HS2016NK",
+  "category": "Security component",
+  "purchase_frequency": 104
+ },
+ {
+  "name": "DSC WS4939 Wireless Key (SKU: WS4939)",
+  "sku": "WS4939",
+  "category": "Security component",
+  "purchase_frequency": 101
+ },
+ {
+  "name": "Hikvision 4MP IP Camera (SKU: DS-2CD2142FWD-I)",
+  "sku": "DS-2CD2142FWD-I",
+  "category": "IP/Network camera",
+  "purchase_frequency": 101
+ },
+ {
+  "name": "Bosch D7050 Detector (SKU: D7050)",
+  "sku": "D7050",
+  "category": "Detector (CO/glassbreak)",
+  "purchase_frequency": 99
+ },
+ {
+  "name": "GE Interlogix 60-848-02-95R Smoke Detector (SKU: 60-848-02-95R)",
+  "sku": "60-848-02-95R",
+  "category": "Detector (CO/glassbreak)",
+  "purchase_frequency": 99
+ },
+ {
+  "name": "Dahua DH-IPC-HDBW4431R-ZS IP Camera (SKU: DH-IPC-HDBW4431R-ZS)",
+  "sku": "DH-IPC-HDBW4431R-ZS",
+  "category": "IP/Network camera",
+  "purchase_frequency": 98
+ },
+ {
+  "name": "GE Interlogix 60-746-01-95R Wireless Keypad (SKU: 60-746-01-95R)",
+  "sku": "60-746-01-95R",
+  "category": "Security component",
+  "purchase_frequency": 98
+ },
+ {
+  "name": "GE Interlogix 60-652-95R Carbon Monoxide Detector (SKU: 60-652-95R)",
+  "sku": "60-652-95R",
+  "category": "Detector (CO/glassbreak)",
+  "purchase_frequency": 97
+ },
+ {
+  "name": "Hikvision DS-7608NI-I2/8P NVR (SKU: DS-7608NI-I2/8P)",
+  "sku": "DS-7608NI-I2/8P",
+  "category": "Network video recorder",
+  "purchase_frequency": 97
+ },
+ {
+  "name": "DSC PG9914 Motion Detector (SKU: PG9914)",
+  "sku": "PG9914",
+  "category": "Detector (CO/glassbreak)",
+  "purchase_frequency": 96
+ },
+ {
+  "name": "Bosch DS160 Detector (SKU: DS160)",
+  "sku": "DS160",
+  "category": "Detector (CO/glassbreak)",
+  "purchase_frequency": 93
+ },
+ {
+  "name": "Hanwha QND-6010R Network Camera (SKU: QND-6010R)",
+  "sku": "QND-6010R",
+  "category": "IP/Network camera",
+  "purchase_frequency": 93
+ },
+ {
+  "name": "Bosch B5512 Control Panel (SKU: B5512)",
+  "sku": "B5512",
+  "category": "Control panel",
+  "purchase_frequency": 92
+ },
+ {
+  "name": "Axis P3367-VE Network Camera (SKU: 0407-001)",
+  "sku": "0407-001",
+  "category": "IP/Network camera",
+  "purchase_frequency": 90
+ },
+ {
+  "name": "Bosch NVR-5500-16A00 NVR (SKU: NVR-5500-16A00)",
+  "sku": "NVR-5500-16A00",
+  "category": "Network video recorder",
+  "purchase_frequency": 90
+ },
+ {
+  "name": "Bosch F220-B6 Detector Base (SKU: F220-B6)",
+  "sku": "F220-B6",
+  "category": "Detector (CO/glassbreak)",
+  "purchase_frequency": 89
+ },
+ {
+  "name": "Bosch NDN-50022-A3 IP Camera (SKU: NDN-50022-A3)",
+  "sku": "NDN-50022-A3",
+  "category": "IP/Network camera",
+  "purchase_frequency": 89
+ },
+ {
+  "name": "DSC WS4916 Smoke Detector (SKU: WS4916)",
+  "sku": "WS4916",
+  "category": "Detector (CO/glassbreak)",
+  "purchase_frequency": 89
+ },
+ {
+  "name": "Axis P3225-LVE Network Camera (SKU: 0935-001)",
+  "sku": "0935-001",
+  "category": "IP/Network camera",
+  "purchase_frequency": 89
+ },
+ {
+  "name": "Honeywell 6160 Keypad (SKU: 6160)",
+  "sku": "6160",
+  "category": "Security component",
+  "purchase_frequency": 88
+ },
+ {
+  "name": "DSC WS4933 Carbon Monoxide Detector (SKU: WS4933)",
+  "sku": "WS4933",
+  "category": "Detector (CO/glassbreak)",
+  "purchase_frequency": 87
+ },
+ {
+  "name": "Honeywell VISTA-20P Control Panel (SKU: VISTA-20P)",
+  "sku": "VISTA-20P",
+  "category": "Control panel",
+  "purchase_frequency": 87
+ },
+ {
+  "name": "Bosch B810 Wireless Receiver (SKU: B810)",
+  "sku": "B810",
+  "category": "Security component",
+  "purchase_frequency": 87
+ },
+ {
+  "name": "Honeywell HEN08104 NVR (SKU: HEN08104)",
+  "sku": "HEN08104",
+  "category": "Network video recorder",
+  "purchase_frequency": 87
+ },
+ {
+  "name": "GE Interlogix NX-8 Control Panel (SKU: NX-8)",
+  "sku": "NX-8",
+  "category": "Control panel",
+  "purchase_frequency": 87
+ },
+ {
+  "name": "Hikvision DS-2CD2385FWD-I IP Camera (SKU: DS-2CD2385FWD-I)",
+  "sku": "DS-2CD2385FWD-I",
+  "category": "IP/Network camera",
+  "purchase_frequency": 85
+ },
+ {
+  "name": "Dahua DH-IPC-HFW4431R-Z IP Camera (SKU: DH-IPC-HFW4431R-Z)",
+  "sku": "DH-IPC-HFW4431R-Z",
+  "category": "IP/Network camera",
+  "purchase_frequency": 85
+ },
+ {
+  "name": "Pelco IMP1110-1ES IP Camera (SKU: IMP1110-1ES)",
+  "sku": "IMP1110-1ES",
+  "category": "IP/Network camera",
+  "purchase_frequency": 84
+ },
+ {
+  "name": "Honeywell 5808W3 Smoke Detector (SKU: 5808W3)",
+  "sku": "5808W3",
+  "category": "Detector (CO/glassbreak)",
+  "purchase_frequency": 84
+ },
+ {
+  "name": "Hanwha QNV-6010R Network Camera (SKU: QNV-6010R)",
+  "sku": "QNV-6010R",
+  "category": "IP/Network camera",
+  "purchase_frequency": 83
+ },
+ {
+  "name": "Pelco Sarix IMP121-1IS IP Camera (SKU: IMP121-1IS)",
+  "sku": "IMP121-1IS",
+  "category": "IP/Network camera",
+  "purchase_frequency": 83
+ },
+ {
+  "name": "GE Interlogix 60-807-95R Glassbreak Detector (SKU: 60-807-95R)",
+  "sku": "60-807-95R",
+  "category": "Detector (CO/glassbreak)",
+  "purchase_frequency": 82
+ },
+ {
+  "name": "Honeywell H4D3PRV2 IP Camera (SKU: H4D3PRV2)",
+  "sku": "H4D3PRV2",
+  "category": "IP/Network camera",
+  "purchase_frequency": 82
+ },
+ {
+  "name": "Bosch NDN-832V03-IP IP Camera (SKU: NDN-832V03-IP)",
+  "sku": "NDN-832V03-IP",
+  "category": "IP/Network camera",
+  "purchase_frequency": 81
+ },
+ {
+  "name": "Hanwha XRN-2010 NVR (SKU: XRN-2010)",
+  "sku": "XRN-2010",
+  "category": "Network video recorder",
+  "purchase_frequency": 80
+ },
+ {
+  "name": "Pelco DSSRV2-040-US NVR (SKU: DSSRV2-040-US)",
+  "sku": "DSSRV2-040-US",
+  "category": "Network video recorder",
+  "purchase_frequency": 80
+ },
+ {
+  "name": "Axis M3046-V Network Camera (SKU: 0806-001)",
+  "sku": "0806-001",
+  "category": "IP/Network camera",
+  "purchase_frequency": 80
+ },
+ {
+  "name": "Honeywell 5800PIR-RES Motion Detector (SKU: 5800PIR-RES)",
+  "sku": "5800PIR-RES",
+  "category": "Detector (CO/glassbreak)",
+  "purchase_frequency": 79
+ },
+ {
+  "name": "Honeywell 5800CO Carbon Monoxide Detector (SKU: 5800CO)",
+  "sku": "5800CO",
+  "category": "Detector (CO/glassbreak)",
+  "purchase_frequency": 75
+ }
+]

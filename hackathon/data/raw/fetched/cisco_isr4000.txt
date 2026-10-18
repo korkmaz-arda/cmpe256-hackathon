@@ -1,0 +1,14 @@
+Cisco 4000 Series Integrated Services Routers (ISR)
+Source: https://www.cisco.com/c/en/us/products/routers/4000-series-integrated-services-routers-isr/index.html
+
+End-of-Sale and End-of-Life Announcement for Cisco 4000 Series ISR:
+End-of-sale date: January 20, 2025. End-of-support date: January 31, 2030.
+Replacement/upgrade path: The Catalyst 8200 and 8300 Series Edge Platforms are high-performance, cloud-ready routers designed for SD-WAN, SASE, and 5G, supporting modularity, security, and advanced analytics.
+
+ISR 4000 models and performance:
+- ISR 4221: GE/SFP integrated WAN ports, 1.2-Gbps throughput, 75-Mbps encrypted throughput.
+- ISR 4331: GE/SFP integrated WAN ports, 2-Gbps throughput, 500-Mbps encrypted throughput.
+- ISR 4431: PoE GE/SFP WAN ports, 4-Gbps throughput, 900-Mbps encrypted throughput.
+- ISR 4461: 10 GE SFP, PoE GE/SFP WAN ports, 10-Gbps throughput, 7-Gbps encrypted throughput.
+
+Business implication: customers still running ISR 4000 series should plan migration to Catalyst 8200/8300 before end-of-support (January 31, 2030), since no new hardware can be ordered after end-of-sale.

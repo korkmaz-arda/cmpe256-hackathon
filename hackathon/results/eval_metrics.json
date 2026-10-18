@@ -1,0 +1,30 @@
+{
+ "routing": {
+  "n": 24,
+  "exact_match_accuracy": 1.0,
+  "mean_f1": 1.0,
+  "recall_by_domain": {
+   "technology": 1.0,
+   "clinical": 1.0,
+   "sec": 1.0,
+   "csr": 1.0
+  }
+ },
+ "retrieval": {
+  "mean_precision@5": 1.0,
+  "cross_domain_precision@5": 0.825,
+  "n_queries": 24
+ },
+ "recommendation": {
+  "n": 200,
+  "hit_rate@5": 0.27,
+  "mrr@5": 0.128,
+  "rules_mined": 296
+ },
+ "response_quality": {
+  "reports": 29,
+  "avg_evidence_passages_per_report": 5.8,
+  "findings_with_citations": 136,
+  "uncertainty_flags_raised": 11
+ }
+}

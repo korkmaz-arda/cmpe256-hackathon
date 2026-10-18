@@ -1,0 +1,11 @@
+Agilent Seahorse Real-Time Cell Metabolic Analysis
+Source: https://www.agilent.com/en/product/cell-analysis/real-time-cell-metabolic-analysis
+
+With over 20,000 genes, 200,000 proteins and thousands of pathways, you can't measure everything in a cell at once, but you can measure the energy that drives them.
+
+Agilent offers cell analysis technology solutions that detect discrete changes in cellular bioenergetics in real time when using 2D and 3D cell models. Real-time cell measurements provide a clear window into the critical functions driving cell signaling, proliferation, activation, toxicity and biosynthesis.
+
+Products:
+- XF Analyzers: Agilent Seahorse XF Analyzers provide metabolic data on energy production in live cells in real time.
+- XF Software: Agilent XF cell analysis software for assay design, data acquisition, analysis, and reporting.
+- Plate Reader Metabolic Assays: easy-to-use kits and reagents for measuring real-time energy flux, mitochondrial function, glycolysis and substrate utilization in living cells, isolated mitochondria, 3D cultures and microbes.
