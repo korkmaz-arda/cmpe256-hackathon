@@ -121,10 +121,17 @@ clearer than real traffic, so treat 50/50 as an upper bound.
 The right-sizing term was added after this evaluation showed oversized picks for a small branch (nDCG@3 was 0.66
 before). The scenario set is small, so these numbers indicate direction, not precision.
 
-**Response quality.** End-to-end runs of the 12 scenarios in `consultai/eval/datasets/scenarios.json`. Deterministic
-checks plus an LLM judge of claim faithfulness and rubric scores (`python -m consultai.eval.response_quality`).
-The full table is in `eval/results/response_quality.json` and the Evaluation tab. First two scenarios: citation
-valid rate 1.00, judge faithfulness 0.94 (`food_tech_investment`, three agents) and 0.81 (`router_outage`).
+**Response quality** (12 end-to-end scenarios, `dev` profile; judge = Opus; `eval/results/response_quality.json`):
+
+| Routing correct | Citation valid rate | Findings with evidence | Claim faithfulness (judge) | Actionability | Completeness | Uncertainty handling | Cross-domain integration | Mean time |
+|---|---|---|---|---|---|---|---|---|
+| 12/12 | 1.00 | 1.00 | 0.89 | 4.4 / 5 | 4.1 / 5 | 4.7 / 5 | 4.0 / 5 | 161 s |
+
+Claim faithfulness counts partially supported claims as 0.5. The judge found 3 unsupported claims across the 12
+answers, all where the synthesis combined several figures into one sentence that went beyond the cited snippets:
+SOFI hunger figures, conflict-related food insecurity in GRFC countries, and Cisco inventory numbers in
+`company_risks` (faithfulness 0.69, the weakest scenario). Out-of-scope requests (IBM) correctly dispatch no
+specialist.
 
 **Market basket.** See below.
 
