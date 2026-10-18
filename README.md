@@ -150,9 +150,23 @@ popularity baseline, and hit-rate@3 is 0.067 against 0.151 (the baseline always 
 recommendations at 38% of checkout steps). The recommender's value here is restraint: it stays silent rather than
 showing weak suggestions.
 
+**Where to find it**
+
+| What | Where |
+|---|---|
+| Apriori + whole-cart recommender | `consultai/basket/apriori.py` |
+| Checkout UI (item list → Add Item → cart → Recommended Items, as on the slides) | **Market Basket** tab of `streamlit run app/streamlit_app.py`; code in `app/basket_view.py` |
+| Hold-out evaluation and threshold choice | `python -m consultai.eval.basket` → `eval/results/basket.json` (also in the tab and the Evaluation tab) |
+| Tests (Apriori vs brute force, whole-cart rule, empty result) | `tests/test_basket.py` |
+| Data | `Retail/CMPE256_Hackathon_market_basket_analysis_Release.csv` from `Retail.zip` (1,000 transactions, 40 items) |
+
 Demo in the **Market Basket** tab:
 - DSC WS4939 Wireless Key → Dahua DH-IPC-HDBW4431R-ZS camera (confidence 0.16, lift 1.62);
 - the slide's own cart, Bosch D7050 + DSC PG9914, appears together in fewer than 6 transactions → no recommendation.
+
+**Not implemented:** a recommended item is added by picking it from the item list (there is no one-click "add"
+next to each recommendation), and the slide's suggested FastAPI/microservice deployment with monitoring and
+retraining was not built; the recommender runs inside the Streamlit app.
 
 ## Demo walkthrough (for recording)
 
