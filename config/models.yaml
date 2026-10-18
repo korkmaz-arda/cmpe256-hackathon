@@ -1,0 +1,33 @@
+# Which Claude model plays which role. This is the only place model choices live.
+# All calls go through the local Claude Code login (claude-agent-sdk); no API key is used.
+#
+# Select a profile with `--profile <name>` (CLI / eval) or the CONSULTAI_PROFILE env var.
+# Aliases (haiku / sonnet / opus) resolve to the latest model of that tier in Claude Code.
+
+default_profile: demo
+
+profiles:
+  # Demo / graded runs. Professor's guidance [M1 05:34]: a small model routes,
+  # a full reasoning model does the domain work.
+  demo:
+    router: haiku        # intent detection + task framing (structured output, no tools)
+    specialist: opus     # Technology, Clinical, SEC, CSR agents (tool-using, grounded)
+    review: opus         # manager's progress-ledger review ("is the goal met?")
+    synthesis: opus      # manager's final consulting recommendation
+    judge: opus          # LLM-as-judge in the response-quality evaluation
+
+  # Development and bulk evaluation: cheaper specialists, everything else unchanged.
+  dev:
+    router: haiku
+    specialist: sonnet
+    review: opus
+    synthesis: opus
+    judge: opus
+
+  # Smoke tests of the plumbing only (not for judging quality).
+  smoke:
+    router: haiku
+    specialist: haiku
+    review: haiku
+    synthesis: haiku
+    judge: haiku

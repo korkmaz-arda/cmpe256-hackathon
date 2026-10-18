@@ -1,0 +1,24 @@
+# Orchestration and retrieval settings (models live in models.yaml).
+
+orchestration:
+  routing_threshold: 0.5        # include a specialist when router relevance >= this (tuned in eval/routing)
+  max_parallel_specialists: 4
+  specialist_timeout_s: 420     # per specialist task; a timeout becomes a `failed` report, the run continues
+  specialist_max_turns: 24      # tool-use turns per specialist session
+  specialist_max_tool_calls: 16 # retrieval/tool budget stated in every SpecialistTask
+  transport_retries: 1          # retry once on CLI/transport errors (not on validation errors)
+  review_enabled: true          # manager's progress-ledger review (evaluate-goal loop)
+  max_follow_up_rounds: 1
+  max_follow_up_tasks: 3
+  llm_call_timeout_s: 240       # router / review / synthesis
+
+retrieval:
+  # Chosen from the retrieval ablation (python -m consultai.eval.retrieval); see eval/results/retrieval.json
+  mode: hybrid_rerank           # bm25 | dense | hybrid | hybrid_rerank
+  embed_model: BAAI/bge-base-en-v1.5
+  rerank_model: BAAI/bge-reranker-base
+  candidates: 40                # fused candidates passed to the reranker
+  rrf_k: 60
+  chunk_chars: 1600             # ~400 tokens
+  chunk_overlap_chars: 200
+  snippet_chars: 900            # evidence text returned to an agent per hit

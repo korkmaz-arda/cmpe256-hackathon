@@ -20,3 +20,26 @@ index/
 # course data stays local (public repo): unzip the Canvas zips into data/
 data/
 sources/*.pdf
+
+# ---- arda-version ----
+# Course data and anything derived from it never enters the repo.
+# Data lives in $CONSULTAI_DATA_ROOT (default: ../../../workdata, outside the repo).
+workdata/
+data/
+*.zip
+*.pdf
+*.csv
+!consultai/eval/datasets/*.csv
+*.npy
+*.sqlite
+runs/
+eval/results/*.raw.jsonl
+
+# Python / tooling
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.env
+.streamlit/secrets.toml
+resources/

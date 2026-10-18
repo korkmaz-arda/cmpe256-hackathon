@@ -1,0 +1,344 @@
+{
+  "generated_at": "2026-10-18 12:10:33",
+  "chosen": {
+    "min_count": 6,
+    "min_confidence": 0.1,
+    "hit_rate@3": 0.0688,
+    "precision@3": 0.0617,
+    "coverage": 0.3824,
+    "f": 0.0651,
+    "frequent_itemsets": 388
+  },
+  "baseline_popularity": {
+    "hit_rate@3": 0.1511,
+    "precision@3": 0.0516,
+    "coverage": 1.0
+  },
+  "grid": [
+    {
+      "min_count": 2,
+      "min_confidence": 0.05,
+      "hit_rate@3": 0.0822,
+      "precision@3": 0.0574,
+      "coverage": 0.566,
+      "f": 0.0676,
+      "frequent_itemsets": 1209
+    },
+    {
+      "min_count": 2,
+      "min_confidence": 0.08,
+      "hit_rate@3": 0.0822,
+      "precision@3": 0.0574,
+      "coverage": 0.566,
+      "f": 0.0676,
+      "frequent_itemsets": 1209
+    },
+    {
+      "min_count": 2,
+      "min_confidence": 0.1,
+      "hit_rate@3": 0.0822,
+      "precision@3": 0.0574,
+      "coverage": 0.566,
+      "f": 0.0676,
+      "frequent_itemsets": 1209
+    },
+    {
+      "min_count": 2,
+      "min_confidence": 0.15,
+      "hit_rate@3": 0.0268,
+      "precision@3": 0.0467,
+      "coverage": 0.3881,
+      "f": 0.034,
+      "frequent_itemsets": 1209
+    },
+    {
+      "min_count": 2,
+      "min_confidence": 0.2,
+      "hit_rate@3": 0.0134,
+      "precision@3": 0.0387,
+      "coverage": 0.1836,
+      "f": 0.0199,
+      "frequent_itemsets": 1209
+    },
+    {
+      "min_count": 2,
+      "min_confidence": 0.3,
+      "hit_rate@3": 0.0115,
+      "precision@3": 0.0517,
+      "coverage": 0.1472,
+      "f": 0.0188,
+      "frequent_itemsets": 1209
+    },
+    {
+      "min_count": 3,
+      "min_confidence": 0.05,
+      "hit_rate@3": 0.0707,
+      "precision@3": 0.0605,
+      "coverage": 0.4321,
+      "f": 0.0652,
+      "frequent_itemsets": 791
+    },
+    {
+      "min_count": 3,
+      "min_confidence": 0.08,
+      "hit_rate@3": 0.0707,
+      "precision@3": 0.0605,
+      "coverage": 0.4321,
+      "f": 0.0652,
+      "frequent_itemsets": 791
+    },
+    {
+      "min_count": 3,
+      "min_confidence": 0.1,
+      "hit_rate@3": 0.0707,
+      "precision@3": 0.0605,
+      "coverage": 0.4321,
+      "f": 0.0652,
+      "frequent_itemsets": 791
+    },
+    {
+      "min_count": 3,
+      "min_confidence": 0.15,
+      "hit_rate@3": 0.0153,
+      "precision@3": 0.0485,
+      "coverage": 0.2543,
+      "f": 0.0233,
+      "frequent_itemsets": 791
+    },
+    {
+      "min_count": 3,
+      "min_confidence": 0.2,
+      "hit_rate@3": 0.0019,
+      "precision@3": 0.0357,
+      "coverage": 0.0497,
+      "f": 0.0036,
+      "frequent_itemsets": 791
+    },
+    {
+      "min_count": 3,
+      "min_confidence": 0.3,
+      "hit_rate@3": 0.0,
+      "precision@3": 0.0,
+      "coverage": 0.0459,
+      "f": 0.0,
+      "frequent_itemsets": 791
+    },
+    {
+      "min_count": 4,
+      "min_confidence": 0.05,
+      "hit_rate@3": 0.0688,
+      "precision@3": 0.0615,
+      "coverage": 0.3862,
+      "f": 0.0649,
+      "frequent_itemsets": 658
+    },
+    {
+      "min_count": 4,
+      "min_confidence": 0.08,
+      "hit_rate@3": 0.0688,
+      "precision@3": 0.0615,
+      "coverage": 0.3862,
+      "f": 0.0649,
+      "frequent_itemsets": 658
+    },
+    {
+      "min_count": 4,
+      "min_confidence": 0.1,
+      "hit_rate@3": 0.0688,
+      "precision@3": 0.0615,
+      "coverage": 0.3862,
+      "f": 0.0649,
+      "frequent_itemsets": 658
+    },
+    {
+      "min_count": 4,
+      "min_confidence": 0.15,
+      "hit_rate@3": 0.0134,
+      "precision@3": 0.0504,
+      "coverage": 0.2084,
+      "f": 0.0211,
+      "frequent_itemsets": 658
+    },
+    {
+      "min_count": 4,
+      "min_confidence": 0.2,
+      "hit_rate@3": 0.0,
+      "precision@3": 0.0,
+      "coverage": 0.0038,
+      "f": 0.0,
+      "frequent_itemsets": 658
+    },
+    {
+      "min_count": 4,
+      "min_confidence": 0.3,
+      "hit_rate@3": 0.0,
+      "precision@3": 0.0,
+      "coverage": 0.0038,
+      "f": 0.0,
+      "frequent_itemsets": 658
+    },
+    {
+      "min_count": 5,
+      "min_confidence": 0.05,
+      "hit_rate@3": 0.0688,
+      "precision@3": 0.0617,
+      "coverage": 0.3824,
+      "f": 0.0651,
+      "frequent_itemsets": 524
+    },
+    {
+      "min_count": 5,
+      "min_confidence": 0.08,
+      "hit_rate@3": 0.0688,
+      "precision@3": 0.0617,
+      "coverage": 0.3824,
+      "f": 0.0651,
+      "frequent_itemsets": 524
+    },
+    {
+      "min_count": 5,
+      "min_confidence": 0.1,
+      "hit_rate@3": 0.0688,
+      "precision@3": 0.0617,
+      "coverage": 0.3824,
+      "f": 0.0651,
+      "frequent_itemsets": 524
+    },
+    {
+      "min_count": 5,
+      "min_confidence": 0.15,
+      "hit_rate@3": 0.0134,
+      "precision@3": 0.0511,
+      "coverage": 0.2046,
+      "f": 0.0212,
+      "frequent_itemsets": 524
+    },
+    {
+      "min_count": 5,
+      "min_confidence": 0.2,
+      "hit_rate@3": 0.0,
+      "precision@3": 0.0,
+      "coverage": 0.0,
+      "f": 0.0,
+      "frequent_itemsets": 524
+    },
+    {
+      "min_count": 5,
+      "min_confidence": 0.3,
+      "hit_rate@3": 0.0,
+      "precision@3": 0.0,
+      "coverage": 0.0,
+      "f": 0.0,
+      "frequent_itemsets": 524
+    },
+    {
+      "min_count": 6,
+      "min_confidence": 0.05,
+      "hit_rate@3": 0.0688,
+      "precision@3": 0.0617,
+      "coverage": 0.3824,
+      "f": 0.0651,
+      "frequent_itemsets": 388
+    },
+    {
+      "min_count": 6,
+      "min_confidence": 0.08,
+      "hit_rate@3": 0.0688,
+      "precision@3": 0.0617,
+      "coverage": 0.3824,
+      "f": 0.0651,
+      "frequent_itemsets": 388
+    },
+    {
+      "min_count": 6,
+      "min_confidence": 0.1,
+      "hit_rate@3": 0.0688,
+      "precision@3": 0.0617,
+      "coverage": 0.3824,
+      "f": 0.0651,
+      "frequent_itemsets": 388
+    },
+    {
+      "min_count": 6,
+      "min_confidence": 0.15,
+      "hit_rate@3": 0.0134,
+      "precision@3": 0.0511,
+      "coverage": 0.2046,
+      "f": 0.0212,
+      "frequent_itemsets": 388
+    },
+    {
+      "min_count": 6,
+      "min_confidence": 0.2,
+      "hit_rate@3": 0.0,
+      "precision@3": 0.0,
+      "coverage": 0.0,
+      "f": 0.0,
+      "frequent_itemsets": 388
+    },
+    {
+      "min_count": 6,
+      "min_confidence": 0.3,
+      "hit_rate@3": 0.0,
+      "precision@3": 0.0,
+      "coverage": 0.0,
+      "f": 0.0,
+      "frequent_itemsets": 388
+    },
+    {
+      "min_count": 8,
+      "min_confidence": 0.05,
+      "hit_rate@3": 0.0669,
+      "precision@3": 0.0614,
+      "coverage": 0.3824,
+      "f": 0.0641,
+      "frequent_itemsets": 162
+    },
+    {
+      "min_count": 8,
+      "min_confidence": 0.08,
+      "hit_rate@3": 0.0669,
+      "precision@3": 0.0614,
+      "coverage": 0.3824,
+      "f": 0.0641,
+      "frequent_itemsets": 162
+    },
+    {
+      "min_count": 8,
+      "min_confidence": 0.1,
+      "hit_rate@3": 0.0669,
+      "precision@3": 0.0614,
+      "coverage": 0.3824,
+      "f": 0.0641,
+      "frequent_itemsets": 162
+    },
+    {
+      "min_count": 8,
+      "min_confidence": 0.15,
+      "hit_rate@3": 0.0134,
+      "precision@3": 0.0511,
+      "coverage": 0.2046,
+      "f": 0.0212,
+      "frequent_itemsets": 162
+    },
+    {
+      "min_count": 8,
+      "min_confidence": 0.2,
+      "hit_rate@3": 0.0,
+      "precision@3": 0.0,
+      "coverage": 0.0,
+      "f": 0.0,
+      "frequent_itemsets": 162
+    },
+    {
+      "min_count": 8,
+      "min_confidence": 0.3,
+      "hit_rate@3": 0.0,
+      "precision@3": 0.0,
+      "coverage": 0.0,
+      "f": 0.0,
+      "frequent_itemsets": 162
+    }
+  ],
+  "summary_md": "Hold-out: 800 train / 200 test transactions (seed 7).\n\n**Chosen thresholds:** min support = 6 transactions, min confidence = 0.1 (lift > 1); most conservative setting within 5% of the best f.\n\n**Popularity baseline:** hit_rate@3 0.1511, precision@3 0.0516 (always shows 3 items).\n\nTop settings by harmonic mean of precision@3 and hit_rate@3:\n\n| min_count | min_confidence | hit_rate@3 | precision@3 | coverage | f | frequent_itemsets |\n|---|---|---|---|---|---|---|\n| 2 | 0.050 | 0.082 | 0.057 | 0.566 | 0.068 | 1209 |\n| 2 | 0.080 | 0.082 | 0.057 | 0.566 | 0.068 | 1209 |\n| 2 | 0.100 | 0.082 | 0.057 | 0.566 | 0.068 | 1209 |\n| 3 | 0.050 | 0.071 | 0.060 | 0.432 | 0.065 | 791 |\n| 3 | 0.080 | 0.071 | 0.060 | 0.432 | 0.065 | 791 |\n| 3 | 0.100 | 0.071 | 0.060 | 0.432 | 0.065 | 791 |\n| 5 | 0.050 | 0.069 | 0.062 | 0.382 | 0.065 | 524 |\n| 5 | 0.080 | 0.069 | 0.062 | 0.382 | 0.065 | 524 |"
+}

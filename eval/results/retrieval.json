@@ -1,0 +1,3212 @@
+{
+  "generated_at": "2026-10-18 11:48:11",
+  "k": 10,
+  "best_mode_by_ndcg": "hybrid_rerank",
+  "summary": [
+    {
+      "collection": "ALL",
+      "mode": "bm25",
+      "n": 59,
+      "hit@1": 0.6949152542372882,
+      "hit@5": 0.864406779661017,
+      "mrr": 0.7668482647296206,
+      "ndcg@10": 0.6647439457704053
+    },
+    {
+      "collection": "ALL",
+      "mode": "dense",
+      "n": 59,
+      "hit@1": 0.6949152542372882,
+      "hit@5": 0.8983050847457628,
+      "mrr": 0.778813559322034,
+      "ndcg@10": 0.6802011763302105
+    },
+    {
+      "collection": "ALL",
+      "mode": "hybrid",
+      "n": 59,
+      "hit@1": 0.7627118644067796,
+      "hit@5": 0.9152542372881356,
+      "mrr": 0.8214689265536722,
+      "ndcg@10": 0.7004327083728926
+    },
+    {
+      "collection": "ALL",
+      "mode": "hybrid_rerank",
+      "n": 59,
+      "hit@1": 0.7966101694915254,
+      "hit@5": 0.9661016949152542,
+      "mrr": 0.8714689265536723,
+      "ndcg@10": 0.7610855816644405
+    },
+    {
+      "collection": "agilent",
+      "mode": "bm25",
+      "n": 6,
+      "hit@1": 1.0,
+      "hit@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@10": 0.9795358858896749
+    },
+    {
+      "collection": "agilent",
+      "mode": "dense",
+      "n": 6,
+      "hit@1": 0.8333333333333334,
+      "hit@5": 1.0,
+      "mrr": 0.8888888888888888,
+      "ndcg@10": 0.8844289327304549
+    },
+    {
+      "collection": "agilent",
+      "mode": "hybrid",
+      "n": 6,
+      "hit@1": 0.8333333333333334,
+      "hit@5": 1.0,
+      "mrr": 0.9166666666666666,
+      "ndcg@10": 0.9135457765177021
+    },
+    {
+      "collection": "agilent",
+      "mode": "hybrid_rerank",
+      "n": 6,
+      "hit@1": 1.0,
+      "hit@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@10": 1.0
+    },
+    {
+      "collection": "clinical_lit",
+      "mode": "bm25",
+      "n": 12,
+      "hit@1": 1.0,
+      "hit@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@10": 0.9552910081916844
+    },
+    {
+      "collection": "clinical_lit",
+      "mode": "dense",
+      "n": 12,
+      "hit@1": 1.0,
+      "hit@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@10": 0.9677622660637882
+    },
+    {
+      "collection": "clinical_lit",
+      "mode": "hybrid",
+      "n": 12,
+      "hit@1": 1.0,
+      "hit@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@10": 0.961072331826137
+    },
+    {
+      "collection": "clinical_lit",
+      "mode": "hybrid_rerank",
+      "n": 12,
+      "hit@1": 1.0,
+      "hit@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@10": 0.961072331826137
+    },
+    {
+      "collection": "sec_filings",
+      "mode": "bm25",
+      "n": 12,
+      "hit@1": 0.5833333333333334,
+      "hit@5": 0.8333333333333334,
+      "mrr": 0.6805555555555557,
+      "ndcg@10": 0.49669956390356385
+    },
+    {
+      "collection": "sec_filings",
+      "mode": "dense",
+      "n": 12,
+      "hit@1": 0.6666666666666666,
+      "hit@5": 1.0,
+      "mrr": 0.8083333333333332,
+      "ndcg@10": 0.6498061138607668
+    },
+    {
+      "collection": "sec_filings",
+      "mode": "hybrid",
+      "n": 12,
+      "hit@1": 0.8333333333333334,
+      "hit@5": 0.9166666666666666,
+      "mrr": 0.8833333333333333,
+      "ndcg@10": 0.6458835282404546
+    },
+    {
+      "collection": "sec_filings",
+      "mode": "hybrid_rerank",
+      "n": 12,
+      "hit@1": 0.75,
+      "hit@5": 1.0,
+      "mrr": 0.875,
+      "ndcg@10": 0.6733748173306161
+    },
+    {
+      "collection": "sofi",
+      "mode": "bm25",
+      "n": 12,
+      "hit@1": 0.4166666666666667,
+      "hit@5": 0.75,
+      "mrr": 0.5381944444444445,
+      "ndcg@10": 0.44353038982911763
+    },
+    {
+      "collection": "sofi",
+      "mode": "dense",
+      "n": 12,
+      "hit@1": 0.5,
+      "hit@5": 0.6666666666666666,
+      "mrr": 0.5625,
+      "ndcg@10": 0.36729005099213824
+    },
+    {
+      "collection": "sofi",
+      "mode": "hybrid",
+      "n": 12,
+      "hit@1": 0.5,
+      "hit@5": 0.75,
+      "mrr": 0.5763888888888888,
+      "ndcg@10": 0.4291389240033234
+    },
+    {
+      "collection": "sofi",
+      "mode": "hybrid_rerank",
+      "n": 12,
+      "hit@1": 0.5833333333333334,
+      "hit@5": 0.8333333333333334,
+      "mrr": 0.6944444444444445,
+      "ndcg@10": 0.547122720122077
+    },
+    {
+      "collection": "tech_docs",
+      "mode": "bm25",
+      "n": 12,
+      "hit@1": 0.6666666666666666,
+      "hit@5": 0.75,
+      "mrr": 0.7182539682539684,
+      "ndcg@10": 0.6175721492092318
+    },
+    {
+      "collection": "tech_docs",
+      "mode": "dense",
+      "n": 12,
+      "hit@1": 0.5,
+      "hit@5": 0.8333333333333334,
+      "mrr": 0.6388888888888888,
+      "ndcg@10": 0.641877352981314
+    },
+    {
+      "collection": "tech_docs",
+      "mode": "hybrid",
+      "n": 12,
+      "hit@1": 0.6666666666666666,
+      "hit@5": 0.9166666666666666,
+      "mrr": 0.7458333333333332,
+      "ndcg@10": 0.6374628611173757
+    },
+    {
+      "collection": "tech_docs",
+      "mode": "hybrid_rerank",
+      "n": 12,
+      "hit@1": 0.75,
+      "hit@5": 1.0,
+      "mrr": 0.8402777777777777,
+      "ndcg@10": 0.7288536638079721
+    },
+    {
+      "collection": "trials",
+      "mode": "bm25",
+      "n": 5,
+      "hit@1": 0.6,
+      "hit@5": 1.0,
+      "mrr": 0.8,
+      "ndcg@10": 0.6371120303025377
+    },
+    {
+      "collection": "trials",
+      "mode": "dense",
+      "n": 5,
+      "hit@1": 0.8,
+      "hit@5": 1.0,
+      "mrr": 0.9,
+      "ndcg@10": 0.6608932800647197
+    },
+    {
+      "collection": "trials",
+      "mode": "hybrid",
+      "n": 5,
+      "hit@1": 0.8,
+      "hit@5": 1.0,
+      "mrr": 0.9,
+      "ndcg@10": 0.7523126785293943
+    },
+    {
+      "collection": "trials",
+      "mode": "hybrid_rerank",
+      "n": 5,
+      "hit@1": 0.8,
+      "hit@5": 1.0,
+      "mrr": 0.9,
+      "ndcg@10": 0.7957933842320731
+    }
+  ],
+  "per_query": [
+    {
+      "id": "tech-01",
+      "collection": "tech_docs",
+      "query": "Which AC power supply options can be ordered for the 1RU Catalyst 8300 and what wattages are available?",
+      "n_relevant": 2,
+      "bm25": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.3065735963827292,
+        "top": [
+          "cisco-catalyst-8200-datasheet:4",
+          "cisco-catalyst-8300-datasheet:4",
+          "cisco-catalyst-8300-datasheet:16"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "cisco-catalyst-8300-datasheet:17",
+          "cisco-catalyst-8300-datasheet:16",
+          "cisco-catalyst-8300-datasheet:16"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.9197207891481876,
+        "top": [
+          "cisco-catalyst-8300-datasheet:16",
+          "cisco-catalyst-8300-datasheet:4",
+          "cisco-catalyst-8300-datasheet:17"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.9197207891481876,
+        "top": [
+          "cisco-catalyst-8300-datasheet:16",
+          "cisco-catalyst-8300-datasheet:4",
+          "cisco-catalyst-8300-datasheet:17"
+        ]
+      }
+    },
+    {
+      "id": "tech-02",
+      "collection": "tech_docs",
+      "query": "When did Cisco stop selling the 4000 Series ISR and how long will it still be supported?",
+      "n_relevant": 1,
+      "bm25": {
+        "hit@1": 0.0,
+        "hit@5": 0.0,
+        "mrr": 0.0,
+        "ndcg@10": 0.0,
+        "top": [
+          "cisco-isr-4000-datasheet:19",
+          "cisco-isr-4000-datasheet:21",
+          "cisco-isr-4000-datasheet:7"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "cisco-isr-4000-page:cisco-isr-4000-page:s0:0",
+          "cisco-isr-4000-datasheet:28",
+          "cisco-isr-4000-datasheet:5"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.2,
+        "ndcg@10": 0.38685280723454163,
+        "top": [
+          "cisco-isr-4000-datasheet:5",
+          "cisco-isr-4000-datasheet:23",
+          "cisco-isr-4000-datasheet:19"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "cisco-isr-4000-page:cisco-isr-4000-page:s0:0",
+          "cisco-isr-4000-datasheet:28",
+          "cisco-isr-4000-datasheet:16"
+        ]
+      }
+    },
+    {
+      "id": "tech-03",
+      "collection": "tech_docs",
+      "query": "What does Cisco position as the replacement or upgrade path for ISR 4000 routers?",
+      "n_relevant": 1,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "cisco-isr-4000-page:cisco-isr-4000-page:s1:0",
+          "cisco-isr-4000-datasheet:6",
+          "cisco-isr-4000-datasheet:5"
+        ]
+      },
+      "dense": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.5,
+        "top": [
+          "cisco-isr-4000-datasheet:5",
+          "cisco-isr-4000-datasheet:21",
+          "cisco-isr-4000-page:cisco-isr-4000-page:s10:0"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.25,
+        "ndcg@10": 0.43067655807339306,
+        "top": [
+          "cisco-isr-4000-datasheet:5",
+          "cisco-isr-4000-datasheet:25",
+          "cisco-isr-4000-datasheet:21"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.25,
+        "ndcg@10": 0.43067655807339306,
+        "top": [
+          "cisco-isr-4000-datasheet:21",
+          "cisco-isr-4000-datasheet:19",
+          "cisco-isr-4000-datasheet:3"
+        ]
+      }
+    },
+    {
+      "id": "tech-04",
+      "collection": "tech_docs",
+      "query": "Can the virtual Catalyst 8000V router be deployed in public clouds such as AWS?",
+      "n_relevant": 4,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.6366824387328317,
+        "top": [
+          "cisco-catalyst-8000v-datasheet:17",
+          "cisco-catalyst-8000v-datasheet:12",
+          "cisco-catalyst-8000v-datasheet:6"
+        ]
+      },
+      "dense": {
+        "hit@1": 0.0,
+        "hit@5": 0.0,
+        "mrr": 0.16666666666666666,
+        "ndcg@10": 0.25657228426720274,
+        "top": [
+          "cisco-catalyst-8000v-datasheet:4",
+          "cisco-catalyst-8000v-datasheet:3",
+          "cisco-catalyst-8000v-datasheet:5"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.3903800499921017,
+        "top": [
+          "cisco-catalyst-8000v-datasheet:12",
+          "cisco-catalyst-8000v-datasheet:6",
+          "cisco-catalyst-8000v-datasheet:5"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.5413996682199069,
+        "top": [
+          "cisco-catalyst-8000v-datasheet:12",
+          "cisco-catalyst-8000v-datasheet:6",
+          "cisco-catalyst-8000v-datasheet:6"
+        ]
+      }
+    },
+    {
+      "id": "tech-05",
+      "collection": "tech_docs",
+      "query": "How far can memory be upgraded on the C8200-1N-4T branch router?",
+      "n_relevant": 2,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.6131471927654584,
+        "top": [
+          "cisco-catalyst-8200-datasheet:4",
+          "cisco-catalyst-8200-datasheet:3",
+          "cisco-catalyst-8200-datasheet:5"
+        ]
+      },
+      "dense": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.5,
+        "ndcg@10": 0.38685280723454163,
+        "top": [
+          "cisco-catalyst-8200-datasheet:6",
+          "cisco-catalyst-8200-datasheet:4",
+          "cisco-isr-4000-datasheet:7"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.6131471927654584,
+        "top": [
+          "cisco-catalyst-8200-datasheet:4",
+          "cisco-catalyst-8200-datasheet:6",
+          "cisco-catalyst-8200-datasheet:3"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.7903864795495061,
+        "top": [
+          "cisco-catalyst-8200-datasheet:4",
+          "cisco-catalyst-8200-datasheet:3",
+          "cisco-catalyst-8200-datasheet:3"
+        ]
+      }
+    },
+    {
+      "id": "tech-06",
+      "collection": "tech_docs",
+      "query": "Which route processor modules are used in the ASR 1006-X chassis?",
+      "n_relevant": 2,
+      "bm25": {
+        "hit@1": 0.0,
+        "hit@5": 0.0,
+        "mrr": 0.14285714285714285,
+        "ndcg@10": 0.20438239758848611,
+        "top": [
+          "cisco-asr-1000-datasheet:16",
+          "cisco-asr-1000-datasheet:13",
+          "cisco-asr-1000-datasheet:27"
+        ]
+      },
+      "dense": {
+        "hit@1": 0.0,
+        "hit@5": 0.0,
+        "mrr": 0.0,
+        "ndcg@10": 0.0,
+        "top": [
+          "cisco-asr-1000-datasheet:16",
+          "cisco-asr-1000-datasheet:13",
+          "cisco-asr-1000-datasheet:27"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 0.0,
+        "hit@5": 0.0,
+        "mrr": 0.0,
+        "ndcg@10": 0.0,
+        "top": [
+          "cisco-asr-1000-datasheet:16",
+          "cisco-asr-1000-datasheet:13",
+          "cisco-asr-1000-datasheet:13"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.3065735963827292,
+        "top": [
+          "cisco-asr-1000-datasheet:12",
+          "cisco-asr-1000-datasheet:27",
+          "cisco-asr-1000-datasheet:10"
+        ]
+      }
+    },
+    {
+      "id": "tech-07",
+      "collection": "tech_docs",
+      "query": "embedded services processor ESP200 forwarding throughput on ASR 1000",
+      "n_relevant": 10,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.6871952210980248,
+        "top": [
+          "cisco-asr-1000-datasheet:28",
+          "cisco-asr-1000-datasheet:9",
+          "cisco-asr-1000-datasheet:20"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.6122496142821665,
+        "top": [
+          "cisco-asr-1000-datasheet:9",
+          "cisco-asr-1000-datasheet:17",
+          "cisco-asr-1000-datasheet:9"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.6621137423456802,
+        "top": [
+          "cisco-asr-1000-datasheet:9",
+          "cisco-asr-1000-datasheet:20",
+          "cisco-asr-1000-datasheet:9"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.6620158551732016,
+        "top": [
+          "cisco-asr-1000-datasheet:28",
+          "cisco-asr-1000-datasheet:9",
+          "cisco-asr-1000-datasheet:3"
+        ]
+      }
+    },
+    {
+      "id": "tech-08",
+      "collection": "tech_docs",
+      "query": "How does Google Cloud protect MCP traffic against prompt injection and sensitive data leakage?",
+      "n_relevant": 1,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "gcp-mcp-overview:gcp-mcp-overview:s13:0",
+          "gcp-what-is-mcp:gcp-what-is-mcp:s14:1387",
+          "cisco-catalyst-8000v-datasheet:9"
+        ]
+      },
+      "dense": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.5,
+        "top": [
+          "gcp-what-is-mcp:gcp-what-is-mcp:s14:0",
+          "gcp-what-is-mcp:gcp-what-is-mcp:s14:1387",
+          "gcp-mcp-overview:gcp-mcp-overview:s4:0"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.5,
+        "ndcg@10": 0.6309297535714575,
+        "top": [
+          "gcp-what-is-mcp:gcp-what-is-mcp:s14:1387",
+          "gcp-mcp-overview:gcp-mcp-overview:s13:0",
+          "gcp-what-is-mcp:gcp-what-is-mcp:s14:0"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "gcp-mcp-overview:gcp-mcp-overview:s13:0",
+          "gcp-what-is-mcp:gcp-what-is-mcp:s14:1387",
+          "gcp-what-is-mcp:gcp-what-is-mcp:s14:0"
+        ]
+      }
+    },
+    {
+      "id": "tech-09",
+      "collection": "tech_docs",
+      "query": "What role does a vector database play in retrieval-augmented generation?",
+      "n_relevant": 1,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "gcp-rag:gcp-rag:s8:0",
+          "gcp-rag:gcp-rag:s1:0",
+          "gcp-rag:gcp-rag:s0:0"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "gcp-rag:gcp-rag:s5:0",
+          "gcp-rag:gcp-rag:s1:0",
+          "gcp-rag:gcp-rag:s9:0"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "gcp-rag:gcp-rag:s1:0",
+          "gcp-rag:gcp-rag:s8:0",
+          "gcp-rag:gcp-rag:s5:0"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "gcp-rag:gcp-rag:s5:0",
+          "gcp-rag:gcp-rag:s8:0",
+          "gcp-what-is-mcp:gcp-what-is-mcp:s9:0"
+        ]
+      }
+    },
+    {
+      "id": "tech-10",
+      "collection": "tech_docs",
+      "query": "How does grounding a model with retrieved data reduce made-up answers?",
+      "n_relevant": 2,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "gcp-what-is-mcp:gcp-what-is-mcp:s11:0",
+          "gcp-rag:gcp-rag:s1:0",
+          "gcp-what-is-mcp:gcp-what-is-mcp:s1:0"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "gcp-what-is-mcp:gcp-what-is-mcp:s11:0",
+          "gcp-rag:gcp-rag:s4:0",
+          "gcp-rag:gcp-rag:s1:0"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "gcp-what-is-mcp:gcp-what-is-mcp:s11:0",
+          "gcp-rag:gcp-rag:s1:0",
+          "gcp-rag:gcp-rag:s4:0"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.8772153153380493,
+        "top": [
+          "gcp-rag:gcp-rag:s6:0",
+          "gcp-rag:gcp-rag:s1:0",
+          "gcp-rag:gcp-rag:s4:0"
+        ]
+      }
+    },
+    {
+      "id": "tech-11",
+      "collection": "tech_docs",
+      "query": "What encrypted VPN throughput does the entry Catalyst 8200 model support?",
+      "n_relevant": 1,
+      "bm25": {
+        "hit@1": 0.0,
+        "hit@5": 0.0,
+        "mrr": 0.14285714285714285,
+        "ndcg@10": 0.3333333333333333,
+        "top": [
+          "cisco-isr-4000-datasheet:24",
+          "cisco-isr-4000-page:cisco-isr-4000-page:s8:0",
+          "gcp-what-is-mcp:gcp-what-is-mcp:s1:0"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "cisco-catalyst-8200-datasheet:3",
+          "cisco-catalyst-8200-datasheet:15",
+          "cisco-catalyst-8200-datasheet:15"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "cisco-catalyst-8200-datasheet:3",
+          "cisco-catalyst-8200-datasheet:6",
+          "cisco-catalyst-8200-datasheet:5"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.5,
+        "ndcg@10": 0.6309297535714575,
+        "top": [
+          "cisco-catalyst-8200-datasheet:15",
+          "cisco-catalyst-8200-datasheet:3",
+          "cisco-catalyst-8200-datasheet:6"
+        ]
+      }
+    },
+    {
+      "id": "tech-12",
+      "collection": "tech_docs",
+      "query": "Which ISR 4000 model offers the highest performance, up to 10 Gbps?",
+      "n_relevant": 5,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.6295516106099184,
+        "top": [
+          "cisco-isr-4000-datasheet:24",
+          "cisco-asr-1000-datasheet:20",
+          "cisco-isr-4000-datasheet:4"
+        ]
+      },
+      "dense": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.4468535299918563,
+        "top": [
+          "cisco-isr-4000-page:cisco-isr-4000-page:s8:0",
+          "cisco-isr-4000-datasheet:9",
+          "cisco-isr-4000-datasheet:24"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.615733440277688,
+        "top": [
+          "cisco-isr-4000-datasheet:24",
+          "cisco-isr-4000-page:cisco-isr-4000-page:s8:0",
+          "cisco-isr-4000-datasheet:4"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.5873259502392343,
+        "top": [
+          "cisco-isr-4000-datasheet:4",
+          "cisco-isr-4000-datasheet:6",
+          "cisco-isr-4000-datasheet:4"
+        ]
+      }
+    },
+    {
+      "id": "sec-01",
+      "collection": "sec_filings",
+      "query": "How did the Splunk acquisition change Cisco's business?",
+      "n_relevant": 29,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.715550648768261,
+        "top": [
+          "10k-cisco-fy2025:71",
+          "10k-cisco-fy2026:72",
+          "10k-cisco-fy2025:72"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.9363792118010483,
+        "top": [
+          "10k-cisco-fy2025:5",
+          "10k-cisco-fy2025:6",
+          "10k-cisco-fy2025:71"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.9052116356304493,
+        "top": [
+          "10k-cisco-fy2025:71",
+          "10k-cisco-fy2025:11",
+          "10k-cisco-fy2026:71"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.8899541168509599,
+        "top": [
+          "10k-cisco-fy2025:5",
+          "10k-cisco-fy2025:18",
+          "10k-cisco-fy2025:5"
+        ]
+      }
+    },
+    {
+      "id": "sec-02",
+      "collection": "sec_filings",
+      "query": "How many employees does Agilent have?",
+      "n_relevant": 3,
+      "bm25": {
+        "hit@1": 0.0,
+        "hit@5": 0.0,
+        "mrr": 0.0,
+        "ndcg@10": 0.0,
+        "top": [
+          "10k-cisco-fy2026:11",
+          "10k-cisco-fy2025:11",
+          "10k-alphabet-fy2024:103"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.6257049680303419,
+        "top": [
+          "10k-agilent-fy2025:16",
+          "10k-agilent-fy2025:16",
+          "10k-agilent-fy2025:17"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.46927872602275644,
+        "top": [
+          "10k-agilent-fy2025:16",
+          "10k-agilent-fy2025:16",
+          "10k-agilent-fy2025:16"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.7653606369886217,
+        "top": [
+          "10k-agilent-fy2025:4",
+          "10k-agilent-fy2025:16",
+          "10k-agilent-fy2025:8"
+        ]
+      }
+    },
+    {
+      "id": "sec-03",
+      "collection": "sec_filings",
+      "query": "What antitrust lawsuits does Alphabet face from the U.S. government?",
+      "n_relevant": 2,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "10k-alphabet-fy2025:19",
+          "10k-alphabet-fy2024:21",
+          "10k-alphabet-fy2024:21"
+        ]
+      },
+      "dense": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.5,
+        "ndcg@10": 0.5640920940185894,
+        "top": [
+          "10k-alphabet-fy2025:20",
+          "10k-alphabet-fy2024:21",
+          "10k-alphabet-fy2024:80"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.9197207891481876,
+        "top": [
+          "10k-alphabet-fy2024:21",
+          "10k-alphabet-fy2024:80",
+          "10k-alphabet-fy2025:19"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "10k-alphabet-fy2025:19",
+          "10k-alphabet-fy2024:21",
+          "10k-alphabet-fy2025:20"
+        ]
+      }
+    },
+    {
+      "id": "sec-04",
+      "collection": "sec_filings",
+      "query": "Cisco greenhouse gas emissions reduction and net zero target",
+      "n_relevant": 2,
+      "bm25": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.5,
+        "ndcg@10": 0.6509209298071326,
+        "top": [
+          "10k-agilent-fy2025:15",
+          "10k-cisco-fy2025:24",
+          "10k-alphabet-fy2024:10"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "10k-cisco-fy2025:24",
+          "10k-cisco-fy2026:24",
+          "10k-alphabet-fy2024:10"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.8772153153380493,
+        "top": [
+          "10k-cisco-fy2025:24",
+          "10k-alphabet-fy2024:10",
+          "10k-alphabet-fy2024:10"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.9197207891481876,
+        "top": [
+          "10k-cisco-fy2026:24",
+          "10k-agilent-fy2025:15",
+          "10k-cisco-fy2025:24"
+        ]
+      }
+    },
+    {
+      "id": "sec-05",
+      "collection": "sec_filings",
+      "query": "Alphabet commitment to run on clean energy around the clock",
+      "n_relevant": 1,
+      "bm25": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.5,
+        "top": [
+          "10k-cisco-fy2026:24",
+          "10k-cisco-fy2026:24",
+          "10k-alphabet-fy2024:10"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "10k-alphabet-fy2024:10",
+          "10k-alphabet-fy2024:10",
+          "10k-alphabet-fy2025:5"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "10k-alphabet-fy2024:10",
+          "10k-alphabet-fy2024:45",
+          "10k-alphabet-fy2024:10"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.5,
+        "ndcg@10": 0.6309297535714575,
+        "top": [
+          "10k-alphabet-fy2025:13",
+          "10k-alphabet-fy2024:10",
+          "10k-alphabet-fy2024:21"
+        ]
+      }
+    },
+    {
+      "id": "sec-06",
+      "collection": "sec_filings",
+      "query": "Which contract development and manufacturing business did Agilent acquire?",
+      "n_relevant": 18,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.4631896595828492,
+        "top": [
+          "10k-agilent-fy2025:7",
+          "10k-cisco-fy2025:15",
+          "10k-agilent-fy2025:4"
+        ]
+      },
+      "dense": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.2,
+        "ndcg@10": 0.29659339675602525,
+        "top": [
+          "10k-agilent-fy2025:10",
+          "10k-agilent-fy2025:11",
+          "10k-agilent-fy2025:9"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.5541432109622958,
+        "top": [
+          "10k-agilent-fy2025:4",
+          "10k-agilent-fy2025:7",
+          "10k-agilent-fy2025:119"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.7019727018777485,
+        "top": [
+          "10k-agilent-fy2025:4",
+          "10k-agilent-fy2025:7",
+          "10k-agilent-fy2025:69"
+        ]
+      }
+    },
+    {
+      "id": "sec-07",
+      "collection": "sec_filings",
+      "query": "How fast did Google's cloud segment revenue grow?",
+      "n_relevant": 8,
+      "bm25": {
+        "hit@1": 0.0,
+        "hit@5": 0.0,
+        "mrr": 0.0,
+        "ndcg@10": 0.0,
+        "top": [
+          "10k-alphabet-fy2024:6",
+          "10k-cisco-fy2025:14",
+          "10k-alphabet-fy2024:89"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.4695140628038533,
+        "top": [
+          "10k-alphabet-fy2025:35",
+          "10k-alphabet-fy2025:34",
+          "10k-alphabet-fy2024:38"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 0.0,
+        "hit@5": 0.0,
+        "mrr": 0.1,
+        "ndcg@10": 0.07311683844390994,
+        "top": [
+          "10k-alphabet-fy2025:37",
+          "10k-alphabet-fy2024:89",
+          "10k-alphabet-fy2024:88"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.5,
+        "ndcg@10": 0.25744067176005675,
+        "top": [
+          "10k-alphabet-fy2025:37",
+          "10k-alphabet-fy2025:35",
+          "10k-alphabet-fy2024:41"
+        ]
+      }
+    },
+    {
+      "id": "sec-08",
+      "collection": "sec_filings",
+      "query": "How do import duties and trade policy affect Agilent?",
+      "n_relevant": 27,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.5263304097820353,
+        "top": [
+          "10k-agilent-fy2025:19",
+          "10k-alphabet-fy2024:100",
+          "10k-alphabet-fy2024:103"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.6489315753318465,
+        "top": [
+          "10k-agilent-fy2025:35",
+          "10k-agilent-fy2025:70",
+          "10k-agilent-fy2025:15"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.627507133061656,
+        "top": [
+          "10k-agilent-fy2025:19",
+          "10k-agilent-fy2025:15",
+          "10k-agilent-fy2025:21"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.5739723394665964,
+        "top": [
+          "10k-agilent-fy2025:19",
+          "10k-agilent-fy2025:70",
+          "10k-agilent-fy2025:23"
+        ]
+      }
+    },
+    {
+      "id": "sec-09",
+      "collection": "sec_filings",
+      "query": "Does Cisco depend on single-source suppliers for components?",
+      "n_relevant": 1,
+      "bm25": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.5,
+        "top": [
+          "10k-cisco-fy2025:15",
+          "10k-cisco-fy2025:15",
+          "10k-cisco-fy2026:15"
+        ]
+      },
+      "dense": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.5,
+        "ndcg@10": 0.6309297535714575,
+        "top": [
+          "10k-cisco-fy2025:15",
+          "10k-cisco-fy2026:15",
+          "10k-cisco-fy2025:15"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.5,
+        "ndcg@10": 0.6309297535714575,
+        "top": [
+          "10k-cisco-fy2025:15",
+          "10k-cisco-fy2026:15",
+          "10k-cisco-fy2025:15"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.5,
+        "ndcg@10": 0.6309297535714575,
+        "top": [
+          "10k-cisco-fy2025:15",
+          "10k-cisco-fy2026:15",
+          "10k-cisco-fy2026:15"
+        ]
+      }
+    },
+    {
+      "id": "sec-10",
+      "collection": "sec_filings",
+      "query": "Alphabet generative AI model family and products",
+      "n_relevant": 12,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.3843113526044082,
+        "top": [
+          "10k-alphabet-fy2025:5",
+          "10k-alphabet-fy2025:5",
+          "10k-alphabet-fy2025:11"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.5669450709942981,
+        "top": [
+          "10k-alphabet-fy2025:5",
+          "10k-alphabet-fy2025:11",
+          "10k-alphabet-fy2025:7"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.47338717040861195,
+        "top": [
+          "10k-alphabet-fy2025:5",
+          "10k-alphabet-fy2025:11",
+          "10k-alphabet-fy2025:5"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.5704044892860389,
+        "top": [
+          "10k-alphabet-fy2024:6",
+          "10k-alphabet-fy2025:5",
+          "10k-alphabet-fy2025:5"
+        ]
+      }
+    },
+    {
+      "id": "sec-11",
+      "collection": "sec_filings",
+      "query": "Agilent revenue expected to be recognized from remaining performance obligations",
+      "n_relevant": 11,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.22009176629808017,
+        "top": [
+          "10k-agilent-fy2025:81",
+          "10k-agilent-fy2025:38",
+          "10k-agilent-fy2025:63"
+        ]
+      },
+      "dense": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.5,
+        "ndcg@10": 0.13886244387355454,
+        "top": [
+          "10k-agilent-fy2025:63",
+          "10k-agilent-fy2025:81",
+          "10k-agilent-fy2025:71"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.22009176629808017,
+        "top": [
+          "10k-agilent-fy2025:81",
+          "10k-agilent-fy2025:63",
+          "10k-agilent-fy2025:71"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.22009176629808017,
+        "top": [
+          "10k-agilent-fy2025:81",
+          "10k-agilent-fy2025:63",
+          "10k-agilent-fy2025:71"
+        ]
+      }
+    },
+    {
+      "id": "sec-12",
+      "collection": "sec_filings",
+      "query": "Who oversees Cisco's cybersecurity risk management program?",
+      "n_relevant": 2,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "10k-cisco-fy2026:28",
+          "10k-cisco-fy2025:28",
+          "10k-alphabet-fy2025:25"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.9197207891481876,
+        "top": [
+          "10k-cisco-fy2025:28",
+          "10k-cisco-fy2025:28",
+          "10k-cisco-fy2026:28"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "10k-cisco-fy2025:28",
+          "10k-cisco-fy2026:28",
+          "10k-cisco-fy2025:28"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.9197207891481876,
+        "top": [
+          "10k-cisco-fy2025:28",
+          "10k-alphabet-fy2024:26",
+          "10k-cisco-fy2026:28"
+        ]
+      }
+    },
+    {
+      "id": "csr-01",
+      "collection": "sofi",
+      "query": "How many people in the world faced hunger in 2023?",
+      "n_relevant": 4,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.7541985434892589,
+        "top": [
+          "sofi-2024:36",
+          "sofi-2024:20",
+          "sofi-2023:36"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.5078961547485289,
+        "top": [
+          "sofi-2024:20",
+          "sofi-2023:38",
+          "sofi-2023:18"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.5413996682199069,
+        "top": [
+          "sofi-2024:20",
+          "sofi-2023:38",
+          "sofi-2023:18"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.9052181617170642,
+        "top": [
+          "sofi-2024:18",
+          "sofi-2024:20",
+          "sofi-2024:20"
+        ]
+      }
+    },
+    {
+      "id": "csr-02",
+      "collection": "sofi",
+      "query": "How many people were moderately or severely food insecure in 2023?",
+      "n_relevant": 5,
+      "bm25": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.5,
+        "ndcg@10": 0.5601912955315027,
+        "top": [
+          "sofi-2024:48",
+          "sofi-2024:49",
+          "sofi-2023:18"
+        ]
+      },
+      "dense": {
+        "hit@1": 0.0,
+        "hit@5": 0.0,
+        "mrr": 0.16666666666666666,
+        "ndcg@10": 0.1208113026994942,
+        "top": [
+          "sofi-2023:48",
+          "sofi-2023:37",
+          "sofi-2023:21"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.3896266367619438,
+        "top": [
+          "sofi-2023:18",
+          "sofi-2023:37",
+          "sofi-2024:21"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.7052750892414584,
+        "top": [
+          "sofi-2024:18",
+          "sofi-2023:48",
+          "sofi-2023:18"
+        ]
+      }
+    },
+    {
+      "id": "csr-03",
+      "collection": "sofi",
+      "query": "What are the major drivers behind rising food insecurity and malnutrition?",
+      "n_relevant": 4,
+      "bm25": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.25,
+        "ndcg@10": 0.16812753627111746,
+        "top": [
+          "sofi-2024:104",
+          "sofi-2024:33",
+          "sofi-2024:25"
+        ]
+      },
+      "dense": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.34620964322385606,
+        "top": [
+          "sofi-2024:33",
+          "sofi-2024:33",
+          "sofi-2024:24"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.33424620450682646,
+        "top": [
+          "sofi-2024:33",
+          "sofi-2024:104",
+          "sofi-2024:24"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.19519002499605084,
+        "top": [
+          "sofi-2023:20",
+          "sofi-2024:20",
+          "sofi-2024:24"
+        ]
+      }
+    },
+    {
+      "id": "csr-04",
+      "collection": "sofi",
+      "query": "How many people were unable to afford a healthy diet?",
+      "n_relevant": 1,
+      "bm25": {
+        "hit@1": 0.0,
+        "hit@5": 0.0,
+        "mrr": 0.0,
+        "ndcg@10": 0.0,
+        "top": [
+          "sofi-2023:60",
+          "sofi-2023:58",
+          "sofi-2024:56"
+        ]
+      },
+      "dense": {
+        "hit@1": 0.0,
+        "hit@5": 0.0,
+        "mrr": 0.0,
+        "ndcg@10": 0.0,
+        "top": [
+          "sofi-2023:55",
+          "sofi-2024:56",
+          "sofi-2024:55"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 0.0,
+        "hit@5": 0.0,
+        "mrr": 0.0,
+        "ndcg@10": 0.0,
+        "top": [
+          "sofi-2024:56",
+          "sofi-2023:55",
+          "sofi-2023:60"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 0.0,
+        "hit@5": 0.0,
+        "mrr": 0.0,
+        "ndcg@10": 0.0,
+        "top": [
+          "sofi-2023:55",
+          "sofi-2024:56",
+          "sofi-2024:21"
+        ]
+      }
+    },
+    {
+      "id": "csr-05",
+      "collection": "sofi",
+      "query": "How did rising food prices affect food security and diets?",
+      "n_relevant": 1,
+      "bm25": {
+        "hit@1": 0.0,
+        "hit@5": 0.0,
+        "mrr": 0.0,
+        "ndcg@10": 0.0,
+        "top": [
+          "sofi-2023:44",
+          "sofi-2023:173",
+          "sofi-2023:45"
+        ]
+      },
+      "dense": {
+        "hit@1": 0.0,
+        "hit@5": 0.0,
+        "mrr": 0.0,
+        "ndcg@10": 0.0,
+        "top": [
+          "sofi-2023:44",
+          "sofi-2024:54",
+          "sofi-2024:24"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 0.0,
+        "hit@5": 0.0,
+        "mrr": 0.0,
+        "ndcg@10": 0.0,
+        "top": [
+          "sofi-2023:44",
+          "sofi-2024:54",
+          "sofi-2023:103"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 0.0,
+        "hit@5": 0.0,
+        "mrr": 0.0,
+        "ndcg@10": 0.0,
+        "top": [
+          "sofi-2023:44",
+          "sofi-2024:54",
+          "sofi-2023:42"
+        ]
+      }
+    },
+    {
+      "id": "csr-06",
+      "collection": "sofi",
+      "query": "How many children under five were stunted in 2022?",
+      "n_relevant": 6,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.7580206790284696,
+        "top": [
+          "sofi-2024:65",
+          "sofi-2024:22",
+          "sofi-2023:64"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.6105858728157117,
+        "top": [
+          "sofi-2024:65",
+          "sofi-2023:22",
+          "sofi-2024:70"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.7456919575934261,
+        "top": [
+          "sofi-2024:65",
+          "sofi-2023:22",
+          "sofi-2023:64"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.9740298100854945,
+        "top": [
+          "sofi-2023:122",
+          "sofi-2024:65",
+          "sofi-2023:22"
+        ]
+      }
+    },
+    {
+      "id": "csr-07",
+      "collection": "sofi",
+      "query": "How much additional financing is needed to end hunger?",
+      "n_relevant": 2,
+      "bm25": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.3065735963827292,
+        "top": [
+          "sofi-2024:123",
+          "sofi-2024:123",
+          "sofi-2024:126"
+        ]
+      },
+      "dense": {
+        "hit@1": 0.0,
+        "hit@5": 0.0,
+        "mrr": 0.0,
+        "ndcg@10": 0.0,
+        "top": [
+          "sofi-2024:123",
+          "sofi-2024:123",
+          "sofi-2024:179"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 0.0,
+        "hit@5": 0.0,
+        "mrr": 0.0,
+        "ndcg@10": 0.0,
+        "top": [
+          "sofi-2024:123",
+          "sofi-2024:123",
+          "sofi-2024:179"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.5,
+        "ndcg@10": 0.38685280723454163,
+        "top": [
+          "sofi-2024:128",
+          "sofi-2024:126",
+          "sofi-2024:125"
+        ]
+      }
+    },
+    {
+      "id": "csr-08",
+      "collection": "sofi",
+      "query": "How is urbanization changing agrifood systems?",
+      "n_relevant": 20,
+      "bm25": {
+        "hit@1": 0.0,
+        "hit@5": 0.0,
+        "mrr": 0.125,
+        "ndcg@10": 0.06943122193677727,
+        "top": [
+          "sofi-2023:33",
+          "sofi-2023:85",
+          "sofi-2023:99"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.456899187845258,
+        "top": [
+          "sofi-2023:73",
+          "sofi-2023:24",
+          "sofi-2023:83"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.25,
+        "ndcg@10": 0.31561692740233804,
+        "top": [
+          "sofi-2023:85",
+          "sofi-2023:83",
+          "sofi-2023:24"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.5,
+        "ndcg@10": 0.3706355185414171,
+        "top": [
+          "sofi-2023:24",
+          "sofi-2023:74",
+          "sofi-2023:85"
+        ]
+      }
+    },
+    {
+      "id": "csr-09",
+      "collection": "sofi",
+      "query": "How do the agencies now define financing for food security and nutrition?",
+      "n_relevant": 17,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.5541432109622958,
+        "top": [
+          "sofi-2024:101",
+          "sofi-2024:23",
+          "sofi-2024:82"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.7885497208855957,
+        "top": [
+          "sofi-2024:80",
+          "sofi-2024:24",
+          "sofi-2024:78"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.6489315753318465,
+        "top": [
+          "sofi-2024:84",
+          "sofi-2024:82",
+          "sofi-2024:101"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.7917267193679839,
+        "top": [
+          "sofi-2024:24",
+          "sofi-2024:78",
+          "sofi-2024:84"
+        ]
+      }
+    },
+    {
+      "id": "csr-10",
+      "collection": "sofi",
+      "query": "malnutrition in war zones and countries in protracted food crises",
+      "n_relevant": 6,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.6818624649454273,
+        "top": [
+          "sofi-2024:96",
+          "sofi-2024:97",
+          "sofi-2024:96"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.4935232796777481,
+        "top": [
+          "sofi-2023:44",
+          "sofi-2024:96",
+          "sofi-2024:96"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.5493640533376876,
+        "top": [
+          "sofi-2024:96",
+          "sofi-2024:96",
+          "sofi-2023:44"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.5274541611612878,
+        "top": [
+          "sofi-2024:96",
+          "sofi-2024:96",
+          "sofi-2024:96"
+        ]
+      }
+    },
+    {
+      "id": "csr-11",
+      "collection": "sofi",
+      "query": "How many people are projected to be chronically undernourished in 2030?",
+      "n_relevant": 4,
+      "bm25": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.25,
+        "ndcg@10": 0.5431800515011934,
+        "top": [
+          "sofi-2023:36",
+          "sofi-2023:46",
+          "sofi-2024:44"
+        ]
+      },
+      "dense": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.25,
+        "ndcg@10": 0.29127873064148246,
+        "top": [
+          "sofi-2023:47",
+          "sofi-2024:42",
+          "sofi-2024:22"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.7668091220635322,
+        "top": [
+          "sofi-2024:20",
+          "sofi-2024:36",
+          "sofi-2023:47"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.8421423592553552,
+        "top": [
+          "sofi-2024:18",
+          "sofi-2023:36",
+          "sofi-2024:20"
+        ]
+      }
+    },
+    {
+      "id": "csr-12",
+      "collection": "sofi",
+      "query": "prevalence of anaemia in women aged 15 to 49",
+      "n_relevant": 88,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.9266360779006401,
+        "top": [
+          "sofi-2024:249",
+          "sofi-2024:63",
+          "sofi-2023:222"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.7917267193679839,
+        "top": [
+          "sofi-2024:249",
+          "sofi-2023:223",
+          "sofi-2023:222"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.857980942822373,
+        "top": [
+          "sofi-2024:249",
+          "sofi-2023:223",
+          "sofi-2023:222"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.866947989864271,
+        "top": [
+          "sofi-2024:249",
+          "sofi-2024:22",
+          "sofi-2024:68"
+        ]
+      }
+    },
+    {
+      "id": "lit-01",
+      "collection": "clinical_lit",
+      "query": "fog computing on wearable edge devices to predict heart attacks",
+      "n_relevant": 1,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-heart_attack-fog-driven_heart_attack_prediction_from:2",
+          "paper-heart_attack-fog-driven_heart_attack_prediction_from:1",
+          "paper-heart_attack-fog-driven_heart_attack_prediction_from:4"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-heart_attack-fog-driven_heart_attack_prediction_from:2",
+          "paper-heart_attack-fog-driven_heart_attack_prediction_from:1",
+          "paper-heart_attack-fog-driven_heart_attack_prediction_from:1"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-heart_attack-fog-driven_heart_attack_prediction_from:2",
+          "paper-heart_attack-fog-driven_heart_attack_prediction_from:1",
+          "paper-heart_attack-fog-driven_heart_attack_prediction_from:4"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-heart_attack-fog-driven_heart_attack_prediction_from:1",
+          "paper-heart_attack-fog-driven_heart_attack_prediction_from:2",
+          "paper-heart_attack-fog-driven_heart_attack_prediction_from:4"
+        ]
+      }
+    },
+    {
+      "id": "lit-02",
+      "collection": "clinical_lit",
+      "query": "IoT heart-rate monitor design for detecting a heart attack",
+      "n_relevant": 1,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-heart_attack-iot_based_heart_rate_monitoring_system_d:4",
+          "paper-heart_attack-iot_based_heart_rate_monitoring_system_d:1",
+          "paper-heart_attack-iot_based_heart_rate_monitoring_system_d:1"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-heart_attack-iot_based_heart_rate_monitoring_system_d:1",
+          "paper-heart_attack-iot_based_heart_rate_monitoring_system_d:1",
+          "paper-heart_attack-iot_based_heart_rate_monitoring_system_d:2"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-heart_attack-iot_based_heart_rate_monitoring_system_d:1",
+          "paper-heart_attack-iot_based_heart_rate_monitoring_system_d:1",
+          "paper-heart_attack-iot_based_heart_rate_monitoring_system_d:4"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-heart_attack-iot_based_heart_rate_monitoring_system_d:1",
+          "paper-heart_attack-iot_based_heart_rate_monitoring_system_d:3",
+          "paper-heart_attack-iot_based_heart_rate_monitoring_system_d:2"
+        ]
+      }
+    },
+    {
+      "id": "lit-03",
+      "collection": "clinical_lit",
+      "query": "comparison of support vector machines and k-nearest neighbours for heart disease detection",
+      "n_relevant": 1,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-heart_attack-machine_learning_model_for_heart_disease:1",
+          "paper-heart_attack-fog-driven_heart_attack_prediction_from:2",
+          "paper-heart_attack-fog-driven_heart_attack_prediction_from:2"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-heart_attack-machine_learning_model_for_heart_disease:1",
+          "paper-heart_attack-machine_learning_model_for_heart_disease:3",
+          "paper-heart_attack-machine_learning_model_for_heart_disease:1"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-heart_attack-machine_learning_model_for_heart_disease:1",
+          "paper-heart_attack-machine_learning_model_for_heart_disease:1",
+          "paper-heart_attack-machine_learning_model_for_heart_disease:4"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-heart_attack-machine_learning_model_for_heart_disease:1",
+          "paper-heart_attack-machine_learning_model_for_heart_disease:1",
+          "paper-heart_attack-fog-driven_heart_attack_prediction_from:2"
+        ]
+      }
+    },
+    {
+      "id": "lit-04",
+      "collection": "clinical_lit",
+      "query": "deep learning detection of COVID-19 from lung images",
+      "n_relevant": 2,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.8503449055347546,
+        "top": [
+          "paper-covid-covid_detection_using_deep_learning:7",
+          "paper-covid-covid_detection_using_deep_learning:7",
+          "paper-covid-analysis_and_prediction_of_covid-19_usin:7"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-covid-extraction_of_features_from_lung_image_f:6",
+          "paper-covid-covid_detection_using_deep_learning:7",
+          "paper-covid-analysis_and_prediction_of_covid-19_usin:2"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.9197207891481876,
+        "top": [
+          "paper-covid-covid_detection_using_deep_learning:7",
+          "paper-covid-covid_detection_using_deep_learning:7",
+          "paper-covid-extraction_of_features_from_lung_image_f:6"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.9197207891481876,
+        "top": [
+          "paper-covid-covid_detection_using_deep_learning:1",
+          "paper-covid-covid_detection_using_deep_learning:7",
+          "paper-covid-extraction_of_features_from_lung_image_f:1"
+        ]
+      }
+    },
+    {
+      "id": "lit-05",
+      "collection": "clinical_lit",
+      "query": "web portal that forecasts COVID-19 cases in Bangladesh",
+      "n_relevant": 1,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-covid-covid-19_update_forecast_and_assistant:1",
+          "paper-covid-covid-19_update_forecast_and_assistant:1",
+          "paper-covid-covid-19_update_forecast_and_assistant:5"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-covid-covid-19_update_forecast_and_assistant:5",
+          "paper-covid-covid-19_update_forecast_and_assistant:2",
+          "paper-covid-covid-19_update_forecast_and_assistant:1"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-covid-covid-19_update_forecast_and_assistant:1",
+          "paper-covid-covid-19_update_forecast_and_assistant:5",
+          "paper-covid-covid-19_update_forecast_and_assistant:1"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-covid-covid-19_update_forecast_and_assistant:1",
+          "paper-covid-covid-19_update_forecast_and_assistant:1",
+          "paper-covid-covid-19_update_forecast_and_assistant:1"
+        ]
+      }
+    },
+    {
+      "id": "lit-06",
+      "collection": "clinical_lit",
+      "query": "anxiety in long COVID analysed with big data",
+      "n_relevant": 1,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-covid-big_data_analytics_on_irritating_anxiety:1",
+          "paper-covid-big_data_analytics_on_irritating_anxiety:1",
+          "paper-covid-big_data_analytics_on_irritating_anxiety:6"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-covid-big_data_analytics_on_irritating_anxiety:6",
+          "paper-covid-big_data_analytics_on_irritating_anxiety:6",
+          "paper-covid-big_data_analytics_on_irritating_anxiety:1"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-covid-big_data_analytics_on_irritating_anxiety:1",
+          "paper-covid-big_data_analytics_on_irritating_anxiety:6",
+          "paper-covid-big_data_analytics_on_irritating_anxiety:6"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-covid-big_data_analytics_on_irritating_anxiety:1",
+          "paper-covid-big_data_analytics_on_irritating_anxiety:6",
+          "paper-covid-big_data_analytics_on_irritating_anxiety:1"
+        ]
+      }
+    },
+    {
+      "id": "lit-07",
+      "collection": "clinical_lit",
+      "query": "Bayesian network relationships between biomarkers in type 1 and type 2 diabetes",
+      "n_relevant": 1,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-diabetes-exploring_biomarker_relationships_in_bot:1",
+          "paper-diabetes-exploring_biomarker_relationships_in_bot:1",
+          "paper-diabetes-exploring_biomarker_relationships_in_bot:1"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-diabetes-exploring_biomarker_relationships_in_bot:1",
+          "paper-diabetes-exploring_biomarker_relationships_in_bot:3",
+          "paper-diabetes-exploring_biomarker_relationships_in_bot:1"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-diabetes-exploring_biomarker_relationships_in_bot:1",
+          "paper-diabetes-exploring_biomarker_relationships_in_bot:1",
+          "paper-diabetes-exploring_biomarker_relationships_in_bot:1"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-diabetes-exploring_biomarker_relationships_in_bot:1",
+          "paper-diabetes-exploring_biomarker_relationships_in_bot:3",
+          "paper-diabetes-exploring_biomarker_relationships_in_bot:1"
+        ]
+      }
+    },
+    {
+      "id": "lit-08",
+      "collection": "clinical_lit",
+      "query": "mobile app patient education for type 2 diabetes self-management",
+      "n_relevant": 1,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-diabetes-improving_self-management_of_type_2_diab:1",
+          "paper-diabetes-improving_self-management_of_type_2_diab:1",
+          "paper-diabetes-improving_self-management_of_type_2_diab:2"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-diabetes-improving_self-management_of_type_2_diab:1",
+          "paper-diabetes-improving_self-management_of_type_2_diab:4",
+          "paper-diabetes-improving_self-management_of_type_2_diab:1"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-diabetes-improving_self-management_of_type_2_diab:1",
+          "paper-diabetes-improving_self-management_of_type_2_diab:1",
+          "paper-diabetes-improving_self-management_of_type_2_diab:1"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-diabetes-improving_self-management_of_type_2_diab:2",
+          "paper-diabetes-improving_self-management_of_type_2_diab:1",
+          "paper-diabetes-improving_self-management_of_type_2_diab:1"
+        ]
+      }
+    },
+    {
+      "id": "lit-09",
+      "collection": "clinical_lit",
+      "query": "LLM-powered conversational health agent for diabetes patients",
+      "n_relevant": 1,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-diabetes-knowledge-infused_llm-powered_conversati:1",
+          "paper-diabetes-knowledge-infused_llm-powered_conversati:3",
+          "paper-diabetes-knowledge-infused_llm-powered_conversati:2"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-diabetes-knowledge-infused_llm-powered_conversati:1",
+          "paper-diabetes-knowledge-infused_llm-powered_conversati:1",
+          "paper-diabetes-knowledge-infused_llm-powered_conversati:4"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-diabetes-knowledge-infused_llm-powered_conversati:1",
+          "paper-diabetes-knowledge-infused_llm-powered_conversati:4",
+          "paper-diabetes-knowledge-infused_llm-powered_conversati:1"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-diabetes-knowledge-infused_llm-powered_conversati:4",
+          "paper-diabetes-knowledge-infused_llm-powered_conversati:1",
+          "paper-diabetes-knowledge-infused_llm-powered_conversati:2"
+        ]
+      }
+    },
+    {
+      "id": "lit-10",
+      "collection": "clinical_lit",
+      "query": "powered wearable knee exoskeleton for lower-limb rehabilitation",
+      "n_relevant": 2,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.6131471927654584,
+        "top": [
+          "paper-knee_injuries-design_and_control_of_a_novel_powered_we:1",
+          "paper-knee_injuries-design_and_control_of_a_novel_powered_we:6",
+          "paper-knee_injuries-design_and_control_of_a_novel_powered_we:2"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.6131471927654584,
+        "top": [
+          "paper-knee_injuries-design_and_control_of_a_novel_powered_we:1",
+          "paper-knee_injuries-design_and_control_of_a_novel_powered_we:1",
+          "paper-knee_injuries-design_and_control_of_a_novel_powered_we:6"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.6131471927654584,
+        "top": [
+          "paper-knee_injuries-design_and_control_of_a_novel_powered_we:1",
+          "paper-knee_injuries-design_and_control_of_a_novel_powered_we:1",
+          "paper-knee_injuries-design_and_control_of_a_novel_powered_we:2"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.6131471927654584,
+        "top": [
+          "paper-knee_injuries-design_and_control_of_a_novel_powered_we:1",
+          "paper-knee_injuries-design_and_control_of_a_novel_powered_we:1",
+          "paper-knee_injuries-design_and_control_of_a_novel_powered_we:5"
+        ]
+      }
+    },
+    {
+      "id": "lit-11",
+      "collection": "clinical_lit",
+      "query": "IoT system for monitoring patients after knee fracture surgery",
+      "n_relevant": 1,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-knee_injuries-knee_fracture_surgery_monitoring_for_adv:2",
+          "paper-knee_injuries-knee_fracture_surgery_monitoring_for_adv:1",
+          "paper-knee_injuries-knee_fracture_surgery_monitoring_for_adv:3"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-knee_injuries-knee_fracture_surgery_monitoring_for_adv:2",
+          "paper-knee_injuries-knee_fracture_surgery_monitoring_for_adv:1",
+          "paper-knee_injuries-knee_fracture_surgery_monitoring_for_adv:3"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-knee_injuries-knee_fracture_surgery_monitoring_for_adv:2",
+          "paper-knee_injuries-knee_fracture_surgery_monitoring_for_adv:1",
+          "paper-knee_injuries-knee_fracture_surgery_monitoring_for_adv:3"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-knee_injuries-knee_fracture_surgery_monitoring_for_adv:1",
+          "paper-knee_injuries-knee_fracture_surgery_monitoring_for_adv:2",
+          "paper-knee_injuries-knee_fracture_surgery_monitoring_for_adv:2"
+        ]
+      }
+    },
+    {
+      "id": "lit-12",
+      "collection": "clinical_lit",
+      "query": "highlighting surgical instruments during total knee arthroplasty",
+      "n_relevant": 1,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-knee_injuries-development_of_a_highlighting_system_for:1",
+          "paper-knee_injuries-development_of_a_highlighting_system_for:1",
+          "paper-knee_injuries-development_of_a_highlighting_system_for:1"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-knee_injuries-development_of_a_highlighting_system_for:2",
+          "paper-knee_injuries-development_of_a_highlighting_system_for:6",
+          "paper-knee_injuries-development_of_a_highlighting_system_for:1"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-knee_injuries-development_of_a_highlighting_system_for:2",
+          "paper-knee_injuries-development_of_a_highlighting_system_for:1",
+          "paper-knee_injuries-development_of_a_highlighting_system_for:1"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "paper-knee_injuries-development_of_a_highlighting_system_for:1",
+          "paper-knee_injuries-development_of_a_highlighting_system_for:1",
+          "paper-knee_injuries-development_of_a_highlighting_system_for:3"
+        ]
+      }
+    },
+    {
+      "id": "agi-01",
+      "collection": "agilent",
+      "query": "whole slide scanner cleared for primary diagnostic use in pathology",
+      "n_relevant": 2,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "agilent-nanozoomer:agilent-nanozoomer:s1:0",
+          "agilent-digital-pathology-scanners:agilent-digital-pathology-scanners:s1:0",
+          "agilent-nanozoomer:agilent-nanozoomer:s4:0"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "agilent-digital-pathology-scanners:agilent-digital-pathology-scanners:s1:0",
+          "agilent-nanozoomer:agilent-nanozoomer:s1:0",
+          "agilent-digital-pathology:agilent-digital-pathology:s0:0"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "agilent-nanozoomer:agilent-nanozoomer:s1:0",
+          "agilent-digital-pathology-scanners:agilent-digital-pathology-scanners:s1:0",
+          "agilent-digital-pathology:agilent-digital-pathology:s0:0"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "agilent-nanozoomer:agilent-nanozoomer:s1:0",
+          "agilent-digital-pathology-scanners:agilent-digital-pathology-scanners:s1:0",
+          "agilent-digital-pathology:agilent-digital-pathology:s0:0"
+        ]
+      }
+    },
+    {
+      "id": "agi-02",
+      "collection": "agilent",
+      "query": "automated instrument for special histochemical stains",
+      "n_relevant": 1,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "agilent-artisan-link-pro:agilent-artisan-link-pro:s1:0",
+          "agilent-artisan-link-pro:agilent-artisan-link-pro:s2:0",
+          "agilent-artisan-link-pro:agilent-artisan-link-pro:s4:0"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "agilent-artisan-link-pro:agilent-artisan-link-pro:s2:0",
+          "agilent-artisan-link-pro:agilent-artisan-link-pro:s1:0",
+          "agilent-digital-pathology-scanners:agilent-digital-pathology-scanners:s1:0"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "agilent-artisan-link-pro:agilent-artisan-link-pro:s1:0",
+          "agilent-artisan-link-pro:agilent-artisan-link-pro:s2:0",
+          "agilent-nanozoomer:agilent-nanozoomer:s1:0"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "agilent-artisan-link-pro:agilent-artisan-link-pro:s1:0",
+          "agilent-artisan-link-pro:agilent-artisan-link-pro:s2:0",
+          "agilent-artisan-link-pro:agilent-artisan-link-pro:s4:0"
+        ]
+      }
+    },
+    {
+      "id": "agi-03",
+      "collection": "agilent",
+      "query": "measure mitochondrial respiration and glycolysis in live cells in real time",
+      "n_relevant": 2,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.8772153153380493,
+        "top": [
+          "agilent-seahorse-xf:agilent-seahorse-xf:s6:0",
+          "agilent-seahorse-xf:agilent-seahorse-xf:s2:0",
+          "agilent-seahorse-xf:agilent-seahorse-xf:s1:0"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.8065735963827293,
+        "top": [
+          "agilent-seahorse-xf:agilent-seahorse-xf:s6:0",
+          "agilent-seahorse-xf:agilent-seahorse-xf:s1:0",
+          "agilent-seahorse-xf:agilent-seahorse-xf:s2:0"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.8503449055347546,
+        "top": [
+          "agilent-seahorse-xf:agilent-seahorse-xf:s6:0",
+          "agilent-seahorse-xf:agilent-seahorse-xf:s2:0",
+          "agilent-seahorse-xf:agilent-seahorse-xf:s1:0"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "agilent-seahorse-xf:agilent-seahorse-xf:s6:0",
+          "agilent-press-2023-scientists-choice:agilent-press-2023-scientists-choice:s1:0",
+          "agilent-seahorse-xf:agilent-seahorse-xf:s1:0"
+        ]
+      }
+    },
+    {
+      "id": "agi-04",
+      "collection": "agilent",
+      "query": "which Agilent product won a drug discovery award",
+      "n_relevant": 1,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "agilent-press-2023-scientists-choice:agilent-press-2023-scientists-choice:s1:0",
+          "agilent-seahorse-xf:agilent-seahorse-xf:s8:0",
+          "agilent-press-2023-scientists-choice:agilent-press-2023-scientists-choice:s2:0"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "agilent-press-2023-scientists-choice:agilent-press-2023-scientists-choice:s2:0",
+          "agilent-press-2023-scientists-choice:agilent-press-2023-scientists-choice:s1:0",
+          "agilent-press-2023-scientists-choice:agilent-press-2023-scientists-choice:s1:2575"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "agilent-press-2023-scientists-choice:agilent-press-2023-scientists-choice:s1:0",
+          "agilent-press-2023-scientists-choice:agilent-press-2023-scientists-choice:s2:0",
+          "agilent-seahorse-xf:agilent-seahorse-xf:s8:0"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "agilent-press-2023-scientists-choice:agilent-press-2023-scientists-choice:s1:0",
+          "agilent-seahorse-xf:agilent-seahorse-xf:s8:0",
+          "agilent-press-2023-scientists-choice:agilent-press-2023-scientists-choice:s2:0"
+        ]
+      }
+    },
+    {
+      "id": "agi-05",
+      "collection": "agilent",
+      "query": "AI image analysis applications and image management for pathology labs",
+      "n_relevant": 1,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "agilent-digital-pathology:agilent-digital-pathology:s0:0",
+          "agilent-nanozoomer:agilent-nanozoomer:s2:0",
+          "agilent-digital-pathology-scanners:agilent-digital-pathology-scanners:s1:0"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "agilent-digital-pathology:agilent-digital-pathology:s0:0",
+          "agilent-digital-pathology-scanners:agilent-digital-pathology-scanners:s1:0",
+          "agilent-nanozoomer:agilent-nanozoomer:s3:0"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "agilent-digital-pathology:agilent-digital-pathology:s0:0",
+          "agilent-digital-pathology-scanners:agilent-digital-pathology-scanners:s1:0",
+          "agilent-nanozoomer:agilent-nanozoomer:s2:0"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "agilent-digital-pathology:agilent-digital-pathology:s0:0",
+          "agilent-digital-pathology-scanners:agilent-digital-pathology-scanners:s1:0",
+          "agilent-nanozoomer:agilent-nanozoomer:s2:0"
+        ]
+      }
+    },
+    {
+      "id": "agi-06",
+      "collection": "agilent",
+      "query": "high-capacity slide scanner with continuous loading for busy clinical labs",
+      "n_relevant": 1,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "agilent-digital-pathology-scanners:agilent-digital-pathology-scanners:s1:0",
+          "agilent-nanozoomer:agilent-nanozoomer:s1:0",
+          "agilent-digital-pathology:agilent-digital-pathology:s0:0"
+        ]
+      },
+      "dense": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg@10": 0.5,
+        "top": [
+          "agilent-nanozoomer:agilent-nanozoomer:s1:0",
+          "agilent-nanozoomer:agilent-nanozoomer:s2:0",
+          "agilent-digital-pathology-scanners:agilent-digital-pathology-scanners:s1:0"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.5,
+        "ndcg@10": 0.6309297535714575,
+        "top": [
+          "agilent-nanozoomer:agilent-nanozoomer:s1:0",
+          "agilent-digital-pathology-scanners:agilent-digital-pathology-scanners:s1:0",
+          "agilent-nanozoomer:agilent-nanozoomer:s2:0"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "agilent-digital-pathology-scanners:agilent-digital-pathology-scanners:s1:0",
+          "agilent-nanozoomer:agilent-nanozoomer:s2:0",
+          "agilent-nanozoomer:agilent-nanozoomer:s1:0"
+        ]
+      }
+    },
+    {
+      "id": "trial-01",
+      "collection": "trials",
+      "query": "continuous glucose monitoring trials in type 1 diabetes",
+      "n_relevant": 71,
+      "bm25": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.5,
+        "ndcg@10": 0.5368103404171507,
+        "top": [
+          "ctg-diabetes:NCT05200390",
+          "ctg-diabetes:NCT00406133",
+          "ctg-diabetes:NCT03557892"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.8572048559638628,
+        "top": [
+          "ctg-diabetes:NCT00406133",
+          "ctg-diabetes:NCT02137031",
+          "ctg-diabetes:NCT00824148"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.866947989864271,
+        "top": [
+          "ctg-diabetes:NCT00406133",
+          "ctg-diabetes:NCT03605979",
+          "ctg-diabetes:NCT02734667"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.8630152897016883,
+        "top": [
+          "ctg-diabetes:NCT00824148",
+          "ctg-diabetes:NCT01569841",
+          "ctg-diabetes:NCT00406133"
+        ]
+      }
+    },
+    {
+      "id": "trial-02",
+      "collection": "trials",
+      "query": "platelet-rich plasma injections for knee injuries",
+      "n_relevant": 6,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.6238470455881188,
+        "top": [
+          "ctg-knee_injuries:NCT03176641",
+          "ctg-knee_injuries:NCT05328674",
+          "ctg-knee_injuries:NCT03024801"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.4034698846650846,
+        "top": [
+          "ctg-knee_injuries:NCT06082531",
+          "ctg-knee_injuries:NCT01406821",
+          "ctg-knee_injuries:NCT03024801"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.5,
+        "ndcg@10": 0.5068650170648672,
+        "top": [
+          "ctg-knee_injuries:NCT03024801",
+          "ctg-knee_injuries:NCT03176641",
+          "ctg-knee_injuries:NCT01406821"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.5,
+        "ndcg@10": 0.5041767792801809,
+        "top": [
+          "ctg-knee_injuries:NCT01406821",
+          "ctg-knee_injuries:NCT06082531",
+          "ctg-knee_injuries:NCT03024801"
+        ]
+      }
+    },
+    {
+      "id": "trial-03",
+      "collection": "trials",
+      "query": "statin therapy in patients with myocardial infarction",
+      "n_relevant": 59,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.7759944384848244,
+        "top": [
+          "ctg-heart_attack:NCT01923077",
+          "ctg-heart_attack:NCT05184530",
+          "ctg-heart_attack:NCT00808717"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.7827392871477702,
+        "top": [
+          "ctg-heart_attack:NCT00128024",
+          "ctg-heart_attack:NCT00652717",
+          "ctg-heart_attack:NCT01372839"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.8165901947515999,
+        "top": [
+          "ctg-heart_attack:NCT01923077",
+          "ctg-heart_attack:NCT01205347",
+          "ctg-heart_attack:NCT05184530"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "ctg-heart_attack:NCT00128024",
+          "ctg-heart_attack:NCT01923077",
+          "ctg-heart_attack:NCT01997294"
+        ]
+      }
+    },
+    {
+      "id": "trial-04",
+      "collection": "trials",
+      "query": "remdesivir treatment for hospitalized COVID-19 patients",
+      "n_relevant": 46,
+      "bm25": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "ctg-covid:NCT04410354",
+          "ctg-covid:NCT04321993",
+          "ctg-diabetes:NCT04970719"
+        ]
+      },
+      "dense": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.933745776545611,
+        "top": [
+          "ctg-covid:NCT06729593",
+          "ctg-covid:NCT04321993",
+          "ctg-covid:NCT04871633"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "ctg-covid:NCT04321993",
+          "ctg-covid:NCT05239988",
+          "ctg-covid:NCT04257656"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "top": [
+          "ctg-covid:NCT06729593",
+          "ctg-covid:NCT04321993",
+          "ctg-covid:NCT04252664"
+        ]
+      }
+    },
+    {
+      "id": "trial-05",
+      "collection": "trials",
+      "query": "rehabilitation after anterior cruciate ligament reconstruction",
+      "n_relevant": 29,
+      "bm25": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.5,
+        "ndcg@10": 0.2489083270225946,
+        "top": [
+          "ctg-knee_injuries:NCT05487768",
+          "ctg-knee_injuries:NCT05719974",
+          "ctg-knee_injuries:NCT04847258"
+        ]
+      },
+      "dense": {
+        "hit@1": 0.0,
+        "hit@5": 1.0,
+        "mrr": 0.5,
+        "ndcg@10": 0.32730659600126993,
+        "top": [
+          "ctg-knee_injuries:NCT05423184",
+          "ctg-knee_injuries:NCT05719974",
+          "ctg-knee_injuries:NCT05481918"
+        ]
+      },
+      "hybrid": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.5711601909662336,
+        "top": [
+          "ctg-knee_injuries:NCT05719974",
+          "ctg-knee_injuries:NCT05423184",
+          "ctg-knee_injuries:NCT06809920"
+        ]
+      },
+      "hybrid_rerank": {
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@10": 0.6117748521784964,
+        "top": [
+          "ctg-knee_injuries:NCT06513988",
+          "ctg-knee_injuries:NCT05929261",
+          "ctg-knee_injuries:NCT05481918"
+        ]
+      }
+    }
+  ],
+  "table_md": "| collection | mode | n | hit@1 | hit@5 | mrr | ndcg@10 |\n|---|---|---|---|---|---|---|\n| ALL | bm25 | 59 | 0.695 | 0.864 | 0.767 | 0.665 |\n| ALL | dense | 59 | 0.695 | 0.898 | 0.779 | 0.680 |\n| ALL | hybrid | 59 | 0.763 | 0.915 | 0.821 | 0.700 |\n| ALL | hybrid_rerank | 59 | 0.797 | 0.966 | 0.871 | 0.761 |\n| agilent | bm25 | 6 | 1.000 | 1.000 | 1.000 | 0.980 |\n| agilent | dense | 6 | 0.833 | 1.000 | 0.889 | 0.884 |\n| agilent | hybrid | 6 | 0.833 | 1.000 | 0.917 | 0.914 |\n| agilent | hybrid_rerank | 6 | 1.000 | 1.000 | 1.000 | 1.000 |\n| clinical_lit | bm25 | 12 | 1.000 | 1.000 | 1.000 | 0.955 |\n| clinical_lit | dense | 12 | 1.000 | 1.000 | 1.000 | 0.968 |\n| clinical_lit | hybrid | 12 | 1.000 | 1.000 | 1.000 | 0.961 |\n| clinical_lit | hybrid_rerank | 12 | 1.000 | 1.000 | 1.000 | 0.961 |\n| sec_filings | bm25 | 12 | 0.583 | 0.833 | 0.681 | 0.497 |\n| sec_filings | dense | 12 | 0.667 | 1.000 | 0.808 | 0.650 |\n| sec_filings | hybrid | 12 | 0.833 | 0.917 | 0.883 | 0.646 |\n| sec_filings | hybrid_rerank | 12 | 0.750 | 1.000 | 0.875 | 0.673 |\n| sofi | bm25 | 12 | 0.417 | 0.750 | 0.538 | 0.444 |\n| sofi | dense | 12 | 0.500 | 0.667 | 0.562 | 0.367 |\n| sofi | hybrid | 12 | 0.500 | 0.750 | 0.576 | 0.429 |\n| sofi | hybrid_rerank | 12 | 0.583 | 0.833 | 0.694 | 0.547 |\n| tech_docs | bm25 | 12 | 0.667 | 0.750 | 0.718 | 0.618 |\n| tech_docs | dense | 12 | 0.500 | 0.833 | 0.639 | 0.642 |\n| tech_docs | hybrid | 12 | 0.667 | 0.917 | 0.746 | 0.637 |\n| tech_docs | hybrid_rerank | 12 | 0.750 | 1.000 | 0.840 | 0.729 |\n| trials | bm25 | 5 | 0.600 | 1.000 | 0.800 | 0.637 |\n| trials | dense | 5 | 0.800 | 1.000 | 0.900 | 0.661 |\n| trials | hybrid | 5 | 0.800 | 1.000 | 0.900 | 0.752 |\n| trials | hybrid_rerank | 5 | 0.800 | 1.000 | 0.900 | 0.796 |"
+}

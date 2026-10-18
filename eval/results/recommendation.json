@@ -1,0 +1,254 @@
+{
+  "generated_at": "2026-10-18 12:12:33",
+  "summary": [
+    {
+      "recommender": "cisco_platforms",
+      "variant": "full",
+      "n": 6,
+      "hit@1": 1.0,
+      "p@3": 0.7222222222222222,
+      "ndcg@3": 0.7950646366051056
+    },
+    {
+      "recommender": "cisco_platforms",
+      "variant": "similarity_only",
+      "n": 6,
+      "hit@1": 0.5,
+      "p@3": 0.2222222222222222,
+      "ndcg@3": 0.35080759528038147
+    },
+    {
+      "recommender": "agilent_products",
+      "variant": "full",
+      "n": 3,
+      "hit@1": 1.0,
+      "p@3": 0.7777777777777777,
+      "ndcg@3": 0.8439710432204549
+    },
+    {
+      "recommender": "agilent_products",
+      "variant": "similarity_only",
+      "n": 3,
+      "hit@1": 0.6666666666666666,
+      "p@3": 0.6666666666666666,
+      "ndcg@3": 0.6634906102699877
+    }
+  ],
+  "details": [
+    {
+      "kind": "cisco_platforms",
+      "id": "small-branch",
+      "full_top3": [
+        "C8200-1N-4T",
+        "C8300-2N2S-6T",
+        "C8200L-1N-4T"
+      ],
+      "similarity_top3": [
+        "C8300-2N2S-4T2X",
+        "ASR1001-X",
+        "ASR1006-X"
+      ],
+      "full": {
+        "hit@1": 1.0,
+        "p@3": 0.6666666666666666,
+        "ndcg@3": 0.8344475896326595
+      },
+      "similarity_only": {
+        "hit@1": 0.0,
+        "p@3": 0.0,
+        "ndcg@3": 0.0
+      }
+    },
+    {
+      "kind": "cisco_platforms",
+      "id": "large-branch-10g",
+      "full_top3": [
+        "ASR 1001-HX",
+        "C8300-2N2S-4T2X",
+        "ASR1002-HX"
+      ],
+      "similarity_top3": [
+        "ASR 1001-HX",
+        "ASR1013",
+        "ASR1001-X"
+      ],
+      "full": {
+        "hit@1": 1.0,
+        "p@3": 1.0,
+        "ndcg@3": 0.6291344046077069
+      },
+      "similarity_only": {
+        "hit@1": 1.0,
+        "p@3": 0.3333333333333333,
+        "ndcg@3": 0.18543279769614657
+      }
+    },
+    {
+      "kind": "cisco_platforms",
+      "id": "cloud",
+      "full_top3": [
+        "Catalyst 8000V"
+      ],
+      "similarity_top3": [
+        "Catalyst 8000V",
+        "C8300-2N2S-4T2X",
+        "ASR1006-X"
+      ],
+      "full": {
+        "hit@1": 1.0,
+        "p@3": 0.3333333333333333,
+        "ndcg@3": 1.0
+      },
+      "similarity_only": {
+        "hit@1": 1.0,
+        "p@3": 0.3333333333333333,
+        "ndcg@3": 1.0
+      }
+    },
+    {
+      "kind": "cisco_platforms",
+      "id": "replace-isr4331",
+      "full_top3": [
+        "C8300-1N1S-4T2X",
+        "C8300-1N1S-6T",
+        "C8300-2N2S-6T"
+      ],
+      "similarity_top3": [
+        "ISR4331-DC",
+        "ISR4431",
+        "ISR4321"
+      ],
+      "full": {
+        "hit@1": 1.0,
+        "p@3": 1.0,
+        "ndcg@3": 0.6291344046077069
+      },
+      "similarity_only": {
+        "hit@1": 0.0,
+        "p@3": 0.0,
+        "ndcg@3": 0.0
+      }
+    },
+    {
+      "kind": "cisco_platforms",
+      "id": "headend-100g",
+      "full_top3": [
+        "ASR1006-X",
+        "ASR1013",
+        "ASR1009-X"
+      ],
+      "similarity_top3": [
+        "ASR1006-X",
+        "ASR1002-HX",
+        "ASR1006"
+      ],
+      "full": {
+        "hit@1": 1.0,
+        "p@3": 1.0,
+        "ndcg@3": 0.9514426589871553
+      },
+      "similarity_only": {
+        "hit@1": 1.0,
+        "p@3": 0.3333333333333333,
+        "ndcg@3": 0.5562983930884396
+      }
+    },
+    {
+      "kind": "cisco_platforms",
+      "id": "regional-aggregation",
+      "full_top3": [
+        "ASR1002-HX",
+        "ASR1006",
+        "ASR1013"
+      ],
+      "similarity_top3": [
+        "ASR1001-X",
+        "ASR1006",
+        "ASR1002-HX"
+      ],
+      "full": {
+        "hit@1": 1.0,
+        "p@3": 0.3333333333333333,
+        "ndcg@3": 0.7262287617954056
+      },
+      "similarity_only": {
+        "hit@1": 0.0,
+        "p@3": 0.3333333333333333,
+        "ndcg@3": 0.3631143808977028
+      }
+    },
+    {
+      "kind": "agilent_products",
+      "id": "primary-dx-scanner",
+      "full_top3": [
+        "NanoZoomer® S360MD Slide Scanner System",
+        "Digital Pathology Scanners",
+        "Agilent S540MD Slide Scanner System"
+      ],
+      "similarity_top3": [
+        "Digital Pathology Scanners",
+        "NanoZoomer® S360MD Slide Scanner System",
+        "Agilent S540MD Slide Scanner System"
+      ],
+      "full": {
+        "hit@1": 1.0,
+        "p@3": 0.6666666666666666,
+        "ndcg@3": 0.9639404333166532
+      },
+      "similarity_only": {
+        "hit@1": 0.0,
+        "p@3": 0.6666666666666666,
+        "ndcg@3": 0.6590018048024133
+      }
+    },
+    {
+      "kind": "agilent_products",
+      "id": "special-stains",
+      "full_top3": [
+        "Artisan Link Pro Special Staining System",
+        "Special Stains Kits",
+        "Special Staining Accessories"
+      ],
+      "similarity_top3": [
+        "Artisan Link Pro Special Staining System",
+        "Special Stains Kits",
+        "Digital Pathology Scanners"
+      ],
+      "full": {
+        "hit@1": 1.0,
+        "p@3": 1.0,
+        "ndcg@3": 1.0
+      },
+      "similarity_only": {
+        "hit@1": 1.0,
+        "p@3": 0.6666666666666666,
+        "ndcg@3": 0.878961873034099
+      }
+    },
+    {
+      "kind": "agilent_products",
+      "id": "cell-metabolism",
+      "full_top3": [
+        "Agilent Seahorse XF Pro Analyzer",
+        "Plate Reader Metabolic Assays",
+        "XF Software"
+      ],
+      "similarity_top3": [
+        "Plate Reader Metabolic Assays",
+        "Agilent Seahorse XF Pro Analyzer",
+        "XF Software"
+      ],
+      "full": {
+        "hit@1": 1.0,
+        "p@3": 0.6666666666666666,
+        "ndcg@3": 0.5679726963447116
+      },
+      "similarity_only": {
+        "hit@1": 1.0,
+        "p@3": 0.6666666666666666,
+        "ndcg@3": 0.45250815297345076
+      }
+    }
+  ],
+  "table_md": "| recommender | variant | n | hit@1 | p@3 | ndcg@3 |\n|---|---|---|---|---|---|\n| cisco_platforms | full | 6 | 1.000 | 0.722 | 0.795 |\n| cisco_platforms | similarity_only | 6 | 0.500 | 0.222 | 0.351 |\n| agilent_products | full | 3 | 1.000 | 0.778 | 0.844 |\n| agilent_products | similarity_only | 3 | 0.667 | 0.667 | 0.663 |"
+}

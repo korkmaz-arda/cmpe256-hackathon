@@ -1,0 +1,13 @@
+# Tested in the conda env `cmpe256` (Python 3.11).
+claude-agent-sdk==0.2.168   # Claude via the local Claude Code login (no API key)
+pydantic>=2.6
+pyyaml>=6
+numpy>=1.26
+torch>=2.2                  # local embeddings/reranker (GPU if available)
+sentence-transformers>=3.0  # BAAI/bge-base-en-v1.5 + BAAI/bge-reranker-base
+rank-bm25==0.2.2
+pymupdf>=1.24
+beautifulsoup4>=4.12
+streamlit>=1.40
+pandas>=2.0                 # Streamlit tables
+pytest>=8

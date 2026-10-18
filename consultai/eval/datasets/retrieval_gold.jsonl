@@ -1,0 +1,59 @@
+{"id": "tech-01", "collection": "tech_docs", "query": "Which AC power supply options can be ordered for the 1RU Catalyst 8300 and what wattages are available?", "phrases": ["PWR-CC1-250WAC"]}
+{"id": "tech-02", "collection": "tech_docs", "query": "When did Cisco stop selling the 4000 Series ISR and how long will it still be supported?", "phrases": ["End-of-sale date: January 20, 2025"]}
+{"id": "tech-03", "collection": "tech_docs", "query": "What does Cisco position as the replacement or upgrade path for ISR 4000 routers?", "phrases": ["Replacement/upgrade"]}
+{"id": "tech-04", "collection": "tech_docs", "query": "Can the virtual Catalyst 8000V router be deployed in public clouds such as AWS?", "phrases": ["Amazon Web Services"]}
+{"id": "tech-05", "collection": "tech_docs", "query": "How far can memory be upgraded on the C8200-1N-4T branch router?", "phrases": ["32 GB DRAM"]}
+{"id": "tech-06", "collection": "tech_docs", "query": "Which route processor modules are used in the ASR 1006-X chassis?", "phrases": ["ASR1000-RP3"]}
+{"id": "tech-07", "collection": "tech_docs", "query": "embedded services processor ESP200 forwarding throughput on ASR 1000", "phrases": ["ESP200"]}
+{"id": "tech-08", "collection": "tech_docs", "query": "How does Google Cloud protect MCP traffic against prompt injection and sensitive data leakage?", "phrases": ["Model Armor"]}
+{"id": "tech-09", "collection": "tech_docs", "query": "What role does a vector database play in retrieval-augmented generation?", "phrases": ["vector database"]}
+{"id": "tech-10", "collection": "tech_docs", "query": "How does grounding a model with retrieved data reduce made-up answers?", "phrases": ["hallucination"]}
+{"id": "tech-11", "collection": "tech_docs", "query": "What encrypted VPN throughput does the entry Catalyst 8200 model support?", "phrases": ["up to 1 Gbps IPsec"]}
+{"id": "tech-12", "collection": "tech_docs", "query": "Which ISR 4000 model offers the highest performance, up to 10 Gbps?", "phrases": ["ISR4461"]}
+{"id": "sec-01", "collection": "sec_filings", "query": "How did the Splunk acquisition change Cisco's business?", "phrases": ["Splunk"]}
+{"id": "sec-02", "collection": "sec_filings", "query": "How many employees does Agilent have?", "phrases": ["approximately 18,"]}
+{"id": "sec-03", "collection": "sec_filings", "query": "What antitrust lawsuits does Alphabet face from the U.S. government?", "phrases": ["Department of Justice"]}
+{"id": "sec-04", "collection": "sec_filings", "query": "Cisco greenhouse gas emissions reduction and net zero target", "phrases": ["net zero"]}
+{"id": "sec-05", "collection": "sec_filings", "query": "Alphabet commitment to run on clean energy around the clock", "phrases": ["carbon-free"]}
+{"id": "sec-06", "collection": "sec_filings", "query": "Which contract development and manufacturing business did Agilent acquire?", "phrases": ["BioVectra"]}
+{"id": "sec-07", "collection": "sec_filings", "query": "How fast did Google's cloud segment revenue grow?", "phrases": ["Google Cloud revenues"]}
+{"id": "sec-08", "collection": "sec_filings", "query": "How do import duties and trade policy affect Agilent?", "phrases": ["tariff"]}
+{"id": "sec-09", "collection": "sec_filings", "query": "Does Cisco depend on single-source suppliers for components?", "phrases": ["limited or single sources"]}
+{"id": "sec-10", "collection": "sec_filings", "query": "Alphabet generative AI model family and products", "phrases": ["Gemini"]}
+{"id": "sec-11", "collection": "sec_filings", "query": "Agilent revenue expected to be recognized from remaining performance obligations", "phrases": ["remaining performance obligations"], "where": {"company": "Agilent"}}
+{"id": "sec-12", "collection": "sec_filings", "query": "Who oversees Cisco's cybersecurity risk management program?", "phrases": ["Chief Security and Trust Officer"]}
+{"id": "csr-01", "collection": "sofi", "query": "How many people in the world faced hunger in 2023?", "phrases": ["713 and 757 million"]}
+{"id": "csr-02", "collection": "sofi", "query": "How many people were moderately or severely food insecure in 2023?", "phrases": ["2.33 billion"]}
+{"id": "csr-03", "collection": "sofi", "query": "What are the major drivers behind rising food insecurity and malnutrition?", "phrases": ["conflict, climate extremes and economic downturns"]}
+{"id": "csr-04", "collection": "sofi", "query": "How many people were unable to afford a healthy diet?", "phrases": ["2.8 billion"]}
+{"id": "csr-05", "collection": "sofi", "query": "How did rising food prices affect food security and diets?", "phrases": ["food price inflation"]}
+{"id": "csr-06", "collection": "sofi", "query": "How many children under five were stunted in 2022?", "phrases": ["148.1 million"]}
+{"id": "csr-07", "collection": "sofi", "query": "How much additional financing is needed to end hunger?", "phrases": ["USD 176 billion"]}
+{"id": "csr-08", "collection": "sofi", "query": "How is urbanization changing agrifood systems?", "phrases": ["urbanization is transforming agrifood systems"]}
+{"id": "csr-09", "collection": "sofi", "query": "How do the agencies now define financing for food security and nutrition?", "phrases": ["a new definition of financing"]}
+{"id": "csr-10", "collection": "sofi", "query": "malnutrition in war zones and countries in protracted food crises", "phrases": ["protracted"]}
+{"id": "csr-11", "collection": "sofi", "query": "How many people are projected to be chronically undernourished in 2030?", "phrases": ["582 million"]}
+{"id": "csr-12", "collection": "sofi", "query": "prevalence of anaemia in women aged 15 to 49", "phrases": ["anaemia"]}
+{"id": "lit-01", "collection": "clinical_lit", "query": "fog computing on wearable edge devices to predict heart attacks", "gold_sources": ["paper-heart_attack-fog-driven_heart_attack_prediction_from"]}
+{"id": "lit-02", "collection": "clinical_lit", "query": "IoT heart-rate monitor design for detecting a heart attack", "gold_sources": ["paper-heart_attack-iot_based_heart_rate_monitoring_system_d"]}
+{"id": "lit-03", "collection": "clinical_lit", "query": "comparison of support vector machines and k-nearest neighbours for heart disease detection", "gold_sources": ["paper-heart_attack-machine_learning_model_for_heart_disease"]}
+{"id": "lit-04", "collection": "clinical_lit", "query": "deep learning detection of COVID-19 from lung images", "gold_sources": ["paper-covid-covid_detection_using_deep_learning", "paper-covid-extraction_of_features_from_lung_image_f"]}
+{"id": "lit-05", "collection": "clinical_lit", "query": "web portal that forecasts COVID-19 cases in Bangladesh", "gold_sources": ["paper-covid-covid-19_update_forecast_and_assistant"]}
+{"id": "lit-06", "collection": "clinical_lit", "query": "anxiety in long COVID analysed with big data", "gold_sources": ["paper-covid-big_data_analytics_on_irritating_anxiety"]}
+{"id": "lit-07", "collection": "clinical_lit", "query": "Bayesian network relationships between biomarkers in type 1 and type 2 diabetes", "gold_sources": ["paper-diabetes-exploring_biomarker_relationships_in_bot"]}
+{"id": "lit-08", "collection": "clinical_lit", "query": "mobile app patient education for type 2 diabetes self-management", "gold_sources": ["paper-diabetes-improving_self-management_of_type_2_diab"]}
+{"id": "lit-09", "collection": "clinical_lit", "query": "LLM-powered conversational health agent for diabetes patients", "gold_sources": ["paper-diabetes-knowledge-infused_llm-powered_conversati"]}
+{"id": "lit-10", "collection": "clinical_lit", "query": "powered wearable knee exoskeleton for lower-limb rehabilitation", "gold_sources": ["paper-knee_injuries-design_and_control_of_a_novel_powered_we", "paper-knee_injuries-design_and_analysis_of_a_knee_exoskeleto"]}
+{"id": "lit-11", "collection": "clinical_lit", "query": "IoT system for monitoring patients after knee fracture surgery", "gold_sources": ["paper-knee_injuries-knee_fracture_surgery_monitoring_for_adv"]}
+{"id": "lit-12", "collection": "clinical_lit", "query": "highlighting surgical instruments during total knee arthroplasty", "gold_sources": ["paper-knee_injuries-development_of_a_highlighting_system_for"]}
+{"id": "agi-01", "collection": "agilent", "query": "whole slide scanner cleared for primary diagnostic use in pathology", "gold_sources": ["agilent-nanozoomer", "agilent-digital-pathology-scanners"]}
+{"id": "agi-02", "collection": "agilent", "query": "automated instrument for special histochemical stains", "gold_sources": ["agilent-artisan-link-pro"]}
+{"id": "agi-03", "collection": "agilent", "query": "measure mitochondrial respiration and glycolysis in live cells in real time", "gold_sources": ["agilent-seahorse-xf", "agilent-press-2023-scientists-choice"]}
+{"id": "agi-04", "collection": "agilent", "query": "which Agilent product won a drug discovery award", "gold_sources": ["agilent-press-2023-scientists-choice"]}
+{"id": "agi-05", "collection": "agilent", "query": "AI image analysis applications and image management for pathology labs", "gold_sources": ["agilent-digital-pathology"]}
+{"id": "agi-06", "collection": "agilent", "query": "high-capacity slide scanner with continuous loading for busy clinical labs", "gold_sources": ["agilent-digital-pathology-scanners"]}
+{"id": "trial-01", "collection": "trials", "query": "continuous glucose monitoring trials in type 1 diabetes", "gold_sql": "title LIKE '%continuous glucose monitor%' AND conditions LIKE '%type 1%'"}
+{"id": "trial-02", "collection": "trials", "query": "platelet-rich plasma injections for knee injuries", "gold_sql": "(title || interventions) LIKE '%platelet%' AND conditions LIKE '%knee%'"}
+{"id": "trial-03", "collection": "trials", "query": "statin therapy in patients with myocardial infarction", "gold_sql": "(title || interventions) LIKE '%statin%' AND conditions LIKE '%myocardial infarction%'"}
+{"id": "trial-04", "collection": "trials", "query": "remdesivir treatment for hospitalized COVID-19 patients", "gold_sql": "(title || interventions) LIKE '%remdesivir%'"}
+{"id": "trial-05", "collection": "trials", "query": "rehabilitation after anterior cruciate ligament reconstruction", "gold_sql": "conditions LIKE '%anterior cruciate%' AND title LIKE '%rehabilitation%'"}

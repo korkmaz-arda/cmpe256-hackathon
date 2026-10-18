@@ -1,0 +1,567 @@
+{
+  "generated_at": "2026-10-18 12:09:04",
+  "n": 50,
+  "model": "haiku",
+  "llm": {
+    "exact_set_accuracy": 1.0,
+    "micro_f1": 1.0,
+    "macro_f1": 1.0,
+    "over_routing_rate": 0.0,
+    "under_routing_rate": 0.0,
+    "out_of_scope_accuracy": 1.0,
+    "per_agent": {
+      "technology": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "clinical": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "sec": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "csr": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    }
+  },
+  "knn": {
+    "exact_set_accuracy": 0.68,
+    "micro_f1": 0.81,
+    "macro_f1": 0.81,
+    "over_routing_rate": 0.02,
+    "under_routing_rate": 0.3,
+    "out_of_scope_accuracy": 1.0,
+    "per_agent": {
+      "technology": {
+        "precision": 0.909,
+        "recall": 0.556,
+        "f1": 0.69
+      },
+      "clinical": {
+        "precision": 1.0,
+        "recall": 0.688,
+        "f1": 0.815
+      },
+      "sec": {
+        "precision": 1.0,
+        "recall": 0.722,
+        "f1": 0.839
+      },
+      "csr": {
+        "precision": 1.0,
+        "recall": 0.812,
+        "f1": 0.897
+      }
+    }
+  },
+  "tau_sweep": [
+    {
+      "tau": 0.3,
+      "exact_set_accuracy": 1.0,
+      "micro_f1": 1.0,
+      "macro_f1": 1.0,
+      "over_routing_rate": 0.0,
+      "under_routing_rate": 0.0,
+      "out_of_scope_accuracy": 1.0
+    },
+    {
+      "tau": 0.4,
+      "exact_set_accuracy": 1.0,
+      "micro_f1": 1.0,
+      "macro_f1": 1.0,
+      "over_routing_rate": 0.0,
+      "under_routing_rate": 0.0,
+      "out_of_scope_accuracy": 1.0
+    },
+    {
+      "tau": 0.5,
+      "exact_set_accuracy": 1.0,
+      "micro_f1": 1.0,
+      "macro_f1": 1.0,
+      "over_routing_rate": 0.0,
+      "under_routing_rate": 0.0,
+      "out_of_scope_accuracy": 1.0
+    },
+    {
+      "tau": 0.6,
+      "exact_set_accuracy": 0.98,
+      "micro_f1": 0.993,
+      "macro_f1": 0.993,
+      "over_routing_rate": 0.0,
+      "under_routing_rate": 0.02,
+      "out_of_scope_accuracy": 1.0
+    },
+    {
+      "tau": 0.7,
+      "exact_set_accuracy": 0.94,
+      "micro_f1": 0.977,
+      "macro_f1": 0.978,
+      "over_routing_rate": 0.0,
+      "under_routing_rate": 0.06,
+      "out_of_scope_accuracy": 1.0
+    },
+    {
+      "tau": 0.8,
+      "exact_set_accuracy": 0.9,
+      "micro_f1": 0.962,
+      "macro_f1": 0.962,
+      "over_routing_rate": 0.0,
+      "under_routing_rate": 0.1,
+      "out_of_scope_accuracy": 1.0
+    }
+  ],
+  "knn_grid": [
+    {
+      "abs_threshold": 0.5,
+      "margin": 0.03,
+      "exact": 0.68,
+      "micro_f1": 0.824
+    },
+    {
+      "abs_threshold": 0.5,
+      "margin": 0.06,
+      "exact": 0.7,
+      "micro_f1": 0.855
+    },
+    {
+      "abs_threshold": 0.5,
+      "margin": 0.1,
+      "exact": 0.74,
+      "micro_f1": 0.891
+    },
+    {
+      "abs_threshold": 0.55,
+      "margin": 0.03,
+      "exact": 0.66,
+      "micro_f1": 0.786
+    },
+    {
+      "abs_threshold": 0.55,
+      "margin": 0.06,
+      "exact": 0.68,
+      "micro_f1": 0.81
+    },
+    {
+      "abs_threshold": 0.55,
+      "margin": 0.1,
+      "exact": 0.72,
+      "micro_f1": 0.831
+    },
+    {
+      "abs_threshold": 0.6,
+      "margin": 0.03,
+      "exact": 0.52,
+      "micro_f1": 0.667
+    },
+    {
+      "abs_threshold": 0.6,
+      "margin": 0.06,
+      "exact": 0.54,
+      "micro_f1": 0.68
+    },
+    {
+      "abs_threshold": 0.6,
+      "margin": 0.1,
+      "exact": 0.56,
+      "micro_f1": 0.692
+    },
+    {
+      "abs_threshold": 0.65,
+      "margin": 0.03,
+      "exact": 0.36,
+      "micro_f1": 0.472
+    },
+    {
+      "abs_threshold": 0.65,
+      "margin": 0.06,
+      "exact": 0.38,
+      "micro_f1": 0.489
+    },
+    {
+      "abs_threshold": 0.65,
+      "margin": 0.1,
+      "exact": 0.38,
+      "micro_f1": 0.489
+    }
+  ],
+  "errors": [],
+  "raw_llm": [
+    {
+      "technology": 1.0,
+      "_oos": [
+        "Cisco troubleshooting guides, field notices and configuration guides are not in the sources, so root cause cannot be confirmed from documentation",
+        "Pricing and lead times for replacement parts are not available"
+      ]
+    },
+    {
+      "technology": 1.0,
+      "_oos": []
+    },
+    {
+      "technology": 1.0,
+      "_oos": [
+        "AWS-native VPN and networking services (Site-to-Site VPN, Transit Gateway, VPC pricing and quotas): no AWS documentation was provided",
+        "Pricing, marketplace listing costs, and AWS SLAs: not in the Cisco data sheets provided",
+        "Non-Cisco virtual routers from other vendors: no sources"
+      ]
+    },
+    {
+      "technology": 1.0,
+      "_oos": [
+        "Google Cloud product pricing, SLAs, and detailed IAM configuration steps (not in the available Google Cloud pages)",
+        "Financial or regulatory analysis of Alphabet/Google (not requested)"
+      ]
+    },
+    {
+      "technology": 0.9,
+      "_oos": [
+        "Pricing, SLAs, and product configuration details for Google Cloud RAG services (not in the available sources)",
+        "Legal or compliance validation that the policy answers are correct (not covered by any specialist)"
+      ]
+    },
+    {
+      "technology": 1.0,
+      "_oos": [
+        "Cisco end-of-sale dates and pricing (no lifecycle notices or price lists in the sources)",
+        "Cisco configuration or installation guides for memory/storage upgrades (not in sources)"
+      ]
+    },
+    {
+      "technology": 1.0,
+      "_oos": [
+        "Pricing and quotes: the Cisco sources contain no price lists",
+        "Vendor comparison outside Cisco: no other vendor documentation was provided"
+      ]
+    },
+    {
+      "technology": 1.0,
+      "_oos": [
+        "Pricing and ordering availability (no price lists in sources)",
+        "Installation or configuration guidance beyond the data sheets (no configuration guides provided)"
+      ]
+    },
+    {
+      "clinical": 1.0,
+      "_oos": [
+        "Official regulatory clearance verification (FDA, CE or other registry numbers) beyond the Agilent web pages provided; the sources contain no regulatory filings",
+        "Instrument prices, service contracts and installation details (no price or service documentation)",
+        "Clinical advice on diagnostic decisions for individual patients"
+      ]
+    },
+    {
+      "clinical": 1.0,
+      "_oos": [
+        "Pricing, quotes, and procurement terms for the stainer (no price data in sources)",
+        "Installation, service, and validation details beyond what the Agilent web pages provide (no manuals or service guides)",
+        "Clinical or diagnostic advice on which stains a patient needs"
+      ]
+    },
+    {
+      "clinical": 1.0,
+      "_oos": []
+    },
+    {
+      "clinical": 0.95,
+      "_oos": [
+        "Diagnostic recommendations for individual patients",
+        "Methods outside the provided IEEE corpus (no broader literature search is possible)"
+      ]
+    },
+    {
+      "clinical": 1.0,
+      "_oos": [
+        "Prices, service guides, and part catalogs for the analyzer (not in available sources)"
+      ]
+    },
+    {
+      "clinical": 1.0,
+      "_oos": [
+        "Wearable device product specifications, pricing or part numbers (no Cisco/Google/Agilent sources cover consumer wearables)",
+        "Individual medical advice on using a wearable or acting on its readings",
+        "Outcome data or systematic-review-grade conclusions (sources are registry metadata and a limited paper set)"
+      ]
+    },
+    {
+      "clinical": 1.0,
+      "_oos": [
+        "Trial outcome data or results content (registry metadata only)"
+      ]
+    },
+    {
+      "clinical": 0.9,
+      "_oos": [
+        "Specific knee exoskeleton product recommendations or vendor comparisons (no device catalogue or manuals in sources)",
+        "Individual medical advice on whether a patient should use an exoskeleton",
+        "Regulatory approval status or pricing of knee exoskeletons"
+      ]
+    },
+    {
+      "sec": 1.0,
+      "_oos": []
+    },
+    {
+      "sec": 1.0,
+      "_oos": []
+    },
+    {
+      "sec": 1.0,
+      "_oos": [
+        "Alphabet 10-Qs, 8-Ks, or legal filings beyond the FY2024 and FY2025 10-Ks",
+        "Predictions of legal outcomes or stock-price impact",
+        "Legal advice"
+      ]
+    },
+    {
+      "sec": 1.0,
+      "_oos": []
+    },
+    {
+      "sec": 1.0,
+      "_oos": [
+        "Google Cloud performance after FY2025 (no 10-Qs or earnings releases are available)",
+        "Stock price, analyst estimates or guidance for Google Cloud"
+      ]
+    },
+    {
+      "sec": 1.0,
+      "_oos": [
+        "Acquisitions or margin data after the FY2025 10-K (no 10-Qs, 8-Ks or earnings calls available)",
+        "Stock price or analyst estimate impacts of acquisitions"
+      ]
+    },
+    {
+      "sec": 1.0,
+      "_oos": []
+    },
+    {
+      "sec": 1.0,
+      "_oos": [
+        "Stock prices, valuation, or analyst estimates (not in the 10-K sources)",
+        "Earnings call commentary, 10-Q or 8-K disclosures (not provided)",
+        "Investment recommendations or buy/sell advice"
+      ]
+    },
+    {
+      "csr": 1.0,
+      "_oos": []
+    },
+    {
+      "csr": 1.0,
+      "_oos": []
+    },
+    {
+      "csr": 1.0,
+      "_oos": [
+        "Company-specific food-system or ESG data: no sustainability datasets beyond SOFI 2023 and SOFI 2024 are available"
+      ]
+    },
+    {
+      "csr": 1.0,
+      "_oos": []
+    },
+    {
+      "csr": 1.0,
+      "_oos": [
+        "Country-level data beyond what SOFI 2023 and SOFI 2024 contain",
+        "Recommendations on specific charities or grantees to fund",
+        "Current prevalence data after 2024, because only SOFI 2023 and SOFI 2024 are available"
+      ]
+    },
+    {
+      "csr": 1.0,
+      "_oos": [
+        "Forecasts of future climate events or food prices beyond what the SOFI reports state"
+      ]
+    },
+    {
+      "csr": 1.0,
+      "_oos": [
+        "Company-specific ESG disclosures or sustainability reports (no company named; no CSR reports in the sources)",
+        "Technology investment recommendations (not requested; can be added if the customer asks)",
+        "Programme budget costing and implementation partner selection (no data source covers these)"
+      ]
+    },
+    {
+      "csr": 1.0,
+      "_oos": [
+        "Sources beyond SOFI 2023 and SOFI 2024 are not available; the user's report year is unspecified so both are considered"
+      ]
+    },
+    {
+      "technology": 1.0,
+      "sec": 0.8,
+      "_oos": [
+        "Cisco pricing and discounts (no pricing sources)",
+        "Cisco configuration guides, field notices or troubleshooting (not in the sources)",
+        "Stock price forecasts or analyst estimates (not in the sources)"
+      ]
+    },
+    {
+      "sec": 0.9,
+      "clinical": 0.6,
+      "_oos": [
+        "Agilent pricing, service contracts, and part catalogs (no sources provided)",
+        "Agilent FY2026 or 10-Q data (not in source set)",
+        "Stock price or analyst forecasts"
+      ]
+    },
+    {
+      "csr": 1.0,
+      "technology": 0.5,
+      "_oos": [
+        "Agricultural technology hardware (sensors, drones, precision farming, irrigation, storage) - no sources available",
+        "Rural-specific food-insecurity data beyond the SOFI reports",
+        "Company CSR or ESG commitments in food systems - no sources available"
+      ]
+    },
+    {
+      "csr": 1.0,
+      "sec": 0.6,
+      "_oos": [
+        "Alphabet's own sustainability or CSR reports, philanthropy pages and other non-10-K disclosures: no sources provided, so the SEC agent can only check the 10-Ks",
+        "Alphabet's food-related products or programmes beyond what the 10-Ks disclose"
+      ]
+    },
+    {
+      "technology": 0.9,
+      "clinical": 0.9,
+      "_oos": [
+        "Pricing, SLAs, and procurement terms for Google Cloud and Agilent (no sources)",
+        "Regulatory clearance and compliance certification for clinical diagnosis in the hospital's jurisdiction",
+        "Clinical diagnostic advice for individual patients"
+      ]
+    },
+    {
+      "sec": 0.9,
+      "technology": 0.8,
+      "_oos": [
+        "Google Cloud pricing, SLAs and contract terms (no sources)",
+        "Alphabet stock price or analyst forecasts (not in 10-K sources)",
+        "Google Cloud AI product breadth beyond MCP and RAG pages (no sources)"
+      ]
+    },
+    {
+      "clinical": 0.9,
+      "csr": 0.8,
+      "_oos": [
+        "Individual medical advice or treatment choice for diabetes",
+        "Trial outcome or efficacy data (registry metadata only)",
+        "Recruiting status of trials outside the diabetes export, if the export lacks status fields",
+        "Region-specific diabetes prevalence data not contained in SOFI or the IEEE set"
+      ]
+    },
+    {
+      "csr": 0.9,
+      "clinical": 0.9,
+      "_oos": [
+        "Pricing, sales strategy and procurement terms for the customer's instruments: no source covers these.",
+        "Agilent instrument manuals, service guides and part catalogues: not in the provided sources.",
+        "Clinical advice on anaemia or metabolic conditions for individual patients."
+      ]
+    },
+    {
+      "technology": 0.9,
+      "sec": 0.8,
+      "csr": 0.8,
+      "_oos": [
+        "Clinical workflow, telehealth protocol or device-clinical validity for the health posts: the clinical agent covers only Agilent lab instruments and the literature/trial sets, so it does not fit this request.",
+        "Cisco pricing, quotes, SLAs and field notices: no source covers them.",
+        "Cisco stock price or analyst views: not in the 10-K sources.",
+        "Regional food-security data for a specific country: only the SOFI global reports are available."
+      ]
+    },
+    {
+      "clinical": 0.9,
+      "technology": 0.9,
+      "sec": 0.9,
+      "_oos": [
+        "Vendor prices and quotes for scanners or routers (no price sources)",
+        "Agilent instrument manuals, service guides and part catalogs",
+        "Cisco configuration guides, troubleshooting guides and pricing",
+        "Stock price or valuation forecasts for Agilent or Cisco"
+      ]
+    },
+    {
+      "csr": 1.0,
+      "technology": 0.7,
+      "sec": 0.8,
+      "_oos": [
+        "Listed tech companies other than Alphabet, Cisco and Agilent: no filings or ESG reports in the sources",
+        "Company ESG or CSR reports, which are not in the sources",
+        "Stock prices, analyst ratings or investment recommendations",
+        "Vendor product pricing or deployment costs for food-security projects"
+      ]
+    },
+    {
+      "clinical": 0.9,
+      "technology": 0.7,
+      "sec": 0.8,
+      "_oos": [
+        "Wearable device specifications, validation studies or vendor data: no wearable sources are available",
+        "Google Cloud pricing, SLAs and healthcare compliance certifications (for example HIPAA BAA): not in the Google Cloud sources",
+        "Individual medical advice or clinical decision-making for specific patients",
+        "Alphabet stock price or analyst estimates: not in the 10-K sources"
+      ]
+    },
+    {
+      "clinical": 0.95,
+      "technology": 0.85,
+      "sec": 0.85,
+      "csr": 1.0,
+      "_oos": [
+        "Agilent and Cisco prices, quotes, service contracts and warranties (no pricing sources)",
+        "Cisco troubleshooting, field notices and configuration guides (not in sources)",
+        "Agilent instrument manuals, service guides and part catalogs (not in sources)",
+        "Individual child medical diagnosis or treatment advice",
+        "Program-level operational data for the NGO itself (not provided)",
+        "Sources for NGO-specific budgets or internal network inventory"
+      ]
+    },
+    {
+      "technology": 1.0,
+      "clinical": 0.9,
+      "sec": 0.8,
+      "csr": 0.9,
+      "_oos": [
+        "The organisation's own CSR commitment documents and progress data (only SOFI reports are available)",
+        "Actual supplier list (not named; Cisco, Agilent and Alphabet assumed as the vendors covered by the sources)",
+        "Cisco pricing, SLAs, troubleshooting or field notices (not in the sources)",
+        "Agilent instrument prices, service guides or part catalogues (not in the sources)",
+        "Any IBM products or data (no IBM sources)"
+      ]
+    },
+    {
+      "_oos": [
+        "IBM Power server models, specifications, sizing and purchase recommendation: no IBM sources or documentation are available to any specialist",
+        "IBM vendor financial or risk analysis: the SEC agent only covers Cisco, Agilent and Alphabet 10-K filings"
+      ]
+    },
+    {
+      "_oos": [
+        "Creative writing (poems): no specialist covers poetry; the four domains are Cisco/Google Cloud technology, Agilent/clinical and life-science, Cisco/Agilent/Alphabet SEC filings, and food security/CSR"
+      ]
+    },
+    {
+      "_oos": [
+        "Flight booking to Tokyo: no travel, airline or booking sources are available to any specialist.",
+        "Hotel search near Shibuya: no travel or hotel sources are available to any specialist.",
+        "Booking actions in general: none of the four specialists (technology, clinical, sec, csr) can make reservations."
+      ]
+    },
+    {
+      "_oos": [
+        "Individual medical advice and medication recommendations for a person with active chest pain: no specialist can provide this. The clinical agent covers Agilent lab instruments, IEEE literature and ClinicalTrials.gov data, not patient care.",
+        "Emergency triage: must be handled by emergency services, not this system"
+      ]
+    }
+  ],
+  "summary_md": "| router | exact_set_accuracy | micro_f1 | macro_f1 | over_routing_rate | under_routing_rate | out_of_scope_accuracy |\n|---|---|---|---|---|---|---|\n| LLM (haiku), tau=0.5 | 1.000 | 1.000 | 1.000 | 0.000 | 0.000 | 1.000 |\n| kNN embedding baseline (0.55, 0.06) | 0.680 | 0.810 | 0.810 | 0.020 | 0.300 | 1.000 |\n\n**LLM router per agent (tau=0.5)**\n\n| agent | precision | recall | f1 |\n|---|---|---|---|\n| technology | 1.000 | 1.000 | 1.000 |\n| clinical | 1.000 | 1.000 | 1.000 |\n| sec | 1.000 | 1.000 | 1.000 |\n| csr | 1.000 | 1.000 | 1.000 |\n\n**Threshold sweep (LLM router)**\n\n| tau | exact_set_accuracy | micro_f1 | over_routing_rate | under_routing_rate |\n|---|---|---|---|---|\n| 0.300 | 1.000 | 1.000 | 0.000 | 0.000 |\n| 0.400 | 1.000 | 1.000 | 0.000 | 0.000 |\n| 0.500 | 1.000 | 1.000 | 0.000 | 0.000 |\n| 0.600 | 0.980 | 0.993 | 0.000 | 0.020 |\n| 0.700 | 0.940 | 0.977 | 0.000 | 0.060 |\n| 0.800 | 0.900 | 0.962 | 0.000 | 0.100 |\n\nMisrouted: 0 of 50."
+}

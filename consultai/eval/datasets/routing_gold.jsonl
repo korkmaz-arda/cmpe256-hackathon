@@ -1,0 +1,50 @@
+{"id": "r01", "query": "Our branch router reboots every few hours and the console shows power supply alarms. What should we replace?", "agents": ["technology"]}
+{"id": "r02", "query": "Which Catalyst 8300 model gives us two 10G WAN ports and room for a service module?", "agents": ["technology"]}
+{"id": "r03", "query": "We need a virtual router in our AWS VPC to terminate site-to-site VPNs. What fits?", "agents": ["technology"]}
+{"id": "r04", "query": "How do Google Cloud MCP servers control what tools an AI agent can call?", "agents": ["technology"]}
+{"id": "r05", "query": "Explain how retrieval-augmented generation keeps a chatbot's answers grounded in our policies.", "agents": ["technology"]}
+{"id": "r06", "query": "Our ISR4451 is end of sale; what memory and storage upgrades are still possible on the replacement platform?", "agents": ["technology"]}
+{"id": "r07", "query": "What aggregation router should a regional ISP use for 100 Gbps of encrypted traffic?", "agents": ["technology"]}
+{"id": "r08", "query": "Which network interface modules can we add to a Catalyst 8200 for more LAN ports?", "agents": ["technology"]}
+{"id": "r09", "query": "Our hospital lab wants to scan slides for primary diagnosis. Which scanner is cleared for that?", "agents": ["clinical"]}
+{"id": "r10", "query": "We want to automate special stains in histology. What system is available?", "agents": ["clinical"]}
+{"id": "r11", "query": "How many recruiting interventional trials study type 2 diabetes?", "agents": ["clinical"]}
+{"id": "r12", "query": "What machine-learning methods have been used to detect COVID-19 from chest images?", "agents": ["clinical"]}
+{"id": "r13", "query": "Our pharma team studies mitochondrial function in tumour cells; which analyzer measures real-time metabolism?", "agents": ["clinical"]}
+{"id": "r14", "query": "What evidence is there for wearable devices predicting heart attacks?", "agents": ["clinical"]}
+{"id": "r15", "query": "Which sponsors run the most knee injury trials and how many have posted results?", "agents": ["clinical"]}
+{"id": "r16", "query": "Are knee exoskeletons effective for rehabilitation after injury?", "agents": ["clinical"]}
+{"id": "r17", "query": "What risk factors does Agilent disclose in its latest annual report?", "agents": ["sec"]}
+{"id": "r18", "query": "How much did Cisco's total revenue change in fiscal 2026?", "agents": ["sec"]}
+{"id": "r19", "query": "What antitrust and regulatory exposure does Alphabet report?", "agents": ["sec"]}
+{"id": "r20", "query": "Summarize Cisco's supply chain risks from its 10-K.", "agents": ["sec"]}
+{"id": "r21", "query": "How is Google Cloud performing financially compared with the prior year?", "agents": ["sec"]}
+{"id": "r22", "query": "What acquisitions did Agilent complete and how might they affect margins?", "agents": ["sec"]}
+{"id": "r23", "query": "How does Cisco govern cybersecurity risk according to its filing?", "agents": ["sec"]}
+{"id": "r24", "query": "Compare the operating risks of Cisco and Alphabet for an investor relations briefing.", "agents": ["sec"]}
+{"id": "r25", "query": "How many people faced hunger in 2023 and where is it rising?", "agents": ["csr"]}
+{"id": "r26", "query": "What is the cost of a healthy diet and how many people cannot afford it?", "agents": ["csr"]}
+{"id": "r27", "query": "How does urbanization change diets and food systems?", "agents": ["csr"]}
+{"id": "r28", "query": "What financing is needed to end hunger by 2030?", "agents": ["csr"]}
+{"id": "r29", "query": "Our foundation wants to fund child nutrition. Where are stunting and wasting highest?", "agents": ["csr"]}
+{"id": "r30", "query": "How do climate extremes affect food insecurity?", "agents": ["csr"]}
+{"id": "r31", "query": "Design a CSR program to reduce food insecurity in Sub-Saharan Africa with measurable KPIs.", "agents": ["csr"]}
+{"id": "r32", "query": "What does the State of Food Security report say about conflict and hunger?", "agents": ["csr"]}
+{"id": "r33", "query": "Which Cisco router should replace our ISR 4331s, and how financially stable is Cisco as a supplier?", "agents": ["technology", "sec"]}
+{"id": "r34", "query": "We plan to buy Agilent digital pathology scanners; what are Agilent's business risks as a vendor?", "agents": ["clinical", "sec"]}
+{"id": "r35", "query": "Which technologies could help address the main causes of food insecurity in rural areas?", "agents": ["csr", "technology"]}
+{"id": "r36", "query": "Does Alphabet disclose sustainability commitments relevant to fighting hunger, and what are the biggest hunger drivers?", "agents": ["sec", "csr"]}
+{"id": "r37", "query": "Our hospital wants a RAG assistant on Google Cloud for lab SOPs and a slide scanner for diagnosis.", "agents": ["technology", "clinical"]}
+{"id": "r38", "query": "Is Google Cloud's growth strong enough that we should standardize on its AI and MCP services?", "agents": ["sec", "technology"]}
+{"id": "r39", "query": "Which diabetes trials are recruiting, and how does the burden of malnutrition relate to diabetes risk in poor regions?", "agents": ["clinical", "csr"]}
+{"id": "r40", "query": "We sell lab instruments to nutrition researchers; what does SOFI say about anaemia and which Agilent tools fit metabolic studies?", "agents": ["csr", "clinical"]}
+{"id": "r41", "query": "Plan a connected-clinic network for rural health posts, check Cisco's vendor risk, and align with food security goals.", "agents": ["technology", "sec", "csr"]}
+{"id": "r42", "query": "For our diagnostics lab expansion: pick the pathology scanner, the branch routers to connect sites, and assess Agilent's and Cisco's financial health.", "agents": ["clinical", "technology", "sec"]}
+{"id": "r43", "query": "Which technology investments could improve food security, and which listed tech companies disclose credible sustainability targets?", "agents": ["csr", "technology", "sec"]}
+{"id": "r44", "query": "We need clinical evidence on heart-attack prediction with wearables, cloud RAG to deliver it to clinicians, and the vendor risks of Alphabet.", "agents": ["clinical", "technology", "sec"]}
+{"id": "r45", "query": "Our NGO runs hospitals and nutrition programs: choose a slide scanner and routers, assess Agilent and Cisco risks, and target child malnutrition with SOFI data.", "agents": ["clinical", "technology", "sec", "csr"]}
+{"id": "r46", "query": "Board briefing: tech refresh options for our Cisco WAN, diagnostic instruments for our labs, risk profile of our suppliers, and our food-security CSR commitments.", "agents": ["technology", "clinical", "sec", "csr"]}
+{"id": "r47", "query": "Which IBM Power server should we buy?", "agents": []}
+{"id": "r48", "query": "Write me a poem about the ocean.", "agents": []}
+{"id": "r49", "query": "Book me a flight to Tokyo next week and find a hotel near Shibuya.", "agents": []}
+{"id": "r50", "query": "I have chest pain right now, what medication should I take?", "agents": []}
