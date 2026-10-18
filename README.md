@@ -161,8 +161,10 @@ Demo in the **Market Basket** tab:
 2. **Consult tab:** run `router_outage` (brief section 4). Show routing to Technology only, the live tool calls,
    confirmed facts vs hypotheses, the questions for diagnostics, and the ISR 4000 end-of-sale flag.
 3. **Consult tab:** run `food_tech_investment`. Show CSR and SEC running in parallel, Technology waiting for CSR,
-   the review triggering an SEC follow-up, cross-domain insights and reconciled conflicts, and the Sources table.
-   (Or open a saved run in **Run history** to skip the wait.)
+   the manager's review (in our saved run it sent SEC a follow-up; whether a follow-up happens depends on the
+   review), cross-domain insights, reconciled conflicts and the Sources table. To skip the ~5 minute wait, open a
+   saved run in **Run history**. Runs are saved under `runs/`, which is git-ignored, so only runs made on your
+   own machine appear there.
 4. **Evaluation tab:** the routing, retrieval, recommendation and response-quality tables.
 5. **Market Basket tab:** one cart that gets recommendations and one that blanks out.
 
@@ -173,8 +175,15 @@ Demo in the **Market Basket** tab:
 - Claim support is enforced structurally (evidence ids must exist) and measured by an LLM judge; it is not
   guaranteed. The judge is also a Claude model, so self-preference bias is possible.
 - Catalog verification checks that each value string is on the cited page, not that it sits in the right table column.
-- End-to-end runs take about 2–5 minutes, with more specialists, Opus specialists and a follow-up round adding time.
+- End-to-end runs took about 2–5 minutes on the `dev` profile (mean 161 s); more specialists and a follow-up round
+  add time.
 - The evaluation sets are small and were written by the team.
+- All end-to-end evaluations ran on the `dev` profile (Sonnet specialists). The `demo` profile (Opus specialists)
+  uses the same code and prompts, but its quality and latency have not been measured.
+- Specialists report `partial` most of the time (21 of 23 reports in the response-quality runs): they mark a report
+  partial whenever part of the request is outside their sources, so the status is conservative.
+- Failure containment (a specialist timing out or crashing becomes a `failed` report and the run continues) is
+  covered by offline tests; the live `--inject-failure` path has not been exercised in a recorded run.
 
 ## Repository layout
 
@@ -193,5 +202,7 @@ app/                      streamlit_app.py, views.py, basket_view.py
 scripts/                  setup_data.py, consult.py, extract_catalogs.py, gen_agent_cards.py
 config/                   models.yaml, settings.yaml
 docs/                     ARCHITECTURE.md, AGENTS.md (generated)
+eval/results/             evaluation outputs (JSON, shown in the Evaluation tab)
 tests/                    offline tests
+runs/                     saved run traces (git-ignored, created when you run the platform)
 ```
